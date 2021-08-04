@@ -5,11 +5,60 @@
     <meta name="viewport" content="width=device-width">
     <title> test page </title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: grey;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: lightgrey;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a.testlink:link {
+        color: white;
+        background-color: grey;
+        text-decoration: none;
+      }
+
+      a.testlink:visited {
+        color: grey;
+        background-color: white;
+        text-decoration: none;
+      }
+
+      a.testlink:hover {
+        color: lightgrey;
+        background-color: darkgrey;
+        text-decoration: underline;
+      }
+
+      a.testlink:active {
+        color: black;
+        background-color: white;
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <!-- This is a comment -->
-    <a style="color:white; font-family:verdana;" href="https://DarkMode-list.bobjoerules.repl.co" title="DarkMode list"><img src="darkmodelistlogoplus.png" alt="darkmode-list-logo" width="192" height="108"></a>
-    <div style="text-align:center;"  ><p>Site made by <a href="https://wlo.link/@Bobjoerules" style="color:white; font-family:verdana;">Bobjoerules</a> a kid who does not know how to code but is learning and is 15. He is also a <a href="https://www.youtube.com/channel/UCh_oJzyBeQYXDPoJAKoOkqw" style="color:white; font-family:verdana;">YouTuber</a>. Email me at <a href="email.bobjoerules@gmail.com" style="color:white; font-family:verdana;">email.bobjoerules@gmail.com.</a></p></div>
+    <a style="color:white; font-family:verdana;" href="https://bobjoerules.github.io/DarkMode-list" title="DarkMode list"><img src="darkmodelistlogoplus.png" alt="darkmode-list-logo" width="192" height="108"></a>
+    <div style="text-align:center;"  ><p>Site made by <a href="https://wlo.link/@Bobjoerules" style="color:font-family:verdana;">Bobjoerules</a> a kid who does not know how to code but is learning and is 15. He is also a <a href="https://www.youtube.com/channel/UCh_oJzyBeQYXDPoJAKoOkqw" style="font-family:verdana;">YouTuber</a>. Email me at <a href="email.bobjoerules@gmail.com" style="font-family:verdana;">email.bobjoerules@gmail.com.</a></p></div> 
+    <a class="testlink" href="https://youtu.be/j5a0jTc9S10">Don't click me</a>
     <script src="script.js"></script>
   </body>
 </html>
