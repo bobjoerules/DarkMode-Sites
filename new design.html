@@ -14,12 +14,71 @@
         height:200px;
         width:200px;
       }
+      .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #212121;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+
+      
+      .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      
+      .sidebar a.active {
+        background-color: #4f4f4f;
+        color: white;
+      }
+
+      /* Links on mouse-over */
+      .sidebar a:hover:not(.active) {
+        background-color: #383838;
+        color: white;
+      }
+
+      div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+      }
+
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {float: left;}
+        div.content {margin-left: 0;}
+      }
+
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
+      }
     </style>  
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="0TeRsniE"></script>
-    <!-- This is a comment -->
+    
+    <div class="sidebar" style="font-family:verdana;">
+      <a class="active" href="#home">Home</a>
+     <a href="#ws">Websites</a>
+     <a href="#contact">Contact</a>
+     <a href="#about">About</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
     <a style="color:white; font-family:verdana;" href="https://bobjoerules.github.io/DarkMode-sheet" title="Home"><img src="images/darkmode sheet.png" alt="DarkMode-sheet-logo" width="192" height="108"></a>
     <h1 style="text-align:center;">Websites and apps with DarkMode</h1>
     <h4 style="color:white; font-family:verdana; text-align:center;">Not like darkmodelist.com were you have to pay to have your website added...</h3>
@@ -104,9 +163,9 @@
     <p>(added firefox add ons will go here)</p>
     <hr>
     <p style="text-align:center;"><a class="book" href="pages/credits/" title="Who made this website">Credits</a> <a class="book" href="https://forms.gle/NNjPAEm8CnPvVZYB8" title="Suggest something to be added">Suggest a DarkMode app/website/addon</a> <a class="book" href="https://docs.google.com/document/d/1JKAdEzzR9Uqi4SPSZkbbhGToi6GRjgbZHlnDNzl7jz8/edit?usp=sharing" title="What is being added and the Status of it">Status</a> <a class="book" href="pages/key/" title="Wtf are those symbols?">Key for symbols</a></p>
-    <center>
-    <div class="fb-like" data-href="https://bobjoerules.github.io/DarkMode-sheet/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+    </div>
+    
+    <!-- This is a comment -->
     <script src="script.js"></script>
-   </center>
   </body>
 </html>
