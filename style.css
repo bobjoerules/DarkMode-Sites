@@ -89,3 +89,16 @@ p {
         text-decoration: underline;
         font-size: 10px;
       }
+      a.bookred:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 10px;
+      }
+      a.bookred:active {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+        background-color: white;
+        font-size: 10px;
+      }
