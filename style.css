@@ -17,6 +17,7 @@ p {
         padding: 15px 25px;
         text-align: center;
         text-decoration: none;
+        font-size: 10px;
         display: inline-block;
         background-color: black;
       }
@@ -25,12 +26,14 @@ p {
         color: grey;
         background-color: transparent;
         text-decoration: none;
+        font-size: 10px;
       }
 
       a.book:hover {
         color: lightgrey;
         background-color: transparent;
         text-decoration: underline;
+        font-size: 10px;
       }
 
       a.book:active {
@@ -38,6 +41,7 @@ p {
         background-color: transparent;
         text-decoration: underline;
         background-color: white;
+        font-size: 10px;
       }
       a.book1:link {
         color: grey;
@@ -67,4 +71,21 @@ p {
         background-color: transparent;
         text-decoration: underline;
         background-color: white;
+      }
+      a.bookred:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 10px;
+        display: inline-block;
+        background-color: darkred;
+      }
+      a.bookred:hover {
+        color: white;
+        background-color: transparent;
+        text-decoration: underline;
+        font-size: 10px;
       }
