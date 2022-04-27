@@ -10,15 +10,21 @@ h2 {
 p {
   color:white; font-family:verdana;
 }
+ol {
+  color:white; font-family:verdana;
+}
+li {
+  color:white; font-family:verdana;
+}
 
       a:link {
-        color: grey;
+        color: white;
         background-color: transparent;
         text-decoration: none;
       }
 
       a:visited {
-        color: grey;
+        color: white;
         background-color: transparent;
         text-decoration: none;
       }
