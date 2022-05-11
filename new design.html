@@ -22,34 +22,25 @@
         position: fixed;
         height: 100%;
         overflow: auto;
-      }
-
-      
+      }  
       .sidebar a {
         display: block;
         color: black;
         padding: 16px;
         text-decoration: none;
-      }
-
-      
+      } 
       .sidebar a.active {
         background-color: #4f4f4f;
         color: white;
-      }
-
-      /* Links on mouse-over */
       .sidebar a:hover:not(.active) {
         background-color: #383838;
         color: white;
       }
-
       div.content {
         margin-left: 200px;
         padding: 1px 16px;
         height: 1000px;
       }
-
       @media screen and (max-width: 700px) {
         .sidebar {
           width: 100%;
@@ -59,7 +50,6 @@
         .sidebar a {float: left;}
         div.content {margin-left: 0;}
       }
-
       @media screen and (max-width: 400px) {
         .sidebar a {
           text-align: center;
@@ -69,14 +59,12 @@
     </style>  
   </head>
   <body>
-    
     <div class="sidebar" style="font-family:verdana;">
       <a class="active" href="#home">Home</a>
      <a href="#ws">Websites</a>
      <a href="#contact">Contact</a>
      <a href="#about">About</a>
     </div>
-
     <!-- Page content -->
     <div class="content">
     <a style="color:white; font-family:verdana;" href="https://bobjoerules.github.io/DarkMode-sheet" title="Home"><img src="images/darkmode sheet.png" alt="DarkMode-sheet-logo" width="192" height="108"></a>
