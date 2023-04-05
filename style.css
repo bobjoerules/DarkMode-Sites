@@ -1,0 +1,152 @@
+body {
+  background-color:#181818;
+  
+}
+h1 {
+  color:white; font-family:verdana;
+}
+h2 {
+  color:white; font-family:verdana;
+}
+p {
+  color:white; font-family:verdana;
+}
+      a.book:link {
+        color: grey;
+        text-decoration: none;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 10px;
+        display: inline-block;
+        background-color: black;
+      }
+
+      a.book:visited {
+        color: grey;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 10px;
+      }
+
+      a.book:hover {
+        color: lightgrey;
+        background-color: transparent;
+        text-decoration: underline;
+        font-size: 10px;
+      }
+
+      a.book:active {
+        color: black;
+        text-decoration: underline;
+        background-color: white;
+        font-size: 10px;
+      }
+      a.book1:link {
+        color: grey;
+        text-decoration: none;
+        padding: 1px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        background-color: black;
+      }
+
+      a.book1:visited {
+        color: grey;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a.book1:hover {
+        color: lightgrey;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a.book1:active {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+        background-color: white;
+      }
+      a.bookred:link {
+        color: white;
+        text-decoration: none;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 10px;
+        display: inline-block;
+        background-color: darkred;
+      }
+      a.bookred:hover {
+        color: white;
+        background-color: transparent;
+        text-decoration: underline;
+        font-size: 10px;
+      }
+      a.bookred:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 10px;
+      }
+      a.bookred:active {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+        background-color: white;
+        font-size: 10px;
+      }
+
+      #searchapp {
+        background-image: url('/images/search.png'); 
+        background-position-x: 10px; 
+        background-position-y: center; 
+        background-repeat: no-repeat; 
+        background-size: 15px;
+        width: 100%; 
+        box-sizing: border-box;
+        font-size: 16px; 
+        padding: 12px 20px 12px 40px; 
+        border: 1px solid #ddd; 
+        margin-bottom: 12px; 
+      }
+      #buttons {
+        text-align:center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      a.booklink:link {
+        text-decoration: none;
+        margin: 5px;
+        padding: 15px 25px;
+        text-align: center;
+        font-size: 0px;
+        display: inline-block;
+        background-color: black;
+        
+      }
+
+      a.booklink:visited {
+        background-color: transparent;
+        font-size: 0px;
+      }
+
+      a.booklink:hover {
+        background-color: transparent;
+        font-size: 0px;
+      }
+
+      a.booklink:active {
+        background-color: white;
+        font-size: 0px;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
