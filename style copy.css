@@ -13,6 +13,7 @@ p {
 }
       a.book:link {
         color: grey;
+        background-color: transparent;
         text-decoration: none;
         padding: 15px 25px;
         text-align: center;
@@ -38,12 +39,14 @@ p {
 
       a.book:active {
         color: black;
+        background-color: transparent;
         text-decoration: underline;
         background-color: white;
         font-size: 10px;
       }
       a.book1:link {
         color: grey;
+        background-color: transparent;
         text-decoration: none;
         padding: 1px 15px;
         text-align: center;
@@ -72,6 +75,7 @@ p {
       }
       a.bookred:link {
         color: white;
+        background-color: transparent;
         text-decoration: none;
         padding: 15px 25px;
         text-align: center;
@@ -98,54 +102,4 @@ p {
         text-decoration: underline;
         background-color: white;
         font-size: 10px;
-      }
-
-      #searchapp {
-        background-image: url('/images/search.png'); 
-        background-position-x: 10px; 
-        background-position-y: center; 
-        background-repeat: no-repeat; 
-        background-size: 15px;
-        width: 100%; 
-        box-sizing: border-box;
-        font-size: 16px; 
-        padding: 12px 20px 12px 40px; 
-        border: 1px solid #ddd; 
-        margin-bottom: 12px; 
-      }
-      #buttons {
-        text-align:center;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-      a.booklink:link {
-        text-decoration: none;
-        margin: 5px;
-        padding: 15px 25px;
-        text-align: center;
-        font-size: 0px;
-        display: inline-block;
-        background-color: black;
-        
-      }
-
-      a.booklink:visited {
-        background-color: transparent;
-        font-size: 0px;
-      }
-
-      a.booklink:hover {
-        background-color: transparent;
-        font-size: 0px;
-      }
-
-      a.booklink:active {
-        background-color: white;
-        font-size: 0px;
-      }
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
       }
