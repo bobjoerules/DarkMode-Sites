@@ -1,3 +1,0 @@
-# DarkMode-list
-Websites and apps with DarkMode. Not like darkmodelist.com were you have to pay to have your website added...
-Link: https://bobjoerules.github.io/DarkMode-sheet/
