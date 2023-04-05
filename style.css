@@ -113,7 +113,7 @@ p {
         border: 1px solid #ddd; 
         margin-bottom: 12px; 
       }
-      #buttons {
+      ul {
         text-align:center;
         list-style-type: none;
         padding: 0;
