@@ -225,7 +225,7 @@ p {
         background: transparent;
         border: 0;
         outline: none;
-        cursor: pointer;
+        cursor: not-allowed;
       }
       .social-icons {
         width: 40px;
