@@ -113,11 +113,14 @@ p {
         border: 1px solid #ddd; 
         margin-bottom: 12px; 
       }
-      ul {
+      ul.main{
         text-align:center;
         list-style-type: none;
         padding: 0;
         margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
       a.booklink:link {
         text-decoration: none;
@@ -144,9 +147,140 @@ p {
         background-color: white;
         font-size: 0px;
       }
-      ul {
+      footer{
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(to bottom, #0b445e, black);
+        color: white;
+        padding: 10px 0 10px;
+        border-top-left-radius: 125px;
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 20px;
+
+      }
+      .row{
+        width: 85%;
+        margin: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: space-between;
       }
-      
+      .col{
+        flex-basis: 25%;
+        padding: 10px;
+      }
+      .col:nth-child(2),  .col:nth-child(3){
+        flex-basis: 15%;
+      }
+
+      .logo {
+        width: 80px;
+        margin: 10px;
+      }
+      .col ul {
+      list-style-type: none;  
+      padding: 0px;
+      margin: 0px;
+
+      }
+      .col ul li{
+        text-decoration: underline;
+        color:white; font-family:verdana;
+        list-style: none;
+        margin:0;
+        padding:0;
+        margin-bottom: 12px;
+      }
+      ul li a{
+        text-decoration: none;
+        color: rgb(214, 247, 255);
+      }
+      h3 {
+        color:white; font-family:verdana;
+      }
+      form {
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        margin-bottom: 50px;
+
+      }
+      form input{
+        width: 100%;
+        background: transparent;
+        color: white;
+        border: 0;
+        outline: none;
+      }
+      form button{
+        font-size: 16px;
+        color: white;
+        background: transparent;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+      }
+      .social-icons {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        margin-right: 15px;
+        cursor: pointer;
+      }
+      hr{
+        width: 90%;
+        border: 0;
+        border-bottom: 1px solid white;
+        margin: 20px auto;
+
+      }
+      .copyright{
+        text-align: center;
+      }
+      .underline{
+        width: 100%;
+        height: 5px;
+        background: #767676;
+        border-radius: 3px;
+        position: absolute;
+        top: 25px;
+        left: 0;
+      }
+      .underline span{
+        width: 15px;
+        height: 100%;
+        background: white;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        animation: moving 2s linear infinite;
+      }
+      @keyframes moving{
+        0%{
+          left: -20px;
+        }
+        100%{
+          left: 100%;
+        }
+      }
+
+      @media (max-width: 700px){
+        footer{
+          bottom: unset;
+          
+          .col{
+            flex-basis: 100%;
+
+          }
+          .col:nth-child(2),  .col:nth-child(3){
+            flex-basis: 100%;
+          }
+        }
+      }
