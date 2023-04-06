@@ -172,7 +172,7 @@ p {
         padding: 10px;
       }
       .col:nth-child(2),  .col:nth-child(3){
-        flex-basis: 15%;
+        flex-basis: 25%;
       }
 
       .logo {
