@@ -261,14 +261,6 @@ p {
         left: 10px;
         animation: moving 2s linear infinite;
       }
-      @keyframes moving{
-        0%{
-          left: -20px;
-        }
-        100%{
-          left: 100%;
-        }
-      }
 
       @media (max-width: 700px){
         footer{
