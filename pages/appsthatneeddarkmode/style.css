@@ -48,7 +48,7 @@ li {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.2);
       }
 
       a.book:visited {
