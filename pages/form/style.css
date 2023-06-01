@@ -11,6 +11,9 @@ h2 {
 p {
   color:white; font-family:verdana;
 }
+a {
+  position: fixed;
+}
       a.book:link {
         color: grey;
         text-decoration: none;
