@@ -152,8 +152,6 @@ p {
         bottom: 0;
         background: linear-gradient(to bottom, #0b445e, black);
         color: white;
-        padding: 10px 0 10px;
-        border-top-left-radius: 125px;
         font-size: 13px;
         line-height: 20px;
         margin-top: 20px;
@@ -202,30 +200,6 @@ p {
       }
       h3 {
         color:white; font-family:verdana;
-      }
-      form {
-        padding-bottom: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid white;
-        margin-bottom: 25px;
-
-      }
-      form input{
-        width: 100%;
-        background: transparent;
-        color: white;
-        border: 0;
-        outline: none;
-      }
-      form button{
-        font-size: 16px;
-        color: white;
-        background: transparent;
-        border: 0;
-        outline: none;
-        cursor: not-allowed;
       }
       .social-icons {
         width: 40px;
