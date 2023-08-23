@@ -286,3 +286,39 @@ p {
         background: white; 
         border-radius: 10px;
       }
+
+      .twitter-rebranded {
+        position: relative;
+
+      }
+      .twitter-rebranded img.twitter2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        object-fit: contain;
+        opacity: 0;
+        transition: opacity .2s;
+      }
+
+      .twitter-rebranded:hover img.twitter2 {
+        opacity: 1;
+      }
+      .twitter-rebranded:hover img.twitter1 {
+        opacity: 0;
+      }
+      .button{
+        height:200px;
+        width:200px;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #181818;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: white; 
+        border-radius: 10px;
+      }
