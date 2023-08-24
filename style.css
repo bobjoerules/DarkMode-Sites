@@ -11,37 +11,35 @@ h2 {
 p {
   color:white; font-family:verdana;
 }
-      a.book:link {
-        color: grey;
-        text-decoration: none;
-        padding: 15px 25px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 10px;
-        display: inline-block;
-        background-color: rgba(0, 0, 0, 0.2);
-      }
+a.book:link {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-      a.book:visited {
-        color: grey;
-        background-color: transparent;
-        text-decoration: none;
-        font-size: 10px;
-      }
+a.book:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
 
-      a.book:hover {
-        color: lightgrey;
-        background-color: transparent;
-        text-decoration: underline;
-        font-size: 10px;
-      }
+a.book:hover {
+  color: lightgrey;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
-      a.book:active {
-        color: black;
-        text-decoration: underline;
-        background-color: white;
-        font-size: 10px;
-      }
+a.book:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+  background-color: white;
+}
       a.book1:link {
         color: grey;
         text-decoration: none;
