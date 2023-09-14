@@ -96,6 +96,7 @@ a.book:active {
       }
 
       #searchapp {
+        margin: 0 8px 0 8px;
         background-image: url('images/search.png'); 
         background-position-x: 10px; 
         background-position-y: center; 

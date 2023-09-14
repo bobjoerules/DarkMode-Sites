@@ -2,6 +2,11 @@ body {
   background-color:#181818;
   
 }
+
+.home {
+  margin-left: 8px;
+}
+
 h1 {
   color:white; font-family:verdana;
 }
