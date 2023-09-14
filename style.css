@@ -36,9 +36,8 @@ a.book:hover {
 
 a.book:active {
   color: black;
-  background-color: transparent;
   text-decoration: underline;
-  background-color: white;
+  background-color: lightslategray;
 }
       a.book1:link {
         color: grey;
@@ -64,9 +63,8 @@ a.book:active {
 
       a.book1:active {
         color: black;
-        background-color: transparent;
         text-decoration: underline;
-        background-color: white;
+        background-color: lightslategray;
       }
       a.bookred:link {
         color: white;
@@ -92,9 +90,8 @@ a.book:active {
       }
       a.bookred:active {
         color: black;
-        background-color: transparent;
         text-decoration: underline;
-        background-color: white;
+        background-color: lightslategray;
         font-size: 10px;
       }
 
@@ -142,7 +139,7 @@ a.book:active {
       }
 
       a.booklink:active {
-        background-color: white;
+        background-color: lightslategray;
         font-size: 0px;
       }
       footer{
