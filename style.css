@@ -37,7 +37,7 @@ a.book:hover {
 a.book:active {
   color: black;
   text-decoration: underline;
-  background-color: lightslategray;
+  background-color: darkslategray;
 }
       a.book1:link {
         color: grey;
@@ -64,7 +64,7 @@ a.book:active {
       a.book1:active {
         color: black;
         text-decoration: underline;
-        background-color: lightslategray;
+        background-color: darkslategray;
       }
       a.bookred:link {
         color: white;
@@ -91,12 +91,12 @@ a.book:active {
       a.bookred:active {
         color: black;
         text-decoration: underline;
-        background-color: lightslategray;
+        background-color: darkslategray;
         font-size: 10px;
       }
 
       #searchapp {
-        margin: 0 8px 0 8px;
+        padding: 0 8px 0 8px;
         background-image: url('images/search.png'); 
         background-position-x: 10px; 
         background-position-y: center; 
@@ -140,7 +140,7 @@ a.book:active {
       }
 
       a.booklink:active {
-        background-color: lightslategray;
+        background-color: darkslategray;
         font-size: 0px;
       }
       footer{

@@ -43,7 +43,7 @@ a {
       a.book:active {
         color: black;
         text-decoration: underline;
-        background-color: white;
+         background-color: darkslategray;
         font-size: 10px;
       }
       a.book1:link {
@@ -72,7 +72,7 @@ a {
         color: black;
         background-color: transparent;
         text-decoration: underline;
-        background-color: white;
+         background-color: darkslategray;
       }
       a.bookred:link {
         color: white;
@@ -100,7 +100,7 @@ a {
         color: black;
         background-color: transparent;
         text-decoration: underline;
-        background-color: white;
+         background-color: darkslategray;
         font-size: 10px;
       }
 
@@ -136,7 +136,7 @@ a {
       }
 
       a.booklink:active {
-        background-color: white;
+         background-color: darkslategray;
         font-size: 0px;
       }
       footer{

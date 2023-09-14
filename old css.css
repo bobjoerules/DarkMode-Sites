@@ -41,7 +41,7 @@ p {
         color: black;
         background-color: transparent;
         text-decoration: underline;
-        background-color: white;
+         background-color: darkslategray;
         font-size: 10px;
       }
       a.book1:link {
@@ -71,7 +71,7 @@ p {
         color: black;
         background-color: transparent;
         text-decoration: underline;
-        background-color: white;
+         background-color: darkslategray;
       }
       a.bookred:link {
         color: white;
@@ -100,6 +100,6 @@ p {
         color: black;
         background-color: transparent;
         text-decoration: underline;
-        background-color: white;
+         background-color: darkslategray;
         font-size: 10px;
       }
