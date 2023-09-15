@@ -14,6 +14,7 @@ function searchSite() {
     }
   }
 }
+
 const allElements = document.querySelectorAll('*');
 allElements.forEach(element => {
     element.draggable = false;
