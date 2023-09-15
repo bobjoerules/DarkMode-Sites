@@ -2,6 +2,9 @@ body {
   background-color:#181818;
   margin: 0;
 }
+:root {
+  --color: ' ';
+}
 h1 {
   color:white; font-family:verdana;
 }
@@ -37,7 +40,7 @@ a.book:hover {
 a.book:active {
   color: black;
   text-decoration: underline;
-  background-color: darkslategray;
+  background-color: var(--color);
 }
       a.book1:link {
         color: grey;
@@ -46,7 +49,7 @@ a.book:active {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        background-color: rgba(0, 0, 0, 0.5);;
+        background-color: rgba(0, 0, 0, 0.5);
       }
 
       a.book1:visited {
@@ -64,7 +67,7 @@ a.book:active {
       a.book1:active {
         color: black;
         text-decoration: underline;
-        background-color: darkslategray;
+        background-color: var(--color);
       }
       a.bookred:link {
         color: white;
@@ -91,7 +94,7 @@ a.book:active {
       a.bookred:active {
         color: black;
         text-decoration: underline;
-        background-color: darkslategray;
+        background-color: var(--color);
         font-size: 10px;
       }
 
@@ -140,13 +143,13 @@ a.book:active {
       }
 
       a.booklink:active {
-        background-color: darkslategray;
+        background-color: var(--color);;
         font-size: 0px;
       }
       footer{
         width: 100%;
         bottom: 0;
-        background: linear-gradient(to bottom, #0b445e, black);
+        background: linear-gradient(to top, var(--color), #181818);
         color: white;
         font-size: 13px;
         line-height: 20px;

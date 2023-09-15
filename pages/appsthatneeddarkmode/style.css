@@ -67,5 +67,5 @@ li {
         color: black;
         background-color: transparent;
         text-decoration: underline;
-         background-color: darkslategray;
+         background-color: var(--color);;
       }

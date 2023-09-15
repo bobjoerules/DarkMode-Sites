@@ -18,3 +18,15 @@ const allElements = document.querySelectorAll('*');
 allElements.forEach(element => {
     element.draggable = false;
 });
+function delay(milliseconds){
+  return new Promise(resolve => {
+      setTimeout(resolve, milliseconds);
+  });
+}
+async function start() {
+  var color = Math.floor(Math.random() * 360);
+  console.log(`Highlight color set to: hsla(${color}, 25%, 25%, 1)`)
+  document.documentElement.style.setProperty(`--color`, `hsla(${color}, 25%, 25%, 1)`);
+  await delay(10000);
+}
+start()
