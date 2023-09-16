@@ -15,6 +15,7 @@ p {
   color:white; font-family:verdana;
 }
 .home{
+  filter: drop-shadow(0 0 0.75rem var(--color));
   margin-left: 8px;
 }
 a.book:link {
@@ -204,6 +205,7 @@ a.book:active {
         color:white; font-family:verdana;
       }
       .social-icons {
+        filter: drop-shadow(0 0 0.75rem black);
         width: 40px;
         height: 40px;
         text-align: center;
