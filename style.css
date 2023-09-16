@@ -1,6 +1,5 @@
 body {
   background-color:#181818;
-  margin: 0;
 }
 :root {
   --color: ' ';
@@ -16,7 +15,6 @@ p {
 }
 .home{
   filter: drop-shadow(0 0 0.75rem var(--color));
-  margin-left: 8px;
 }
 a.book:link {
   color: grey;
