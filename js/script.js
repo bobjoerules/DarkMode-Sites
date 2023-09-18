@@ -14,14 +14,13 @@ function searchSite() {
     }
   }
 }
-
 const allElements = document.querySelectorAll('*');
 allElements.forEach(element => {
-    element.draggable = false;
+  element.draggable = false;
 });
 function delay(milliseconds){
   return new Promise(resolve => {
-      setTimeout(resolve, milliseconds);
+    setTimeout(resolve, milliseconds);
   });
 }
 async function start() {
