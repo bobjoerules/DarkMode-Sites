@@ -1,5 +1,6 @@
 body {
   background-color:#181818;
+  margin: 8px;
 }
 :root {
   --color: ' ';
@@ -149,6 +150,7 @@ a.book:active {
         font-size: 0px;
       }
       footer{
+        margin: -8px;
         width: 100%;
         bottom: 0;
         background: linear-gradient(to top, var(--color), #181818);
