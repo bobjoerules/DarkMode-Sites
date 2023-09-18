@@ -27,263 +27,244 @@ a.book:link {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 a.book:visited {
   color: grey;
   background-color: transparent;
   text-decoration: none;
 }
-
 a.book:hover {
   color: lightgrey;
   background-color: transparent;
   text-decoration: underline;
 }
-
 a.book:active {
   color: black;
   text-decoration: underline;
   background-color: var(--color);
 }
-      a.book1:link {
-        color: grey;
-        text-decoration: none;
-        padding: 1px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      a.book1:visited {
-        color: grey;
-        background-color: transparent;
-        text-decoration: none;
-      }
-
-      a.book1:hover {
-        color: lightgrey;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-
-      a.book1:active {
-        color: black;
-        text-decoration: underline;
-        background-color: var(--color);
-      }
-      a.bookred:link {
-        color: white;
-        text-decoration: none;
-        padding: 15px 25px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 10px;
-        display: inline-block;
-        background-color: darkred;
-      }
-      a.bookred:hover {
-        color: white;
-        background-color: transparent;
-        text-decoration: underline;
-        font-size: 10px;
-      }
-      a.bookred:visited {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
-        font-size: 10px;
-      }
-      a.bookred:active {
-        color: black;
-        text-decoration: underline;
-        background-color: var(--color);
-        font-size: 10px;
-      }
-
-      #searchapp {
-        padding: 0 8px 0 8px;
-        background-image: url('images/search.png'); 
-        background-position-x: 10px; 
-        background-position-y: center; 
-        background-repeat: no-repeat; 
-        background-size: 15px;
-        width: 100%; 
-        box-sizing: border-box;
-        font-size: 16px; 
-        padding: 12px 20px 12px 40px; 
-        border: 1px solid #ddd; 
-        margin-bottom: 12px; 
-      }
-      ul.main{
-        text-align:center;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      a.booklink:link {
-        text-decoration: none;
-        margin: 5px;
-        padding: 15px 25px;
-        text-align: center;
-        font-size: 0px;
-        display: inline-block;
-        background-color: rgba(0, 0, 0, 0.5);;
-        
-      }
-
-      a.booklink:visited {
-        background-color: transparent;
-        font-size: 0px;
-      }
-
-      a.booklink:hover {
-        background-color: transparent;
-        font-size: 0px;
-      }
-
-      a.booklink:active {
-        background-color: var(--color);;
-        font-size: 0px;
-      }
-      footer{
-        margin: -8px -8px -8px -8px;
-        width: 100%;
-        bottom: 0;
-        background: linear-gradient(to top, var(--color), #181818);
-        color: white;
-        font-size: 13px;
-        line-height: 20px;
-        margin-top: 20px;
-
-      }
-      .row{
-        width: 85%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-      }
-      .col{
-        flex-basis: 25%;
-        padding: 10px;
-      }
-      .col:nth-child(2),  .col:nth-child(3){
-        flex-basis: 25%;
-      }
-
-      .logo {
-        width: 80px;
-        margin: 10px;
-      }
-      .col ul {
-      list-style-type: none;  
-      padding: 0px;
-      margin: 0px;
-
-      }
-      .col ul li{
-        text-decoration: underline;
-        color:white; font-family:verdana;
-        list-style: none;
-        margin:0;
-        padding:0;
-        margin-bottom: 12px;
-      }
-      ul li a{
-        text-decoration: none;
-        color: rgb(214, 247, 255);
-      }
-      h2 {
-      margin-top: 50px;
-      }
-      h3 {
-        color:white; font-family:verdana;
-      }
-      .social-icons {
-        filter: drop-shadow(0 0 0.75rem black);
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        line-height: 40px;
-        font-size: 20px;
-        margin-right: 15px;
-        margin-left: -5px;
-        
-        cursor: pointer;
-        display: inline;
-      }
-      hr{
-        width: 90%;
-        border: 0;
-        border-bottom: 1px solid white;
-        margin: 20px auto;
-
-      }
-      .copyright{
-        text-align: center;
-      }
-      body {
-        max-width: 1920px ;
-      }
-      .error {
-        text-align: center;
-        align-items: center;
-        width: auto;
-        height: 100%;
-        max-width: 100%
-      }
-      .button{
-        height:200px;
-        width:200px;
-      }
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #181818;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: white; 
-        border-radius: 10px;
-      }
-
-      .twitter-rebranded {
-        position: relative;
-
-      }
-      .twitter-rebranded img.twitter2 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        object-fit: contain;
-        opacity: 0;
-        transition: opacity .2s;
-      }
-
-      .twitter-rebranded:hover img.twitter2 {
-        opacity: 1;
-      }
-      .twitter-rebranded:hover img.twitter1 {
-        opacity: 0;
-      }
-      .button{
-        height:200px;
-        width:200px;
-      }
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #181818;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: white; 
-        border-radius: 10px;
-      }
+a.book1:link {
+  color: grey;
+  text-decoration: none;
+  padding: 1px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+a.book1:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+a.book1:hover {
+  color: lightgrey;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a.book1:active {
+  color: black;
+  text-decoration: underline;
+  background-color: var(--color);
+}
+a.bookred:link {
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  display: inline-block;
+  background-color: darkred;
+}
+a.bookred:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 10px;
+}
+a.bookred:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 10px;
+}
+a.bookred:active {
+  color: black;
+  text-decoration: underline;
+  background-color: var(--color);
+  font-size: 10px;
+}
+#searchapp {
+  padding: 0 8px 0 8px;
+  background-image: url('images/search.png'); 
+  background-position-x: 10px; 
+  background-position-y: center; 
+  background-repeat: no-repeat; 
+  background-size: 15px;
+  width: 100%; 
+  box-sizing: border-box;
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+}
+ul.main{
+  text-align:center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+a.booklink:link {
+  text-decoration: none;
+  margin: 5px;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 0px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);;
+}
+a.booklink:visited {
+  background-color: transparent;
+  font-size: 0px;
+}
+a.booklink:hover {
+  background-color: transparent;
+  font-size: 0px;
+}
+a.booklink:active {
+  background-color: var(--color);;
+  font-size: 0px;
+}
+footer{
+  margin: -8px -8px -8px -8px;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to top, var(--color), #181818);
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col:nth-child(2),  .col:nth-child(3){
+  flex-basis: 25%;
+}
+.logo {
+  width: 80px;
+  margin: 10px;
+}
+.col ul {
+  list-style-type: none;  
+  padding: 0px;
+  margin: 0px;
+}
+.col ul li{
+  text-decoration: underline;
+  color:white; font-family:verdana;
+  list-style: none;
+  margin:0;
+  padding:0;
+  margin-bottom: 12px;
+}
+ul li a{
+  text-decoration: none;
+  color: rgb(214, 247, 255);
+}
+h2 {
+margin-top: 50px;
+}
+h3 {
+  color:white; font-family:verdana;
+}
+.social-icons {
+  filter: drop-shadow(0 0 0.75rem black);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-left: -5px;
+  cursor: pointer;
+  display: inline;
+}
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid white;
+  margin: 20px auto;
+}
+.copyright{
+  text-align: center;
+}
+body {
+  max-width: 1920px ;
+}
+.error {
+  text-align: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  max-width: 100%
+}
+.button{
+  height:200px;
+  width:200px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+.twitter-rebranded {
+  position: relative;
+}
+.twitter-rebranded img.twitter2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.twitter-rebranded:hover img.twitter2 {
+  opacity: 1;
+}
+.twitter-rebranded:hover img.twitter1 {
+  opacity: 0;
+}
+.button{
+  height:200px;
+  width:200px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
