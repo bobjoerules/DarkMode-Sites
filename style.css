@@ -238,23 +238,36 @@ body {
   background: white; 
   border-radius: 10px;
 }
-.twitter-rebranded {
+.image-change {
   position: relative;
 }
-.twitter-rebranded img.twitter2 {
+.twitter-images {
+  position: relative;
+  display: inline-block; /* Display the images side by side */
+}
+.twitter-images img {
+  max-width: 100%; /* Ensure the images don't exceed the container width */
+  max-height: 100%; /* Ensure the images don't exceed the container height */
+  display: block; /* Remove any spacing between the images */
+}
+.image-change img.image2 {
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
   object-fit: contain;
   opacity: 0;
   transition: opacity .2s;
 }
-.twitter-rebranded:hover img.twitter2 {
+.image-change img.image2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.image-change:hover img.image2 {
   opacity: 1;
 }
-.twitter-rebranded:hover img.twitter1 {
+.image-change:hover img.image1 {
   opacity: 0;
 }
 .button{
