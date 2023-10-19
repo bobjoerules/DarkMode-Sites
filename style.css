@@ -27,7 +27,8 @@ a.book:link {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, black 40%, #181818);
+  
 }
 a.book:visited {
   color: grey;
@@ -38,11 +39,13 @@ a.book:hover {
   color: lightgrey;
   background-color: transparent;
   text-decoration: underline;
+  box-shadow: 0px 0px 10px grey;
 }
 a.book:active {
-  color: black;
+  color: white;
   text-decoration: underline;
-  background-color: var(--color);
+  background: none;
+  box-shadow: none;
 }
 a.book1:link {
   color: grey;
@@ -51,7 +54,7 @@ a.book1:link {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, black 40%, #181818);
 }
 a.book1:visited {
   color: grey;
@@ -62,11 +65,13 @@ a.book1:hover {
   color: lightgrey;
   background-color: transparent;
   text-decoration: underline;
+  box-shadow: 0px 0px 10px grey;
 }
 a.book1:active {
-  color: black;
+  color: white;
   text-decoration: underline;
-  background-color: var(--color);
+  background: none;
+  box-shadow: none;
 }
 a.bookred:link {
   color: white;
@@ -83,6 +88,7 @@ a.bookred:hover {
   background-color: transparent;
   text-decoration: underline;
   font-size: 10px;
+  box-shadow: 0px 0px 10px grey;
 }
 a.bookred:visited {
   color: white;
@@ -91,10 +97,11 @@ a.bookred:visited {
   font-size: 10px;
 }
 a.bookred:active {
-  color: black;
+  color: white;
   text-decoration: underline;
-  background-color: var(--color);
+  background: none;
   font-size: 10px;
+  box-shadow: none;
 }
 #searchapp {
   padding: 0 8px 0 8px;
@@ -126,7 +133,7 @@ a.booklink:link {
   text-align: center;
   font-size: 0px;
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.5);;
+  background: linear-gradient(135deg, black 40%, #181818);
 }
 a.booklink:visited {
   background-color: transparent;
@@ -135,10 +142,14 @@ a.booklink:visited {
 a.booklink:hover {
   background-color: transparent;
   font-size: 0px;
+  box-shadow: 0px 0px 10px grey;
 }
 a.booklink:active {
-  background-color: var(--color);;
+  color: white;
+  text-decoration: underline;
+  background: none;
   font-size: 0px;
+  box-shadow: none;
 }
 footer{
   margin: 0 -8px -8px 0;
@@ -184,8 +195,14 @@ footer{
   margin-bottom: 12px;
 }
 ul li a{
+  box-shadow: ;
   text-decoration: none;
-  color: rgb(214, 247, 255);
+  color: white;
+}
+ul li a:hover{
+  box-shadow: ;
+  text-decoration: none;
+  color: grey;
 }
 h2 {
 margin-top: 50px;
