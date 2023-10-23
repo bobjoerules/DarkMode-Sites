@@ -19,6 +19,9 @@ p {
 .home{
   filter: drop-shadow(0 0 0.75rem var(--color));
 }
+a.website {
+  text-decoration: none
+}
 a.book:link {
   color: grey;
   background-color: transparent;
@@ -195,12 +198,12 @@ footer{
   margin-bottom: 12px;
 }
 ul li a{
-  box-shadow: ;
+  box-shadow: none;
   text-decoration: none;
   color: white;
 }
 ul li a:hover{
-  box-shadow: ;
+  box-shadow: none;
   text-decoration: none;
   color: grey;
 }
