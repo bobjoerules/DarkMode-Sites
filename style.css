@@ -17,7 +17,7 @@ p {
   color:white; font-family:verdana;
 }
 .home{
-  filter: drop-shadow(0 0 0.75rem var(--color));
+  filter: drop-shadow(0 0 0.75rem black);
 }
 a.website {
   text-decoration: none
@@ -155,11 +155,11 @@ a.booklink:active {
   box-shadow: none;
 }
 footer{
-  margin: 0 -8px -8px 0;
-  padding: 0 8px 8px 0;
+  margin: -8px -8px -8px -8px;
+  padding: 8px 8px 8px 8px;
   width: 100%;
   bottom: 0;
-  background: linear-gradient(to top, var(--color), #181818);
+  background: linear-gradient(to top, black, #181818);
   color: white;
   font-size: 13px;
   line-height: 20px;
