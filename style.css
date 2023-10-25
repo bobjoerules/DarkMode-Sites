@@ -22,6 +22,12 @@ p {
 a.website {
   text-decoration: none
 }
+img.rotate {
+  transition: transform .1s ease-in-out;
+}
+img.rotate:hover {
+  transform: rotate(30deg);
+}
 a.book:link {
   color: grey;
   background-color: transparent;
@@ -33,7 +39,7 @@ a.book:link {
   background: linear-gradient(135deg, black 40%, #181818);
 }
 a {
-  border-radius: 10%;
+  border-radius: 20px;
 }
 a.book:visited {
   color: grey;
