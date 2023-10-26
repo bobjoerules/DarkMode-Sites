@@ -25,9 +25,11 @@ a.website {
 img.rotate {
   padding-left: 5px;
   transition: transform .1s ease-in-out;
+  transform-origin: center;
 }
 img.rotate:hover {
   transform: rotate(30deg);
+  transform-origin: center;
 }
 a.book:link {
   color: grey;
