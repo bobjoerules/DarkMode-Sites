@@ -8,7 +8,7 @@ function searchSite() {
   for (i = 0; i < li1.length; i++) {
     a = li1[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().startsWith(filter)) {
+    if (txtValue.toUpperCase().startsWith(filter) || txtValue.toUpperCase().includes(" " + filter)) {
       li1[i].style.display = "";
       number = 1;
     } else {
@@ -30,12 +30,12 @@ function delay(milliseconds){
     setTimeout(resolve, milliseconds);
   });
 }
-async function start() {
+/* async function start() {
   var color = Math.floor(Math.random() * 360);
   console.log(`Highlight color set to: hsla(${color}, 25%, 25%, 1)`)
   document.documentElement.style.setProperty(`--color`, `hsla(${color}, 25%, 25%, 1)`);
   await delay(10000);
-}
+}*/
 start()
 var is_OSX = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
 var is_iOS = /(iPhone|iPod|iPad)/i.test(navigator.platform);
