@@ -325,3 +325,10 @@ hr {
   background-image: -ms-linear-gradient(left, black, white, black);
   background-image: -o-linear-gradient(left, black, white, black);
 } 
+
+noscript {
+  color: red; 
+  text-align: center; 
+  text-transform: uppercase; 
+  font-family:verdana;
+}
