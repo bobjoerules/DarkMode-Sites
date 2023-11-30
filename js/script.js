@@ -35,8 +35,8 @@ function delay(milliseconds){
   console.log(`Highlight color set to: hsla(${color}, 25%, 25%, 1)`)
   document.documentElement.style.setProperty(`--color`, `hsla(${color}, 25%, 25%, 1)`);
   await delay(10000);
-}*/
-start()
+}
+start()*/
 var is_OSX = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
 var is_iOS = /(iPhone|iPod|iPad)/i.test(navigator.platform);
 
