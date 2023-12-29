@@ -336,6 +336,10 @@ noscript {
   filter: grayscale(100%);
   transform: scale(125%);
 }
+.social:hover{
+  filter: grayscale(100%);
+  transform: scale(125%);
+}
 .socials{
   box-shadow: 0px 0px 10px grey;
   vertical-align:middle;
