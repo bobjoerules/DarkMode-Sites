@@ -1,3 +1,3 @@
 # DarkMode-list
-Websites and Apps With DarkMode. Not like darkmodelist.com were you have to pay to have your website added...
+A free to add to list of Websites/Apps/Browser Extensions with DarkMode.
 Link: https://bobjoerules.github.io/DarkMode-sheet/
