@@ -17,6 +17,8 @@ p {
   color:white; font-family:verdana;
 }
 .home{
+  width: 192px; 
+  height: 108px;
   filter: drop-shadow(0 0 0.75rem black);
 }
 a.website {
