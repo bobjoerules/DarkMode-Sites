@@ -7,15 +7,9 @@ body {
 :root {
   --color: ' ';
 }
-.roboto-mono-medium {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight:500;
-  font-style: normal;
-}
 h1 {
   color:white; font-family:verdana;
-  font-family: 'Roboto Mono', monospace;
+  font-size: xx-large;
 }
 h2 {
   color:white; font-family:verdana;
