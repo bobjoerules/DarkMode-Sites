@@ -123,8 +123,8 @@ a.bookred:active {
 #searchapp {
   padding: 0 8px 0 8px;
   background-image: url('images/search.png'); 
-  background-position-x: 10px; 
-  background-position-y: center; 
+  background-position-x: 15px; 
+  background-position-y: 13px; 
   background-repeat: no-repeat; 
   background-size: 15px;
   width: 100%; 
@@ -133,6 +133,7 @@ a.bookred:active {
   padding: 12px 20px 12px 40px; 
   border: 1px solid #ddd; 
   margin-bottom: 12px; 
+  border-radius: 30px;
 }
 ul.main{
   text-align:center;
