@@ -6,6 +6,7 @@
 }
 
 body {
+  background: radial-gradient(circle at 76% 26%, #17262f 0, #18171c 57%, #141414 100%);
   background-color:#181818;
   min-height: 100vh;
   display: flex;
@@ -182,7 +183,7 @@ footer{
   padding: 8px 8px 8px 8px;
   width: 100%;
   bottom: 0;
-  background: linear-gradient(to top, black, #181818);
+  background: linear-gradient(to top, black, transparent);
   color: white;
   font-size: 13px;
   line-height: 20px;
