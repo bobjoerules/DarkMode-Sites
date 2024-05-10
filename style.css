@@ -6,7 +6,6 @@
 }
 
 body {
-  background: radial-gradient(circle at 76% 26%, #17262f 0, #18171c 57%, #141414 100%);
   background-color:#181818;
   min-height: 100vh;
   display: flex;
@@ -326,10 +325,10 @@ hr {
   margin: 40px;
   border: none;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, black, white, black);
-  background-image: -moz-linear-gradient(left, black, white, black); 
-  background-image: -ms-linear-gradient(left, black, white, black);
-  background-image: -o-linear-gradient(left, black, white, black);
+  background-image: -webkit-linear-gradient(left, transparent, white, transparent);
+  background-image: -moz-linear-gradient(left, transparent, white, transparent); 
+  background-image: -ms-linear-gradient(left, transparent, white, transparent);
+  background-image: -o-linear-gradient(left, transparent, white, transparent);
 } 
 
 noscript {
