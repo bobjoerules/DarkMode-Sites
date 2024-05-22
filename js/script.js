@@ -52,6 +52,7 @@ var mac = document.getElementById('mac');
 var windows = document.getElementById('windows');
 var iphone = document.getElementById('iphone');
 var android = document.getElementById('android');
+var phone = document.getElementById('phone');
 
 /* if (!is_OSX) type.innerHTML += "This NOT a Mac or an iOS Device!";
 if (is_Mac) type.innerHTML += "This is a Mac Computer!\n";
@@ -64,3 +65,4 @@ if (!is_iPhone && !is_windows && !is_Android) windows.innerHTML += "Your compute
 if (!is_iPhone && !is_Mac && !is_Android) mac.innerHTML += "Your computer is Not A Mac Computer so some of these programs might not work with DarkMode on your device";
 if (!is_iPhone && !is_Mac && !is_windows) iphone.innerHTML += "Your Phone is Not An iPhone so some of these programs might not work with DarkMode on your device";
 if (!is_Android && !is_Mac && !is_windows) android.innerHTML += "Your Phone/Tablet is Not An Android so some of these programs might not work with DarkMode on your device";
+if (is_iPhone || is_Android ) phone.innerHTML += "Your Phone's browser most likely won't be able to run extensions";
