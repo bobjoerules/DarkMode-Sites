@@ -332,6 +332,15 @@ hr {
   background-image: -ms-linear-gradient(left, transparent, white, transparent);
   background-image: -o-linear-gradient(left, transparent, white, transparent);
 } 
+.copyhr {
+  margin: 40px;
+  border: none;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, transparent, white, transparent);
+  background-image: -moz-linear-gradient(left, transparent, white, transparent); 
+  background-image: -ms-linear-gradient(left, transparent, white, transparent);
+  background-image: -o-linear-gradient(left, transparent, white, transparent);
+} 
 
 noscript {
   color: red; 
@@ -348,7 +357,7 @@ noscript {
   transform: scale(125%);
 }
 .socials{
-  box-shadow: 0px 0px 10px grey;
+  border-color: white;
   vertical-align:middle;
   transition: transform .1s ease-in-out;
   transform-origin: center;
