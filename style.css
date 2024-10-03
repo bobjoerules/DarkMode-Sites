@@ -149,7 +149,7 @@ ul.main{
   text-align:center;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
