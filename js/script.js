@@ -1,3 +1,18 @@
+window.onload = function() {
+  var ul, li, a, i;
+  ul = document.getElementById("all");
+  li = Array.from(ul.getElementsByTagName('li'));
+  li.sort(function(a, b) {
+    var textA = a.getElementsByTagName("a")[0].textContent || a.getElementsByTagName("a")[0].innerText;
+    var textB = b.getElementsByTagName("a")[0].textContent || b.getElementsByTagName("a")[0].innerText;
+    return textA.localeCompare(textB);
+  });
+  ul.innerHTML = "";
+  li.forEach(function(item) {
+    ul.appendChild(item);
+  });
+}
+
 function searchSite() {
   var input, filter, ul, li, a, i, number, txtValue;
   input = document.getElementById('searchapp');
