@@ -161,7 +161,11 @@ a.booklinksmall:link {
   text-align: center;
   font-size: 0px;
   display: inline-block;
-  background: linear-gradient(135deg, black 40%, #1a0000);
+  background: linear-gradient(135deg, black 40%, #480000);
+  border: 1px solid; 
+  margin-bottom: 12px; 
+  border-radius: 30px;
+  background-color: #181818;
 }
 a.booklinksmall:visited {
   background-color: transparent;
