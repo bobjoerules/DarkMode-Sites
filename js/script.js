@@ -12,7 +12,6 @@ window.onload = function() {
     li.forEach(function(item) {
       ul.appendChild(item);
     });
-    console.log(ul.getElementsByTagName('li').length)
   }else{
     var ul = document.getElementById("all");
     var li = Array.from(ul.getElementsByTagName('li'));
@@ -25,25 +24,38 @@ window.onload = function() {
     li.forEach(function(item) {
         ul.appendChild(item);
     });    
-    console.log(ul.getElementsByTagName('li').length)
   }
 }
 
 function searchSite() {
-  var input, filter, ul, li, a, i, number, txtValue;
+  var input, filter, ul, li, button, a, i, number, txtValue;
   input = document.getElementById('searchapp');
   filter = input.value.toUpperCase();
   number = 0
   ul1 = document.getElementById("all");
   li1 = ul1.getElementsByTagName('li');
-  for (i = 0; i < li1.length; i++) {
-    a = li1[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().startsWith(filter) || txtValue.toUpperCase().includes(" " + filter)) {
-      li1[i].style.display = "";
-      number = 1;
-    } else {
-      li1[i].style.display = "none";
+  if (!(window.location.pathname === '/catagories/extensions/')){
+    for (i = 0; i < li1.length; i++) {
+      a = li1[i].getElementsByTagName("a")[0];
+      console.log(a.textContent )
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().startsWith(filter) || txtValue.toUpperCase().includes(" " + filter)) {
+        li1[i].style.display = "";
+        number = 1;
+      } else {
+        li1[i].style.display = "none";
+      }
+    }
+  }else{
+    for (i = 0; i < li1.length; i++) {
+      a = li1[i].getElementsByTagName("button")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().startsWith(filter) || txtValue.toUpperCase().includes(" " + filter)) {
+        li1[i].style.display = "";
+        number = 1;
+      } else {
+        li1[i].style.display = "none";
+      }
     }
   }
   if (number === 0) {
