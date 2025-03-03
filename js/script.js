@@ -1,16 +1,32 @@
 window.onload = function() {
-  var ul, li, a, i;
-  ul = document.getElementById("all");
-  li = Array.from(ul.getElementsByTagName('li'));
-  li.sort(function(a, b) {
-    var textA = a.getElementsByTagName("a")[0].textContent || a.getElementsByTagName("a")[0].innerText;
-    var textB = b.getElementsByTagName("a")[0].textContent || b.getElementsByTagName("a")[0].innerText;
-    return textA.localeCompare(textB);
-  });
-  ul.innerHTML = "";
-  li.forEach(function(item) {
-    ul.appendChild(item);
-  });
+  if (!(window.location.pathname === '/catagories/extensions/')){
+    var ul, li, a, i;
+    ul = document.getElementById("all");
+    li = Array.from(ul.getElementsByTagName('li'));
+    li.sort(function(a, b) {
+      var textA = a.getElementsByTagName("a")[0].textContent || a.getElementsByTagName("a")[0].innerText;
+      var textB = b.getElementsByTagName("a")[0].textContent || b.getElementsByTagName("a")[0].innerText;
+      return textA.localeCompare(textB);
+    });
+    ul.innerHTML = "";
+    li.forEach(function(item) {
+      ul.appendChild(item);
+    });
+    console.log(ul.getElementsByTagName('li').length)
+  }else{
+    var ul = document.getElementById("all");
+    var li = Array.from(ul.getElementsByTagName('li'));
+    li.sort(function(a, b) {
+        var textA = a.querySelector(".dropdown > .dropbtn").textContent.trim();
+        var textB = b.querySelector(".dropdown > .dropbtn").textContent.trim();
+        return textA.localeCompare(textB);
+    });
+    ul.innerHTML = "";
+    li.forEach(function(item) {
+        ul.appendChild(item);
+    });    
+    console.log(ul.getElementsByTagName('li').length)
+  }
 }
 
 function searchSite() {
@@ -56,7 +72,6 @@ var is_OSX = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
 var is_iOS = /(iPhone|iPod|iPad)/i.test(navigator.platform);
 
 var is_Mac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-console.log(navigator.platform)
 var is_windows = navigator.platform.indexOf('Win') >=0
 var is_iPhone = navigator.platform == "iPhone";
 var is_iPod = navigator.platform == "iPod";
@@ -76,8 +91,14 @@ if (is_iPhone) type.innerHTML += "This is an iPhone!";
 if (is_iPod) type.innerHTML += "This is an iPod Touch!";
 if (is_iPad) type.innerHTML += "This is an iPad!";*/
 
-if (!is_iPhone && !is_windows && !is_Android) windows.innerHTML += "Your computer is Not A Windows Computer so some of these programs might not work with DarkMode on your device";
-if (!is_iPhone && !is_Mac && !is_Android) mac.innerHTML += "Your computer is Not A Mac Computer so some of these programs might not work with DarkMode on your device";
-if (!is_iPhone && !is_Mac && !is_windows) iphone.innerHTML += "Your Phone is Not An iPhone so some of these programs might not work with DarkMode on your device";
-if (!is_Android && !is_Mac && !is_windows) android.innerHTML += "Your Phone/Tablet is Not An Android so some of these programs might not work with DarkMode on your device";
-if (is_iPhone || is_Android ) phone.innerHTML += "Your Phone's browser most likely won't be able to run extensions";
+try
+{
+  if (!is_iPhone && !is_windows && !is_Android) windows.innerHTML += "Your computer is Not A Windows Computer so some of these programs might not work with DarkMode on your device";
+  if (!is_iPhone && !is_Mac && !is_Android) mac.innerHTML += "Your computer is Not A Mac Computer so some of these programs might not work with DarkMode on your device";
+  if (!is_iPhone && !is_Mac && !is_windows) iphone.innerHTML += "Your Phone is Not An iPhone so some of these programs might not work with DarkMode on your device";
+  if (!is_Android && !is_Mac && !is_windows) android.innerHTML += "Your Phone/Tablet is Not An Android so some of these programs might not work with DarkMode on your device";
+  if (is_iPhone || is_Android ) phone.innerHTML += "Your Phone's browser most likely won't be able to run extensions";
+}
+catch(e)
+{
+}

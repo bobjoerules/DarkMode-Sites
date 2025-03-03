@@ -398,3 +398,65 @@ noscript {
 .social-icons {
   text-align: right;
 }
+
+/* Parent container to center the dropdown */
+.parent-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dropbtn {
+  border-radius: 20px;
+  background: linear-gradient(135deg, black 40%, #181818);
+  margin: 5px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 25px;
+  font-size: 0px;
+  border: none;
+  display: inline-block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #181818;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color:white; font-family:verdana;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: transparent; 
+  box-shadow: 0px 0px 10px grey;
+}
