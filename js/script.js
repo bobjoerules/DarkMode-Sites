@@ -25,6 +25,7 @@ window.onload = function() {
         ul.appendChild(item);
     });    
   }
+  console.log(li.length + '  Added So far')
 }
 
 function searchSite() {
@@ -37,7 +38,6 @@ function searchSite() {
   if (!(window.location.pathname === '/catagories/extensions/')){
     for (i = 0; i < li1.length; i++) {
       a = li1[i].getElementsByTagName("a")[0];
-      console.log(a.textContent )
       txtValue = a.textContent || a.innerText;
       if (txtValue.toUpperCase().startsWith(filter) || txtValue.toUpperCase().includes(" " + filter)) {
         li1[i].style.display = "";
