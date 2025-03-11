@@ -1,4 +1,5 @@
 window.onload = function() {
+  document.getElementById("year").textContent = new Date().getFullYear();
   if (!(window.location.pathname === '/catagories/extensions/')){
     var ul, li, a, i;
     ul = document.getElementById("all");
