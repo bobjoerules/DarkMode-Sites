@@ -27,6 +27,24 @@ window.onload = function() {
     });    
   }
   console.log(li.length + '  Added So far')
+  var popup = document.getElementById("popupcontent");
+  if ((window.location.pathname === '/') || (window.location.pathname === '/catagories/no-darkmode/')|| (window.location.pathname === '/catagories/open-source/')){
+    popup.innerHTML += li.length + ' Websites/Apps'
+  }else if ((window.location.pathname === '/catagories/extensions/')){
+    popup.innerHTML += li.length + ' Extensions'
+  }else if ((window.location.pathname === '/catagories/websites/')){
+    popup.innerHTML += li.length + ' Websites'
+  }else if ((window.location.pathname === '/catagories/websites/')){
+    popup.innerHTML += li.length + ' Websites'
+  }else if ((window.location.pathname === '/catagories/profile-websites/')){
+    popup.innerHTML += li.length + ' About-Me Websites/Pages'
+  }else if ((window.location.pathname === '/catagories/Wiki/')){
+    popup.innerHTML += li.length + ' Websites/Pages'
+  }else if ((window.location.pathname === '/catagories/pay-for-darkmode/')){
+    popup.innerHTML += li.length + ' App'
+  }else{
+    popup.innerHTML += li.length + ' Apps'
+  }
 }
 
 function searchSite() {
@@ -114,4 +132,7 @@ try
 }
 catch(e)
 {
+}
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
 }

@@ -466,3 +466,24 @@ noscript {
   background-color: transparent; 
   box-shadow: 0px 0px 10px grey;
 }
+
+.popup {
+  font-family:verdana;
+  font-size: x-small;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+  background-color: #000000;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
