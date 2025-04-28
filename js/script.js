@@ -26,7 +26,6 @@ window.onload = function() {
         ul.appendChild(item);
     });    
   }
-  console.log(li.length + '  Added So far')
   var popup = document.getElementById("popupcontent");
   if ((window.location.pathname === '/') || (window.location.pathname === '/catagories/no-darkmode/')|| (window.location.pathname === '/catagories/open-source/')){
     popup.innerHTML += li.length + ' Websites/Apps'
