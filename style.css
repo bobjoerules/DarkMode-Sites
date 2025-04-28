@@ -1,18 +1,8 @@
-@font-face {
-  font-family: 'Dosis';
-  src:  url('/fonts/Dosis-Bold.woff2') format('woff2'),
-        url('/fonts/Dosis-Bold.woff') format('woff'),
-        url('/fonts/Dosis-Bold.tff') format('truetype');
-}
-
 body {
   background-color:#181818;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-:root {
-  --color: ' ';
 }
 h1 {
   color:white; font-family:verdana;
@@ -315,12 +305,12 @@ hr{
 }
 .twitter-images {
   position: relative;
-  display: inline-block; /* Display the images side by side */
+  display: inline-block;
 }
 .twitter-images img {
-  max-width: 100%; /* Ensure the images don't exceed the container width */
-  max-height: 100%; /* Ensure the images don't exceed the container height */
-  display: block; /* Remove any spacing between the images */
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 .image-change img.image2 {
   position: absolute;
@@ -404,13 +394,10 @@ noscript {
 .social-icons {
   text-align: right;
 }
-
-/* Parent container to center the dropdown */
 .parent-container {
   display: flex;
   justify-content: center;
 }
-
 .dropbtn {
   border-radius: 20px;
   background: linear-gradient(135deg, black 40%, #181818);
@@ -422,14 +409,10 @@ noscript {
   border: none;
   display: inline-block;
 }
-
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -440,8 +423,6 @@ noscript {
   left: 50%;
   transform: translateX(-50%);
 }
-
-/* Links inside the dropdown */
 .dropdown-content a {
   color:white; font-family:verdana;
   color: white;
@@ -449,24 +430,17 @@ noscript {
   text-decoration: none;
   display: block;
 }
-
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: black;
   color: white;
 }
-
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: transparent; 
   box-shadow: 0px 0px 10px grey;
 }
-
 .popup {
   font-family:verdana;
   font-size: x-small;
