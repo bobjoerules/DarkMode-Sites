@@ -133,6 +133,5 @@ catch(e)
 {
 }
 function closePopup() {
-  document.getElementById('popup2').style.display = 'none';
   document.getElementById('popup').style.display = 'none';
 }
