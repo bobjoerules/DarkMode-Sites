@@ -1,6 +1,6 @@
 window.onload = function() {
   document.getElementById("year").textContent = new Date().getFullYear();
-  if (!(window.location.pathname === '/catagories/extensions/')){
+  if (!(window.location.pathname === '/DarkMode-sheet/catagories/extensions/')){
     var ul, li, a, i;
     ul = document.getElementById("all");
     li = Array.from(ul.getElementsByTagName('li'));
@@ -27,19 +27,19 @@ window.onload = function() {
     });    
   }
   var popup = document.getElementById("popupcontent");
-  if ((window.location.pathname === '/') || (window.location.pathname === '/catagories/no-darkmode/')|| (window.location.pathname === '/catagories/open-source/')){
+  if ((window.location.pathname === '/DarkMode-sheet/') || (window.location.pathname === '/DarkMode-sheet/catagories/no-darkmode/')|| (window.location.pathname === '/DarkMode-sheet/catagories/open-source/')){
     popup.innerHTML += li.length + ' Websites/Apps'
-  }else if ((window.location.pathname === '/catagories/extensions/')){
+  }else if ((window.location.pathname === '/DarkMode-sheet/DarkMode-sheet/catagories/extensions/')){
     popup.innerHTML += li.length + ' Extensions'
-  }else if ((window.location.pathname === '/catagories/websites/')){
+  }else if ((window.location.pathname === '/DarkMode-sheet/catagories/websites/')){
     popup.innerHTML += li.length + ' Websites'
-  }else if ((window.location.pathname === '/catagories/websites/')){
+  }else if ((window.location.pathname === '/DarkMode-sheet/catagories/websites/')){
     popup.innerHTML += li.length + ' Websites'
-  }else if ((window.location.pathname === '/catagories/profile-websites/')){
+  }else if ((window.location.pathname === '/DarkMode-sheet/catagories/profile-websites/')){
     popup.innerHTML += li.length + ' About-Me Websites/Pages'
-  }else if ((window.location.pathname === '/catagories/Wiki/')){
+  }else if ((window.location.pathname === '/DarkMode-sheet/catagories/Wiki/')){
     popup.innerHTML += li.length + ' Websites/Pages'
-  }else if ((window.location.pathname === '/catagories/pay-for-darkmode/')){
+  }else if ((window.location.pathname === '/DarkMode-sheet/catagories/pay-for-darkmode/')){
     popup.innerHTML += li.length + ' App'
   }else{
     popup.innerHTML += li.length + ' Apps'
