@@ -29,7 +29,7 @@ window.onload = function() {
   var popup = document.getElementById("popupcontent");
   if ((window.location.pathname === '/DarkMode-sheet/') || (window.location.pathname === '/DarkMode-sheet/catagories/no-darkmode/')|| (window.location.pathname === '/DarkMode-sheet/catagories/open-source/')){
     popup.innerHTML += li.length + ' Websites/Apps'
-  }else if ((window.location.pathname === '/DarkMode-sheet/DarkMode-sheet/catagories/extensions/')){
+  }else if ((window.location.pathname === 'DarkMode-sheet/catagories/extensions/')){
     popup.innerHTML += li.length + ' Extensions'
   }else if ((window.location.pathname === '/DarkMode-sheet/catagories/websites/')){
     popup.innerHTML += li.length + ' Websites'
