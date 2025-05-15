@@ -8,7 +8,7 @@
     <meta name="author" content="Bobjoerules">
     <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../../images/apple touch smaller.png">
-    <title>Pay for DarkMode Apps/Websites | DarkMode Sheet</title>
+    <title>Pay For DarkMode Apps/Websites | DarkMode Sheet</title>
     <link href="../../style.css" rel="stylesheet" type="text/css"/>
     <style>
       body{
@@ -18,6 +18,11 @@
     </style>  
   </head>
   <body>
+    <div id="redirect-modal" style="display:none;">
+      <p>The homepage/website you are about to open does not have DarkMode, would you like to still continue?</p>
+      <button id="confirm-redirect">Continue</button>
+      <button id="cancel-redirect">Cancel</button>
+    </div>
     <div id="popup" class="popup" onclick="closePopup()" style="color: red; border-color: red;"><div id="popupcontent"></div></div>
     <a style="color:white; font-family:verdana;" href="../../" title="Home" class="home"><img src="../../images/darkmode sheet.png" alt="DarkMode-sheet-logo" width="192" height="108"></a>
     <h1 style="text-align:center;">Pay for DarkMode Apps/Websites</h1>
@@ -41,7 +46,7 @@
     <noscript>Sorry, your browser does not support JavaScript or you have it turned off! You are unable to search</noscript>
     <!--  <h2 style="text-align:center;" id="fao">Android Apps With DarkMode</h2> -->
     <ul class="main"  id="all">
-      <li> <a href="../../pages/bitlife" class="booklink" title="BitLife is a life simulation game in which users take control of a stranger's life from beginning to end."><img src="../../images/output_images/bitlife.png" alt="Bitlife Icon" style="width:150px;height:30px;">Bitlife</a></li>
+      <li> <a href="../../pages/bitlife" class="booklink external-link" title="BitLife is a life simulation game in which users take control of a stranger's life from beginning to end."><img src="../../images/output_images/bitlife.png" alt="Bitlife Icon" style="width:150px;height:30px;">Bitlife</a></li>
     </ul>
     <p id="nothingfound" style="display: none; color: red; text-align: center; text-transform: uppercase;">Sorry, We Could Not Find Anything For Your Search Query At The Moment</p>
     <footer>

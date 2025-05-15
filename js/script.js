@@ -1,3 +1,21 @@
+let targetUrl = '';
+document.querySelectorAll('.external-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    targetUrl = this.href;
+    document.getElementById('redirect-modal').style.display = 'block';
+  });
+});
+
+document.getElementById('confirm-redirect').addEventListener('click', function() {
+  window.open(targetUrl, '_blank', 'noopener,noreferrer');
+  document.getElementById('redirect-modal').style.display = 'none';
+});
+
+document.getElementById('cancel-redirect').addEventListener('click', function() {
+  document.getElementById('redirect-modal').style.display = 'none';
+});
+
 window.onload = function() {
   document.getElementById("year").textContent = new Date().getFullYear();
   if (!(window.location.pathname === '/DarkMode-sheet/catagories/extensions/')){

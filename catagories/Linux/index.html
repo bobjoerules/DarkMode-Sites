@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="DarkMode, List of DarkMode websites, List of DarkMode apps, DarkMode, list, bobjoerules, cool, Bobjoerules">
+    <meta name="description" content="Free too use and add to list of DarkMode websites, apps, and extensions for browsers">
+    <meta name="author" content="Bobjoerules">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../images/apple touch smaller.png">
+    <title>Linux Apps | DarkMode Sheet</title>
+    <link href="../../style.css" rel="stylesheet" type="text/css" />
+    <style>
+      body{
+        background: radial-gradient(circle at 76% 26%, #313131 0, rgb(0, 0, 0) 57%, #181818 100%);
+        background-color: #181818;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="redirect-modal" style="display:none;">
+      <p>The homepage/website you are about to open does not have DarkMode, would you like to still continue?</p>
+      <button id="confirm-redirect">Continue</button>
+      <button id="cancel-redirect">Cancel</button>
+    </div>
+    <div id="popup" class="popup" onclick="closePopup()"><div id="popupcontent"></div></div>    
+    <a style="color:white; font-family:verdana;" href="../../" title="Home" class="home"><img src="../../images/darkmode sheet.png" alt="DarkMode-sheet-logo" width="192" height="108"></a>
+    <h1 style="text-align:center;">Linux Apps With DarkMode</h1>
+    <!-- <h4 style="color:white; font-family:verdana; text-align:center;">A list of Software that includes Darkmode themes. Please suggests any software that is not included in list that has Darkmode</h4> -->
+    <p style="text-align:center;">
+      <a href="../../catagories/websites" class="website" title="Only show websites"><img class="rotate" src="../../images/icons/website.png" alt="Web Image" style="width:30px;height:30px;"></a> 
+      <a href="../../catagories/Windows" class="website" title="Only show Windows apps"><img class= "rotate" src="../../images/icons/windows.png" alt="Windows Image" style="width:30px;height:30px;"></a> 
+      <a href="../../catagories/MacOS" class="website" title="Only show Mac apps"><img class= "rotate" src="../../images/icons/mac.png" alt="Mac Image" style="width:30px;height:30px;"></a> 
+      <a href="../../catagories/IOS" class="website" title="Only show IOS apps"><img class= "rotate" src="../../images/icons/ios.png" alt="IOS Image" style="width:30px;height:30px;"></a> 
+      <a href="../../catagories/Android" class="website" title="Only show Android apps"><img class= "rotate" src="../../images/icons/android.png" alt="Android Image" style="width:30px;height:30px;"></a> 
+      <a href="../../catagories/extensions/" class="website" title="Only show Browser Extensions"><img class="rotate" src="../../images/icons/extensions.png" alt="Puzzle Image" style="width:30px;height:30px;"></a> 
+      <br><br>
+      <a href="../../catagories/no-darkmode/" class="website" title="Show applications and websites that don't currently have DarkMode"><img class="rotate" src="../../images/icons/nodarkmode.png" alt="No DarkMode Image" style="width:30px;height:30px;"></a>
+      <a href="../../catagories/profile-websites/" class="website" title="Profile websites that aren't really have any other purpose"><img class="rotate" src="../../images/icons/aboutmewebsites.png" alt="User Image" style="width:30px;height:30px;"></a>
+      <a href="../../catagories/pay-for-darkmode/" class="website" title="Websites/Apps to not use because you have to pay to use DarkMode"><img class="rotate" src="../../images/icons/pay.png" alt="Paid Image" style="width:30px;height:30px;"></a>
+      <a href="../../catagories/open-source/" class="website" title="Websites/Apps that are Open Source"><img class="rotate" src="../../images/icons/opensource.png" alt="Open Source Image" style="width:30px;height:30px;"></a>   
+      <a href="../../catagories/Wiki/" class="website" title="Wiki Pages"><img class="rotate" src="../../images/icons/Wiki.png" alt="Wiki Image" style="width:30px;height:30px;"></a>
+    </p>
+    <p style="color:red; font-family:verdana; text-align: center;" id="windows"></p>
+    <input type="text" id="searchapp" onkeyup="searchSite()" placeholder="Search for a Windows App...">
+    <noscript>Sorry, your browser does not support JavaScript or you have it turned off! You are unable to search</noscript>
+    <!-- <h2 style="text-align:center;" id="fao">Windows Apps With DarkMode</h2> -->
+    <ul class="main"  id="all">
+      <li> <a target="_blank" href="https://developer.android.com/studio" class="booklink" title="Android Studio is an integrated development environment (IDE) for creating Android applications, featuring a comprehensive suite of tools for coding, debugging, and testing mobile apps."><img src="../../images/output_images/androidstudio.png" alt="Android Studio Icon" style="width:150px;height:30px;">Android Studio Google</a></li>
+      <li> <a target="_blank" href="https://www.badlion.net/minecraft-client" class="booklink" title="The Badlion Client app provides Minecraft players with an enhanced gaming environment, featuring optimized performance, customizable settings, and a range of additional gaming tools and features."><img src="../../images/output_images/badlion.png" alt="Badlion Client Icon" style="width:150px;height:30px;">Badlion Minecraft Client</a></li>
+      <li> <a target="_blank" href="https://www.blender.org/download/" class="booklink" title="Blender is a powerful open-source 3D creation software that enables users to design and render 3D models, animations, and visual effects for various purposes, including gaming, filmmaking, and architectural visualization."><img src="../../images/output_images/blender.png" alt="Blender Icon" style="width:150px;height:30px;">blender</a></li>
+      <li> <a target="_blank" href="https://apps.microsoft.com/detail/xp9kn75rrb9nhs" class="booklink" title="A Video Editor"><img src="../../images/output_images/capcut.png" alt="Capcut Icon" style="width:150px;height:30px;">capcut</a></li>
+      <li> <a target="_blank" href="https://www.google.com/chrome/" class="booklink" title="Chrome is a web browser developed by Google, known for its speed, simplicity, and integration with Google services, offering a user-friendly interface, extensive customization options, and robust security features for browsing the internet efficiently and securely."><img src="../../images/output_images/Chrome.png" alt="Chrome Icon" style="width:150px;height:30px;">google chrome</a></li>
+      <li> <a target="_blank" href="https://www.blackmagicdesign.com/products/davinciresolve" class="booklink" title="DaVinci Resolve is a professional-grade video editing software offering comprehensive editing, color correction, visual effects, and audio post-production capabilities, all in a single application."><img src="../../images/output_images/davinci resolve.png" alt="Davinci Resolve Icon" style="width:150px;height:30px;">Davinci Resolve</a></li>
+      <li> <a target="_blank" href="https://discord.com/download" class="booklink" title="Discord is a communication app designed for creating communities, offering voice, video, and text chat functionalities for gamers, educators, and various groups."><img src="../../images/output_images/discord.png" alt="discord Icon" style="width:150px;height:30px;">discord</a></li>
+      <li> <a href="https://www.mozilla.org/en-US/firefox/linux/" class="booklink external-link" title="Firefox is an open-source web browser developed by Mozilla, known for its privacy features, customization options, and commitment to an open internet, offering fast and secure browsing experiences across various platforms."><img src="../../images/output_images/firefox.png" alt="FireFox Icon" style="width:150px;height:30px;">firefox</a></li>
+      <li> <a target="_blank" href="https://www.lunarclient.com/download" class="booklink" title="The Lunar Client app enhances gaming experiences with optimized performance, customizable settings, and additional features for Minecraft players."><img src="../../images/output_images/lunar client.png" alt="Lunar Client Icon" style="width:150px;height:30px;">Lunar Client Minecraft</a></li>
+      <li> <a target="_blank" href="https://create.roblox.com/" class="booklink" title="Game Editor/Creator for Roblox"><img src="../../images/output_images/Roblox Studio.png" alt="Roblox Studio Icon" style="width:150px;height:30px;">Roblox Studio</a></li>
+      <li> <a target="_blank" href="https://www.spotify.com/de-en/download/linux/" class="booklink" title="Spotify is a digital music streaming service that provides access to a vast library of songs, podcasts, and playlists from various artists and genres.."><img src="../../images/output_images/spotify.png" alt="Spotify Icon" style="width:150px;height:30px;">spotify</a></li>
+      <li> <a target="_blank" href="https://code.visualstudio.com/download" class="booklink" title="Visual Studio Code (VSC) is a free, open-source code editor developed by Microsoft, renowned for its lightweight design, extensive language support, and rich ecosystem of extensions, catering to developers' diverse needs for coding, debugging, and collaboration."><img src="../../images/output_images/vsc2.png" alt="VSC Icon" style="width:150px;height:30px;">VSC visual studio code</a></li>
+      <li> <a target="_blank" href="https://zoom.us/download?os=linux" class="booklink" title="Zoom is a video conferencing app that allows users to conduct virtual meetings, webinars, and collaborative online sessions with high-quality video, audio, and interactive features."><img src="../../images/output_images/zoom.png" alt="Zoom Icon" style="width:150px;height:30px;">zoom</a></li>
+      <li> <a target="_blank" href="https://betterdiscord.app/" class="booklink" title="A modding software for Discord (against TOS)"><img src="../../images/output_images/Better Discord.png" alt="Better Discord Icon" style="width:150px;height:30px;">Better Discord</a></li>
+      <li> <a target="_blank" href="https://www.minecraft.net/en-us/download" class="booklink" title="3D Open Sandbox Video Game"><img src="../../images/output_images/Minecraft.png" alt="Minecraft Icon" style="width:150px;height:30px;">Minecraft</a></li>
+      <li> <a target="_blank" href="https://www.curseforge.com/download/app" class="booklink" title="Mods for minecraft and also a modded client"><img src="../../images/output_images/curseforge.png" alt="curseforge Icon" style="width:150px;height:30px;">Curseforge Minecraft</a></li>
+      <li> <a target="_blank" href="https://www.unrealengine.com/en-US/linux" class="booklink" title="Videogame/3d render/creating software"><img src="../../images/output_images/unreal engine.png" alt="Unreal Engine Icon" style="width:150px;height:30px;">Unreal Engine</a></li>
+      <li> <a target="_blank" href="https://replit.com/desktop" class="booklink" title="Code hosting"><img src="../../images/output_images/replit.png" alt="Replit Icon" style="width:150px;height:30px;">Replit</a></li>
+      <li> <a target="_blank" href="https://prismlauncher.org/download/" class="booklink" title="Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Customized version of MultiMC"><img src="../../images/output_images/prisim launcher.png" alt="Prism Launcher Icon" style="width:150px;height:30px;">Prism Launcher Minecraft</a></li>
+      <li> <a target="_blank" href="https://multimc.org/#Download" class="booklink" title="MultiMC is an alternative launcher for Minecraft."><img src="../../images/output_images/multimc.png" alt="MultiMC Launcher Icon" style="width:150px;height:30px;">MultiMC Launcher Minecraft</a></li>
+      <li> <a target="_blank" href="https://www.videolan.org/vlc/#download" class="booklink" title="VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols."><img src="../../images/output_images/vlc.png" alt="VLC Icon" style="width:150px;height:30px;">VideoLAN Client VLC</a></li>
+      <li> <a target="_blank" href="https://spicetify.app/docs/getting-started" class="booklink" title="An open source modder for Spotify that gives more customization with themes and plugins"><img src="../../images/output_images/spice.png" alt="Spicetify Icon" style="width:150px;height:30px;">Spicetify Spotify</a></li>
+      <li> <a target="_blank" href="https://keeweb.info/" class="booklink" title="Free cross-platform password manager compatible with KeePass"><img src="../../images/output_images/KeeWeb.png" alt="KeeWeb" style="width:150px;height:30px;">KeeWeb</a></li>
+      <li> <a target="_blank" href="https://slack.com/downloads/linux" class="booklink" title="Slack is a cloud-based messaging app that helps teams communicate and collaborate."><img src="../../images/output_images/slack.png" alt="Slack Icon" style="width:150px;height:30px;">Slack</a></li>
+      <li> <a target="_blank" href="https://pianorhythm.io/" class="booklink" title="PianoRhythm is an online multiplayer piano game where players can play the piano in real-time, either solo or with others."><img src="../../images/output_images/pianorhythm.png" alt="PianoRhythm Icon" style="width:150px;height:30px;">PianoRhythm</a></li>   
+      <li> <a target="_blank" href="https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=linux" class="booklink" title="Plex is a free streaming app that offers movies, TV shows, and music (with ads). It also allows users to stream their own media collections."><img src="../../images/output_images/plex.png" alt="Plex Icon" style="width:150px;height:30px;">Plex Tv</a></li>
+      <li> <a target="_blank" href="https://revolt.chat/download" class="booklink" title="Revolt is a free, open-source chat app that allows users to create communities and communicate with each other. (Open source discord)"><img src="../../images/output_images/revolt.png" alt="Revolt Icon" style="width:150px;height:30px;">Revolt</a></li>
+      <li> <a target="_blank" href="https://obsproject.com/download" class="booklink" title="Free and open source software for video recording and live streaming."><img src="../../images/output_images/OBS Studio.png" alt="OBS Icon" style="width:150px;height:30px;">OBS Studio</a></li>
+      <li> <a target="_blank" href="https://www.piskelapp.com/download" class="booklink" title="Piskel is a free online editor for animated sprites & pixel art."><img src="../../images/output_images/piskel.png" alt="Piskel Icon" style="width:150px;height:30px;">Piskel</a></li>
+      <li> <a target="_blank" href="https://whale.naver.com/en/download/linux/" class="booklink" title="Naver Whale is a freeware web browser developed by the South Korean technology company Naver Corporation."><img src="../../images/output_images/Naver Whale.png" alt="Naver Whale Icon" style="width:150px;height:30px;">Naver Whale</a></li>
+      <li> <a target="_blank" href="https://requestly.com/downloads/" class="booklink" title="A Powerful HTTP Interception and Mocking Tool"><img src="../../images/output_images/Requestly.png" alt="Requestly Icon" style="width:150px;height:30px;">Requestly</a></li>
+      <li> <a target="_blank" href="https://developer.android.com/studio" class="booklink" title="Modern tools and resources to help you build experiences that people love, faster and easier, across every Android device."><img src="../../images/output_images/Android Developers.png" alt="Android Developer Icon" style="width:150px;height:30px;">Android Developer</a></li>
+      <li> <a target="_blank" href="https://getaether.net/download" class="booklink" title="Peer-to-peer ephemeral public communities."><img src="../../images/output_images/aether.png" alt="Aether Icon" style="width:150px;height:30px;">Aether</a></li>
+    <li> <a target="_blank" href="https://sober.vinegarhq.org/" class="booklink" title="No emulators. Double the performance. Sober's an unofficial native port of Roblox to Linux."><img src="../../images/output_images/Sober.png" alt="Sober Icon" style="width:150px;height:30px;">Sober</a></li>
+    </ul>
+    <p id="nothingfound" style="display: none; color: red; text-align: center; text-transform: uppercase;">Sorry, We Could Not Find Anything For Your Search Query At The Moment</p>
+    <footer>
+      <div class="row">
+        <div class="col">
+          <h3>About: <div class="underline"><span></span></div></h3>
+          <p>This website is an ongoing passion project created by Bobjoerules who was addicted to DarkMode and was angry about darkmodelist.com's pay wall. This website is his first html site.</p>
+        </div>
+        <div class="col"><h3>Important Links: <div class="underline"><span></span></div></h3><ul>
+          <div class="social-icons">
+            <a href="https://discord.gg/XCTwWafSj7" title="Join The Discord Server"><img class="socials" src="../../images/discordlink.png" alt="Discord Icon" style="width:30px;height:30px;"></a>
+            <a href="../../pages/form/" title="Suggest A Software"><img class="socials" src="../../images/suggest.png" alt="Suggest Icon" style="width:30px;height:30px;"></a>
+            <a href="../../pages/status/" title="Status of Implementing"><img class="socials" src="../../images/status.png" alt="Status Icon" style="width:30px;height:30px;"></a>
+            <a href="../../pages/appicons/" title="IOS app icons for apps with none"><img class="socials" src="../../images/18.png" alt="ios 18 Icon" style="width:30px;height:30px;"></a>
+            <a href="https://github.com/bobjoerules/DarkMode-sheet" title="GitHub page for this site"><img class="socials" src="../../images/githubsmall.png" alt="Github Icon" style="width:30px;height:30px;"></a>
+          </div>
+          </div>
+        <div class="col">
+          <h3>Contributors: <div class="underline"><span></span></div></h3>
+          <div class="social-icons">
+            <a href="https://bobjoerules.github.io/" title="Bobjoerules"><img class="socials" src="../../images/contributor pfp images/Bobjoerules.png" alt="Bobjoerules' pfp" style="width:30px;height:30px;"></a>
+            <a href="../../pages/Contributors/GalaxyDRAXxX/" title="GalaxyDRAXxX"><img class="socials" src="../../images/contributor pfp images/GalaxyDRAXxX.png" alt="GalaxyDRAXxX's pfp" style="width:30px;height:30px;"></a>
+          </div>
+        </div>
+        <hr><p class="copyright">Bobjoerules © <span id="year"></span> - All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+  </body>
+</html>
