@@ -6,16 +6,16 @@ document.querySelectorAll('.external-link').forEach(link => {
     document.getElementById('redirect-modal').style.display = 'block';
   });
 });
+if ((window.location.pathname === '/DarkMode-sheet/') || (window.location.pathname === '/') || (window.location.pathname === '/DarkMode-sheet/catagories/Windows/') || (window.location.pathname === '/catagories/Windows/') || (window.location.pathname === '/DarkMode-sheet/catagories/MacOS/') || (window.location.pathname === '/catagories/MacOS/') || (window.location.pathname === '/DarkMode-sheet/catagories/no-darkmode/') || (window.location.pathname === '/catagories/no-darkmode/') || (window.location.pathname === '/DarkMode-sheet/catagories/pay-for-darkmode/') || (window.location.pathname === '/catagories/pay-for-darkmode/') || (window.location.pathname === '/DarkMode-sheet/catagories/open-source/') || (window.location.pathname === '/catagories/open-source/')){
+  document.getElementById('confirm-redirect').addEventListener('click', function() {
+    window.open(targetUrl, '_blank', 'noopener,noreferrer');
+    document.getElementById('redirect-modal').style.display = 'none';
+  });
 
-document.getElementById('confirm-redirect').addEventListener('click', function() {
-  window.open(targetUrl, '_blank', 'noopener,noreferrer');
-  document.getElementById('redirect-modal').style.display = 'none';
-});
-
-document.getElementById('cancel-redirect').addEventListener('click', function() {
-  document.getElementById('redirect-modal').style.display = 'none';
-});
-
+  document.getElementById('cancel-redirect').addEventListener('click', function() {
+    document.getElementById('redirect-modal').style.display = 'none';
+  });
+}
 window.onload = function() {
   document.getElementById("year").textContent = new Date().getFullYear();
   if (!(window.location.pathname === '/DarkMode-sheet/catagories/extensions/')){
@@ -45,7 +45,7 @@ window.onload = function() {
     });    
   }
   var popup = document.getElementById("popupcontent");
-  if ((window.location.pathname === '/DarkMode-sheet/') || (window.location.pathname === '/DarkMode-sheet/catagories/no-darkmode/')|| (window.location.pathname === '/DarkMode-sheet/catagories/open-source/')){
+  if ((window.location.pathname === '/DarkMode-sheet/') || (window.location.pathname === '/DarkMode-sheet/catagories/no-darkmode/') || (window.location.pathname === '/DarkMode-sheet/catagories/open-source/')){
     popup.innerHTML += li.length + ' Websites/Apps'
   }else if ((window.location.pathname === 'DarkMode-sheet/catagories/extensions/')){
     popup.innerHTML += li.length + ' Extensions'
