@@ -152,7 +152,7 @@ catch(e)
 }
 function closePopup() {
   document.getElementById('popup').style.display = 'none';
-  if ((window.location.pathname === '/DarkMode-sheet/')) {
+  if ((window.location.pathname === '/DarkMode-sheet/') || (window.location.pathname === '/')) {
     document.getElementById('popup2').style.display = 'none';
   }
 }
