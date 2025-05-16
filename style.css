@@ -479,13 +479,20 @@ noscript {
   font-size: large;
   position: fixed;
   color: white;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 1);
   padding: 50px 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-color: white;
+  box-shadow: 0 0 0 6000px rgba(0, 0, 0, 0.75);
   z-index: 1000;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+#redirect-modal button{
+  color: lightgrey;
+  background-color: transparent;
+  text-decoration: underline;
+  transform: scale(1.1)
 }
