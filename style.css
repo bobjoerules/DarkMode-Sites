@@ -479,7 +479,7 @@ noscript {
   font-size: large;
   position: fixed;
   color: white;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #181818;
   padding: 50px 20px;
   border-radius: 8px;
   border-color: white;
@@ -492,7 +492,15 @@ noscript {
 }
 #redirect-modal button{
   color: lightgrey;
-  background-color: transparent;
+  border-radius: 8px;
+  margin-left: 10px;
+  background-color: black;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 10px;
+  outline: none;
   text-decoration: underline;
   transform: scale(1.1)
 }
