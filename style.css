@@ -481,3 +481,26 @@ noscript {
 ::selection {
   background: transparent;
 }
+
+.homemenu {
+  font-family:verdana;
+  color: white;
+  display: none;
+  position: absolute;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.homemenu ul {
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.homemenu li {
+  padding: 8px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}

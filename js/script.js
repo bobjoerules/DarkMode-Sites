@@ -154,3 +154,36 @@ function closePopup() {
     document.getElementById('popup2').style.display = 'none';
   }
 }
+
+
+const image = document.getElementById('homeimage');
+const menu = document.getElementById('homemenu');
+const downloadBtn = document.getElementById('downloadImage');
+
+image.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+  showMenu(e.pageX, e.pageY);
+});
+
+function showMenu(x, y) {
+  menu.style.left = '20px';
+  menu.style.top = '100px';
+  menu.style.display = 'block';
+}
+
+document.addEventListener('click', () => {
+  menu.style.display = 'none';
+});
+
+function downloadFile(filePath, fileName) {
+  const link = document.createElement('a');
+  link.href = filePath;
+  link.download = fileName || filePath.split('/').pop();
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+downloadBtn.addEventListener('click', () => {
+  downloadFile('/images/DarkMode Sites.png');
+});
