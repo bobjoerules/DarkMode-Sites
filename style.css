@@ -1,5 +1,5 @@
 body {
-  background-color:#181818;
+  background-color:#111111;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@ a.book:link {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  background: linear-gradient(135deg, black 40%, #181818);
+  background: linear-gradient(135deg, black 40%, #111111);
 }
 a {
   border-radius: 20px;
@@ -70,7 +70,7 @@ a.book1:link {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  background: linear-gradient(135deg, black 40%, #181818);
+  background: linear-gradient(135deg, black 40%, #111111);
 }
 a.book1:visited {
   color: grey;
@@ -135,7 +135,7 @@ a.bookred:active {
   border: 1px solid #ddd; 
   margin-bottom: 12px; 
   border-radius: 30px;
-  background-color: #181818;
+  background-color: #111111;
   color: white;
 }
 ul.main{
@@ -147,36 +147,6 @@ ul.main{
   flex-wrap: wrap;
   justify-content: center;
 }
-a.booklinksmall:link {
-  text-decoration: none;
-  margin: 5px;
-  padding: 15px 25px;
-  text-align: center;
-  font-size: 0px;
-  display: inline-block;
-  background: linear-gradient(135deg, black 40%, #181818);
-  border: 1px solid; 
-  margin-bottom: 12px; 
-  border-radius: 30px;
-  background-color: #181818;
-}
-a.booklinksmall:visited {
-  background-color: transparent;
-  font-size: 0px;
-}
-a.booklinksmall:hover {
-  background-color: transparent;
-  font-size: 0px;
-  box-shadow: 0px 0px 10px darkred;
-  transform: scale(1.1)
-}
-a.booklinksmall:active {
-  color: white;
-  text-decoration: underline;
-  background: none;
-  font-size: 0px;
-  box-shadow: none;
-}
 
 a.booklink:link {
   text-decoration: none;
@@ -185,7 +155,7 @@ a.booklink:link {
   text-align: center;
   font-size: 0px;
   display: inline-block;
-  background: linear-gradient(135deg, black 40%, #181818);
+  background: linear-gradient(135deg, black 40%, #111111);
 }
 a.booklink:visited {
   background-color: transparent;
@@ -294,7 +264,7 @@ hr{
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #181818;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: white; 
@@ -340,7 +310,7 @@ hr{
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #181818;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: white; 
@@ -400,7 +370,7 @@ noscript {
 }
 .dropbtn {
   border-radius: 20px;
-  background: linear-gradient(135deg, black 40%, #181818);
+  background: linear-gradient(135deg, black 40%, #111111);
   margin: 5px;
   text-decoration: none;
   text-align: center;
@@ -416,7 +386,7 @@ noscript {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #181818;
+  background-color: #111111;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -479,7 +449,7 @@ noscript {
   font-size: large;
   position: fixed;
   color: white;
-  background-color: #181818;
+  background-color: #111111;
   padding: 50px 20px;
   border-radius: 8px;
   border-color: white;
