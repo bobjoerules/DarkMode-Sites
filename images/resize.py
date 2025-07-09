@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 input_folder = 'new size'
-output_folder = 'output_images'
+output_folder = 'logos'
 os.makedirs(output_folder, exist_ok=True)
 
 # Resize dimensions (change these as needed)
