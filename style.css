@@ -54,7 +54,7 @@ a.book:hover {
   color: lightgrey;
   background-color: transparent;
   text-decoration: underline;
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 10px black;
   transform: scale(1.1)
 }
 a.book:active {
@@ -81,7 +81,7 @@ a.book1:hover {
   color: lightgrey;
   background-color: transparent;
   text-decoration: underline;
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 10px black;
   transform: scale(1.1)
 }
 a.book1:active {
@@ -105,7 +105,7 @@ a.bookred:hover {
   background-color: transparent;
   text-decoration: underline;
   font-size: 10px;
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 10px black;
   transform: scale(1.1)
 }
 a.bookred:visited {
@@ -164,7 +164,7 @@ a.booklink:visited {
 a.booklink:hover {
   background-color: transparent;
   font-size: 0px;
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 10px black;
   transform: scale(1.1)
 }
 a.booklink:active {
@@ -409,7 +409,7 @@ noscript {
 }
 .dropdown:hover .dropbtn {
   background-color: transparent; 
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 10px black;
 }
 .popup {
   font-family:verdana;
