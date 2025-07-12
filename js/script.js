@@ -1,5 +1,5 @@
 let targetUrl = '';
-document.querySelectorAll('.external-link').forEach(link => {
+document.querySelectorAll('.lightmode').forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
     targetUrl = this.href;
@@ -107,14 +107,7 @@ function delay(milliseconds){
     setTimeout(resolve, milliseconds);
   });
 }
-/* async function start() {
-  var color = Math.floor(Math.random() * 360);
-  console.log(`Highlight color set to: hsla(${color}, 25%, 25%, 1)`)
-  document.documentElement.style.setProperty(`--color`, `hsla(${color}, 25%, 25%, 1)`);
-  await delay(10000);
-}
-start()*/
-var is_OSX = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
+/* var is_OSX = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
 var is_iOS = /(iPhone|iPod|iPad)/i.test(navigator.platform);
 
 var is_Mac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
@@ -128,7 +121,7 @@ var mac = document.getElementById('mac');
 var windows = document.getElementById('windows');
 var iphone = document.getElementById('iphone');
 var android = document.getElementById('android');
-var phone = document.getElementById('phone');
+var phone = document.getElementById('phone');*/
 
 /* if (!is_OSX) type.innerHTML += "This NOT a Mac or an iOS Device!";
 if (is_Mac) type.innerHTML += "This is a Mac Computer!\n";
@@ -137,7 +130,7 @@ if (is_iPhone) type.innerHTML += "This is an iPhone!";
 if (is_iPod) type.innerHTML += "This is an iPod Touch!";
 if (is_iPad) type.innerHTML += "This is an iPad!";*/
 
-try
+/*try
 {
   if (!is_iPhone && !is_windows && !is_Android) windows.innerHTML += "Your computer is Not A Windows Computer so some of these programs might not work with DarkMode on your device";
   if (!is_iPhone && !is_Mac && !is_Android) mac.innerHTML += "Your computer is Not A Mac Computer so some of these programs might not work with DarkMode on your device";
@@ -153,7 +146,7 @@ function closePopup() {
   if ((window.location.pathname === '/DarkMode-sheet/') || (window.location.pathname === '/')) {
     document.getElementById('popup2').style.display = 'none';
   }
-}
+}*/
 
 
 const image = document.getElementById('homeimage');
@@ -186,4 +179,12 @@ function downloadFile(filePath, fileName) {
 
 downloadBtn.addEventListener('click', () => {
   downloadFile('/images/DarkMode Sites.png');
+});
+
+document.querySelectorAll('a[href]').forEach(link => {
+  const isExternal = link.hostname !== window.location.hostname;
+  if (isExternal) {
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer');
+  }
 });
