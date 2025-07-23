@@ -140,13 +140,13 @@ if (is_iPad) type.innerHTML += "This is an iPad!";*/
 }
 catch(e)
 {
-}
+}*/
 function closePopup() {
   document.getElementById('popup').style.display = 'none';
   if ((window.location.pathname === '/DarkMode-sheet/') || (window.location.pathname === '/')) {
     document.getElementById('popup2').style.display = 'none';
   }
-}*/
+}
 
 
 const image = document.getElementById('homeimage');
