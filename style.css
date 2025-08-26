@@ -146,8 +146,11 @@ ul.main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+} 
+.booklink img {
+  width:150px;
+  height:30px;
 }
-
 a.booklink:link {
   text-decoration: none;
   margin: 5px;
@@ -157,6 +160,7 @@ a.booklink:link {
   display: inline-block;
   background: linear-gradient(135deg, black 40%, #111111);
 }
+
 a.booklink:visited {
   background-color: transparent;
   font-size: 0px;
