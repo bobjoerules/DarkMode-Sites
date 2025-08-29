@@ -189,31 +189,56 @@ document.querySelectorAll('a[href]').forEach(link => {
   }
 });
 
-document.querySelectorAll("[data-title]").forEach(el => {
-  el.addEventListener("mouseenter", () => {
-    const tooltip = document.createElement("div");
-    tooltip.textContent = el.getAttribute("data-title");
-    tooltip.style.position = "absolute";
-    tooltip.style.background = "rgba(0, 0, 0, 0.5)";
-    tooltip.style.color = "white";
-    tooltip.style.fontFamily = "verdana"
-    tooltip.style.padding = "4px 8px";
-    tooltip.style.borderRadius = "10px";
-    tooltip.style.pointerEvents = "none";
-    tooltip.style.maxWidth = "400px"; 
-    tooltip.style.textAlign = "center"
-    tooltip.style.zIndex = "9999";
-    document.body.appendChild(tooltip);
+const toggleButton = document.querySelector("#activateTooltips");
+let tooltipsActive = false;
+let listeners = [];
 
-    function moveTooltip(e) {
-      tooltip.style.left = e.pageX + 10 + "px";
-      tooltip.style.top = e.pageY + 10 + "px";
-    }
+toggleButton.addEventListener("click", () => {
+  const elements = document.querySelectorAll("[data-title]");
 
-    el.addEventListener("mousemove", moveTooltip);
-    el.addEventListener("mouseleave", () => {
-      tooltip.remove();
-      el.removeEventListener("mousemove", moveTooltip);
-    }, { once: true });
-  });
+  if (!tooltipsActive) {
+    elements.forEach(el => {
+      const enterHandler = () => {
+        const tooltip = document.createElement("div");
+        tooltip.textContent = el.getAttribute("data-title");
+        tooltip.style.position = "absolute";
+        tooltip.style.background = "rgba(0,0,0,0.5)";
+        tooltip.style.color = "white";
+        tooltip.style.fontFamily = "verdana";
+        tooltip.style.padding = "4px 8px";
+        tooltip.style.borderRadius = "10px";
+        tooltip.style.pointerEvents = "none";
+        tooltip.style.maxWidth = "400px";
+        tooltip.style.textAlign = "center";
+        tooltip.style.zIndex = "9999";
+        document.body.appendChild(tooltip);
+
+        function moveTooltip(e) {
+          tooltip.style.left = e.pageX + 10 + "px";
+          tooltip.style.top = e.pageY + 10 + "px";
+        }
+
+        el.addEventListener("mousemove", moveTooltip);
+        el.addEventListener("mouseleave", () => {
+          tooltip.remove();
+          el.removeEventListener("mousemove", moveTooltip);
+        }, { once: true });
+      };
+
+      el.addEventListener("mouseenter", enterHandler);
+      listeners.push({ el, enterHandler });
+    });
+
+    tooltipsActive = true;
+    toggleButton.textContent = "Turn Tooltips Off";
+  } else {
+    listeners.forEach(({ el, enterHandler }) => {
+      el.removeEventListener("mouseenter", enterHandler);
+    });
+    listeners = [];
+    tooltipsActive = false;
+    toggleButton.textContent = "Turn Tooltips On";
+  }
 });
+
+
