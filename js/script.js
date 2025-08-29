@@ -194,12 +194,14 @@ document.querySelectorAll("[data-title]").forEach(el => {
     const tooltip = document.createElement("div");
     tooltip.textContent = el.getAttribute("data-title");
     tooltip.style.position = "absolute";
-    tooltip.style.background = "black";
+    tooltip.style.background = "rgba(0, 0, 0, 0.5)";
     tooltip.style.color = "white";
     tooltip.style.fontFamily = "verdana"
     tooltip.style.padding = "4px 8px";
     tooltip.style.borderRadius = "10px";
     tooltip.style.pointerEvents = "none";
+    tooltip.style.maxWidth = "400px"; 
+    tooltip.style.textAlign = "center"
     tooltip.style.zIndex = "9999";
     document.body.appendChild(tooltip);
 
