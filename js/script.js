@@ -188,3 +188,30 @@ document.querySelectorAll('a[href]').forEach(link => {
     link.setAttribute('rel', 'noopener noreferrer');
   }
 });
+
+document.querySelectorAll("[data-title]").forEach(el => {
+  el.addEventListener("mouseenter", () => {
+    const tooltip = document.createElement("div");
+    tooltip.textContent = el.getAttribute("data-title");
+    tooltip.style.position = "absolute";
+    tooltip.style.background = "black";
+    tooltip.style.color = "white";
+    tooltip.style.fontFamily = "verdana"
+    tooltip.style.padding = "4px 8px";
+    tooltip.style.borderRadius = "10px";
+    tooltip.style.pointerEvents = "none";
+    tooltip.style.zIndex = "9999";
+    document.body.appendChild(tooltip);
+
+    function moveTooltip(e) {
+      tooltip.style.left = e.pageX + 10 + "px";
+      tooltip.style.top = e.pageY + 10 + "px";
+    }
+
+    el.addEventListener("mousemove", moveTooltip);
+    el.addEventListener("mouseleave", () => {
+      tooltip.remove();
+      el.removeEventListener("mousemove", moveTooltip);
+    }, { once: true });
+  });
+});
