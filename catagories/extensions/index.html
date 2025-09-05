@@ -22,7 +22,8 @@
       <p>The homepage/website you are about to open does not have DarkMode, would you like to still continue?</p>
       <button id="confirm-redirect">Continue</button>
       <button id="cancel-redirect">Cancel</button>
-    <div id="popup2" class="popup2"><button id="activateTooltips">Turn Tooltips On</button></div> 
+    </div>
+    <div id="settings"><div id="popup2"><button id="activateTooltips">Tooltips Off</button></div><span id="sb">⚙️ Settings</span></div>
     <div id="popup" class="popup" onclick="closePopup()" style="top: 70px;"><div id="popupcontent"></div></div>  
     <a style="color:white; font-family:verdana;" href="../../" data-title="Home" class="home" id="homeimage"><img src="../../images/DarkMode Sites.png" alt="DarkMode-sheet-logo" width="192" height="108"></a>
     <div id="homemenu" class="homemenu">
@@ -41,7 +42,7 @@
       <a href="../../catagories/Android" class="website" data-title="Only show Android apps"><img class= "rotate" src="../../images/icons/android.png" alt="Android Image" style="width:30px;height:30px;"></a> 
       <a href="../../catagories/extensions/" class="website" data-title="Only show Browser Extensions"><img class="rotate" src="../../images/icons/extensions.png" alt="Puzzle Image" style="width:30px;height:30px;"></a> 
       <br><br>
-      <a href="../../catagories/no-darkmode/" class="website" data-title="Show applications and websites that don't currently have DarkMode"><img class="rotate" src="../../images/icons/nodarkmode.png" alt="No DarkMode Image" style="width:30px;height:30px;"></a>
+      <!--<a href="../../catagories/no-darkmode/" class="website" data-title="Show applications and websites that don't currently have DarkMode"><img class="rotate" src="../../images/icons/nodarkmode.png" alt="No DarkMode Image" style="width:30px;height:30px;"></a> -->
       <a href="../../catagories/profile-websites/" class="website" data-title="Profile websites that aren't really have any other purpose"><img class="rotate" src="../../images/icons/aboutmewebsites.png" alt="User Image" style="width:30px;height:30px;"></a>
       <!-- <a href="../../catagories/pay-for-darkmode/" class="website" data-title="Websites/Apps to not use because you have to pay to use DarkMode"><img class="rotate" src="../../images/icons/pay.png" alt="Paid Image" style="width:30px;height:30px;"></a> -->
       <a href="../../catagories/open-source/" class="website" data-title="Websites/Apps that are Open Source"><img class="rotate" src="../../images/icons/opensource.png" alt="Open Source Image" style="width:30px;height:30px;"></a>   
@@ -54,7 +55,7 @@
     <ul class="main"  id="all">
       <li>
         <div class="dropdown">
-        <button class="dropbtn">
+        <button class="dropbtn booklink">
           AdBlock
           <img src="../../images/logos/Adblock.png" alt="Adblock Icon" data-title="The Adblock extension blocks intrusive advertisements on websites, providing users with a cleaner and faster browsing experience by eliminating distractions and protecting privacy.">
         </button>
@@ -72,7 +73,7 @@
       </li>
       <li>
         <div class="dropdown">
-        <button class="dropbtn">
+        <button class="dropbtn booklink">
           Dark Reader
           <img src="../../images/logos/Dark Reader.png" alt="Dark Reader Icon" data-title="Dark Reader is a browser extension that transforms website colors to a dark mode theme, reducing eye strain and improving readability during nighttime browsing.">
         </button>
@@ -90,7 +91,7 @@
       </li>
       <li>
         <div class="dropdown">
-        <button class="dropbtn">
+        <button class="dropbtn booklink">
           Scratch Addons
           <img src="../../images/logos/scartchaddons.png" alt=" Icon" data-title="The Scratch Addons extension enhances the functionality of the Scratch programming platform by providing additional features and tools for users to create and share projects more efficiently.">
         </button>
@@ -105,7 +106,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             YouTube Sponsor Block
             <img src="../../images/logos/sponsorblock.png" alt="Sponsor Block Icon" data-title="The SponsorBlock extension automatically skips sponsored segments and other non-content sections in YouTube videos, enhancing user experience by saving time and improving content consumption.">
           </button>
@@ -121,7 +122,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             AdBlock uBlock Origin
             <img src="../../images/logos/ublock origin.png" alt="uBlock Origin Icon" data-title="Free, open-source ad content blocker.">
           </button>
@@ -137,7 +138,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Truffle YouTube
             <img src="../../images/logos/truffle.png"  alt="Truffle Icon" data-title="Make streaming and interacting with streamers better on YouTube and Twitch.">
           </button>
@@ -153,7 +154,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Wayback Machine Internet Archive
             <img src="../../images/logos/wayback.png"  alt="Wayback Machine Icon" data-title="Explore more than 916 billion web pages saved over time.">
           </button>
@@ -171,7 +172,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Advanced Profanity Filter
             <img src="../../images/logos/Advanced Profanity Filter.png"  alt="Advanced Profanity Filter Icon" data-title="Helps to clean up bad language on the websites you and your family visit.">
           </button>
@@ -188,7 +189,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             DeArrow Youtube
             <img src="../../images/logos/dearrow.png"  alt="DeArrow Icon" data-title="An open source browser extension for crowdsourcing better titles and thumbnails on YouTube.">
           </button>
@@ -203,7 +204,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Pie adblock
             <img src="../../images/logos/Pie.png"  alt="Pie adblock Icon" data-title="An adblock that pays you when you don't block an ad">
           </button>
@@ -217,7 +218,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Arweave Wallet
             <img src="../../images/logos/Arweave Wallet.png"  alt="Arweave Wallet Icon" data-title="">
           </button>
@@ -230,7 +231,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             youtube return dislike button
             <img src="../../images/logos/REturn youtube dislike.png" alt="Return YouTube Dislike Icon" data-title="The &quot;Return Dislike Button&quot; extension reinstates the dislike functionality on YouTube, allowing users to express their disapproval of videos by bringing back the dislike count visible to both creators and viewers.">
           </button>
@@ -244,7 +245,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             AugmentedSteam Steam
             <img src="../../images/logos/AugmentedSteam.png" alt="AugmentedSteam Steam Icon" data-title="Free browser extension based on the Enhanced Steam.">
           </button>
@@ -259,7 +260,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Volta
             <img src="../../images/logos/Volta.png" alt="Volta Icon" data-title="Work in real-time with your team on open-source and private repositories from GitHub, all in one place.">
           </button>
@@ -271,7 +272,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             BetterTTV
             <img src="../../images/logos/BetterTTV.png" alt="BetterTTV Icon" data-title="BetterTTV is a browser extension for Twitch and YouTube that adds new features, emotes, and more.">
           </button>
@@ -285,7 +286,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             DarkMode for Chrome
             <img src="../../images/logos/DarkMode for Chrome.png" alt="DarkMode for Chrome Icon" data-title="Dark mode for all websites. Use dark theme for night and daily browsing with dark reader. Night shift mode.">
           </button>
@@ -297,7 +298,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             DarkMode Google Docs
             <img src="../../images/logos/Dark Mode Google Docs.png" alt="Dark Mode Google Docs Icon" data-title="Dark mode for all websites.">
           </button>
@@ -308,7 +309,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Night Eye
             <img src="../../images/logos/Night Eye.png" alt="Night Eye Icon" data-title="Enable dark mode on any website.">
           </button>
@@ -324,7 +325,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             RoGold
             <img src="../../images/logos/RoGold.png" alt="RoGold Icon" data-title="RoGold is a Roblox extension that enhances the user experience on the Roblox platform, offering features like profile customization, a refreshed user interface, and tools for both players and developers, and it is available as a free version and a premium version called RoGold Ultimate.">
           </button>
@@ -339,7 +340,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Video Speed Up Controller for Chrome ⏩
             <img src="../../images/logos/Video Speed Up Controller for Chrome.png" alt="Video Speed Up Controller for Chrome ⏩ Icon" data-title="Video speed controller for online videos. Speed up, slow down playback on any website.">
           </button>
@@ -350,7 +351,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Classic Dark Theme - Night Mode
             <img src="../../images/logos/Classic Dark Theme - Night Mode.png" alt="Classic Dark Theme - Night Mode Icon" data-title="Dark Mode for websites: protect your eyes with a dark theme for night or daily browsing, ideal for work and reading.">
           </button>
@@ -361,7 +362,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             RoPro
             <img src="../../images/logos/ropro.png" alt="RoPro Icon" data-title="RoPro adds dozens of useful features to Roblox.">
           </button>
@@ -373,7 +374,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Requestly
             <img src="../../images/logos/Requestly.png" alt="Requestly Icon" data-title="A Powerful HTTP Interception and Mocking Tool">
           </button>
@@ -388,7 +389,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Responsive Viewer
             <img src="../../images/logos/Responsive Viewer.png" alt="Responsive Viewer Icon" data-title="Test and preview your website on multiple screens with built-in screenshot and annotation tools">
           </button>
@@ -400,7 +401,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Trancy
             <img src="../../images/logos/Trancy.png" alt="Trancy Icon" data-title="​Trancy.org is an AI-powered language learning platform designed to enhance your skills through immersive experiences with real-world content.">
           </button>
@@ -415,7 +416,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             CCU Game
             <img src="../../images/logos/CCU Game.png" alt="CCU Game Icon" data-title="CCU Game helps you manage your hangar/buybacks and helps you reach your dream fleet.">
           </button>
@@ -429,7 +430,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Proton VPN
             <img src="../../images/logos/Proton VPN.png" alt="Proton VPN Icon" data-title="Gain unrestricted access to global content, block annoying ads, and safeguard your privacy with a fast and secure VPN.">
           </button>
@@ -442,7 +443,7 @@
       </li>
     <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Obsidian
             <img src="../../images/logos/Obsidian.png" alt="Obsidian Icon" data-title="The free and flexible app for your private thoughts.">
           </button>
@@ -457,7 +458,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Twos
             <img src="../../images/logos/Twos.png" alt="Twos Icon" data-title="One app for everything.">
           </button>
@@ -469,7 +470,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Anylist
             <img src="../../images/logos/AnyList.png" alt="AnyList Icon" data-title="One app for stress-free shopping, cooking, and meal planning.">
           </button>
@@ -484,7 +485,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Ecosia
             <img src="../../images/logos/Ecosia.png" alt="Ecosia Icon" data-title="Ecosia is a search engine that prioritizes environmental sustainability by using its profits to plant trees.">
           </button>
@@ -502,7 +503,7 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
             Repeek
             <img src="../../images/logos/Repeek.png" alt="Repeek Icon" data-title="The browser extension that boosts you to the next level on FACEIT.">
           </button>
@@ -517,7 +518,21 @@
       </li>
       <li>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn booklink">
+            reveddit
+            <img src="../../images/logos/reveddit.png" alt="reveddit Icon" data-title="A tool that allows users to view content removed from Reddit by moderators or automated filters, making otherwise hidden posts, comments, and user activities visible again.">
+          </button>
+          <div class="dropdown-content">
+            <a href="https://www.reveddit.com/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
+            <a href="https://chrome.google.com/webstore/detail/reveddit-real-time/ickfhlplfbipnfahjbeongebnmojbnhm"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/reveddit-real-time/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
+          </div>
+        </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn booklink">
             FrankerFaceZ
             <img src="../../images/logos/FrankerFaceZ.png" alt="FrankerFaceZ Icon" data-title="The Twitch enhancement suite.">
           </button>

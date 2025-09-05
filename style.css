@@ -239,14 +239,13 @@ h3 {
   color:white; font-family:verdana;
 }
 .social-icons {
-  filter: drop-shadow(0 0 0.75rem black);
   width: 40px;
   height: 40px;
   text-align: center;
   line-height: 40px;
   font-size: 20px;
   margin-right: 15px;
-  
+  text-align: right;
   cursor: pointer;
   display: inline;
 }
@@ -365,9 +364,6 @@ noscript {
   transition: transform .1s ease-in-out;
   transform-origin: center;
 }
-.social-icons {
-  text-align: right;
-}
 .parent-container {
   display: flex;
   justify-content: center;
@@ -428,7 +424,17 @@ noscript {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
-.popup2 button {
+#settings #popup2{
+  display: none;
+}
+#settings:hover #popup2{
+  display: inline; 
+  
+}
+#settings:hover #sb{
+  display: none; 
+}
+#settings {
   font-family:verdana;
   font-size: x-small;
   position: fixed;

@@ -230,15 +230,13 @@ toggleButton.addEventListener("click", () => {
     });
 
     tooltipsActive = true;
-    toggleButton.textContent = "Turn Tooltips Off";
+    toggleButton.textContent = "Tooltips On";
   } else {
     listeners.forEach(({ el, enterHandler }) => {
       el.removeEventListener("mouseenter", enterHandler);
     });
     listeners = [];
     tooltipsActive = false;
-    toggleButton.textContent = "Turn Tooltips On";
+    toggleButton.textContent = "Tooltips Off";
   }
 });
-
-
