@@ -22,11 +22,16 @@ window.onload = function() {
     var ul, li, a, i;
     ul = document.getElementById("all");
     li = Array.from(ul.getElementsByTagName('li'));
-    li.sort(function(a, b) {
+    /* li.sort(function(a, b) {
       var textA = a.getElementsByTagName("a")[0].textContent || a.getElementsByTagName("a")[0].innerText;
       var textB = b.getElementsByTagName("a")[0].textContent || b.getElementsByTagName("a")[0].innerText;
       return textA.localeCompare(textB);
+    }); */
+
+    li.sort(function() {
+      return Math.random() - 0.5;
     });
+
     ul.innerHTML = "";
     li.forEach(function(item) {
       ul.appendChild(item);
@@ -34,14 +39,19 @@ window.onload = function() {
   }else{
     var ul = document.getElementById("all");
     var li = Array.from(ul.getElementsByTagName('li'));
-    li.sort(function(a, b) {
+    /* li.sort(function(a, b) {
         var textA = a.querySelector(".dropdown > .dropbtn").textContent.trim();
         var textB = b.querySelector(".dropdown > .dropbtn").textContent.trim();
         return textA.localeCompare(textB);
+    }); */
+
+    li.sort(function() {
+      return Math.random() - 0.5;
     });
+
     ul.innerHTML = "";
     li.forEach(function(item) {
-        ul.appendChild(item);
+      ul.appendChild(item);
     });    
   }
   var popup = document.getElementById("popupcontent");
