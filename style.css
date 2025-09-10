@@ -516,3 +516,10 @@ noscript {
   cursor: pointer;
   white-space: nowrap;
 }
+#activateTooltips {
+  padding: 0px;
+  height: 0px;
+  border: none;
+  background-color: black;
+  color: white;
+}
