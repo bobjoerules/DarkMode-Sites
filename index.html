@@ -23,8 +23,8 @@
       <button id="confirm-redirect">Continue</button>
       <button id="cancel-redirect">Cancel</button>
     </div>
-    <div id="settings"><div id="popup2"><button id="activateTooltips">Tooltips Off</button></div><span id="sb">⚙️ Settings</span></div>
-    <div id="popup" class="popup" onclick="closePopup()" style="top: 70px;"><div id="popupcontent"></div></div>  
+    <!--<div id="settings"><div id="popup2"><button id="activateTooltips">Tooltips Off</button></div><span id="sb">⚙️ Settings</span></div>-->
+    <div id="popup" class="popup" onclick="closePopup()" style="top: 30px;"><div id="popupcontent"></div></div>  
     <a style="color:white; font-family:verdana;" href="./" data-title="Home" class="home" id="homeimage"><img src="images/DarkMode Sites.png" alt="DarkMode-sheet-logo" width="192" height="108"></a>
     <div id="homemenu" class="homemenu">
       <ul>
@@ -48,7 +48,7 @@
       <a href="catagories/Wiki/" class="website" data-title="Wiki Pages"><img class="rotate" src="images/icons/Wiki.png" alt="Wiki Image" style="width:30px;height:30px;"></a> 
     </p>
     <p style="color:red; font-family:verdana; text-align: center;" id="warning"></p>
-    <input type="text" id="searchapp" onkeyup="searchSite()" placeholder="Search for a App/Website/Extension...">
+    <input type="text" id="searchapp" onkeyup="searchSite()" placeholder="Search for an App/Website/Extension...">
     <noscript>Sorry, your browser does not support JavaScript or you have it turned off! You are unable to search</noscript>
     <ul class="main"  id="all">
       <li> <a href="https://getadblock.com/" class="booklink lightmode" data-title="The Adblock extension blocks intrusive advertisements on websites, providing users with a cleaner and faster browsing experience by eliminating distractions and protecting privacy."><img src="images/logos/Adblock.png" alt="Adblock Icon">adblock</a></li>
@@ -1051,6 +1051,31 @@
       <li> <a href="https://emojito.meme/" class="booklink" data-title="Stir up your reactions with custom emoji."><img src="images/logos/Emojito.png" alt="Emojito Icon">Emojito</a></li>
       <li> <a href="https://www.gifbuddy.lol/" class="booklink" data-title="A gif companion app for nostr clients."><img src="images/logos/GIF Buddy.png" alt="GIF Buddy Icon">GIF Buddy</a></li>
       <li> <a href="https://coracle.social/" class="booklink" data-title="A Nostr client for feeds that puts relays first."><img src="images/logos/Coracle.png" alt="Coracle Icon">Coracle</a></li>
+      <li> <a href="https://lowtechguys.com/rcmd/" class="booklink" data-title="Instant app switching with a rarely used key."><img src="images/logos/rcmd.png" alt="rcmd Icon">rcmd</a></li>
+      <li> <a href="https://www.jetbrains.com/" class="booklink" data-title="A rich suite of tools that provide an exceptional developer experience."><img src="images/logos/jetbrains.png" alt="JetBrains Icon">JetBrains</a></li>
+      <li> <a href="https://wikifreedia.xyz/" class="booklink" data-title="WikiFreedia is a proof-of-concept for a Nostr-based alternative to Wikipedia."><img src="images/logos/wikifreedia.png" alt="WikiFreedia Icon">WikiFreedia</a></li>
+      <li> <a href="https://sindresorhus.com/speediness" class="booklink" data-title="Quickly check your internet connection speed."><img src="images/logos/speediness.png" alt="Speediness Icon">Speediness</a></li>
+      <li> <a href="https://goodsnooze.gumroad.com/l/voices" class="booklink lightmode" data-title="Text to Speech with OpenAI, ElevenLabs, PlayAI and Kokoro."><img src="images/logos/voices.png" alt="Voices Icon">voices</a></li>
+      <li> <a href="https://dotesports.com/" class="booklink" data-title="Dot Esports is a premier global destination for coverage of competitive gaming and esports."><img src="images/logos/dotesports.png" alt="Dot Esports Icon">Dot Esports</a></li>
+      <li> <a href="https://render.com/" class="booklink" data-title="Render is a unified cloud platform for deploying and managing applications, databases, and static sites."><img src="images/logos/render.png" alt="Render Icon">Render</a></li>
+      <li> <a href="https://cookieclicker.bobjoerules.com/" class="booklink" data-title="Click cookies, build your empire! A modern recreation of the classic Cookie Clicker game."><img src="images/logos/bobjoerulescookieclicker.png" alt="Cookie Clicker Icon">Cookie Clicker Bobjoerules</a></li>
+      <li> <a href="https://www.nos.social/" class="booklink" data-title="Nos (nos.social) is an iOS social media app built on the decentralized Nostr protocol."><img src="images/logos/nos.png" alt="Nos Icon">Nos</a></li>
+      <li> <a href="https://www.fountain.fm/" class="booklink" data-title="Fountain.fm is a modern podcast app that integrates Bitcoin and social features."><img src="images/logos/fountain.png" alt="Fountain Icon">Fountain.fm</a></li>
+      <li> <a href="https://shopstr.store/" class="booklink" data-title="Buy and sell anything, anywhere, anytime."><img src="images/logos/shopstr.png" alt="Shopstr Icon">Shopstr</a></li>
+      <li> <a href="https://ollama.com/" class="booklink lightmode" data-title="Ollama is a free, open-source tool that simplifies running powerful Large Language Models (LLMs) like Llama 3, Mistral, and Gemma directly on your local computer."><img src="images/logos/ollama.png" alt="Ollama Icon">Ollama</a></li>
+      <li> <a href="https://excalidraw.com/" class="booklink" data-title="Virtual whiteboard for sketching hand-drawn like diagrams."><img src="images/logos/excalidraw.png" alt="Excalidraw Icon">Excalidraw</a></li>
+      <li> <a href="https://shots.so/" class="booklink" data-title="Create Amazing Mockups, Product demos & Videos."><img src="images/logos/Shots.so.png" alt="Shots.so Icon">Shots.so</a></li>
+      <li> <a href="https://macosicons.com/" class="booklink" data-title="Replacement icons for popular apps in the style of macOS"><img src="images/logos/macOSicons.png" alt="macOSicons Icon">macOSicons</a></li>
+      <li> <a href="https://www.webbites.io/" class="booklink" data-title="Save anything with one click and let AI do the organising for you."><img src="images/logos/WebBites.png" alt="WebBites Icon">WebBites</a></li>
+      <li> <a href="https://yandex.com/" class="booklink" data-title="Yandex is a major Russian multinational tech company, often called the &quot;Google of Russia,&quot; known for its dominant search engine but also offering a vast ecosystem of internet services like email, maps, cloud storage, ride-hailing (Yandex.Taxi), e-commerce, and AI-driven products."><img src="images/logos/Yandex.png" alt="Yandex Icon">Yandex</a></li>
+      <li> <a href="https://www.rabbit.tech/" class="booklink" data-title="An AI startup known for its AI-native devices like the Rabbit R1, which uses an AI operating system."><img src="images/logos/rabbit.png" alt="rabbit Icon">rabbit</a></li>
+      <li> <a href="https://www.artstation.com/" class="booklink" data-title="ArtStation is a leading online platform for digital artists in games, film, and entertainment to showcase professional portfolios, find jobs, sell art/assets, and learn new skills."><img src="images/logos/ArtStation.png" alt="ArtStation Icon">ArtStation</a></li>
+      <li> <a href="https://www.comfy.org" class="booklink" data-title="ComfyUI is a powerful, free, open-source visual interface for AI image/video generation."><img src="images/logos/Comfy.png" alt="ComfyUi Icon">ComfyUi</a></li>
+      <li> <a href="https://www.jetbrains.com/idea/download/" class="booklink lightmode" data-title="An IDE for Professional Development in Java and Kotlin"><img src="images/logos/IntelliJ IDEA.png" alt="IntelliJ IDEA Icon">IntelliJ IDEA</a></li>
+      <li> <a href="https://chatgpt.com/atlas/" class="booklink" data-title="Bring ChatGPT with you across the web for instant answers, smarter suggestions, and help with tasks—all with privacy settings you can control."><img src="images/logos/Atlas.png" alt="Atlas Icon">ChatGPT Atlas</a></li>
+      <li> <a href="https://suno.com/home" class="booklink" data-title="AI song/music creator"><img src="images/logos/suno.png" alt="Suno Icon">Suno</a></li>
+      <li> <a href="https://starforgesystems.com/" class="booklink" data-title="Starforge Systems is a US-based company that builds and sells custom pre-built gaming PCs, founded by members of the popular streamer organization OTK."><img src="images/logos/Starforge Systems.png" alt="Starforge Systems Icon">Starforge Systems</a></li>
+      <li> <a href="https://www.fedoraproject.org/" class="booklink" data-title="Fedora Linux is a free, community-driven, open-source operating system."><img src="images/logos/Fedora.png" alt="Fedora Icon">Fedora Linux</a></li>
     </ul>
       <!--
       <li> <a href="" class="booklink" data-title=""><img src="images/logos/" alt=" Icon"></a></li>
@@ -1081,6 +1106,7 @@
             <a href="https://dailytracker.bobjoerules.com/" data-title="Track Tallies Daily"><img class="socials" src="images/dailytally.png" alt="Daily Tracker" style="width:30px;height:30px;"></a>
             <a href="https://amazonbrandblock.bobjoerules.com/" data-title="Block certain brands on Amazon search results especially Amazon's own brands"><img class="socials" src="images/amazon.png" alt="Amazon Brand Block" style="width:23px;height:23px;"></a>
             <a href="https://appicons.bobjoerules.com/" data-title="MacOS 26 Tahoe App Icons for websites & apps that haven't been updated." style="margin-left: 7px;"><img class="socials" src="images/Apple.png" alt="MacOS 26 Tahoe App Icons" style="width:23px;height:23px;"></a>
+            <a href="https://cookieclicker.bobjoerules.com/" data-title="Click cookies, build your empire! A modern recreation of the classic Cookie Clicker game." style="margin-left: 7px;"><img class="socials" src="images/cookie.png" alt="Cookie Clicker" style="width:23px;height:23px;"></a>
           </div>
           <hr><p class="copyright">Bobjoerules © <span id="year"></span> - All Rights Reserved</p>
         </div>
