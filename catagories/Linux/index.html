@@ -23,6 +23,30 @@
       <button id="confirm-redirect">Continue</button>
       <button id="cancel-redirect">Cancel</button>
     </div>
+    <!-- Site Details Popup -->
+    <div id="site-popup-overlay">
+      <div id="site-popup">
+        <span class="popup-close" onclick="closeSitePopup()">&times;</span>
+        
+        <div class="popup-hero">
+          <img id="popup-hero-img" class="popup-hero-img" src="" alt="">
+          <div class="popup-hero-gradient"></div>
+          <div class="popup-hero-content">
+            <img id="popup-logo" class="popup-logo" src="" alt="">
+            
+          </div>
+        </div>
+
+        <div class="popup-body">
+          <p id="popup-description" class="popup-description"></p>
+          <div id="popup-links" class="popup-links-grid"></div>
+        </div>
+      </div>
+    </div>
+    
+        </div>
+      </div>
+    </div>
     <!--<div id="settings"><div id="popup2"><button id="activateTooltips">Tooltips Off</button></div><span id="sb">⚙️ Settings</span></div>-->
     <div id="popup" class="popup" onclick="closePopup()" style="top: 30px;"><div id="popupcontent"></div></div>     
     <a style="color:white; font-family:verdana;" href="../../" data-title="Home" class="home" id="homeimage"><img src="../../images/DarkMode Sites.png" alt="DarkMode-sheet-logo" width="192" height="108"></a>
@@ -42,132 +66,15 @@
       <a href="../../catagories/Android" class="website" data-title="Only show Android apps"><img class= "rotate" src="../../images/icons/android.png" alt="Android Image" style="width:30px;height:30px;"></a> 
       <a href="../../catagories/extensions/" class="website" data-title="Only show Browser Extensions"><img class="rotate" src="../../images/icons/extensions.png" alt="Puzzle Image" style="width:30px;height:30px;"></a> 
       <br><br>
-      <!--<a href="../../catagories/no-darkmode/" class="website" data-title="Show applications and websites that don't currently have DarkMode"><img class="rotate" src="../../images/icons/nodarkmode.png" alt="No DarkMode Image" style="width:30px;height:30px;"></a> -->
       <a href="../../catagories/profile-websites/" class="website" data-title="Profile websites that aren't really have any other purpose"><img class="rotate" src="../../images/icons/aboutmewebsites.png" alt="User Image" style="width:30px;height:30px;"></a>
-      <!-- <a href="../../catagories/pay-for-darkmode/" class="website" data-title="Websites/Apps to not use because you have to pay to use DarkMode"><img class="rotate" src="../../images/icons/pay.png" alt="Paid Image" style="width:30px;height:30px;"></a> -->
       <a href="../../catagories/open-source/" class="website" data-title="Websites/Apps that are Open Source"><img class="rotate" src="../../images/icons/opensource.png" alt="Open Source Image" style="width:30px;height:30px;"></a>   
       <a href="../../catagories/Wiki/" class="website" data-title="Wiki Pages"><img class="rotate" src="../../images/icons/Wiki.png" alt="Wiki Image" style="width:30px;height:30px;"></a>
     </p>
-    <p style="color:red; font-family:verdana; text-align: center;" id="linux"></p>
+    
     <input type="text" id="searchapp" onkeyup="searchSite()" placeholder="Search for a Windows App...">
     <noscript>Sorry, your browser does not support JavaScript or you have it turned off! You are unable to search</noscript>
     <!-- <h2 style="text-align:center;" id="fao">Windows Apps With DarkMode</h2> -->
-    <ul class="main"  id="all">
-      <li> <a href="https://developer.android.com/studio" class="booklink" data-title="Android Studio is an integrated development environment (IDE) for creating Android applications, featuring a comprehensive suite of tools for coding, debugging, and testing mobile apps."><img src="../../images/logos/androidstudio.png" alt="Android Studio Icon">Android Studio Google</a></li>
-      <li> <a href="https://www.badlion.net/minecraft-client" class="booklink" data-title="The Badlion Client app provides Minecraft players with an enhanced gaming environment, featuring optimized performance, customizable settings, and a range of additional gaming tools and features."><img src="../../images/logos/badlion.png" alt="Badlion Client Icon">Badlion Minecraft Client</a></li>
-      <li> <a href="https://www.blender.org/download/" class="booklink" data-title="Blender is a powerful open-source 3D creation software that enables users to design and render 3D models, animations, and visual effects for various purposes, including gaming, filmmaking, and architectural visualization."><img src="../../images/logos/blender.png" alt="Blender Icon">blender</a></li>
-      <li> <a href="https://apps.microsoft.com/detail/xp9kn75rrb9nhs" class="booklink" data-title="A Video Editor"><img src="../../images/logos/capcut.png" alt="Capcut Icon">capcut</a></li>
-      <li> <a href="https://www.google.com/chrome/" class="booklink" data-title="Chrome is a web browser developed by Google, known for its speed, simplicity, and integration with Google services, offering a user-friendly interface, extensive customization options, and robust security features for browsing the internet efficiently and securely."><img src="../../images/logos/Chrome.png" alt="Chrome Icon">google chrome</a></li>
-      <li> <a href="https://www.blackmagicdesign.com/products/davinciresolve" class="booklink" data-title="DaVinci Resolve is a professional-grade video editing software offering comprehensive editing, color correction, visual effects, and audio post-production capabilities, all in a single application."><img src="../../images/logos/davinci resolve.png" alt="Davinci Resolve Icon">Davinci Resolve</a></li>
-      <li> <a href="https://discord.com/download" class="booklink" data-title="Discord is a communication app designed for creating communities, offering voice, video, and text chat functionalities for gamers, educators, and various groups."><img src="../../images/logos/discord.png" alt="discord Icon">discord</a></li>
-      <li> <a href="https://www.mozilla.org/en-US/firefox/linux/" class="booklink lightmode" data-title="Firefox is an open-source web browser developed by Mozilla, known for its privacy features, customization options, and commitment to an open internet, offering fast and secure browsing experiences across various platforms."><img src="../../images/logos/firefox.png" alt="FireFox Icon">firefox</a></li>
-      <li> <a href="https://www.lunarclient.com/download" class="booklink" data-title="The Lunar Client app enhances gaming experiences with optimized performance, customizable settings, and additional features for Minecraft players."><img src="../../images/logos/lunar client.png" alt="Lunar Client Icon">Lunar Client Minecraft</a></li>
-      <li> <a href="https://create.roblox.com/" class="booklink" data-title="Game Editor/Creator for Roblox"><img src="../../images/logos/Roblox Studio.png" alt="Roblox Studio Icon">Roblox Studio</a></li>
-      <li> <a href="https://www.spotify.com/de-en/download/linux/" class="booklink" data-title="Spotify is a digital music streaming service that provides access to a vast library of songs, podcasts, and playlists from various artists and genres."><img src="../../images/logos/spotify.png" alt="Spotify Icon">spotify</a></li>
-      <li> <a href="https://code.visualstudio.com/download" class="booklink" data-title="Visual Studio Code (VSC) is a free, open-source code editor developed by Microsoft, renowned for its lightweight design, extensive language support, and rich ecosystem of extensions, catering to developers' diverse needs for coding, debugging, and collaboration."><img src="../../images/logos/vsc2.png" alt="VSC Icon">VSC visual studio code</a></li>
-      <li> <a href="https://zoom.us/download?os=linux" class="booklink" data-title="Zoom is a video conferencing app that allows users to conduct virtual meetings, webinars, and collaborative online sessions with high-quality video, audio, and interactive features."><img src="../../images/logos/zoom.png" alt="Zoom Icon">zoom</a></li>
-      <li> <a href="https://betterdiscord.app/" class="booklink" data-title="A modding software for Discord (against TOS)"><img src="../../images/logos/Better Discord.png" alt="Better Discord Icon">Better Discord</a></li>
-      <li> <a href="https://www.minecraft.net/en-us/download" class="booklink" data-title="3D Open Sandbox Video Game"><img src="../../images/logos/Minecraft.png" alt="Minecraft Icon">Minecraft</a></li>
-      <li> <a href="https://www.curseforge.com/download/app" class="booklink" data-title="Mods for minecraft and also a modded client"><img src="../../images/logos/curseforge.png" alt="curseforge Icon">Curseforge Minecraft</a></li>
-      <li> <a href="https://www.unrealengine.com/en-US/linux" class="booklink" data-title="Videogame/3d render/creating software"><img src="../../images/logos/unreal engine.png" alt="Unreal Engine Icon">Unreal Engine</a></li>
-      <li> <a href="https://replit.com/desktop" class="booklink" data-title="Code hosting"><img src="../../images/logos/replit.png" alt="Replit Icon">Replit</a></li>
-      <li> <a href="https://prismlauncher.org/download/" class="booklink" data-title="Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Customized version of MultiMC"><img src="../../images/logos/prisim launcher.png" alt="Prism Launcher Icon">Prism Launcher Minecraft</a></li>
-      <li> <a href="https://multimc.org/#Download" class="booklink" data-title="MultiMC is an alternative launcher for Minecraft."><img src="../../images/logos/multimc.png" alt="MultiMC Launcher Icon">MultiMC Launcher Minecraft</a></li>
-      <li> <a href="https://www.videolan.org/vlc/#download" class="booklink" data-title="VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols."><img src="../../images/logos/vlc.png" alt="VLC Icon">VideoLAN Client VLC</a></li>
-      <li> <a href="https://spicetify.app/docs/getting-started" class="booklink" data-title="An open source modder for Spotify that gives more customization with themes and plugins"><img src="../../images/logos/spice.png" alt="Spicetify Icon">Spicetify Spotify</a></li>
-      <li> <a href="https://keeweb.info/" class="booklink" data-title="Free cross-platform password manager compatible with KeePass"><img src="../../images/logos/KeeWeb.png" alt="KeeWeb">KeeWeb</a></li>
-      <li> <a href="https://slack.com/downloads/linux" class="booklink" data-title="Slack is a cloud-based messaging app that helps teams communicate and collaborate."><img src="../../images/logos/slack.png" alt="Slack Icon">Slack</a></li>
-      <li> <a href="https://pianorhythm.io/" class="booklink" data-title="PianoRhythm is an online multiplayer piano game where players can play the piano in real-time, either solo or with others."><img src="../../images/logos/pianorhythm.png" alt="PianoRhythm Icon">PianoRhythm</a></li>   
-      <li> <a href="https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=linux" class="booklink" data-title="Plex is a free streaming app that offers movies, TV shows, and music (with ads). It also allows users to stream their own media collections."><img src="../../images/logos/plex.png" alt="Plex Icon">Plex Tv</a></li>
-      <li> <a href="https://revolt.chat/download" class="booklink" data-title="Revolt is a free, open-source chat app that allows users to create communities and communicate with each other. (Open source discord)"><img src="../../images/logos/revolt.png" alt="Revolt Icon">Revolt</a></li>
-      <li> <a href="https://obsproject.com/download" class="booklink" data-title="Free and open source software for video recording and live streaming."><img src="../../images/logos/OBS Studio.png" alt="OBS Icon">OBS Studio</a></li>
-      <li> <a href="https://www.piskelapp.com/download" class="booklink" data-title="Piskel is a free online editor for animated sprites & pixel art."><img src="../../images/logos/piskel.png" alt="Piskel Icon">Piskel</a></li>
-      <li> <a href="https://whale.naver.com/en/download/linux/" class="booklink" data-title="Naver Whale is a freeware web browser developed by the South Korean technology company Naver Corporation."><img src="../../images/logos/Naver Whale.png" alt="Naver Whale Icon">Naver Whale</a></li>
-      <li> <a href="https://requestly.com/downloads/" class="booklink" data-title="A Powerful HTTP Interception and Mocking Tool"><img src="../../images/logos/Requestly.png" alt="Requestly Icon">Requestly</a></li>
-      <li> <a href="https://developer.android.com/studio" class="booklink" data-title="Modern tools and resources to help you build experiences that people love, faster and easier, across every Android device."><img src="../../images/logos/Android Developers.png" alt="Android Developer Icon">Android Developer</a></li>
-      <li> <a href="https://getaether.net/download" class="booklink" data-title="Peer-to-peer ephemeral public communities."><img src="../../images/logos/aether.png" alt="Aether Icon">Aether</a></li>
-      <li> <a href="https://sober.vinegarhq.org/" class="booklink" data-title="No emulators. Double the performance. Sober's an unofficial native port of Roblox to Linux."><img src="../../images/logos/Sober.png" alt="Sober Icon">Sober Roblox</a></li>
-      <li> <a href="https://brinkervii.gitlab.io/grapejuice/" class="booklink" data-title="Roblox on Linux, made easy."><img src="../../images/logos/Grapejuice.png" alt="Grapejuice Icon">Grapejuice</a></li>
-      <li> <a href="https://blackarch.org/" class="booklink" data-title="BlackArch Linux is an Arch Linux-based penetration testing distribution for penetration testers and security researchers."><img src="../../images/logos/BlackArchLinux.png" alt="Swipe Icon">Black Arch Linux</a></li>
-      <li> <a href="https://cider.sh/downloads/client" class="booklink" data-title="Cider is a new cross-platform Apple Music experience built on Vue.js and written from the ground up with performance in mind."><img src="../../images/logos/Cider Collective.png" alt="Cider Collective Icon">Cider Collective</a></li>
-      <li> <a href="https://windsurf.com/editor/download-linux" class="booklink" data-title="Windsurf (formerly Codeium) is an AI Code Editor."><img src="../../images/logos/Windsurf.png" alt="Windsurf Icon">Windsurf</a></li>
-      <li> <a href="https://coder.com/docs/install" class="booklink" data-title="Coder is the open-source platform that brings developers and AI together in context-rich environments on your infrastructure."><img src="../../images/logos/Coder.png" alt="Coder Icon">Coder</a></li>
-      <li> <a href="https://www.teamspeak.com/downloads" class="booklink" data-title="A proprietary Voice over IP (VoIP) application used for voice communication between users, similar to a conference call."><img src="../../images/logos/teamspeak.png" alt="Teamspeak Icon">Teamspeak</a></li>
-      <li> <a href="https://itch.io/app" class="booklink lightmode" data-title="itch.io is an open marketplace for independent digital creators with a focus on independent video games."><img src="../../images/logos/itch.png" alt="Itch Icon">Itch</a></li>
-      <li> <a href="https://www.sublimetext.com/download" class="booklink lightmode" data-title="The sophisticated text editor for code, markup and prose."><img src="../../images/logos/Sublime Text.png" alt="Sublime Text Icon">Sublime Text</a></li>
-      <li> <a href="https://phcode.io/" class="booklink lightmode" data-title="The text editor designed to make coding as simple and fun as playing a video game"><img src="../../images/logos/Phoenix Code.png" alt="Phoenix Code Icon">Phoenix Code</a></li>
-      <li> <a href="https://lmms.io/download#linux" class="booklink" data-title="LMMS formerly known as Linux MultiMedia Studio, is a free and open-source digital audio workstation (DAW)."><img src="../../images/logos/LMMS.png" alt="LMMS Icon">LMMS</a></li>
-      <li> <a href="https://www.gimp.org/downloads/" class="booklink lightmode" data-title="Free & Open Source Image Editor"><img src="../../images/logos/GIMP.png" alt="Gimp Icon">Gimp</a></li>
-      <li> <a href="https://krita.org/en/download/" class="booklink" data-title="Krita is a professional FREE and open source painting program."><img src="../../images/logos/Krita.png" alt="Krita Icon">Krita</a></li>
-      <li> <a href="https://www.pencil2d.org/download" class="booklink lightmode" data-title="An easy, intuitive tool to make 2D hand-drawn animations."><img src="../../images/logos/Pencil2D Animation.png" alt="Pencil2D Animation Icon">Pencil2D Animation</a></li>
-      <li> <a href="https://www.audacityteam.org/download/linux/" class="booklink lightmode" data-title="Audio editing and recording app"><img src="../../images/logos/Audacity.png" alt="Audacity Icon">Audacity</a></li>
-      <li> <a href="https://musescore.org/download" class="booklink lightmode" data-title="Music notation app"><img src="../../images/logos/musescore studio.png" alt="Musescore Studio Icon">Musescore Studio</a></li>
-      <li> <a href="https://cursor.com/downloads" class="booklink" data-title="An AI Code Editor"><img src="../../images/logos/cursor.png" alt="Cursor Icon">Cursor</a></li>
-      <li> <a href="https://protonvpn.com/download-linux" class="booklink lightmode" data-title="Gain unrestricted access to global content, block annoying ads, and safeguard your privacy with a fast and secure VPN."><img src="../../images/logos/Proton VPN.png" alt="Proton VPN Icon">Proton VPN</a></li>
-      <li> <a href="https://obsidian.md/download" class="booklink" data-title="The free and flexible app for your private thoughts."><img src="../../images/logos/Obsidian.png" alt="Obsidian Icon">Obsidian</a></li>
-      <li> <a href="https://heptabase.com/download" class="booklink lightmode" data-title="Explore your notes through whiteboards, mindmaps, tables, and kanban boards to see how everything connects at a glance."><img src="../../images/logos/Heptabase.png" alt="Heptabase Icon">Heptabase</a></li>
-      <li> <a href="https://download.anytype.io/" class="booklink" data-title="The everything app."><img src="../../images/logos/anytype.png" alt="anytype Icon">anytype</a></li>
-      <li> <a href="https://www.twosapp.com/" class="booklink" data-title="One app for everything."><img src="../../images/logos/Twos.png" alt="Twos Icon">Twos</a></li>
-      <li> <a href="https://webcatalog.io/downloads" class="booklink" data-title="Turn websites into desktop apps."><img src="../../images/logos/WebCatalog.png" alt="WebCatalog Icon">WebCatalog</a></li>
-      <li> <a href="https://numi.app/" class="booklink lightmode" data-title="Beautiful calculator."><img src="../../images/logos/numi.png" alt="Numi Icon">Numi</a></li>
-      <li> <a href="https://modrinth.com/app" class="booklink" data-title="Discover, play, and share Minecraft content through a open-source platform built for the community."><img src="../../images/logos/Modrinth.png" alt="Modrinth Icon">Modrinth Minecraft</a></li>
-      <li> <a href="https://xmcl.app/" class="booklink" data-title="An Open Source Minecraft Launcher with Modern UX."><img src="../../images/logos/X Minecraft Launcher.png" alt="X Minecraft Launcher Icon">X Minecraft Launcher</a></li>
-      <li> <a href="https://docs.steambrew.app/users/getting-started/installation" class="booklink" data-title="An open source gateway to a better Steam® client experience."><img src="../../images/logos/Millennium.png" alt="Millennium Icon">Millennium</a></li>
-      <li> <a href="https://imagemagick.org/script/download.php#linux" class="booklink" data-title="A free, open-source software suite, used for editing and manipulating digital images."><img src="../../images/logos/ImageMagick.png" alt="ImageMagick Icon">ImageMagick</a></li>
-      <li> <a href="https://mcreator.net/download" class="booklink lightmode" data-title="MCreator is an open-source software used to make Minecraft Java Edition mods, Bedrock Edition Add-Ons, resource packs, and data packs using an intuitive easy-to-learn interface or with an integrated code editor."><img src="../../images/logos/MCreator.png" alt="MCreator Icon">MCreator Minecraft</a></li>
-      <li> <a href="https://www.digikam.org/download/" class="booklink" data-title="Dynamic open-source digital asset manager and image editor"><img src="../../images/logos/digiKam.png" alt="digiKam Icon">digiKam</a></li>
-      <li> <a href="https://logseq.com/downloads" class="booklink" data-title="Logseq is a privacy-first, open-source platform for knowledge management and collaboration."><img src="../../images/logos/Logseq.png" alt="Logseq Icon">Logseq</a></li>
-      <li> <a href="https://djflame.tech/download" class="booklink" data-title="DJFlame is an end-to-end solution for controlling the DJ playlist of your party."><img src="../../images/logos/DJFLAME.png" alt="DJFLAME Icon">DJFLAME</a></li>
-      <li> <a href="https://runjs.app/" class="booklink" data-title="The JavaScript playground for your desktop"><img src="../../images/logos/RunJs.png" alt="RunJS Icon">RunJS</a></li>
-      <li> <a href="https://factorio.com/download" class="booklink" data-title="Factorio is a game in which you build and maintain factories."><img src="../../images/logos/Factorio.png" alt="Factorio Icon">Factorio</a></li>
-      <li> <a href="https://www.etlegacy.com/download" class="booklink" data-title="An open source project that aims to create a fully compatible client and server for the popular online FPS game Wolfenstein: Enemy Territory "><img src="../../images/logos/etLegacy.png" alt="ET: Legacy Icon">ET: Legacy</a></li>
-      <li> <a href="https://www.enlightenment.org/" class="booklink" data-title="Enlightenment is a Window Manager, Compositor and Minimal Desktop for Linux (the primary platform), BSD and any other compatible UNIX system."><img src="../../images/logos/Enlightment.png" alt="Enlightment Icon">Enlightment</a></li>
-      <li> <a href="https://openrgb.org/" class="booklink" data-title="Open source RGB lighting control that doesn't depend on manufacturer software."><img src="../../images/logos/OpenRGB.png" alt="OpenRGB Icon">OpenRGB</a></li>
-      <li> <a href="https://openrazer.github.io/#download" class="booklink" data-title="A community-led effort to support Razer peripherals on Linux."><img src="../../images/logos/OpenRazer.png" alt="OpenRazer Icon">OpenRazer</a></li>
-      <li> <a href="https://i3wm.org/" class="booklink" data-title="i3 is a tiling window manager."><img src="../../images/logos/i3wm.png" alt="i3 Icon">i3wm</a></li>
-      <li> <a href="https://undertale.com/" class="booklink" data-title="Undertale is a 2015 role-playing video game created by American indie developer Toby Fox."><img src="../../images/logos/Undertale.png" alt="Undertale Icon">Undertale</a></li>
-      <li> <a href="https://replugged.dev/download" class="booklink" data-title="Discord client mod"><img src="../../images/logos/Replugged.png" alt="Replugged Icon">Replugged</a></li>
-      <li> <a href="https://www.redeclipse.net/download" class="booklink" data-title="A free arena shooter"><img src="../../images/logos/Red Eclipse.png" alt="Red Eclipse Icon">Red Eclipse</a></li>
-      <li> <a href="https://redasm.io/download" class="booklink" data-title="A cross platform disassembler with a modern codebase"><img src="../../images/logos/REDasm.png" alt="REDasm Icon">REDasm</a></li>
-      <li> <a href="https://upscayl.org/download" class="booklink" data-title="Upscayl lets you enhance your images using AI."><img src="../../images/logos/Upscayl.png" alt="Upscayl Icon">Upscayl</a></li>
-      <li> <a href="https://www.warp.dev/download" class="booklink" data-title="Code with Al agents. Prompt, review, edit, and ship."><img src="../../images/logos/Warp.png" alt="Warp Icon">Warp</a></li>
-      <li> <a href="https://larbs.xyz/" class="booklink" data-title="LARBS is an efficient shell script that will install a fully-featured tiling window manager-based system on any Arch or Artix Linux-based system, without any of the routine of manual post-install processes and configuration."><img src="../../images/logos/LARBS.png" alt="LARBS Icon">LARBS</a></li>
-      <li> <a href="https://osu.ppy.sh/home/download" class="booklink" data-title="free-to-win rhythm game"><img src="../../images/logos/OSU.png" alt="OSU! Icon">OSU!</a></li>
-      <li> <a href="https://lumina-desktop.org/" class="booklink" data-title="Lightweight Desktop Environment"><img src="../../images/logos/lumina.png" alt="Lumina Icon">Lumina</a></li>
-      <li> <a href="https://lutris.net/downloads" class="booklink" data-title="Lutris is a video game preservation platform aiming to keep your video game collection up and running for the years to come."><img src="../../images/logos/Lutris.png" alt="Lutris Icon">Lutris</a></li>
-      <li> <a href="https://ruffle.rs/downloads" class="booklink" data-title="An open source Flash Player emulator"><img src="../../images/logos/ruffle.png" alt="Ruffle Icon">Ruffle</a></li>
-      <li> <a href="https://schildi.chat/desktop/" class="booklink" data-title="SchildiChat is a feature-rich messenger for Matrix based on Element with some extras and tweaks."><img src="../../images/logos/SchildiChat.png" alt="SchildiChat Icon">SchildiChat</a></li>
-      <li> <a href="https://notesnook.com/downloads/" class="booklink" data-title="A fully open source & end-to-end encrypted note taking alternative to Evernote."><img src="../../images/logos/Notesnook.png" alt="Notesnook Icon">Notesnook</a></li>
-      <li> <a href="https://nheko-reborn.github.io/" class="booklink" data-title="A native desktop app for Matrix that feels more like a mainstream chat app."><img src="../../images/logos/nheko.png" alt="nheko Icon">nheko</a></li>
-      <li> <a href="https://nerimity.com/" class="booklink" data-title="A modern and sleek chat app."><img src="../../images/logos/Nerimity.png" alt="Nerimity Icon">Nerimity</a></li>
-      <li> <a href="https://nationsglory.fr/" class="booklink" data-title="A French modded Minecraft server established in 2013 that focuses on geopolitics with players forming countries and alliances on a reconstructed Earth map."><img src="../../images/logos/NationsGlory.png" alt="NationsGlory Icon">NationsGlory</a></li>
-      <li> <a href="https://hyper.is/" class="booklink" data-title="Hyper is an Electron-based terminal."><img src="../../images/logos/Hyper.png" alt="Hyper Icon">Hyper</a></li>
-      <li> <a href="https://hedgewars.org/download.html" class="booklink" data-title="A free, open-source, turn-based artillery game featuring fighting hedgehogs."><img src="../../images/logos/Hedge Wars.png" alt="Hedge Wars Icon">Hedge Wars</a></li>
-      <li> <a href="https://you.dj/download-dj-software" class="booklink" data-title="The easiest DJ software"><img src="../../images/logos/youdj.png" alt="youdj Icon">youdj dj</a></li>
-      <li> <a href="https://xonotic.org/download" class="booklink" data-title="Xonotic is an addictive arena-style first person shooter with crisp movement and a wide array of weapons."><img src="../../images/logos/xonotic.png" alt="Xonotic Icon">Xonotic</a></li>
-      <li> <a href="https://xerolinux.xyz/" class="booklink" data-title="Discover a Distro Fueled by Passion for GNU/Linux."><img src="../../images/logos/XeroLinux.png" alt="XeroLinux Icon">XeroLinux</a></li>
-      <li> <a href="https://www.wickeditor.com/#/download/" class="booklink lightmode" data-title="A free and open-source tool for creating games, animations and everything in-between!"><img src="../../images/logos/Wick Editor.png" alt="Wick Editor Icon">Wick Editor</a></li>
-      <li> <a href="https://warthunder.com/" class="booklink" data-title="War Thunder is a 2013 free-to-play vehicular combat multiplayer video game produced by Gaijin Entertainment for Microsoft Windows, macOS, Linux, PlayStation 4, Xbox One, PlayStation 5, Xbox Series X/S, Oculus, and Vive."><img src="../../images/logos/War Thunder.png" alt="War Thunder Icon">War Thunder</a></li>
-      <li> <a href="https://warsow.net/download" class="booklink" data-title="Set in a futuristic cartoonish world, Warsow is a completely free fast-paced first-person shooter (FPS) for Windows, Linux and macOS."><img src="../../images/logos/War Sow.png" alt="War Sow Icon">War Sow</a></li>
-      <li> <a href="https://www.warcraftlogs.com/client/download" class="booklink" data-title="A Web site that provides combat analysis for Blizzard's World of Warcraft MMO."><img src="../../images/logos/Warcraft Logs.png" alt="Warcraft Logs Icon">Warcraft Logs</a></li>
-      <li> <a href="https://wago.io/app" class="booklink" data-title="Database of sharable World of Warcraft addon elements."><img src="../../images/logos/wago.io.png" alt="wago.io Icon">wago.io</a></li>
-      <li> <a href="https://mixxx.org/download" class="booklink" data-title="Free and open source DJ software for Windows, macOS, and Linux."><img src="../../images/logos/Mixxx.png" alt="Mixxx Icon">Mixxx</a></li>
-      <li> <a href="https://melonds.kuribo64.net/downloads.php" class="booklink" data-title="melonDS aims at providing fast and accurate Nintendo DS emulation."><img src="../../images/logos/melonDS.png" alt="melonDS Icon">melonDS</a></li>
-      <li> <a href="https://tetr.io/about/desktop/" class="booklink" data-title="Puzzle together in this modern yet familiar online stacker. "><img src="../../images/logos/Tetr.io.png" alt="Tetr.io Icon">Tetr.io</a></li>
-      <li> <a href="https://garudalinux.org/" class="booklink" data-title="Garuda Linux is an opinionated Linux distribution based on Arch Linux."><img src="../../images/logos/Garuda Linux.png" alt="Garuda Linux Icon">Garuda Linux</a></li>
-      <li> <a href="https://www.gitkraken.com/download" class="booklink" data-title="GitKraken AI works for you to seamlessly orchestrate your workflows."><img src="../../images/logos/GitKraken.png" alt="GitKraken Icon">GitKraken</a></li>
-      <li> <a href="https://grayjay.app/desktop/" class="booklink" data-title="Grayjay enables you to create and watch video content in your own terms, fully retaining ownership and having control over what you watch. Your content on your terms."><img src="../../images/logos/Grayjay.png" alt="Grayjay Icon">Grayjay</a></li>
-      <li> <a href="https://polychromatic.app/download/" class="booklink" data-title="Polychromatic is a frontend for OpenRazer that enables Razer devices to control lighting effects and more on GNU/Linux."><img src="../../images/logos/polychromatic.png" alt="polychromatic Icon">polychromatic</a></li>
-      <li> <a href="https://tabby.sh/" class="booklink" data-title="Tabby is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections."><img src="../../images/logos/Tabby.png" alt="Tabby Icon">Tabby</a></li>
-      <li> <a href="https://www.star-made.org/download" class="booklink" data-title="StarMade is a voxel-based 3D sandbox space shooter."><img src="../../images/logos/StarMade.png" alt="StarMade Icon">StarMade</a></li>
-      <li> <a href="https://brave.com/download/" class="booklink" data-title="Brave Web Browser"><img src="../../images/logos/Brave.png" alt="Brave Icon">Brave</a></li>
-      <li> <a href="https://keys.band/" class="booklink" data-title="This extension allows you to sign Nostr events on web-apps without having to give them your keys."><img src="../../images/logos/keys.band.png" alt="Keys.Band Icon">Keys.Band</a></li>
-      <li> <a href="https://go.yondar.me/" class="booklink" data-title="Yondar (go.yondar.me) is a browser-based decentralized XR/metaverse platform for sharing locations, places, and friends using its “Cyberspace Meta-Protocol.”"><img src="../../images/logos/Yondar.png" alt="Yondar Icon">Yondar</a></li>
-      <li> <a href="https://ollama.com/download/linux" class="booklink lightmode" data-title="Ollama is a free, open-source tool that simplifies running powerful Large Language Models (LLMs) like Llama 3, Mistral, and Gemma directly on your local computer."><img src="../../images/logos/ollama.png" alt="Ollama Icon">Ollama</a></li>
-      <li> <a href="https://www.jetbrains.com/idea/download/?section=linux" class="booklink lightmode" data-title="An IDE for Professional Development in Java and Kotlin"><img src="../../images/logos/IntelliJ IDEA.png" alt="IntelliJ IDEA Icon">IntelliJ IDEA</a></li>
-      <li> <a href="https://mcsrranked.com/download" class="booklink" data-title="Race an opponent head-to-head in a Minecraft speedrun in separate worlds but on the same seed."><img src="../../images/logos/Minecraft Speedrunning ranked.png" alt="MCSR Ranked Icon">MCSR Ranked Minecraft Ranked Speedrunning</a></li>
-      <li> <a href="https://vivaldi.com/download/" class="booklink" data-title="Vivaldi is a Norwegian freeware, cross-platform web browser with a built-in email client developed by Vivaldi Technologies."><img src="../../images/logos/vivaldi.png" alt="Vivaldi Icon">Vivaldi</a></li>
-    </ul>
+    <ul class="main"  id="all"></ul>
     <p id="nothingfound" style="display: none; color: red; text-align: center; text-transform: uppercase;">Sorry, We Could Not Find Anything For Your Search Query At The Moment</p>
     <footer>
       <div class="row">
@@ -175,29 +82,30 @@
           <h3>About: <div class="underline"><span></span></div></h3>
           <p>This website is an ongoing passion project created by Bobjoerules who was addicted to DarkMode and was angry about darkmodelist.com's pay wall. This website is his first html site.</p>
         </div>
-        <div class="col"><h3>Important Links: <div class="underline"><span></span></div></h3><ul>
+        <div class="col">
+          <h3>Important Links: <div class="underline"><span></span></div></h3>
           <div class="social-icons">
             <a href="https://discord.gg/XCTwWafSj7"><img class="socials" src="../../images/discordlink.png" alt="Discord Icon" style="width:30px;height:30px;"></a>
             <a href="../../form/"><img class="socials" src="../../images/suggest.png" alt="Suggest Icon" style="width:30px;height:30px;"></a>
-            <!-- <a href="../../pages/status/" data-title="Status of Implementing"><img class="socials" src="../../images/status.png" alt="Status Icon" style="width:30px;height:30px;"></a> -->
-            <!-- <a href="../../pages/appicons/" data-title="IOS app icons for apps with none"><img class="socials" src="../../images/18.png" alt="ios 18 Icon" style="width:30px;height:30px;"></a> -->
             <a href="https://github.com/bobjoerules/DarkMode-Sites"><img class="socials" src="../../images/githubsmall.png" alt="Github Icon" style="width:30px;height:30px;"></a>
           </div>
-          </div>
-          <div class="col">
+        </div>
+        <div class="col">
           <h3>Other Websites/Projects: <div class="underline"><span></span></div></h3>
           <div class="social-icons">
-            <a href="https://bobjoerules.com/" data-title="Website"><img class="socials" src="../../images/Bobjoerules.png" alt="Creator's Website" style="width:30px;height:30px;"></a>
-            <a href="https://emoji.bobjoerules.com/" data-title="Emoji"><img class="socials" src="../../images/Smile Face.png" alt="Emoji Maker" style="width:30px;height:30px;"></a>
+            <a href="https://bobjoerules.com/" data-title="My About-Me Website"><img class="socials" src="../../images/Bobjoerules.png" alt="Creator's Website" style="width:30px;height:30px;"></a>
+            <a href="https://emoji.bobjoerules.com/" data-title="Emoji Maker"><img class="socials" src="../../images/Smile Face.png" alt="Emoji Maker" style="width:30px;height:30px;"></a>
             <a href="https://dailytracker.bobjoerules.com/" data-title="Track Tallies Daily"><img class="socials" src="../../images/dailytally.png" alt="Daily Tracker" style="width:30px;height:30px;"></a>
             <a href="https://amazonbrandblock.bobjoerules.com/" data-title="Block certain brands on Amazon search results especially Amazon's own brands"><img class="socials" src="../../images/amazon.png" alt="Amazon Brand Block" style="width:23px;height:23px;"></a>
             <a href="https://appicons.bobjoerules.com/" data-title="MacOS 26 Tahoe App Icons for websites & apps that haven't been updated." style="margin-left: 7px;"><img class="socials" src="../../images/Apple.png" alt="MacOS 26 Tahoe App Icons" style="width:23px;height:23px;"></a>
             <a href="https://cookieclicker.bobjoerules.com/" data-title="Click cookies, build your empire! A modern recreation of the classic Cookie Clicker game." style="margin-left: 7px;"><img class="socials" src="../../images/cookie.png" alt="Cookie Clicker" style="width:23px;height:23px;"></a>
           </div>
-          <hr><p class="copyright">Bobjoerules © <span id="year"></span> - All Rights Reserved</p>
         </div>
       </div>
+      <hr>
+      <p class="copyright">Bobjoerules © <span id="year"></span> - All Rights Reserved</p>
     </footer>
+    <script src="../../js/sites.js"></script>
     <script src="../../js/script.js"></script>
   </body>
 </html>

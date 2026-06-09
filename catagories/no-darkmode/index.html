@@ -23,6 +23,30 @@
       <button id="confirm-redirect">Continue</button>
       <button id="cancel-redirect">Cancel</button>
     </div>
+    <!-- Site Details Popup -->
+    <div id="site-popup-overlay">
+      <div id="site-popup">
+        <span class="popup-close" onclick="closeSitePopup()">&times;</span>
+        
+        <div class="popup-hero">
+          <img id="popup-hero-img" class="popup-hero-img" src="" alt="">
+          <div class="popup-hero-gradient"></div>
+          <div class="popup-hero-content">
+            <img id="popup-logo" class="popup-logo" src="" alt="">
+            
+          </div>
+        </div>
+
+        <div class="popup-body">
+          <p id="popup-description" class="popup-description"></p>
+          <div id="popup-links" class="popup-links-grid"></div>
+        </div>
+      </div>
+    </div>
+    
+        </div>
+      </div>
+    </div>
     <!--<div id="settings"><div id="popup2"><button id="activateTooltips">Tooltips Off</button></div><span id="sb">⚙️ Settings</span></div>-->
     <div id="popup" class="popup" onclick="closePopup()" style="top: 30px;"><div id="popupcontent"></div></div>  
     <a style="color:white; font-family:verdana;" href="../../" data-title="Home" class="home" id="homeimage"><img src="../../images/DarkMode Sites.png" alt="DarkMode-sheet-logo" width="192" height="108"></a>
@@ -42,9 +66,7 @@
       <a href="../../catagories/Android" class="website" data-title="Only show Android apps"><img class= "rotate" src="../../images/icons/android.png" alt="Android Image" style="width:30px;height:30px;"></a> 
       <a href="../../catagories/extensions/" class="website" data-title="Only show Browser Extensions"><img class="rotate" src="../../images/icons/extensions.png" alt="Puzzle Image" style="width:30px;height:30px;"></a> 
       <br><br>
-      <!--<a href="../../catagories/no-darkmode/" class="website" data-title="Show applications and websites that don't currently have DarkMode"><img class="rotate" src="../../images/icons/nodarkmode.png" alt="No DarkMode Image" style="width:30px;height:30px;"></a> -->
       <a href="../../catagories/profile-websites/" class="website" data-title="Profile websites that aren't really have any other purpose"><img class="rotate" src="../../images/icons/aboutmewebsites.png" alt="User Image" style="width:30px;height:30px;"></a>
-      <!-- <a href="../../catagories/pay-for-darkmode/" class="website" data-title="Websites/Apps to not use because you have to pay to use DarkMode"><img class="rotate" src="../../images/icons/pay.png" alt="Paid Image" style="width:30px;height:30px;"></a> -->
       <a href="../../catagories/open-source/" class="website" data-title="Websites/Apps that are Open Source"><img class="rotate" src="../../images/icons/opensource.png" alt="Open Source Image" style="width:30px;height:30px;"></a>   
       <a href="../../catagories/Wiki/" class="website" data-title="Wiki Pages"><img class="rotate" src="../../images/icons/Wiki.png" alt="Wiki Image" style="width:30px;height:30px;"></a>
     </p>
@@ -53,31 +75,7 @@
     <noscript>Sorry, your browser does not support JavaScript or you have it turned off! You are unable to search</noscript>
     <!--  <h2 style="text-align:center;" id="fao">IOS Apps With DarkMode</h2> -->
     <h1 style="text-align: center;">No DarkMode At All</h1>
-    <ul class="main"  id="all">
-      <li> <a href="https://shop.app/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/shop-app.png" alt="Shop.app Icon" style="width:150px;height:30px;">Shop.app</a></li>
-      <li> <a href="https://www.amazon.com/Amazon-Photos/b?ie=UTF8&node=13234696011" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/amazonphotos.png" alt="Amazon Photos Icon" style="width:150px;height:30px;">Amazon Photos</a></li>
-      <li> <a href="https://beliapp.com/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/beli.png" alt="Beli Icon" style="width:150px;height:30px;">Beli</a></li>
-      <li> <a href="https://edupoint.com/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/studentview.png" alt="Student View Icon" style="width:150px;height:30px;">Student View</a></li>
-      <li> <a href="https://web.archive.org/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/internetarchive.png" alt="Internet Archive Icon" style="width:150px;height:30px;">Internet Archive</a></li>
-      <li> <a href="https://www.xfinity.com/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/xfinity.png" alt="Xfinity Icon" style="width:150px;height:30px;">Xfinity</a></li>
-      <li> <a href="https://www.redcrossblood.org/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/redcross.png" alt="Red Cross Icon" style="width:150px;height:30px;">American Red Cross Blood Donor</a></li>
-      <li> <a href="https://www.king.com/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/candycrush_king.png" alt="Candy Crush/King Icon" style="width:150px;height:30px;">King Candy Crush</a></li>
-      <li> <a href="https://www.hilton.com/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/hilton.png" alt="Hilton Icon" style="width:150px;height:30px;">Hilton Honors</a></li>
-      <li> <a href="https://www.delta.com/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/Delta.png" alt="Delta Icon" style="width:150px;height:30px;">Delta Fly Delta</a></li>
-      <li> <a href="https://www.firsttechfed.com/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/first tech.png" alt="first Tech Icon" style="width:150px;height:30px;">First Tech Credit Union</a></li>
-      <li> <a href="https://www.commonapp.org/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/commonapp.png" alt="Common App Icon" style="width:150px;height:30px;">Common App</a></li>
-      <li> <a href="https://www.clover.com/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/clover.png" alt="Clover Icon" style="width:150px;height:30px;">Clover</a></li>
-      <li> <a href="https://business.facebook.com/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/Meta Business suite.png" alt="Meta Business Suite Icon" style="width:150px;height:30px;">Meta Business Suite</a></li>
-      <li> <a href="https://tcgpocket.pokemon.com/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/pokemon tccp.png" alt="Pokémon Trading Card Game Pocket Icon" style="width:150px;height:30px;">Pokémon Trading Card Game Pocket</a></li>
-      <li> <a href="https://www.nytimes.com/games/" class="booklink lightmode" data-title="Phone app nor website has darkmode"><img src="../../images/logos/nytgames.png" alt="New York Times Games Icon" style="width:150px;height:30px;">New York Times Games</a></li>
-      <li> <a href="https://scratch.mit.edu/" class="booklink lightmode" data-title="App nor website has darkmode"><img src="../../images/logos/scratch.png" alt="Scratch Icon" style="width:150px;height:30px;">Scratch Mit</a></li>
-      <li> <a href="https://grammarly.com/" class="booklink lightmode" data-title="Website, mac app, and browser extension doesn't have darkmode"><img src="../../images/logos/Grammarly.png" alt="Grammarly Icon" style="width:150px;height:30px;">Grammarly</a></li>
-      <li> <a href="https://getindie.wiki/" class="booklink lightmode" data-title="Website and browser extension doesn't have darkmode"><img src="../../images/logos/Indie Wiki Buddy.png" alt="Indie Wiki Buddy Icon" style="width:150px;height:30px;">Indie Wiki Buddy</a></li>
-      <li> <a href="https://www.cdc.gov/" class="booklink lightmode" data-title="Website and browser extension doesn't have darkmode"><img src="../../images/logos/cdc.png" alt="CDC Icon" style="width:150px;height:30px;">CDC</a></li>
-      <li> <a href="https://www.whatsapp.com/" class="booklink lightmode" data-title="WhatsApp is a free app that lets you send messages, photos, videos, and more to other people around the world."><img src="../../images/logos/Whatsapp.png" alt="WhatsApp Icon" style="width:150px;height:30px;">WhatsApp</a></li>
-      <li> <a href="https://privatebin.info/" class="booklink lightmode" data-title="PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data."><img src="../../images/logos/PrivateBin.png" alt="PrivateBin Icon" style="width:150px;height:30px;">PrivateBin</a></li>
-      <li> <a href="https://familiasi.gumroad.com/l/dockey" class="booklink lightmode" data-title="Make your macOS Dock faster."><img src="../../images/logos/Dockey.png" alt="Dockey Icon">Dockey</a></li>
-    </ul>
+    <ul class="main"  id="all"></ul>
     <hr>
     <h1 style="text-align: center;">No DarkMode On Website</h1>
     <ul class="main"  id="all">
@@ -106,28 +104,29 @@
           <h3>About: <div class="underline"><span></span></div></h3>
           <p>This website is an ongoing passion project created by Bobjoerules who was addicted to DarkMode and was angry about darkmodelist.com's pay wall. This website is his first html site.</p>
         </div>
-        <div class="col"><h3>Important Links: <div class="underline"><span></span></div></h3><ul>
+        <div class="col">
+          <h3>Important Links: <div class="underline"><span></span></div></h3>
           <div class="social-icons">
             <a href="https://discord.gg/XCTwWafSj7"><img class="socials" src="../../images/discordlink.png" alt="Discord Icon" style="width:30px;height:30px;"></a>
             <a href="../../form/"><img class="socials" src="../../images/suggest.png" alt="Suggest Icon" style="width:30px;height:30px;"></a>
-            <!-- <a href="../../pages/status/" data-title="Status of Implementing"><img class="socials" src="../../images/status.png" alt="Status Icon" style="width:30px;height:30px;"></a> -->
-            <!-- <a href="../../pages/appicons/" data-title="IOS app icons for apps with none"><img class="socials" src="../../images/18.png" alt="ios 18 Icon" style="width:30px;height:30px;"></a> -->
             <a href="https://github.com/bobjoerules/DarkMode-Sites"><img class="socials" src="../../images/githubsmall.png" alt="Github Icon" style="width:30px;height:30px;"></a>
           </div>
-          </div>
-          <div class="col">
+        </div>
+        <div class="col">
           <h3>Other Websites/Projects: <div class="underline"><span></span></div></h3>
           <div class="social-icons">
-            <a href="https://bobjoerules.com/" data-title="Website"><img class="socials" src="../../images/Bobjoerules.png" alt="Creator's Website" style="width:30px;height:30px;"></a>
-            <a href="https://emoji.bobjoerules.com/" data-title="Emoji"><img class="socials" src="../../images/Smile Face.png" alt="Emoji Maker" style="width:30px;height:30px;"></a>
+            <a href="https://bobjoerules.com/" data-title="My About-Me Website"><img class="socials" src="../../images/Bobjoerules.png" alt="Creator's Website" style="width:30px;height:30px;"></a>
+            <a href="https://emoji.bobjoerules.com/" data-title="Emoji Maker"><img class="socials" src="../../images/Smile Face.png" alt="Emoji Maker" style="width:30px;height:30px;"></a>
             <a href="https://dailytracker.bobjoerules.com/" data-title="Track Tallies Daily"><img class="socials" src="../../images/dailytally.png" alt="Daily Tracker" style="width:30px;height:30px;"></a>
             <a href="https://amazonbrandblock.bobjoerules.com/" data-title="Block certain brands on Amazon search results especially Amazon's own brands"><img class="socials" src="../../images/amazon.png" alt="Amazon Brand Block" style="width:23px;height:23px;"></a>
             <a href="https://appicons.bobjoerules.com/" data-title="MacOS 26 Tahoe App Icons for websites & apps that haven't been updated." style="margin-left: 7px;"><img class="socials" src="../../images/Apple.png" alt="MacOS 26 Tahoe App Icons" style="width:23px;height:23px;"></a>
             <a href="https://cookieclicker.bobjoerules.com/" data-title="Click cookies, build your empire! A modern recreation of the classic Cookie Clicker game." style="margin-left: 7px;"><img class="socials" src="../../images/cookie.png" alt="Cookie Clicker" style="width:23px;height:23px;"></a>
           </div>
-          <hr><p class="copyright">Bobjoerules © <span id="year"></span> - All Rights Reserved</p>
         </div>
       </div>
+      <hr>
+      <p class="copyright">Bobjoerules © <span id="year"></span> - All Rights Reserved</p>
     </footer>
+    <script src="../../js/sites.js"></script>
     <script src="../../js/script.js"></script>
 </html>

@@ -1,252 +1,459 @@
+let allSites = [];
 let targetUrl = '';
-document.querySelectorAll('.lightmode').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    targetUrl = this.href;
-    document.getElementById('redirect-modal').style.display = 'block';
-  });
+
+let basePath = '';
+if (window.location.pathname.includes('/catagories/')) {
+    basePath = '../../';
+} else if (window.location.pathname.includes('/form/')) {
+    basePath = '../';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateYear();
+    setupContextMenu();
+    setupExternalLinks();
+    setupTooltips();
+    setupRedirectModal();
+
+    if (typeof SITES_DATA !== 'undefined') { allSites = SITES_DATA; renderSites(); } else { console.error('SITES_DATA not found'); }
 });
-if ((window.location.pathname === '/DarkMode-sheet/') || (window.location.pathname === '/') || (window.location.pathname === '/DarkMode-sheet/catagories/Windows/') || (window.location.pathname === '/catagories/Windows/') || (window.location.pathname === '/DarkMode-sheet/catagories/MacOS/') || (window.location.pathname === '/catagories/MacOS/') || (window.location.pathname === '/DarkMode-sheet/catagories/no-darkmode/') || (window.location.pathname === '/catagories/no-darkmode/') || (window.location.pathname === '/DarkMode-sheet/catagories/pay-for-darkmode/') || (window.location.pathname === '/catagories/pay-for-darkmode/') || (window.location.pathname === '/DarkMode-sheet/catagories/open-source/') || (window.location.pathname === '/catagories/open-source/')){
-  document.getElementById('confirm-redirect').addEventListener('click', function() {
-    window.open(targetUrl, '_blank', 'noopener,noreferrer');
-    document.getElementById('redirect-modal').style.display = 'none';
-  });
 
-  document.getElementById('cancel-redirect').addEventListener('click', function() {
-    document.getElementById('redirect-modal').style.display = 'none';
-  });
+function updateYear() {
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
 }
-window.onload = function() {
-  document.getElementById("year").textContent = new Date().getFullYear();
-  if (!(window.location.pathname === '/DarkMode-sheet/catagories/extensions/')){
-    var ul, li, a, i;
-    ul = document.getElementById("all");
-    li = Array.from(ul.getElementsByTagName('li'));
-    /* li.sort(function(a, b) {
-      var textA = a.getElementsByTagName("a")[0].textContent || a.getElementsByTagName("a")[0].innerText;
-      var textB = b.getElementsByTagName("a")[0].textContent || b.getElementsByTagName("a")[0].innerText;
-      return textA.localeCompare(textB);
-    }); */
 
-    li.sort(function() {
-      return Math.random() - 0.5;
-    });
 
-    ul.innerHTML = "";
-    li.forEach(function(item) {
-      ul.appendChild(item);
-    });
-  }else{
-    var ul = document.getElementById("all");
-    var li = Array.from(ul.getElementsByTagName('li'));
-    /* li.sort(function(a, b) {
-        var textA = a.querySelector(".dropdown > .dropbtn").textContent.trim();
-        var textB = b.querySelector(".dropdown > .dropbtn").textContent.trim();
-        return textA.localeCompare(textB);
-    }); */
-
-    li.sort(function() {
-      return Math.random() - 0.5;
-    });
-
-    ul.innerHTML = "";
-    li.forEach(function(item) {
-      ul.appendChild(item);
-    });    
-  }
-  var popup = document.getElementById("popupcontent");
-  if ((window.location.pathname === '/DarkMode-sheet/') || (window.location.pathname === '/DarkMode-sheet/catagories/no-darkmode/') || (window.location.pathname === '/DarkMode-sheet/catagories/open-source/') || (window.location.pathname === '/') || (window.location.pathname === '/catagories/no-darkmode/') || (window.location.pathname === '/catagories/open-source/')){
-    popup.innerHTML += li.length + ' Websites/Apps'
-  }else if ((window.location.pathname === 'DarkMode-sheet/catagories/extensions/') || (window.location.pathname === '/catagories/extensions/')){
-    popup.innerHTML += li.length + ' Extensions'
-  }else if ((window.location.pathname === '/DarkMode-sheet/catagories/websites/') || (window.location.pathname === '/catagories/websites/')){
-    popup.innerHTML += li.length + ' Websites'
-  }else if ((window.location.pathname === '/DarkMode-sheet/catagories/profile-websites/') || (window.location.pathname === '/catagories/profile-websites/')){
-    popup.innerHTML += li.length + ' About-Me Websites/Pages'
-  }else if ((window.location.pathname === '/DarkMode-sheet/catagories/Wiki/') || (window.location.pathname === '/catagories/Wiki/')){
-    popup.innerHTML += li.length + ' Websites/Pages'
-  }else if ((window.location.pathname === '/DarkMode-sheet/catagories/pay-for-darkmode/') || (window.location.pathname === '/catagories/pay-for-darkmode/')){
-    popup.innerHTML += li.length + ' App'
-  }else{
-    popup.innerHTML += li.length + ' Apps'
-  }
+function getCategory() {
+    const path = window.location.pathname;
+    if (path.includes('/catagories/Android')) return 'android';
+    if (path.includes('/catagories/IOS')) return 'ios';
+    if (path.includes('/catagories/Windows')) return 'windows';
+    if (path.includes('/catagories/MacOS')) return 'macos';
+    if (path.includes('/catagories/Linux')) return 'linux';
+    if (path.includes('/catagories/Wiki')) return 'wiki';
+    if (path.includes('/catagories/extensions')) return 'extensions';
+    if (path.includes('/catagories/no-darkmode')) return 'no-darkmode';
+    if (path.includes('/catagories/open-source')) return 'open-source';
+    if (path.includes('/catagories/pay-for-darkmode')) return 'pay-for-darkmode';
+    if (path.includes('/catagories/profile-websites')) return 'profile-websites';
+    if (path.includes('/catagories/websites')) return 'websites';
+    return 'home';
 }
+
+function renderSites() {
+    const ul = document.getElementById("all");
+    if (!ul) return;
+
+    const category = getCategory();
+    let filtered = allSites.filter(site => {
+        switch (category.toLowerCase()) {
+            case 'home': return site.on_home;
+            case 'android': return site.categories['Android'];
+            case 'ios': return site.categories['IOS'];
+            case 'windows': return site.categories['Windows'];
+            case 'macos': return site.categories['MacOS'];
+            case 'linux': return site.categories['Linux'];
+            case 'wiki': return site.categories['Wiki'];
+            case 'extensions': return site.categories['extensions'];
+            case 'no-darkmode': return site.categories['no-darkmode'];
+            case 'open-source': return site.categories['open-source'];
+            case 'pay-for-darkmode': return site.categories['pay-for-darkmode'];
+            case 'profile-websites': return site.categories['profile-websites'];
+            case 'websites': return site.categories['websites'];
+            default: return site.categories[category];
+        }
+    });
+
+    filtered.sort(() => Math.random() - 0.5);
+
+    ul.innerHTML = '';
+    filtered.forEach(site => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#';
+        a.className = 'booklink';
+        a.innerHTML = `<img src="${basePath}${site.logo}" alt="${site.name} Icon">${site.name}`;
+        a.addEventListener('click', (e) => { e.preventDefault(); openSitePopup(site); });
+        li.appendChild(a);
+        ul.appendChild(li);
+    });
+
+    const popup = document.getElementById("popupcontent");
+    if (popup) {
+        let label = ' Apps';
+        if (['home', 'no-darkmode', 'open-source'].includes(category)) label = ' Websites/Apps';
+        else if (category === 'extensions') label = ' Extensions';
+        else if (category === 'websites') label = ' Websites';
+        else if (category === 'profile-websites') label = ' About-Me Websites/Pages';
+        else if (category === 'wiki') label = ' Websites/Pages';
+        else if (category === 'pay-for-darkmode') label = ' App';
+        popup.innerHTML = filtered.length + label;
+    }
+}
+
+function renderStandardItem(site, category) {
+    let url = site.links[category] || site.links.website || '#';
+    if (category === 'home' || category === 'websites') url = site.links.website || url;
+
+    const isSpecialCategory = ['no-darkmode', 'pay-for-darkmode'].includes(category);
+    const lightmodeClass = (site.flags.lightmode && !isSpecialCategory) ? 'lightmode' : '';
+
+    const logoPath = basePath + site.logo;
+
+    return `
+        <a href="${url}" class="booklink ${lightmodeClass}" data-title="${site.description}">
+            <img src="${logoPath}" alt="${site.name} Icon">
+            ${site.name}
+        </a>
+    `;
+}
+
+function renderExtensionItem(site) {
+    const logoPath = basePath + site.logo;
+    const dropdownLinks = [];
+
+    const types = [
+        { key: 'website', label: 'Website', icon: 'website.png' },
+        { key: 'github', label: 'GitHub', icon: 'github.png' },
+        { key: 'ios', label: 'IOS', icon: 'ios.png' },
+        { key: 'android', label: 'Android', icon: 'android.png' },
+        { key: 'chrome', label: 'Chrome', icon: 'chrome.png' },
+        { key: 'firefox', label: 'Firefox', icon: 'firefox.png' },
+        { key: 'edge', label: 'Edge', icon: 'edge.png' },
+        { key: 'safari', label: 'Safari', icon: 'safari.png' },
+        { key: 'opera', label: 'Opera', icon: 'opera.png' },
+        { key: 'wikipedia', label: 'Wikipedia', icon: 'wikipedia.png' }
+    ];
+
+    types.forEach(t => {
+        if (site.links[t.key]) {
+            dropdownLinks.push(`<a href="${site.links[t.key]}"><img src="${basePath}images/icons/${t.icon}" alt="${t.label} Image" style="width:16px;height:16px; vertical-align: middle;"> ${t.label}</a>`);
+        }
+    });
+
+    return `
+        <div class="dropdown">
+            <button class="dropbtn booklink">
+                ${site.name}
+                <img src="${logoPath}" alt="${site.name} Icon" data-title="${site.description}">
+            </button>
+            <div class="dropdown-content">
+                ${dropdownLinks.join('')}
+            </div>
+        </div>
+    `;
+}
+
 
 function searchSite() {
-  var input, filter, ul, li, button, a, i, number, txtValue;
-  input = document.getElementById('searchapp');
-  filter = input.value.toUpperCase();
-  number = 0
-  ul1 = document.getElementById("all");
-  li1 = ul1.getElementsByTagName('li');
-  if (!(window.location.pathname === '/catagories/extensions/')){
-    for (i = 0; i < li1.length; i++) {
-      a = li1[i].getElementsByTagName("a")[0];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().startsWith(filter) || txtValue.toUpperCase().includes(" " + filter)) {
-        li1[i].style.display = "";
-        number = 1;
-      } else {
-        li1[i].style.display = "none";
-      }
+    const input = document.getElementById('searchapp');
+    if (!input) return;
+
+    const filter = input.value.toUpperCase();
+    let foundCount = 0;
+    const ul = document.getElementById("all");
+    const liItems = ul.getElementsByTagName('li');
+
+    for (let i = 0; i < liItems.length; i++) {
+        let text = '';
+        const a = liItems[i].getElementsByTagName("a")[0];
+        const btn = liItems[i].getElementsByTagName("button")[0];
+
+        if (a) text = a.textContent || a.innerText;
+        else if (btn) text = btn.textContent || btn.innerText;
+
+        if (text.toUpperCase().startsWith(filter) || text.toUpperCase().includes(" " + filter)) {
+            liItems[i].style.display = "";
+            foundCount++;
+        } else {
+            liItems[i].style.display = "none";
+        }
     }
-  }else{
-    for (i = 0; i < li1.length; i++) {
-      a = li1[i].getElementsByTagName("button")[0];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().startsWith(filter) || txtValue.toUpperCase().includes(" " + filter)) {
-        li1[i].style.display = "";
-        number = 1;
-      } else {
-        li1[i].style.display = "none";
-      }
+
+    const nothingFound = document.getElementById('nothingfound');
+    if (nothingFound) {
+        nothingFound.style.display = foundCount === 0 ? "" : "none";
     }
-  }
-  if (number === 0) {
-    document.getElementById('nothingfound').style.display = "";
-  } else {
-    document.getElementById('nothingfound').style.display = "none";
-  }
 }
-const allElements = document.querySelectorAll('*');
-allElements.forEach(element => {
-  element.draggable = false;
-});
-function delay(milliseconds){
-  return new Promise(resolve => {
-    setTimeout(resolve, milliseconds);
-  });
+
+function setupContextMenu() {
+    const image = document.getElementById('homeimage');
+    const menu = document.getElementById('homemenu');
+    const downloadBtn = document.getElementById('downloadImage');
+
+    if (image && menu) {
+        image.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            menu.style.left = '20px';
+            menu.style.top = '100px';
+            menu.style.display = 'block';
+        });
+
+        document.addEventListener('click', () => {
+            menu.style.display = 'none';
+        });
+    }
+
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.href = `${basePath}images/DarkMode Sites.png`;
+            link.download = 'DarkMode Sites.png';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    }
 }
-/* var is_OSX = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
-var is_iOS = /(iPhone|iPod|iPad)/i.test(navigator.platform);
 
-var is_Mac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-var is_windows = navigator.platform.indexOf('Win') >=0
-var is_iPhone = navigator.platform == "iPhone";
-var is_iPod = navigator.platform == "iPod";
-var is_iPad = navigator.platform == "iPad";
-var is_Android = navigator.platform == "Android";
-
-var mac = document.getElementById('mac');
-var windows = document.getElementById('windows');
-var iphone = document.getElementById('iphone');
-var android = document.getElementById('android');
-var phone = document.getElementById('phone');*/
-
-/* if (!is_OSX) type.innerHTML += "This NOT a Mac or an iOS Device!";
-if (is_Mac) type.innerHTML += "This is a Mac Computer!\n";
-if (is_iOS) type.innerHTML += "You're using an iOS Device!\n";
-if (is_iPhone) type.innerHTML += "This is an iPhone!";
-if (is_iPod) type.innerHTML += "This is an iPod Touch!";
-if (is_iPad) type.innerHTML += "This is an iPad!";*/
-
-/*try
-{
-  if (!is_iPhone && !is_windows && !is_Android) windows.innerHTML += "Your computer is Not A Windows Computer so some of these programs might not work with DarkMode on your device";
-  if (!is_iPhone && !is_Mac && !is_Android) mac.innerHTML += "Your computer is Not A Mac Computer so some of these programs might not work with DarkMode on your device";
-  if (!is_iPhone && !is_Mac && !is_windows) iphone.innerHTML += "Your Phone is Not An iPhone so some of these programs might not work with DarkMode on your device";
-  if (!is_Android && !is_Mac && !is_windows) android.innerHTML += "Your Phone/Tablet is Not An Android so some of these programs might not work with DarkMode on your device";
-  if (is_iPhone || is_Android ) phone.innerHTML += "Your Phone's browser most likely won't be able to run extensions";
+function setupExternalLinks() {
+    document.querySelectorAll('a[href]').forEach(link => {
+        const isExternal = link.hostname && link.hostname !== window.location.hostname;
+        if (isExternal) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        }
+    });
 }
-catch(e)
-{
-}*/
+
+function setupTooltips() {
+    const toggleButton = document.querySelector("#activateTooltips");
+    if (!toggleButton) return;
+
+    let tooltipsActive = false;
+    let listeners = [];
+
+    toggleButton.addEventListener("click", () => {
+        const elements = document.querySelectorAll("[data-title]");
+
+        if (!tooltipsActive) {
+            elements.forEach(el => {
+                const enterHandler = (e) => {
+                    const tooltip = document.createElement("div");
+                    tooltip.textContent = el.getAttribute("data-title");
+                    tooltip.className = "dynamic-tooltip";
+                    tooltip.style.position = "absolute";
+                    tooltip.style.background = "rgba(0,0,0,0.5)";
+                    tooltip.style.color = "white";
+                    tooltip.style.fontFamily = "verdana";
+                    tooltip.style.padding = "4px 8px";
+                    tooltip.style.borderRadius = "10px";
+                    tooltip.style.pointerEvents = "none";
+                    tooltip.style.maxWidth = "400px";
+                    tooltip.style.textAlign = "center";
+                    tooltip.style.zIndex = "9999";
+                    document.body.appendChild(tooltip);
+
+                    const moveTooltip = (e) => {
+                        tooltip.style.left = e.pageX + 10 + "px";
+                        tooltip.style.top = e.pageY + 10 + "px";
+                    };
+
+                    el.addEventListener("mousemove", moveTooltip);
+                    el.addEventListener("mouseleave", () => {
+                        tooltip.remove();
+                        el.removeEventListener("mousemove", moveTooltip);
+                    }, { once: true });
+
+                    moveTooltip(e);
+                };
+
+                el.addEventListener("mouseenter", enterHandler);
+                listeners.push({ el, enterHandler });
+            });
+
+            tooltipsActive = true;
+            toggleButton.textContent = "Tooltips On";
+        } else {
+            listeners.forEach(({ el, enterHandler }) => {
+                el.removeEventListener("mouseenter", enterHandler);
+            });
+            listeners = [];
+            tooltipsActive = false;
+            toggleButton.textContent = "Tooltips Off";
+        }
+    });
+}
+
 function closePopup() {
-  document.getElementById('popup').style.display = 'none';
-  if ((window.location.pathname === '/DarkMode-sheet/') || (window.location.pathname === '/')) {
-    document.getElementById('popup2').style.display = 'none';
-  }
+    const popup = document.getElementById('popup');
+    if (popup) popup.style.display = 'none';
+    const popup2 = document.getElementById('popup2');
+    if (popup2 && (window.location.pathname === '/DarkMode-sheet/' || window.location.pathname === '/')) {
+        popup2.style.display = 'none';
+    }
 }
 
+function isLinkTypeLightmode(site, type) {
+    if (!site || !site.lightmode_categories) return false;
 
-const image = document.getElementById('homeimage');
-const menu = document.getElementById('homemenu');
-const downloadBtn = document.getElementById('downloadImage');
+    const lightmodeCats = Object.keys(site.lightmode_categories).map(k => k.toLowerCase());
+    const typeLower = type.toLowerCase();
 
-image.addEventListener('contextmenu', function (e) {
-  e.preventDefault();
-  showMenu(e.pageX, e.pageY);
-});
+    let checkKeys = [];
+    if (typeLower === 'website') {
+        checkKeys = ['home', 'websites'];
+    } else if (['chrome', 'firefox', 'edge', 'safari', 'opera', 'brave'].includes(typeLower)) {
+        checkKeys = ['extensions'];
+    } else if (['wiki', 'wikipedia'].includes(typeLower)) {
+        checkKeys = ['wiki'];
+    } else {
+        checkKeys = [typeLower];
+    }
 
-function showMenu(x, y) {
-  menu.style.left = '20px';
-  menu.style.top = '100px';
-  menu.style.display = 'block';
+    return checkKeys.some(key => lightmodeCats.includes(key));
 }
 
-document.addEventListener('click', () => {
-  menu.style.display = 'none';
-});
-
-function downloadFile(filePath, fileName) {
-  const link = document.createElement('a');
-  link.href = filePath;
-  link.download = fileName || filePath.split('/').pop();
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+function isDarkReaderActive() {
+    const hasStyleTags = !!document.querySelector('style.darkreader');
+    const hasHtmlAttribute = document.documentElement.hasAttribute('data-darkreader-mode') ||
+        document.documentElement.hasAttribute('data-darkreader-scheme');
+    return hasStyleTags || hasHtmlAttribute;
 }
 
-downloadBtn.addEventListener('click', () => {
-  downloadFile('/images/DarkMode Sites.png');
-});
+function shouldShowLightmodeStyles() {
+    if (!window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return false;
+    }
+    if (isDarkReaderActive()) {
+        return false;
+    }
+    return true;
+}
 
-document.querySelectorAll('a[href]').forEach(link => {
-  const isExternal = link.hostname !== window.location.hostname;
-  if (isExternal) {
-    link.setAttribute('target', '_blank');
-    link.setAttribute('rel', 'noopener noreferrer');
-  }
-});
+function shouldShowLightmodePopup() {
+    if (!shouldShowLightmodeStyles()) {
+        return false;
+    }
+    if (document.cookie.split('; ').some(row => row.startsWith('hideRedirectWarning=true'))) {
+        return false;
+    }
+    return true;
+}
 
-const toggleButton = document.querySelector("#activateTooltips");
-let tooltipsActive = false;
-let listeners = [];
+function setupRedirectModal() {
+    const confirmBtn = document.getElementById('confirm-redirect');
+    const cancelBtn = document.getElementById('cancel-redirect');
+    const modal = document.getElementById('redirect-modal');
 
-toggleButton.addEventListener("click", () => {
-  const elements = document.querySelectorAll("[data-title]");
+    if (confirmBtn && modal) {
+        confirmBtn.addEventListener('click', () => {
+            if (targetUrl) {
+                window.open(targetUrl, '_blank', 'noopener,noreferrer');
+            }
+            modal.style.display = 'none';
+        });
+    }
 
-  if (!tooltipsActive) {
-    elements.forEach(el => {
-      const enterHandler = () => {
-        const tooltip = document.createElement("div");
-        tooltip.textContent = el.getAttribute("data-title");
-        tooltip.style.position = "absolute";
-        tooltip.style.background = "rgba(0,0,0,0.5)";
-        tooltip.style.color = "white";
-        tooltip.style.fontFamily = "verdana";
-        tooltip.style.padding = "4px 8px";
-        tooltip.style.borderRadius = "10px";
-        tooltip.style.pointerEvents = "none";
-        tooltip.style.maxWidth = "400px";
-        tooltip.style.textAlign = "center";
-        tooltip.style.zIndex = "9999";
-        document.body.appendChild(tooltip);
+    if (cancelBtn && modal) {
+        cancelBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    }
 
-        function moveTooltip(e) {
-          tooltip.style.left = e.pageX + 10 + "px";
-          tooltip.style.top = e.pageY + 10 + "px";
+    if (modal && !document.getElementById('never-show-redirect')) {
+        const neverBtn = document.createElement('button');
+        neverBtn.id = 'never-show-redirect';
+        neverBtn.textContent = "Don't Show Again";
+        modal.appendChild(neverBtn);
+
+        neverBtn.addEventListener('click', () => {
+            document.cookie = "hideRedirectWarning=true; max-age=31536000; path=/";
+            if (targetUrl) {
+                window.open(targetUrl, '_blank', 'noopener,noreferrer');
+            }
+            modal.style.display = 'none';
+        });
+    }
+}
+
+function openSitePopup(site) {
+    const overlay = document.getElementById('site-popup-overlay');
+    const heroContainer = document.getElementById('site-popup').querySelector('.popup-hero');
+    const logo = document.getElementById('popup-logo');
+    const heroImg = document.getElementById('popup-hero-img');
+    const desc = document.getElementById('popup-description');
+    const linksGrid = document.getElementById('popup-links');
+
+    const fullLogoPath = basePath + site.logo;
+    logo.src = fullLogoPath;
+    desc.textContent = site.description || "No description available.";
+
+    if (site.preview || site.thumbnail) {
+        heroImg.src = basePath + (site.preview || site.thumbnail);
+        heroImg.style.filter = 'none';
+        heroContainer.classList.remove('no-hero');
+    } else {
+        heroImg.src = fullLogoPath;
+        heroImg.style.filter = 'blur(40px) brightness(0.5)';
+        heroContainer.classList.add('no-hero');
+    }
+
+    linksGrid.innerHTML = '';
+    const iconMap = {
+        website: 'website.png', android: 'android.png', ios: 'ios.png',
+        windows: 'windows.png', macos: 'mac.png', mac: 'mac.png', linux: 'linux.png',
+        chrome: 'chrome.png', firefox: 'firefox.png', edge: 'edge.png',
+        safari: 'safari.png', opera: 'opera.png', brave: 'brave.png',
+        wiki: 'Wiki.png', wikipedia: 'wikipedia.png', github: 'github.png',
+        'naver whale': 'narver whale.png', 'other browsers': 'extensions.png'
+    };
+
+    const entries = Object.entries(site.links);
+    const lastKeys = ['website', 'github', 'wiki', 'wikipedia'];
+    const appLinks = entries.filter(([key]) => !lastKeys.includes(key));
+    const webLinks = [];
+    lastKeys.forEach(k => {
+        const found = entries.find(([key]) => key === k);
+        if (found) webLinks.push(found);
+    });
+    const sortedEntries = [...appLinks, ...webLinks];
+
+    sortedEntries.forEach(([type, url]) => {
+        if (!url || url === '#') return;
+        const linkItem = document.createElement('a');
+        linkItem.href = url;
+        linkItem.target = '_blank';
+        linkItem.className = 'popup-link-item';
+
+        const isLightmode = isLinkTypeLightmode(site, type);
+        if (isLightmode) {
+            if (shouldShowLightmodeStyles()) {
+                linkItem.classList.add('link-lightmode');
+            }
+            linkItem.addEventListener('click', (e) => {
+                if (shouldShowLightmodePopup()) {
+                    e.preventDefault();
+                    targetUrl = url;
+                    const modal = document.getElementById('redirect-modal');
+                    if (modal) {
+                        modal.style.display = 'block';
+                    }
+                }
+            });
         }
 
-        el.addEventListener("mousemove", moveTooltip);
-        el.addEventListener("mouseleave", () => {
-          tooltip.remove();
-          el.removeEventListener("mousemove", moveTooltip);
-        }, { once: true });
-      };
+        const iconName = iconMap[type] || 'website.png';
+        const iconPath = `${basePath}images/icons/${iconName}`;
+        linkItem.innerHTML = `<img src="${iconPath}" class="popup-link-icon" alt="${type}"><span class="popup-link-text">${type}</span>`;
 
-      el.addEventListener("mouseenter", enterHandler);
-      listeners.push({ el, enterHandler });
+        linksGrid.appendChild(linkItem);
     });
 
-    tooltipsActive = true;
-    toggleButton.textContent = "Tooltips On";
-  } else {
-    listeners.forEach(({ el, enterHandler }) => {
-      el.removeEventListener("mouseenter", enterHandler);
-    });
-    listeners = [];
-    tooltipsActive = false;
-    toggleButton.textContent = "Tooltips Off";
-  }
+    overlay.classList.add('active');
+}
+
+function closeSitePopup() {
+    const overlay = document.getElementById('site-popup-overlay');
+    if (overlay) overlay.classList.remove('active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.getElementById('site-popup-overlay');
+    if (overlay) {
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) closeSitePopup();
+        });
+    }
 });

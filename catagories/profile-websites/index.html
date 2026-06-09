@@ -18,6 +18,35 @@
     </style>
   </head>
   <body>
+    <div id="redirect-modal" style="display:none;">
+      <p>The homepage/website you are about to open does not have DarkMode on by default or at all, would you like to still continue?</p>
+      <button id="confirm-redirect">Continue</button>
+      <button id="cancel-redirect">Cancel</button>
+    </div>
+    <!-- Site Details Popup -->
+    <div id="site-popup-overlay">
+      <div id="site-popup">
+        <span class="popup-close" onclick="closeSitePopup()">&times;</span>
+        
+        <div class="popup-hero">
+          <img id="popup-hero-img" class="popup-hero-img" src="" alt="">
+          <div class="popup-hero-gradient"></div>
+          <div class="popup-hero-content">
+            <img id="popup-logo" class="popup-logo" src="" alt="">
+            
+          </div>
+        </div>
+
+        <div class="popup-body">
+          <p id="popup-description" class="popup-description"></p>
+          <div id="popup-links" class="popup-links-grid"></div>
+        </div>
+      </div>
+    </div>
+    
+        </div>
+      </div>
+    </div>
     <!--<div id="settings"><div id="popup2"><button id="activateTooltips">Tooltips Off</button></div><span id="sb">⚙️ Settings</span></div>-->
     <div id="popup" class="popup" onclick="closePopup()" style="top: 30px;"><div id="popupcontent"></div></div>  
     <a style="color:white; font-family:verdana;" href="../../" data-title="Home" class="home" id="homeimage"><img src="../../images/DarkMode Sites.png" alt="DarkMode-sheet-logo" width="192" height="108"></a>
@@ -32,169 +61,20 @@
       <a href="../../catagories/websites" class="website" data-title="Only show websites"><img class="rotate" src="../../images/icons/website.png" alt="Web Image" style="width:30px;height:30px;"></a> 
       <a href="../../catagories/Windows" class="website" data-title="Only show Windows apps"><img class= "rotate" src="../../images/icons/windows.png" alt="Windows Image" style="width:30px;height:30px;"></a> 
       <a href="../../catagories/MacOS" class="website" data-title="Only show Mac apps"><img class= "rotate" src="../../images/icons/mac.png" alt="Mac Image" style="width:30px;height:30px;"></a> 
+      <a href="../../catagories/Linux/" class="website" data-title="Only show Linux apps"><img class= "rotate" src="../../images/icons/linux.png" alt="Linux Image" style="width:30px;height:30px;"></a> 
       <a href="../../catagories/IOS" class="website" data-title="Only show IOS apps"><img class= "rotate" src="../../images/icons/ios.png" alt="IOS Image" style="width:30px;height:30px;"></a> 
-      <a href="../../catagories/Android" class="website" data-title="Only show Android apps"><img class= "rotate" src="../../images/icons/android.png" alt="Android Image" style="width:30px;height:30px;"></a>
+      <a href="../../catagories/Android" class="website" data-title="Only show Android apps"><img class= "rotate" src="../../images/icons/android.png" alt="Android Image" style="width:30px;height:30px;"></a> 
       <a href="../../catagories/extensions/" class="website" data-title="Only show Browser Extensions"><img class="rotate" src="../../images/icons/extensions.png" alt="Puzzle Image" style="width:30px;height:30px;"></a> 
       <br><br>
-      <!--<a href="../../catagories/no-darkmode/" class="website" data-title="Show applications and websites that don't currently have DarkMode"><img class="rotate" src="../../images/icons/nodarkmode.png" alt="No DarkMode Image" style="width:30px;height:30px;"></a> -->
       <a href="../../catagories/profile-websites/" class="website" data-title="Profile websites that aren't really have any other purpose"><img class="rotate" src="../../images/icons/aboutmewebsites.png" alt="User Image" style="width:30px;height:30px;"></a>
-      <!-- <a href="../../catagories/pay-for-darkmode/" class="website" data-title="Websites/Apps to not use because you have to pay to use DarkMode"><img class="rotate" src="../../images/icons/pay.png" alt="Paid Image" style="width:30px;height:30px;"></a> -->
       <a href="../../catagories/open-source/" class="website" data-title="Websites/Apps that are Open Source"><img class="rotate" src="../../images/icons/opensource.png" alt="Open Source Image" style="width:30px;height:30px;"></a>   
       <a href="../../catagories/Wiki/" class="website" data-title="Wiki Pages"><img class="rotate" src="../../images/icons/Wiki.png" alt="Wiki Image" style="width:30px;height:30px;"></a>
     </p>
-    <p style="color:grey; font-family:verdana; text-align: center;" id="websites"></p>
+    
     <input type="text" id="searchapp" onkeyup="searchSite()" placeholder="Search for Someone...">
     <noscript>Sorry, your browser does not support JavaScript or you have it turned off! You are unable to search</noscript>
     <!-- <h2 style="text-align:center;" id="fao">Websites with DarkMode</h2> -->
-    <ul class="main"  id="all">
-      <li> <a href="https://bobjoerules.com/" class="booklink" data-title="Bobjoerules about-me site"><img src="../../images/logos/bobjoerulesws.png" alt="Bobjoerules Icon">bobjoerules</a></li>
-      <li> <a href="https://1nf.me/" class="booklink" data-title="1nf/evwltrs site"><img src="../../images/logos/1nf.png" alt="1nf">1nf evwltrs</a></li>
-      <li> <a href="https://aagaming.me/" class="booklink" data-title="Aagaming about-me site"><img src="../../images/logos/aagaming.png" alt="aa gaming Icon">aa gaming</a></li> 
-      <li> <a href="https://abhiyan.me/" class="booklink" data-title="About-me site for Abhiyan Dhakal"><img src="../../images/logos/Abhiyan Dhakal.png" alt="Abhiyan Dhakal">Abhiyan Dhakal</a></li>
-      <li> <a href="https://absolucy.moe/" class="booklink" data-title="Absolucy about-me site"><img src="../../images/logos/absolucy.png" alt="">Absolucy</a></li>
-      <li> <a href="https://adridoesthings.com/" class="booklink" data-title="AdriDoesThings about-me site"><img src="../../images/logos/adridoesthings.png" alt="Adridoesthings">AdriDoesThings</a></li>
-      <li> <a href="https://ajay.app/" class="booklink" data-title="Ajay Ramachandran about-me site"><img src="../../images/logos/Ajay Ramachandran.png" alt="Ajay Ramachandran">Ajay Ramachandran</a></li>
-      <li> <a href="https://www.aliciasykes.com/" class="booklink" data-title="Alicia Sykes about-me site"><img src="../../images/logos/Alicia Sykes.png" alt="Alicia Sykes">Alicia Sykes</a></li>
-      <li> <a href="https://ashishpanigrahi.com/" class="booklink" data-title="Ashish Panigrahi about-me site"><img src="../../images/logos/Ashish Panigrahi.png" alt="">Ashish Panigrahi</a></li>
-      <li> <a href="https://alecks.dev/" class="booklink" data-title="Alecks about-me site"><img src="../../images/logos/Alecks.png" alt="Alecks">Alecks</a></li>
-      <li> <a href="https://www.andrewleguay.com/" class="booklink" data-title="Andrew Leguay about-me site"><img src="../../images/logos/Andrew Leguay.png" alt="Andrew Leguay">Andrew Leguay</a></li>
-      <li> <a href="https://drewj.la/" class="booklink" data-title="Andrew Larson about-me site"><img src="../../images/logos/Andrew Larson.png" alt="Andrew Larson">Andrew Larson</a></li>
-      <li> <a href="https://www.andrewthedev.com/" class="booklink" data-title="Andrew Jones about-me site"><img src="../../images/logos/Andrew Jones.png" alt="Andrew Jones">Andrew Jones</a></li>
-      <li> <a href="https://www.accursedfarms.com/" class="booklink" data-title="Ross Scott's YouTube site"><img src="../../images/logos/accursed farms.png" alt="Accursed Farms">Accursed Farms Ross Scott</a></li>
-      <li> <a href="https://was.tl/" class="booklink" data-title="Eric Wastl about-me site"><img src="../../images/logos/Eric Wastl.png" alt="Eric Wastl">Eric Wastl</a></li>
-      <li> <a href="https://shrirangkahale.com/" class="booklink" data-title="Shrirang Kahale about-me site"><img src="../../images/logos/Shrirang Kahale.png" alt="Shrirang Kahale">Shrirang Kahale</a></li>
-      <li> <a href="https://www.alfawal.dev/" class="booklink" data-title="Abdulrahman Alfawal about-me site"><img src="../../images/logos/Alfawal.png" alt="Abdulrahman Alfawal">Abdulrahman Alfawal</a></li>
-      <li> <a href="https://anishde.dev/" class="booklink" data-title="Anish De about-me site"><img src="../../images/logos/anish de.png" alt="Anish De">Anish De</a></li>
-      <li> <a href="https://ashcam.xyz/" class="booklink" data-title="AshCam about-me site"><img src="../../images/logos/AshCam.png" alt="AshCam">AshCam</a></li>
-      <li> <a href="https://ardov.me/" class="booklink" data-title="Alexey Ardov about-me site"><img src="../../images/logos/Alexey Ardov.png" alt="Alexey Ardov">Alexey Ardov</a></li>
-      <li> <a href="https://ari.lt/" class="booklink" data-title="Ari Archer about-me site"><img src="../../images/logos/Ari Archer.png" alt="Ari Archer">Ari Archer</a></li>
-      <li> <a href="https://arialfx.com/" class="booklink" data-title="Arialfx about-me site"><img src="../../images/logos/arialfx.png" alt="arialfx">arialfx</a></li>
-      <li> <a href="https://av9.dev/" class="booklink" data-title="AnnikaV9 about-me site"><img src="../../images/logos/AnnikaV9.png" alt="AnnikaV9">AnnikaV9</a></li>
-      <li> <a href="https://daksh.eu.org/" class="booklink" data-title="Daksh P. Jain about-me site"><img src="../../images/logos/Daksh P. Jain.png" alt="Daksh P. Jain">Daksh P. Jain</a></li>
-      <li> <a href="https://catvibers.me/" class="booklink" data-title="DanKGooGLy about-me site"><img src="../../images/logos/DanKGooGLy.png" alt="DanKGooGLy">Catvibers DanKGooGLy Vapourium</a></li>
-      <li> <a href="https://cadence.moe/" class="booklink" data-title="Cadence about-me site"><img src="../../images/logos/Cadence.png" alt="Cadence">Cadence</a></li>
-      <li> <a href="https://www.bsodium.fr/" class="booklink" data-title="Elliot Négrek-Jerzy about-me site"><img src="../../images/logos/elliotnegrekjerzy.png" alt="Elliot Négrel-Jerzy">Elliot Négrel-Jerzy</a></li>
-      <li> <a href="https://bherila.net/" class="booklink" data-title="Ben Herila about-me site"><img src="../../images/logos/Ben Herila.png" alt="Ben Herila">Ben Herila</a></li>
-      <li> <a href="https://brianpmaher.com/" class="booklink" data-title="Brian Maher about-me site"><img src="../../images/logos/Brian Maher.png" alt="Brian Maher">Brian Maher</a></li>
-      <li> <a href="https://brianlovin.com/" class="booklink" data-title="Brian Lovin about-me site"><img src="../../images/logos/Brian Lovin.png" alt="Brian Lovin">Brian Lovin</a></li>
-      <li> <a href="https://briantakita.me/" class="booklink" data-title="Brian Takita about-me site"><img src="../../images/logos/Brian Takita.png" alt="Brian Takita">Brian Takita</a></li>
-      <li> <a href="https://mwittrien.github.io/" class="booklink" data-title="DevilBro about-me site"><img src="../../images/logos/DevilBro.png" alt="Devil Bro">Devil Bro</a></li>
-      <li> <a href="https://www.seyi.dev/" class="booklink" data-title="Seyi about-me site"><img src="../../images/logos/seyi.png" alt="seyi">seyi</a></li>
-      <li> <a href="https://migueldemoura.com/" class="booklink" data-title="Miguel de Moura about-me site"><img src="../../images/logos/Miguel de Moura.png" alt="Miguel de Moura">Miguel de Moura</a></li>
-      <li> <a href="https://www.omiod.com/" class="booklink" data-title="Andrea Doimo about-me site"><img src="../../images/logos/Andrea Doimo.png" alt="Andrea Doimo">Andrea Doimo</a></li>
-      <li> <a href="https://bryce.co/" class="booklink" data-title="Bryce Bostwick about-me site"><img src="../../images/logos/Bryce Bostwick.png" alt="Bryce Bostwick">Bryce Bostwick</a></li>
-      <li> <a href="https://danidev.net/" class="booklink" data-title="Dani about-me site"><img src="../../images/logos/dani.png" alt="Daniel">Daniel</a></li>
-      <li> <a href="https://blog.ja-ke.tech/" class="booklink" data-title="Jakeler about-me site"><img src="../../images/logos/Jakeler.png" alt="Jakeler">Jakeler</a></li>
-      <li> <a href="https://brodierobertson.xyz/" class="booklink" data-title="Brodie Robertson about-me site"><img src="../../images/logos/Brodie Robertson.png" alt="Brodie Robertson">Brodie Robertson</a></li>
-      <li> <a href="https://www.isxander.dev/" class="booklink" data-title="Xander about-me site"><img src="../../images/logos/Xander.png" alt="Xander">Xander</a></li>
-      <li> <a href="https://tommytran.io/" class="booklink" data-title="Tommy Tran about-me site"><img src="../../images/logos/Tommy Tran.png" alt="Tommy Tran">Tommy Tran</a></li>
-      <li> <a href="https://jonahsnider.com/" class="booklink" data-title="Jonah Snider about-me site"><img src="../../images/logos/Jonah Snider.png" alt="Jonah Snider">Jonah Snider</a></li>
-      <li> <a href="https://blgn.dev/" class="booklink" data-title="Baptiste Boulongne about-me site"><img src="../../images/logos/Baptiste Boulongne.png" alt="Baptiste Boulongne">Baptiste Boulongne</a></li>
-      <li> <a href="https://blueagle.top/" class="booklink" data-title="Blueagle about-me site"><img src="../../images/logos/Blueeagle.png" alt="Blueagle">Blueagle</a></li>
-      <li> <a href="https://bocchilorenzo.github.io/" class="booklink" data-title="Lorenzo Bocchi about-me site"><img src="../../images/logos/Lorenzo Bocchi.png" alt="Lorenzo Bocchi">Lorenzo Bocchi</a></li>
-      <li> <a href="https://bondoer.fr/" class="booklink" data-title="Pierre Bondoerffer about-me site"><img src="../../images/logos/Pierre Bondoerffer.png" alt="Pierre Bondoerffer">Pierre Bondoerffer</a></li>
-      <li> <a href="https://bri.io/" class="booklink" data-title="Brian Seymour about-me site"><img src="../../images/logos/brian seymour.png" alt="Brian Seymour">Brian Seymour</a></li>
-      <li> <a href="https://c-saccoccio.fr/" class="booklink" data-title="Clément Saccoccio about-me site"><img src="../../images/logos/clementsaccoccio.png" alt="Clément Saccoccio">Clément Saccoccio</a></li>
-      <li> <a href="https://www.cjratliff.com/" class="booklink" data-title="Cj Ratliff about-me site"><img src="../../images/logos/Cj Ratliff.png" alt="Cj Ratliff">Cj Ratliff</a></li>
-      <li> <a href="https://brunotome.dev/" class="booklink" data-title="Bruno Tomé about-me site"><img src="../../images/logos/Bruno Tomé.png" alt="Bruno Tomé">Bruno Tomé</a></li>
-      <li> <a href="https://cookieplmonster.github.io/" class="booklink" data-title="CookiePLMonster about-me site"><img src="../../images/logos/CookiePLMonster.png" alt="">CookiePLMonster</a></li>
-      <li> <a href="https://snazzah.com/" class="booklink" data-title="Snazzah about-me site"><img src="../../images/logos/snazzah.png" alt="Snazzah">Snazzah</a></li>
-      <li> <a href="https://cuibonobo.com/" class="booklink" data-title="Cuibonobo about-me site"><img src="../../images/logos/cuibonobo.png" alt="cuibonobo">cuibonobo</a></li>
-      <li> <a href="https://zyrenth.dev/" class="booklink" data-title="Zyrenth about-me site"><img src="../../images/logos/zyrenth.png" alt="zyrenth">zyrenth</a></li>
-      <li> <a href="https://zerator.com/" class="booklink" data-title="Zerator about-me site"><img src="../../images/logos/Zerator.png" alt="zerator">zerator</a></li>
-      <li> <a href="https://cti.monster/" class="booklink" data-title="0x6rss about-me site"><img src="../../images/logos/0x6rss.png" alt="0x6rss">0x6rss</a></li>
-      <li> <a href="https://max.codes/" class="booklink" data-title="Max Langer about-me site"><img src="../../images/logos/Max Langer.png" alt="Max Langer">Max Langer</a></li>
-      <li> <a href="https://wiktrek.xyz/" class="booklink" data-title="Wiktrek about-me site"><img src="../../images/logos/wiktrek.png" alt="wiktrek">wiktrek</a></li>
-      <li> <a href="https://mkbhd.com/" class="booklink" data-title="MKBHD about-me site"><img src="../../images/logos/MKBHD.png" alt="MKBHD">MKBHD</a></li>
-      <li> <a href="https://daringfireball.net/" class="booklink" data-title="A technology-focused blog and podcast platform created and solely maintained by John Gruber."><img src="../../images/logos/Daring Fireball.png" alt="Daring Fireball">Darling fireball</a></li>
-      <li> <a href="https://www.denims.tv/" class="booklink" data-title="Denims about-me site"><img src="../../images/logos/Denims.png" alt="Denims">Denims</a></li>
-      <li> <a href="https://www.destiny.gg/" class="booklink" data-title="Destiny about-me site"><img src="../../images/logos/Destiny.png" alt="Destiny">Destiny Steven Bonnell II</a></li>
-      <li> <a href="https://devanbuggay.com/" class="booklink" data-title="Devan about-me site"><img src="../../images/logos/Devan.png" alt="Devan">Devan</a></li>
-      <li> <a href="https://www.digi77.com/" class="booklink" data-title="Warith AL Maawali about-me site"><img src="../../images/logos/Warith AL Maawali.png" alt="Warith AL Maawali">Warith AL Maawali</a></li>
-      <li> <a href="https://distro.tube/" class="booklink" data-title="DistroTube about-me site"><img src="../../images/logos/DistroTube.png" alt="DistroTube">DistroTube Derek Taylor</a></li>
-      <li> <a href="https://ecys.xyz/" class="booklink" data-title="Ecys about-me site"><img src="../../images/logos/Ecys.png" alt="Ecys">Ecys</a></li>
-      <li> <a href="https://jacobdoescode.com/" class="booklink" data-title="Jacob Parker about-me site"><img src="../../images/logos/Jacob does code.png" alt="Jacob Parker">Jacob Parker</a></li>
-      <li> <a href="https://elybeatmaker.com/" class="booklink" data-title="Elybeatmaker about-me site"><img src="../../images/logos/Elybeatmaker.png" alt="Elybeatmaker">Elybeatmaker</a></li>
-      <li> <a href="https://framp.me/" class="booklink" data-title="Framp about-me site"><img src="../../images/logos/Framp.png" alt="Framp" style="width: 150px; height: 30px;">Framp Federico Rampazzo</a></li>
-      <li> <a href="https://forumplayer.dev/" class="booklink" data-title="ForumPlayer about-me site"><img src="../../images/logos/ForumPlayer.png" alt="ForumPlayer Icon">ForumPlayer</a></li>
-      <li> <a href="https://forsen.horse/" class="booklink" data-title="Games Created by Twitch Streamer Forsle"><img src="../../images/logos/FORSLE.png" alt="Forsle Icon">Forsle</a></li>
-      <li> <a href="https://fluxpoint.dev/" class="booklink" data-title="Fluxpoint Development about-me site"><img src="../../images/logos/Fluxpoint Development.png" alt="Fluxpoint Development Icon">Fluxpoint Development</a></li>
-      <li> <a href="https://fleepy.tv/" class="booklink" data-title="Fleepy about-me site"><img src="../../images/logos/Fleepy.png" alt="Fleepy Icon">Fleepy</a></li>
-      <li> <a href="https://imxnoobx.com/" class="booklink" data-title="IMXNOOBX about-me site"><img src="../../images/logos/IMXNOOBX.png" alt="IMXNOOBX Icon">IMXNOOBX</a></li>
-      <li> <a href="https://ifkash.vercel.app/" class="booklink" data-title="Kashiful Haque about-me site"><img src="../../images/logos/Kashiful Haque.png" alt="Kashiful Haque Icon">Kashiful Haque</a></li>
-      <li> <a href="https://iipython.dev/" class="booklink" data-title="Benjamin O'Brian about-me site"><img src="../../images/logos/Benjamin obrian.png" alt="Benjamin O'Brian Icon">Benjamin O'Brian</a></li>
-      <li> <a href="https://otzdarva.com/" class="booklink" data-title="Otzdarva about-me site"><img src="../../images/logos/Otzdarva.png" alt="Otzdarva Icon">Otzdarva</a></li>
-      <li> <a href="https://osumatrix.me/" class="booklink" data-title="oSumAtrIX about-me site"><img src="../../images/logos/osumatrix.png" alt="oSumAtrIX Icon">oSumAtrIX</a></li>
-      <li> <a href="https://www.razeenf.ca/" class="booklink" data-title="Razeen Faruque about-me site"><img src="../../images/logos/Razeen Faruque.png" alt="Razeen Faruque Icon">Razeen Faruque</a></li>
-      <li> <a href="https://www.raunaksitoula.com/" class="booklink" data-title="Raunak Sitoula about-me site"><img src="../../images/logos/Raunak Sitoula.png" alt="Raunak Sitoula Icon">Raunak Sitoula</a></li>
-      <li> <a href="https://gabecatalfo.com/" class="booklink" data-title="Gabriel Catalfo about-me site"><img src="../../images/logos/Gabriel Catalfo.png" alt="Gabriel Catalfo Icon">Gabriel Catalfo</a></li>
-      <li> <a href="https://josephchataignon.github.io/" class="booklink" data-title="Joseph CHATAIGNON about-me site"><img src="../../images/logos/Joseph CHATAIGNON.png" alt="Joseph CHATAIGNON Icon">Joseph CHATAIGNON</a></li>
-      <li> <a href="https://www.jhey.dev/" class="booklink" data-title="Jhey Tompkins about-me site"><img src="../../images/logos/Jhey Tompkins.png" alt="Jhey Tompkins Icon">Jhey Tompkins</a></li>
-      <li> <a href="https://www.jeusto.com/" class="booklink" data-title="Jeusto about-me site"><img src="../../images/logos/Jeusto.png" alt="Jeusto Icon">Jeusto</a></li>
-      <li> <a href="https://jakobneumann.com/" class="booklink" data-title="Jakob Neumann about-me site"><img src="../../images/logos/Jakob Neumann.png" alt="Jakob Neumann Icon">Jakob Neumann</a></li>
-      <li> <a href="https://jakeroman.com/" class="booklink" data-title="JAKE ROMAN about-me site"><img src="../../images/logos/JAKE ROMAN.png" alt="JAKE ROMAN Icon">JAKE ROMAN</a></li>
-      <li> <a href="https://kyleggiero.me/" class="booklink" data-title="kyleggiero about-me site"><img src="../../images/logos/kyleggiero.png" alt="kyleggiero Icon">kyleggiero</a></li>
-      <li> <a href="https://www.ksenon.net/" class="booklink" data-title="X3NO about-me site"><img src="../../images/logos/X3NO.png" alt="X3NO Icon">X3NO</a></li>
-      <li> <a href="https://korino.dev/" class="booklink" data-title="korino about-me site"><img src="../../images/logos/korino.png" alt="korino Icon">korino Ender</a></li>
-      <li> <a href="https://kulbachny.com/" class="booklink" data-title="Ilya Kulbachny about-me site"><img src="../../images/logos/Ilya kulbachny.png" alt="Ilya Kulbachny Icon">Ilya Kulbachny</a></li>
-      <li> <a href="https://ppy.sh/" class="booklink" data-title="ppy about-me site"><img src="../../images/logos/ppy.png" alt="ppy Icon">ppy</a></li>
-      <li> <a href="https://lukesmith.xyz/" class="booklink" data-title="Luke Smith about-me site"><img src="../../images/logos/Luke Smith.png" alt="Luke Smith Icon">Luke Smith</a></li>
-      <li> <a href="https://looskie.com/" class="booklink" data-title="Cody Miller about-me site"><img src="../../images/logos/Cody Miller.png" alt="Cody Miller Icon">Cody Miller</a></li>
-      <li> <a href="https://lollilol.xyz/" class="booklink" data-title="lollilol01 about-me site"><img src="../../images/logos/lollilol01.png" alt="lollilol01 Icon"></a></li>
-      <li> <a href="https://www.lemmi.no/" class="booklink" data-title="Lemmino about-me site"><img src="../../images/logos/lemmino.png" alt="Lemmino Icon">Lemmino</a></li>
-      <li> <a href="https://schlep.tv/" class="booklink" data-title="Schlep about-me site"><img src="../../images/logos/SCHLEP.TV.png" alt="Schlep Icon">Schlep.Tv</a></li>
-      <li> <a href="https://hectorlizard.me/" class="booklink" data-title="Hectorlizard about-me site"><img src="../../images/logos/Hectorlizard.png" alt="Hectorlizard Icon">Hectorlizard</a></li>
-      <li> <a href="https://burkybang.com/" class="booklink" data-title="Adam Smith about-me site"><img src="../../images/logos/Adam Smith.png" alt="Adam Smith Icon">Adam Smith</a></li>
-      <li> <a href="https://sandervanderburg.blogspot.com/" class="booklink" data-title="Sander van der Burg's blog"><img src="../../images/logos/Sander van der Burg.png" alt="Sander van der Burg's blog Text">Sander van der Burg's blog</a></li>
-      <li> <a href="https://sammcheese.net/" class="booklink" data-title="SammSammCheesecheese about-me site"><img src="../../images/logos/SammCheese.png" alt="SammCheese Icon">SammCheese</a></li>
-      <li> <a href="https://saliven.com/" class="booklink" data-title="Saliven about-me site"><img src="../../images/logos/Saliven.png" alt="Saliven Icon">Saliven</a></li>
-      <li> <a href="https://www.ruben-p.com/" class="booklink" data-title="Ruben Panzich about-me site"><img src="../../images/logos/Ruben Panzich.png" alt="Ruben Panzich Icon">Ruben Panzich</a></li>
-      <li> <a href="https://ritsuka.moe/" class="booklink" data-title="Kagurazaka. Ritsuka (晏雲杉) about-me site"><img src="../../images/logos/Kagurazaka Ritsuka.png" alt="Kagurazaka. Ritsuka (晏雲杉) Icon">Kagurazaka. Ritsuka (晏雲杉)</a></li>
-      <li> <a href="https://stirante.com/" class="booklink" data-title="Piotr Brzozowski about-me site"><img src="../../images/logos/Piotr Brzozowski.png" alt="Piotr Brzozowski Icon">Piotr Brzozowski</a></li>
-      <li> <a href="https://pandadev.net/" class="booklink" data-title="Pandadev about-me site"><img src="../../images/logos/Pandadev.png" alt="Pandadev Icon">Pandadev</a></li>
-      <li> <a href="https://nicholasjohnson.ch/" class="booklink" data-title="Nicholas Johnson about-me site"><img src="../../images/logos/nicholasjohnson.png" alt="Nicholas Johnson Icon">Nicholas Johnson</a></li>
-      <li> <a href="https://neurocore.xyz/" class="booklink" data-title="Neurocore about-me site"><img src="../../images/logos/Neurocore.png" alt="Neurocore Icon">Neurocore</a></li>
-      <li> <a href="https://nemanjadragun.com/" class="booklink" data-title="Nemanja Dragun about-me site"><img src="../../images/logos/Nemanja Dragun.png" alt="Nemanja Dragun Icon">Nemanja Dragun</a></li>
-      <li> <a href="https://nanobun.tv/" class="booklink" data-title="NanoBunTV about-me site"><img src="../../images/logos/NanoBunTV.png" alt="NanoBunTV Icon">NanoBunTV</a></li>
-      <li> <a href="https://n-o-d-e.net/" class="booklink" data-title="Node about-me site"><img src="../../images/logos/node.png" alt="Node Icon">Node</a></li>
-      <li> <a href="https://thiscute.world/" class="booklink" data-title="Ryan Yin about-me site"><img src="../../images/logos/Ryan Yin.png" alt="Ryan Yin Icon">Ryan Yin</a></li>
-      <li> <a href="https://hkamran.com/" class="booklink" data-title="H. Kamran about-me site"><img src="../../images/logos/H. Kamran.png" alt="H. Kamran Icon">H. Kamran</a></li>
-      <li> <a href="https://hiserod.github.io/" class="booklink" data-title="Immanuel Hise about-me site"><img src="../../images/logos/Immanuel Hise.png" alt="Immanuel Hise Icon">Immanuel Hise</a></li>
-      <li> <a href="https://hexiro.me/" class="booklink" data-title="Nathan Lodge about-me site"><img src="../../images/logos/Nathan Lodge.png" alt="Nathan Lodge Icon">Nathan Lodge</a></li>
-      <li> <a href="https://yarmo.eu/" class="booklink" data-title="Yarmo about-me site"><img src="../../images/logos/Yarmo.png" alt="Yarmo Icon">Yarmo</a></li>
-      <li> <a href="https://w0rp.com/" class="booklink" data-title="w0rp zone blog"><img src="../../images/logos/w0rp zone.png" alt="w0rp zone Icon">w0rp zone</a></li>
-      <li> <a href="https://mrquantumoff.dev/" class="booklink" data-title="Demir about-me site"><img src="../../images/logos/MrQuantumOFF.png" alt="MrQuantumOFF Icon">MrQuantumOFF</a></li>
-      <li> <a href="https://mnsr.win/" class="booklink" data-title="Dylan (MidnightSlicer) about-me site"><img src="../../images/logos/Dylan.png" alt="Dylan (MidnightSlicer) Icon">Dylan MidnightSlicer</a></li>
-      <li> <a href="https://mizik.eu/" class="booklink" data-title="Marián Mižik about-me site"><img src="../../images/logos/Marian Mizik.png" alt="Marián Mižik Icon">Marián Mižik</a></li>
-      <li> <a href="https://mit.gg/" class="booklink" data-title="Mitch Siegel about-me site"><img src="../../images/logos/Mitch Siegel.png" alt="Mitch Siegel Icon">Mitch Siegel</a></li>
-      <li> <a href="https://www.maximepinot.com/" class="booklink" data-title="Maxime Pinot about-me site"><img src="../../images/logos/Maxime Pinot.png" alt="Maxime Pinot Icon">Maxime Pinot</a></li>
-      <li> <a href="https://marvil.co/" class="booklink" data-title="marvil about-me site"><img src="../../images/logos/marvil.png" alt="marvil Icon">marvil</a></li>
-      <li> <a href="https://marte.dev/" class="booklink" data-title="Marte Montipo' about-me site"><img src="../../images/logos/Marte Montipo.png" alt="Marte Montipo' Icon">Marte Montipo'</a></li>
-      <li> <a href="https://mango.pdf.zone/" class="booklink" data-title="Alex about-me site"><img src="../../images/logos/mango.pdf.zone.png" alt="Alex Icon">Alex mango.pdf.zone</a></li>
-      <li> <a href="https://trblwlf.net/" class="booklink" data-title="Tarballwalf about-me site"><img src="../../images/logos/Tarballwalf.png" alt="Tarballwalf Icon">Tarballwalf</a></li>
-      <li> <a href="https://sylviefox.ca/" class="booklink" data-title="Sylvie about-me site"><img src="../../images/logos/sylvie fox.png" alt="Sylvie Fox Icon">Sylvie Fox</a></li>
-      <li> <a href="https://thelinuxcast.org/" class="booklink" data-title="The Linux Cast"><img src="../../images/logos/The Linux Cast.png" alt="The Linux Cast Icon">The Linux Cast</a></li>
-      <li> <a href="https://tube.kdy.ch/" class="booklink" data-title="tube.Kody site"><img src="../../images/logos/tube.Kody.png" alt="tube.Kody Icon">tube.Kody</a></li>
-      <li> <a href="https://gusted.xyz/" class="booklink" data-title="Gusted about-me site"><img src="../../images/logos/Gusted.png" alt="Gusted Icon">Gusted/a></li>
-      <li> <a href="https://gopiratesoftware.com/" class="booklink" data-title="Pirate Software about-me site"><img src="../../images/logos/Pirate Software.png" alt="Pirate Software Icon">Pirate Software</a></li>
-      <li> <a href="https://pxseu.com/" class="booklink" data-title="Kuba/pxseu about-me site"><img src="../../images/logos/pxseu.png" alt="Kuba/pxseu Icon">Kuba pxseu</a></li>
-      <li> <a href="https://ppluss.de/" class="booklink" data-title="Philipp about-me site"><img src="../../images/logos/Philipp.png" alt="Philipp Icon">Philipp</a></li>
-      <li> <a href="https://plasticuproject.com/" class="booklink" data-title="plasticuproject about-me site"><img src="../../images/logos/plasticuproject.png" alt="plasticuproject Icon">plasticuproject</a></li>
-      <li> <a href="https://peterlindbergh.obys.agency/" class="booklink" data-title="Peter Lindbergh about-me site"><img src="../../images/logos/peter lin.png" alt="Peter Lindbergh Icon">Peter Lindbergh</a></li>
-      <li> <a href="https://pedrorok.com/" class="booklink" data-title="Pedro Lucas about-me site"><img src="../../images/logos/Pedro Lucas.png" alt="Pedro Lucas Icon">Pedro Lucas</a></li>
-      <li> <a href="https://cerus.dev/" class="booklink" data-title="Maximilian Dorn about-me site"><img src="../../images/logos/Maximilian Dorn.png" alt="Maximilian Dorn Icon">Maximilian Dorn</a></li>
-      <li> <a href="https://www.randomairborne.dev/" class="booklink" data-title="valkyrie_pilot about-me site"><img src="../../images/logos/valkyrie_pilot.png" alt="valkyrie_pilot Icon">valkyrie_pilot</a></li>
-      <li> <a href="https://ewanhowell.com/" class="booklink" data-title="Ewan Howell about-me site"><img src="../../images/logos/Ewan Howell.png" alt="Ewan Howell Icon">Ewan Howell</a></li>
-      <li> <a href="https://supinic.com/" class="booklink" data-title="Supinic about-me site"><img src="../../images/logos/Supinic.png" alt="Supinic Icon">Supinic</a></li>
-      <li> <a href="https://stillu.cc/" class="booklink" data-title=" about-me site"><img src="../../images/logos/Just Still.png" alt="Just Still Icon">Just Still</a></li>
-      <li> <a href="https://sleeplessbeastie.eu/" class="booklink" data-title="sleeplessbeastie's blog"><img src="../../images/logos/sleeplessbeastie.png" alt="sleeplessbeastie Icon">sleeplessbeastie's notes</a></li>
-      <li> <a href="https://sive.rs/" class="booklink" data-title="Derek Sivers about-me site"><img src="../../images/logos/Derek Sivers.png" alt="Derek Sivers Icon">Derek Sivers</a></li>
-      <li> <a href="https://www.siddharthray.com/" class="booklink" data-title="siddharth.ray() about-me site"><img src="../../images/logos/siddharth.ray.png" alt="siddharth.ray() Icon">siddharth.ray()</a></li>
-      <li> <a href="https://www.shubhamprasad.dev/" class="booklink" data-title="shubham about-me site"><img src="../../images/logos/shubham.png" alt="shubham Icon">shubham</a></li>
-      <li> <a href="https://www.shrirambalaji.com/" class="booklink" data-title="Shriram Balaji about-me site"><img src="../../images/logos/Shriram Balaji.png" alt="Shriram Balaji Icon">Shriram Balaji</a></li>
-      <li> <a href="https://siderite.dev/" class="booklink" data-title="Siderite blog site"><img src="../../images/logos/Siderite.png" alt="Siderite Icon">Siderite</a></li>
-      <li> <a href="https://eliasruiz.com/" class="booklink" data-title="Elías about-me site"><img src="../../images/logos/Elias.png" alt="Elías Icon">Elías</a></li>
-    </ul>
+    <ul class="main"  id="all"></ul>
     <!-- 
     <li> <a href="" class="booklink" data-title=" about-me site"><img src="../../images/logos/" alt=" Icon"></a></li>
     -->
@@ -205,29 +85,30 @@
           <h3>About: <div class="underline"><span></span></div></h3>
           <p>This website is an ongoing passion project created by Bobjoerules who was addicted to DarkMode and was angry about darkmodelist.com's pay wall. This website is his first html site.</p>
         </div>
-        <div class="col"><h3>Important Links: <div class="underline"><span></span></div></h3><ul>
+        <div class="col">
+          <h3>Important Links: <div class="underline"><span></span></div></h3>
           <div class="social-icons">
             <a href="https://discord.gg/XCTwWafSj7"><img class="socials" src="../../images/discordlink.png" alt="Discord Icon" style="width:30px;height:30px;"></a>
             <a href="../../form/"><img class="socials" src="../../images/suggest.png" alt="Suggest Icon" style="width:30px;height:30px;"></a>
-            <!-- <a href="../../pages/status/" data-title="Status of Implementing"><img class="socials" src="../../images/status.png" alt="Status Icon" style="width:30px;height:30px;"></a> -->
-            <!-- <a href="../../pages/appicons/" data-title="IOS app icons for apps with none"><img class="socials" src="../../images/18.png" alt="ios 18 Icon" style="width:30px;height:30px;"></a> -->
             <a href="https://github.com/bobjoerules/DarkMode-Sites"><img class="socials" src="../../images/githubsmall.png" alt="Github Icon" style="width:30px;height:30px;"></a>
           </div>
-          </div>
-          <div class="col">
+        </div>
+        <div class="col">
           <h3>Other Websites/Projects: <div class="underline"><span></span></div></h3>
           <div class="social-icons">
-            <a href="https://bobjoerules.com/" data-title="Website"><img class="socials" src="../../images/Bobjoerules.png" alt="Creator's Website" style="width:30px;height:30px;"></a>
-            <a href="https://emoji.bobjoerules.com/" data-title="Emoji"><img class="socials" src="../../images/Smile Face.png" alt="Emoji Maker" style="width:30px;height:30px;"></a>
+            <a href="https://bobjoerules.com/" data-title="My About-Me Website"><img class="socials" src="../../images/Bobjoerules.png" alt="Creator's Website" style="width:30px;height:30px;"></a>
+            <a href="https://emoji.bobjoerules.com/" data-title="Emoji Maker"><img class="socials" src="../../images/Smile Face.png" alt="Emoji Maker" style="width:30px;height:30px;"></a>
             <a href="https://dailytracker.bobjoerules.com/" data-title="Track Tallies Daily"><img class="socials" src="../../images/dailytally.png" alt="Daily Tracker" style="width:30px;height:30px;"></a>
             <a href="https://amazonbrandblock.bobjoerules.com/" data-title="Block certain brands on Amazon search results especially Amazon's own brands"><img class="socials" src="../../images/amazon.png" alt="Amazon Brand Block" style="width:23px;height:23px;"></a>
             <a href="https://appicons.bobjoerules.com/" data-title="MacOS 26 Tahoe App Icons for websites & apps that haven't been updated." style="margin-left: 7px;"><img class="socials" src="../../images/Apple.png" alt="MacOS 26 Tahoe App Icons" style="width:23px;height:23px;"></a>
             <a href="https://cookieclicker.bobjoerules.com/" data-title="Click cookies, build your empire! A modern recreation of the classic Cookie Clicker game." style="margin-left: 7px;"><img class="socials" src="../../images/cookie.png" alt="Cookie Clicker" style="width:23px;height:23px;"></a>
           </div>
-          <hr><p class="copyright">Bobjoerules © <span id="year"></span> - All Rights Reserved</p>
         </div>
       </div>
+      <hr>
+      <p class="copyright">Bobjoerules © <span id="year"></span> - All Rights Reserved</p>
     </footer>
-  <script src="../../js/script.js"></script>
+  <script src="../../js/sites.js"></script>
+    <script src="../../js/script.js"></script>
   </body> 
 </html>

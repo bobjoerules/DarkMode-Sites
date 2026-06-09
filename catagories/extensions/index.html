@@ -23,6 +23,30 @@
       <button id="confirm-redirect">Continue</button>
       <button id="cancel-redirect">Cancel</button>
     </div>
+    <!-- Site Details Popup -->
+    <div id="site-popup-overlay">
+      <div id="site-popup">
+        <span class="popup-close" onclick="closeSitePopup()">&times;</span>
+        
+        <div class="popup-hero">
+          <img id="popup-hero-img" class="popup-hero-img" src="" alt="">
+          <div class="popup-hero-gradient"></div>
+          <div class="popup-hero-content">
+            <img id="popup-logo" class="popup-logo" src="" alt="">
+            
+          </div>
+        </div>
+
+        <div class="popup-body">
+          <p id="popup-description" class="popup-description"></p>
+          <div id="popup-links" class="popup-links-grid"></div>
+        </div>
+      </div>
+    </div>
+    
+        </div>
+      </div>
+    </div>
     <!--<div id="settings"><div id="popup2"><button id="activateTooltips">Tooltips Off</button></div><span id="sb">⚙️ Settings</span></div>-->
     <div id="popup" class="popup" onclick="closePopup()" style="top: 30px;"><div id="popupcontent"></div></div>  
     <a style="color:white; font-family:verdana;" href="../../" data-title="Home" class="home" id="homeimage"><img src="../../images/DarkMode Sites.png" alt="DarkMode-sheet-logo" width="192" height="108"></a>
@@ -42,579 +66,15 @@
       <a href="../../catagories/Android" class="website" data-title="Only show Android apps"><img class= "rotate" src="../../images/icons/android.png" alt="Android Image" style="width:30px;height:30px;"></a> 
       <a href="../../catagories/extensions/" class="website" data-title="Only show Browser Extensions"><img class="rotate" src="../../images/icons/extensions.png" alt="Puzzle Image" style="width:30px;height:30px;"></a> 
       <br><br>
-      <!--<a href="../../catagories/no-darkmode/" class="website" data-title="Show applications and websites that don't currently have DarkMode"><img class="rotate" src="../../images/icons/nodarkmode.png" alt="No DarkMode Image" style="width:30px;height:30px;"></a> -->
       <a href="../../catagories/profile-websites/" class="website" data-title="Profile websites that aren't really have any other purpose"><img class="rotate" src="../../images/icons/aboutmewebsites.png" alt="User Image" style="width:30px;height:30px;"></a>
-      <!-- <a href="../../catagories/pay-for-darkmode/" class="website" data-title="Websites/Apps to not use because you have to pay to use DarkMode"><img class="rotate" src="../../images/icons/pay.png" alt="Paid Image" style="width:30px;height:30px;"></a> -->
       <a href="../../catagories/open-source/" class="website" data-title="Websites/Apps that are Open Source"><img class="rotate" src="../../images/icons/opensource.png" alt="Open Source Image" style="width:30px;height:30px;"></a>   
       <a href="../../catagories/Wiki/" class="website" data-title="Wiki Pages"><img class="rotate" src="../../images/icons/Wiki.png" alt="Wiki Image" style="width:30px;height:30px;"></a>
     </p>
-    <p style="color:red; font-family:verdana; text-align: center;" id="phone"></p>
+    
     <input type="text" id="searchapp" onkeyup="searchSite()" placeholder="Search for a Browser Extension...">
     <noscript>Sorry, your browser does not support JavaScript or you have it turned off! You are unable to search</noscript>
    <!--  <h2 style="text-align:center;" id="fao">Browser Extensions with DarkMode</h2> -->
-    <ul class="main"  id="all">
-      <li>
-        <div class="dropdown">
-        <button class="dropbtn booklink">
-          AdBlock
-          <img src="../../images/logos/Adblock.png" alt="Adblock Icon" data-title="The Adblock extension blocks intrusive advertisements on websites, providing users with a cleaner and faster browsing experience by eliminating distractions and protecting privacy.">
-        </button>
-        <div class="dropdown-content">
-          <a href="https://getadblock.com/en/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-          <a href="https://apps.apple.com/us/app/adblock-for-mobile/id1036484810"><img src="../../images/icons/ios.png" alt="IOS Image" style="width:16px;height:16px; vertical-align: middle;"> IOS</a>
-          <a href="https://play.google.com/store/apps/details?id=com.betafish.adblocksbrowser&pli=1"><img src="../../images/icons/android.png" alt="Android Image" style="width:16px;height:16px; vertical-align: middle;"> Android</a>
-          <a href="https://chromewebstore.google.com/detail/adblock-%E2%80%94-block-ads-acros/gighmmpiobklfepjocnamgkkbiglidom"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          <a href="https://addons.mozilla.org/firefox/addon/adblock-for-firefox/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-          <a href="https://microsoftedge.microsoft.com/addons/detail/adblock-%E2%80%94-block-ads-acros/ndcileolkflehcjpmjnfbnaibdcgglog"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-          <a href="https://apps.apple.com/us/app/adblock-for-safari/id1402042596?ls=1&mt=12"><img src="../../images/icons/safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-          <a href="https://en.wikipedia.org/wiki/AdBlock"><img src="../../images/icons/wikipedia.png" alt="Wikipedia Image" style="width:16px;height:16px; vertical-align: middle;"> Wikipedia</a>
-        </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-        <button class="dropbtn booklink">
-          Dark Reader
-          <img src="../../images/logos/Dark Reader.png" alt="Dark Reader Icon" data-title="Dark Reader is a browser extension that transforms website colors to a dark mode theme, reducing eye strain and improving readability during nighttime browsing.">
-        </button>
-        <div class="dropdown-content">
-          <a href="https://darkreader.org/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-          <a href="https://github.com/darkreader/"><img src="../../images/icons/github.png" alt="GitHub Image" style="width:16px;height:16px; vertical-align: middle;"> GitHub</a>
-          <a href="https://apps.apple.com/us/app/dark-reader-for-safari/id1438243180?platform=iphone"><img src="../../images/icons/ios.png" alt="IOS Image" style="width:16px;height:16px; vertical-align: middle;"> IOS</a>
-          <a href="https://www.microsoft.com/edge/emmx/darkreadercollaboration"><img src="../../images/icons/android.png" alt="Android Image" style="width:16px;height:16px; vertical-align: middle;"> Android</a>
-          <a href="https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          <a href="https://addons.mozilla.org/firefox/addon/darkreader/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-          <a href="https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofWindows"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-          <a href="https://apps.apple.com/us/app/dark-reader-for-safari/id1438243180"><img src="../../images/icons/safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-        </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-        <button class="dropbtn booklink">
-          Scratch Addons
-          <img src="../../images/logos/scartchaddons.png" alt=" Icon" data-title="The Scratch Addons extension enhances the functionality of the Scratch programming platform by providing additional features and tools for users to create and share projects more efficiently.">
-        </button>
-        <div class="dropdown-content">
-          <a href="https://scratchaddons.com/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-          <a href="https://github.com/ScratchAddons/"><img src="../../images/icons/github.png" alt="GitHub Image" style="width:16px;height:16px; vertical-align: middle;"> GitHub</a>
-          <a href="https://chrome.google.com/webstore/detail/scratch-addons/fbeffbjdlemaoicjdapfpikkikjoneco"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          <a href="https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-          <a href="https://microsoftedge.microsoft.com/addons/detail/scratch-addons/iliepgjnemckemgnledoipfiilhajdjj"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            YouTube Sponsor Block
-            <img src="../../images/logos/sponsorblock.png" alt="Sponsor Block Icon" data-title="The SponsorBlock extension automatically skips sponsored segments and other non-content sections in YouTube videos, enhancing user experience by saving time and improving content consumption.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://sponsor.ajay.app/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://github.com/ajayyy/SponsorBlock"><img src="../../images/icons/github.png" alt="GitHub Image" style="width:16px;height:16px; vertical-align: middle;"> GitHub</a>
-            <a href="https://chromewebstore.google.com/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/sponsorblock/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/sponsorblock-for-youtube-/mbmgnelfcpoecdepckhlhegpcehmpmji"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-            <a href="https://apps.apple.com/ca/app/sponsorblock-for-youtube/id1573461917"><img src="../../images/icons/paid safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            AdBlock uBlock Origin
-            <img src="../../images/logos/ublock origin.png" alt="uBlock Origin Icon" data-title="Free, open-source ad content blocker.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://ublockorigin.com/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/ublock-origin/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-            <a href="https://addons.opera.com/en/extensions/details/ublock/"><img src="../../images/icons/opera.png" alt="Opera Image" style="width:16px;height:16px; vertical-align: middle;"> Opera</a>
-            <a href="https://en.wikipedia.org/wiki/Opera_(web_browser)"><img src="../../images/icons/wikipedia.png" alt="Wikipedia Image" style="width:16px;height:16px; vertical-align: middle;"> Wikipedia</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Truffle YouTube
-            <img src="../../images/logos/truffle.png"  alt="Truffle Icon" data-title="Make streaming and interacting with streamers better on YouTube and Twitch.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://truffle.vip/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://github.com/trufflehq"><img src="../../images/icons/github.png" alt="GitHub Image" style="width:16px;height:16px; vertical-align: middle;"> GitHub</a>
-            <a href="https://apps.apple.com/us/app/truffle-livestreams-enhanced/id1659938519"><img src="../../images/icons/ios.png" alt="IOS Image" style="width:16px;height:16px; vertical-align: middle;"> IOS</a>
-            <a href="https://play.google.com/store/apps/details?id=vip.truffle.app"><img src="../../images/icons/android.png" alt="Android Image" style="width:16px;height:16px; vertical-align: middle;"> Android</a>
-            <a href="https://chromewebstore.google.com/detail/truffle/bkkjeefjfjcfdfifddmkdmcpmaakmelp"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://web.archive.org/web/20250222024009/https://truffle.vip/extension"><img src="../../images/icons/extensions.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Other Browsers</a>
-            </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Wayback Machine Internet Archive
-            <img src="../../images/logos/wayback.png"  alt="Wayback Machine Icon" data-title="Explore more than 916 billion web pages saved over time.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://web.archive.org/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://apps.apple.com/us/app/wayback-machine/id1201888313"><img src="../../images/icons/ios.png" alt="IOS Image" style="width:16px;height:16px; vertical-align: middle;"> IOS</a>
-            <a href="https://play.google.com/store/apps/details?id=com.internetarchive.waybackmachine"><img src="../../images/icons/android.png" alt="Android Image" style="width:16px;height:16px; vertical-align: middle;"> Android</a>
-            <a href="https://chromewebstore.google.com/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak?hl=en-US"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/wayback-machine_new/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/wayback-machine/kjmickeoogghaimmomagaghnogelpcpn?hl=en-US"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-            <a href="https://apps.apple.com/us/app/wayback-machine/id1472432422"><img src="../../images/icons/safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-            <a href="https://en.wikipedia.org/wiki/Wayback_Machine"><img src="../../images/icons/wikipedia.png" alt="Wikipedia Image" style="width:16px;height:16px; vertical-align: middle;"> Wikipedia</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Advanced Profanity Filter
-            <img src="../../images/logos/Advanced Profanity Filter.png"  alt="Advanced Profanity Filter Icon" data-title="Helps to clean up bad language on the websites you and your family visit.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://frostco.github.io/AdvancedProfanityFilter/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle; color: red;"> Website</a>
-            <a href="https://github.com/FrostCo/AdvancedProfanityFilter"><img src="../../images/icons/github.png" alt="GitHub Image" style="width:16px;height:16px; vertical-align: middle;"> GitHub</a>
-            <a href="https://chromewebstore.google.com/detail/advanced-profanity-filter/piajkpdbaniagacofgklljacgjhefjeh"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/advanced_profanity_filter/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/advanced-profanity-filter/lhnbdlbhcokmgpjenkjolnhdnkphnkam"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-            <a href="https://apps.apple.com/us/app/advanced-profanity-filter/id1593810102"><img src="../../images/icons/paid safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-            <a href="https://addons.opera.com/en/extensions/details/advanced-profanity-filter/"><img src="../../images/icons/opera.png" alt="Opera Image" style="width:16px;height:16px; vertical-align: middle;"> Opera</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            DeArrow Youtube
-            <img src="../../images/logos/dearrow.png"  alt="DeArrow Icon" data-title="An open source browser extension for crowdsourcing better titles and thumbnails on YouTube.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://dearrow.ajay.app/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://github.com/ajayyy/DeArrow"><img src="../../images/icons/github.png" alt="GitHub Image" style="width:16px;height:16px; vertical-align: middle;"> GitHub</a>
-            <a href="https://chromewebstore.google.com/detail/dearrow-better-titles-and/enamippconapkdmgfgjchkhakpfinmaj"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/dearrow/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://apps.apple.com/us/app/dearrow-for-youtube/id6451469297"><img src="../../images/icons/paid safari.png" alt="Paid Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Pie adblock
-            <img src="../../images/logos/Pie.png"  alt="Pie adblock Icon" data-title="An adblock that pays you when you don't block an ad">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://www.pie.org/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://apps.apple.com/us/app/pie-adblock-for-safari/id6499055690"><img src="../../images/icons/ios.png" alt="IOS Image" style="width:16px;height:16px; vertical-align: middle;"> IOS</a>
-            <a href="https://chromewebstore.google.com/detail/pie-adblock-the-ad-blocke/jpkfgepcmmchgfbjblnodjhldacghenp"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://apps.apple.com/us/app/pie-adblock-for-safari/id6499055690"><img src="../../images/icons/safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-            </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Arweave Wallet
-            <img src="../../images/logos/Arweave Wallet.png"  alt="Arweave Wallet Icon" data-title="">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://arweave.app/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/arweaveapp/hloekinecmafifaghekdjepphlabepkl"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/arweave-app/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            youtube return dislike button
-            <img src="../../images/logos/REturn youtube dislike.png" alt="Return YouTube Dislike Icon" data-title="The &quot;Return Dislike Button&quot; extension reinstates the dislike functionality on YouTube, allowing users to express their disapproval of videos by bringing back the dislike count visible to both creators and viewers.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://www.returnyoutubedislike.com/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://github.com/Anarios/return-youtube-dislike"><img src="../../images/icons/github.png" alt="GitHub Image" style="width:16px;height:16px; vertical-align: middle;"> GitHub</a>
-            <a href="https://chromewebstore.google.com/detail/return-youtube-dislike/gebbhagfogifgggkldgodflihgfeippi"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/return-youtube-dislikes/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            AugmentedSteam Steam
-            <img src="../../images/logos/AugmentedSteam.png" alt="AugmentedSteam Steam Icon" data-title="Free browser extension based on the Enhanced Steam.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://augmentedsteam.com/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://github.com/IsThereAnyDeal/AugmentedSteam"><img src="../../images/icons/github.png" alt="GitHub Image" style="width:16px;height:16px; vertical-align: middle;"> GitHub</a>
-            <a href="https://chromewebstore.google.com/detail/augmented-steam/dnhpnfgdlenaccegplpojghhmaamnnfp"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/augmented-steam/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/augmented-steam/dnpjkgmekpilchdgolfifobohlohlioc"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Volta
-            <img src="../../images/logos/Volta.png" alt="Volta Icon" data-title="Work in real-time with your team on open-source and private repositories from GitHub, all in one place.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://volta.net/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/volta/dbegojmfekcfbclcgocceflbklfoomjo/related"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            BetterTTV
-            <img src="../../images/logos/BetterTTV.png" alt="BetterTTV Icon" data-title="BetterTTV is a browser extension for Twitch and YouTube that adds new features, emotes, and more.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://betterttv.com/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/betterttv/ajopnjidmegmdimjlfnijceegpefgped"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/betterttv/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/betterttv/icllegkipkooaicfmdfaloehobmglglb"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            DarkMode for Chrome
-            <img src="../../images/logos/DarkMode for Chrome.png" alt="DarkMode for Chrome Icon" data-title="Dark mode for all websites. Use dark theme for night and daily browsing with dark reader. Night shift mode.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://darkmodepro.com/"><img src="../../images/icons/website.png" alt="Web Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/dark-mode-for-chrome/epbpdmalnhhoggbcckpffgacohbmpapb"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            DarkMode Google Docs
-            <img src="../../images/logos/Dark Mode Google Docs.png" alt="Dark Mode Google Docs Icon" data-title="Dark mode for all websites.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://chromewebstore.google.com/detail/dark-mode-google-docs/iabnclnclchijjckhdljmocghgmgnnii"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Night Eye
-            <img src="../../images/logos/Night Eye.png" alt="Night Eye Icon" data-title="Enable dark mode on any website.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://nighteye.app/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/dark-mode-night-eye/alncdjedloppbablonallfbkeiknmkdi"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/night-eye-dark-mode/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/dark-mode-night-eye/gijhmcgnnbcpigflkfoimbnfjnbcphah"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-            <a href="https://apps.apple.com/us/app/dark-mode-for-safari-nighteye/id1450504903"><img src="../../images/icons/safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-            <a href="https://store.whale.naver.com/detail/fhaccehanjelhpfbgdpaamjnpjppbgcb"><img src="../../images/icons/narver whale.png" alt="Naver Whale Image" style="width:16px;height:16px; vertical-align: middle;"> Naver Whale</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            RoGold
-            <img src="../../images/logos/RoGold.png" alt="RoGold Icon" data-title="RoGold is a Roblox extension that enhances the user experience on the Roblox platform, offering features like profile customization, a refreshed user interface, and tools for both players and developers, and it is available as a free version and a premium version called RoGold Ultimate.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://rogold.live/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/rogold-level-up-roblox/mafcicncghogpdpaieifglifaagndbni"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://apps.apple.com/us/app/rogold/id1618599725"><img src="../../images/icons/safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-            <a href="https://rogold.live/downloads"><img src="../../images/icons/mac.png" alt="Mac Image" style="width:16px;height:16px; vertical-align: middle;"> Mac</a>
-            <a href="https://rogold.live/downloads"><img src="../../images/icons/windows.png" alt="Windows Image" style="width:16px;height:16px; vertical-align: middle;"> Windows</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Video Speed Up Controller for Chrome ⏩
-            <img src="../../images/logos/Video Speed Up Controller for Chrome.png" alt="Video Speed Up Controller for Chrome ⏩ Icon" data-title="Video speed controller for online videos. Speed up, slow down playback on any website.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://chromewebstore.google.com/detail/video-speed-up-controller/blfehknobghonbjigahfbmmjecooeeja"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Classic Dark Theme - Night Mode
-            <img src="../../images/logos/Classic Dark Theme - Night Mode.png" alt="Classic Dark Theme - Night Mode Icon" data-title="Dark Mode for websites: protect your eyes with a dark theme for night or daily browsing, ideal for work and reading.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://chromewebstore.google.com/detail/classic-dark-theme-night/pdpfhanekfkeijhemmfbnnjffiblgefi"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            RoPro
-            <img src="../../images/logos/ropro.png" alt="RoPro Icon" data-title="RoPro adds dozens of useful features to Roblox.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://ropro.io/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/ropro-enhance-your-roblox/adbacgifemdbhdkfppmeilbgppmhaobf"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Requestly
-            <img src="../../images/logos/Requestly.png" alt="Requestly Icon" data-title="A Powerful HTTP Interception and Mocking Tool">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://requestly.com/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://github.com/requestly/"><img src="../../images/icons/github.png" alt="GitHub Image" style="width:16px;height:16px; vertical-align: middle;"> GitHub</a>
-            <a href="https://chromewebstore.google.com/detail/requestly-free-api-testin/mdnleldcmiljblolnjhpnblkcekpdkpa"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://requestly.com/downloads/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/requestly-free-api-test/ehghoapnlpepjmfbgaomdiilchcjemak"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Responsive Viewer
-            <img src="../../images/logos/Responsive Viewer.png" alt="Responsive Viewer Icon" data-title="Test and preview your website on multiple screens with built-in screenshot and annotation tools">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://responsiveviewer.org/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Trancy
-            <img src="../../images/logos/Trancy.png" alt="Trancy Icon" data-title="​Trancy.org is an AI-powered language learning platform designed to enhance your skills through immersive experiences with real-world content.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://www.trancy.org/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/ai-subtitles-immersive-tr/mjdbhokoopacimoekfgkcoogikbfgngb"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/trancyfordesktop/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/ai-subtitles-immersive-/aepdhbcjfkpncgbmlllcaloniioihlma"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-            <a href="https://apps.apple.com/us/app/trancy-et-ai-translator/id6475386403"><img src="../../images/icons/safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            CCU Game
-            <img src="../../images/logos/CCU Game.png" alt="CCU Game Icon" data-title="CCU Game helps you manage your hangar/buybacks and helps you reach your dream fleet.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://ccugame.app/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/star-citizen-ccu-game/efkaeodcipbmkhbbfmiagjcnnlhdkdlf"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/star-citizen-ccu-game/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/star-citizen-ccu-game/lmobfijnfglbmhcblkfhmhdfmicffice"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Proton VPN
-            <img src="../../images/logos/Proton VPN.png" alt="Proton VPN Icon" data-title="Gain unrestricted access to global content, block annoying ads, and safeguard your privacy with a fast and secure VPN.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://protonvpn.com/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/proton-vpn-fast-secure/jplgfhpmjnbigmhklmmbgecoobifkmpa"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/en-US/firefox/addon/proton-vpn-firefox-extension/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-          </div>
-        </div>
-      </li>
-    <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Obsidian
-            <img src="../../images/logos/Obsidian.png" alt="Obsidian Icon" data-title="The free and flexible app for your private thoughts.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://obsidian.md/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/obsidian-web-clipper/cnjifjpddelmedmihgijeibhnjfabmlf"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/en-US/firefox/addon/web-clipper-obsidian/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://apps.apple.com/us/app/obsidian-web-clipper/id6720708363"><img src="../../images/icons/safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-            <a href ="https://microsoftedge.microsoft.com/addons/detail/obsidian-web-clipper/eigdjhmgnaaeaonimdklocfekkaanfme"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16; vertical-align: middle;"> Edge</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Twos
-            <img src="../../images/logos/Twos.png" alt="Twos Icon" data-title="One app for everything.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://www.twosapp.com/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/twos-the-best-place-to-wr/lgkfjdlfhjdjcmkdgmciobikpjakpgjn"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Anylist
-            <img src="../../images/logos/AnyList.png" alt="AnyList Icon" data-title="One app for stress-free shopping, cooking, and meal planning.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://www.anylist.com/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/anylist-recipe-import/jebljoacamdppgjiachpgaighglhkgpe"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://www.anylist.com/recipes/browser-extensions/firefox"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://www.anylist.com/recipes/browser-extensions/safari"><img src="../../images/icons/safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/anylist-recipe-import/cbglbildkmpgeicchihcdkigjebbhgna"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Ecosia
-            <img src="../../images/logos/Ecosia.png" alt="Ecosia Icon" data-title="Ecosia is a search engine that prioritizes environmental sustainability by using its profits to plant trees.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://www.ecosia.org/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/ecosia-the-search-engine/eedlgdlajadkbbjoobobefphmfkcchfk"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/en-US/firefox/addon/ecosia-the-green-search/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/ecosia-the-search-engin/fhfidmlnclkepgapcephbaciajegheco"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-            <a href="https://www.ecosia.org/browser"><img src="../../images/icons/mac.png" alt="MacOS Image" style="width:16px;height:16px; vertical-align: middle;"> Mac</a>
-            <a href="https://www.ecosia.org/browser"><img src="../../images/icons/windows.png" alt="Windows Image" style="width:16px;height:16px; vertical-align: middle;"> Windows</a>
-            <a href="https://apps.apple.com/us/app/ecosia-search-to-plant-trees/id670881887"><img src="../../images/icons/ios.png" alt="IOS Image" style="width:16px;height:16px; vertical-align: middle;"> IOS</a>
-            <a href="https://play.google.com/store/apps/details?id=com.ecosia.android"><img src="../../images/icons/android.png" alt="Android Image" style="width:16px;height:16px; vertical-align: middle;"> Android</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Repeek
-            <img src="../../images/logos/Repeek.png" alt="Repeek Icon" data-title="The browser extension that boosts you to the next level on FACEIT.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://repeek.gg/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/repeek-formerly-faceit-en/mokknliiomknodkdmpcellamkopbdmao"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://repeek.gg/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://repeek.gg/"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-            <a href="https://repeek.gg/"><img src="../../images/icons/opera.png" alt="Opera Image" style="width:16px;height:16px; vertical-align: middle;"> Opera</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            reveddit
-            <img src="../../images/logos/reveddit.png" alt="reveddit Icon" data-title="A tool that allows users to view content removed from Reddit by moderators or automated filters, making otherwise hidden posts, comments, and user activities visible again.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://www.reveddit.com/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chrome.google.com/webstore/detail/reveddit-real-time/ickfhlplfbipnfahjbeongebnmojbnhm"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/en-US/firefox/addon/reveddit-real-time/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-          </div>
-        </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Ruffle
-            <img src="../../images/logos/ruffle.png" alt="Ruffle Icon" data-title="An open source Flash Player emulator.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://ruffle.rs/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/ruffle-flash-emulator/donbcfbmhbcapadipfkeojnmajbakjdc"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/firefox/addon/ruffle_rs"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/ruffle/pipjjbgofgieknlpefmcckdmgaaegban"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-            <a href="https://ruffle.rs/downloads"><img src="../../images/icons/windows.png" alt="Windows Image" style="width:16px;height:16px; vertical-align: middle;"> Windows</a>
-            <a href="https://ruffle.rs/downloads"><img src="../../images/icons/mac.png" alt="Mac Image" style="width:16px;height:16px; vertical-align: middle;"> Mac</a>
-            <a href="https://ruffle.rs/downloads"><img src="../../images/icons/linux.png" alt="Linux Image" style="width:16px;height:16px; vertical-align: middle;"> Linux</a>
-            
-          </div>
-        </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            FrankerFaceZ
-            <img src="../../images/logos/FrankerFaceZ.png" alt="FrankerFaceZ Icon" data-title="The Twitch enhancement suite.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://www.frankerfacez.com/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/frankerfacez/fadndhdgpmmaapbmfcknlfgcflmmmieb"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://addons.mozilla.org/en-US/firefox/addon/frankerfacez/"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://www.frankerfacez.com/"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-            <a href="https://repeek.gg/"><img src="../../images/icons/opera.png" alt="Opera Image" style="width:16px;height:16px; vertical-align: middle;"> Opera</a>
-          </div>
-        </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            YouDJ YouTube Dj
-            <img src="../../images/logos/youdj.png" alt="YouDJ Icon" data-title="This extension brings DJ tools such Equalizer, Volume Booster, Sound Effects, to YouTube but also any other website!">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://you.dj/free-dj-software"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://chromewebstore.google.com/detail/youtube-dj-effects-eq-vol/defekohaofmambflfpfoojkmfdpcbgko"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://you.dj/download-dj-software"><img src="../../images/icons/windows.png" alt="Windows Image" style="width:16px;height:16px; vertical-align: middle;"> Windows</a>
-            <a href="https://you.dj/download-dj-software"><img src="../../images/icons/mac.png" alt="Mac Image" style="width:16px;height:16px; vertical-align: middle;"> Mac</a>
-            <a href="https://you.dj/download-dj-software"><img src="../../images/icons/linux.png" alt="Linux Image" style="width:16px;height:16px; vertical-align: middle;"> Linux</a>
-            <a href="https://apps.apple.com/us/app/youdj-mixer-easy-dj-app/id1459666155"><img src="../../images/icons/ios.png" alt="IOS Image" style="width:16px;height:16px; vertical-align: middle;"> IOS</a>
-            <a href="https://play.google.com/store/apps/details?id=you.dj"><img src="../../images/icons/android.png" alt="Android Image" style="width:16px;height:16px; vertical-align: middle;"> Android</a>
-          </div>
-        </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            PreMiD
-            <img src="../../images/logos/Premid.png" alt="PreMiD Icon" data-title="PreMiD is a simple, configurable utility that allows you to show what you're doing on the web in your Discord now playing status.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://premid.app/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://github.com/PreMiD/"><img src="../../images/icons/github.png" alt="GitHub Image" style="width: 16px; height: 16px; vertical-align: middle;"> GitHub</a>
-            <a href="https://chromewebstore.google.com/detail/premid/agjnjboanicjcpenljmaaigopkgdnihi"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-            <a href="https://premid.app/downloads"><img src="../../images/icons/firefox.png" alt="Firefox Image" style="width:16px;height:16px; vertical-align: middle;"> Firefox</a>
-            <a href="https://apps.apple.com/us/app/premid/id6739778076"><img src="../../images/icons/safari.png" alt="Safari Image" style="width:16px;height:16px; vertical-align: middle;"> Safari</a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/premid/hkchpjlnddoppadcbefbpgmgaeidkkkm"><img src="../../images/icons/edge.png" alt="Edge Image" style="width:16px;height:16px; vertical-align: middle;"> Edge</a>
-          </div>
-        </div>
-        </div>
-      </li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn booklink">
-            Keys.Band
-            <img src="../../images/logos/keys.band.png" alt="Keys.Band Icon" data-title="This extension allows you to sign Nostr events on web-apps without having to give them your keys.">
-          </button>
-          <div class="dropdown-content">
-            <a href="https://keys.band/"><img src="../../images/icons/website.png" alt="Website Image" style="width:16px;height:16px; vertical-align: middle;"> Website</a>
-            <a href="https://github.com/toastr-space/keys-band"><img src="../../images/icons/github.png" alt="GitHub Image" style="width: 16px; height: 16px; vertical-align: middle;"> GitHub</a>
-            <a href="https://chromewebstore.google.com/detail/keysband/jdencabhccnfhedpfoojbbdlgmecnlkm"><img src="../../images/icons/chrome.png" alt="Chrome Image" style="width:16px;height:16px; vertical-align: middle;"> Chrome</a>
-          </div>
-        </div>
-        </div>
-      </li>
-    </ul>
+    <ul class="main"  id="all"></ul>
     <p id="nothingfound" style="display: none; color: red; text-align: center; text-transform: uppercase;">Sorry, We Could Not Find Anything For Your Search Query At The Moment</p>
     <footer>
       <div class="row">
@@ -622,29 +82,30 @@
           <h3>About: <div class="underline"><span></span></div></h3>
           <p>This website is an ongoing passion project created by Bobjoerules who was addicted to DarkMode and was angry about darkmodelist.com's pay wall. This website is his first html site.</p>
         </div>
-        <div class="col"><h3>Important Links: <div class="underline"><span></span></div></h3><ul>
+        <div class="col">
+          <h3>Important Links: <div class="underline"><span></span></div></h3>
           <div class="social-icons">
             <a href="https://discord.gg/XCTwWafSj7"><img class="socials" src="../../images/discordlink.png" alt="Discord Icon" style="width:30px;height:30px;"></a>
             <a href="../../form/"><img class="socials" src="../../images/suggest.png" alt="Suggest Icon" style="width:30px;height:30px;"></a>
-            <!-- <a href="../../pages/status/" data-title="Status of Implementing"><img class="socials" src="../../images/status.png" alt="Status Icon" style="width:30px;height:30px;"></a> -->
-            <!-- <a href="../../pages/appicons/" data-title="IOS app icons for apps with none"><img class="socials" src="../../images/18.png" alt="ios 18 Icon" style="width:30px;height:30px;"></a> -->
             <a href="https://github.com/bobjoerules/DarkMode-Sites"><img class="socials" src="../../images/githubsmall.png" alt="Github Icon" style="width:30px;height:30px;"></a>
           </div>
-          </div>
-          <div class="col">
+        </div>
+        <div class="col">
           <h3>Other Websites/Projects: <div class="underline"><span></span></div></h3>
           <div class="social-icons">
-            <a href="https://bobjoerules.com/" data-title="Website"><img class="socials" src="../../images/Bobjoerules.png" alt="Creator's Website" style="width:30px;height:30px;"></a>
-            <a href="https://emoji.bobjoerules.com/" data-title="Emoji"><img class="socials" src="../../images/Smile Face.png" alt="Emoji Maker" style="width:30px;height:30px;"></a>
+            <a href="https://bobjoerules.com/" data-title="My About-Me Website"><img class="socials" src="../../images/Bobjoerules.png" alt="Creator's Website" style="width:30px;height:30px;"></a>
+            <a href="https://emoji.bobjoerules.com/" data-title="Emoji Maker"><img class="socials" src="../../images/Smile Face.png" alt="Emoji Maker" style="width:30px;height:30px;"></a>
             <a href="https://dailytracker.bobjoerules.com/" data-title="Track Tallies Daily"><img class="socials" src="../../images/dailytally.png" alt="Daily Tracker" style="width:30px;height:30px;"></a>
             <a href="https://amazonbrandblock.bobjoerules.com/" data-title="Block certain brands on Amazon search results especially Amazon's own brands"><img class="socials" src="../../images/amazon.png" alt="Amazon Brand Block" style="width:23px;height:23px;"></a>
             <a href="https://appicons.bobjoerules.com/" data-title="MacOS 26 Tahoe App Icons for websites & apps that haven't been updated." style="margin-left: 7px;"><img class="socials" src="../../images/Apple.png" alt="MacOS 26 Tahoe App Icons" style="width:23px;height:23px;"></a>
             <a href="https://cookieclicker.bobjoerules.com/" data-title="Click cookies, build your empire! A modern recreation of the classic Cookie Clicker game." style="margin-left: 7px;"><img class="socials" src="../../images/cookie.png" alt="Cookie Clicker" style="width:23px;height:23px;"></a>
           </div>
-          <hr><p class="copyright">Bobjoerules © <span id="year"></span> - All Rights Reserved</p>
         </div>
       </div>
+      <hr>
+      <p class="copyright">Bobjoerules © <span id="year"></span> - All Rights Reserved</p>
     </footer>
-  <script src="../../js/script.js"></script>
+  <script src="../../js/sites.js"></script>
+    <script src="../../js/script.js"></script>
   </body>
 </html>
