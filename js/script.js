@@ -376,8 +376,17 @@ function openSitePopup(site) {
     const desc = document.getElementById('popup-description');
     const linksGrid = document.getElementById('popup-links');
 
-    const fullLogoPath = basePath + site.logo;
-    logo.src = fullLogoPath;
+    const logoFileName = site.logo.split('/').pop();
+    const newSizeLogoPath = basePath + 'images/new size/' + logoFileName;
+    const originalLogoPath = basePath + site.logo;
+
+    logo.onload = null;
+    logo.onerror = () => {
+        logo.onerror = null;
+        logo.src = originalLogoPath;
+    };
+    logo.src = newSizeLogoPath;
+
     desc.textContent = site.description || "No description available.";
 
     const previewSrc = site.preview || site.thumbnail || `images/previews/${site.name}.png`;
@@ -396,9 +405,20 @@ function openSitePopup(site) {
     heroImg.onerror = () => {
         heroImg.onload = null;
         heroImg.onerror = null;
-        heroImg.src = fullLogoPath;
-        heroImg.style.filter = 'blur(40px) brightness(0.5)';
-        heroContainer.classList.add('no-hero');
+
+        // Try to load new size logo for fallback hero, otherwise original logo
+        const tempImg = new Image();
+        tempImg.onload = () => {
+            heroImg.src = newSizeLogoPath;
+            heroImg.style.filter = 'blur(40px) brightness(0.5)';
+            heroContainer.classList.add('no-hero');
+        };
+        tempImg.onerror = () => {
+            heroImg.src = originalLogoPath;
+            heroImg.style.filter = 'blur(40px) brightness(0.5)';
+            heroContainer.classList.add('no-hero');
+        };
+        tempImg.src = newSizeLogoPath;
     };
     heroImg.src = fullPreviewPath;
 
