@@ -3145,20 +3145,6 @@ const SITES_DATA = [
     "on_home": true
   },
   {
-    "name": "Darkmode.com",
-    "description": "Another darkmode list like this one.",
-    "logo": "images/logos/darkmodecom.png",
-    "links": {
-      "website": "https://darkmode.com/"
-    },
-    "flags": {},
-    "categories": {
-      "websites": true
-    },
-    "lightmode_categories": {},
-    "on_home": true
-  },
-  {
     "name": "Apple Silicon Games",
     "description": "All about Gaming on Apple Silicon by Mac Gamers for Mac Gamers.",
     "logo": "images/logos/Apple Silicon Games.png",
