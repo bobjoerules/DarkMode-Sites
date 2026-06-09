@@ -28,6 +28,24 @@
     <button id="confirm-redirect">Continue</button>
     <button id="cancel-redirect">Cancel</button>
   </div>
+  <div id="site-popup-overlay">
+    <div id="site-popup">
+      <span class="popup-close" onclick="closeSitePopup()">&times;</span>
+
+      <div class="popup-hero">
+        <img id="popup-hero-img" class="popup-hero-img" src="" alt="">
+        <div class="popup-hero-gradient"></div>
+        <div class="popup-hero-content">
+          <img id="popup-logo" class="popup-logo" src="" alt="">
+        </div>
+      </div>
+
+      <div class="popup-body">
+        <p id="popup-description" class="popup-description"></p>
+        <div id="popup-links" class="popup-links-grid"></div>
+      </div>
+    </div>
+  </div>
   <!--<div id="settings"><div id="popup2"><button id="activateTooltips">Tooltips Off</button></div><span id="sb">⚙️ Settings</span></div>-->
   <div id="popup" class="popup" onclick="closePopup()" style="top: 30px;">
     <div id="popupcontent"></div>
