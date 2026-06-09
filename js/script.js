@@ -380,15 +380,27 @@ function openSitePopup(site) {
     logo.src = fullLogoPath;
     desc.textContent = site.description || "No description available.";
 
-    if (site.preview || site.thumbnail) {
-        heroImg.src = basePath + (site.preview || site.thumbnail);
+    const previewSrc = site.preview || site.thumbnail || `images/previews/${site.name}.png`;
+    const fullPreviewPath = basePath + previewSrc;
+
+    heroImg.onload = null;
+    heroImg.onerror = null;
+
+    heroImg.onload = () => {
         heroImg.style.filter = 'none';
         heroContainer.classList.remove('no-hero');
-    } else {
+        heroImg.onload = null;
+        heroImg.onerror = null;
+    };
+
+    heroImg.onerror = () => {
+        heroImg.onload = null;
+        heroImg.onerror = null;
         heroImg.src = fullLogoPath;
         heroImg.style.filter = 'blur(40px) brightness(0.5)';
         heroContainer.classList.add('no-hero');
-    }
+    };
+    heroImg.src = fullPreviewPath;
 
     linksGrid.innerHTML = '';
     const iconMap = {
