@@ -15,8 +15,37 @@ document.addEventListener('DOMContentLoaded', () => {
     setupTooltips();
     setupRedirectModal();
 
-    if (typeof SITES_DATA !== 'undefined') { allSites = SITES_DATA; renderSites(); } else { console.error('SITES_DATA not found'); }
+    if (typeof SITES_DATA !== 'undefined') {
+        allSites = SITES_DATA;
+        allSites.forEach(cleanSiteLinks);
+        renderSites();
+    } else {
+        console.error('SITES_DATA not found');
+    }
 });
+
+function cleanSiteLinks(site) {
+    if (!site || !site.links) return;
+    const websiteUrl = site.links.website;
+    if (websiteUrl) {
+        if (websiteUrl.includes('chromewebstore.google.com') || websiteUrl.includes('chrome.google.com/webstore')) {
+            if (!site.links.chrome) {
+                site.links.chrome = websiteUrl;
+            }
+            delete site.links.website;
+        } else if (websiteUrl.includes('addons.mozilla.org')) {
+            if (!site.links.firefox) {
+                site.links.firefox = websiteUrl;
+            }
+            delete site.links.website;
+        } else if (websiteUrl.includes('microsoftedge.microsoft.com/addons')) {
+            if (!site.links.edge) {
+                site.links.edge = websiteUrl;
+            }
+            delete site.links.website;
+        }
+    }
+}
 
 function updateYear() {
     const yearEl = document.getElementById("year");
@@ -128,7 +157,7 @@ function renderExtensionItem(site) {
 
     types.forEach(t => {
         if (site.links[t.key]) {
-            dropdownLinks.push(`<a href="${site.links[t.key]}"><img src="${basePath}images/icons/${t.icon}" alt="${t.label} Image" style="width:16px;height:16px; vertical-align: middle;"> ${t.label}</a>`);
+            dropdownLinks.push(`<a href="${site.links[t.key]}" data-type="${t.key}"><img src="${basePath}images/icons/${t.icon}" alt="${t.label} Image" style="width:16px;height:16px; vertical-align: middle;"> ${t.label}</a>`);
         }
     });
 
@@ -376,16 +405,21 @@ function openSitePopup(site) {
     const desc = document.getElementById('popup-description');
     const linksGrid = document.getElementById('popup-links');
 
+    const transparentGif = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+
     const logoFileName = site.logo.split('/').pop();
     const newSizeLogoPath = basePath + 'images/new size/' + logoFileName;
     const originalLogoPath = basePath + site.logo;
 
     logo.onload = null;
-    logo.onerror = () => {
-        logo.onerror = null;
-        logo.src = originalLogoPath;
+    logo.onerror = null;
+    logo.src = originalLogoPath;
+
+    const tempLogo = new Image();
+    tempLogo.onload = () => {
+        logo.src = newSizeLogoPath;
     };
-    logo.src = newSizeLogoPath;
+    tempLogo.src = newSizeLogoPath;
 
     desc.textContent = site.description || "No description available.";
 
@@ -394,33 +428,53 @@ function openSitePopup(site) {
 
     heroImg.onload = null;
     heroImg.onerror = null;
+    heroImg.style.filter = 'none';
 
-    heroImg.onload = () => {
-        heroImg.style.filter = 'none';
+    const setHeroFallback = (imgEl, containerEl, newSizePath, originalPath) => {
+        const tempLogoForHero = new Image();
+        tempLogoForHero.onload = () => {
+            imgEl.src = newSizePath;
+            imgEl.style.filter = 'blur(40px) brightness(0.5)';
+            containerEl.classList.add('no-hero');
+        };
+        tempLogoForHero.onerror = () => {
+            imgEl.src = originalPath;
+            imgEl.style.filter = 'blur(40px) brightness(0.5)';
+            containerEl.classList.add('no-hero');
+        };
+        tempLogoForHero.src = newSizePath;
+    };
+
+    const hasExplicitPreview = !!(site.preview || site.thumbnail);
+
+    if (hasExplicitPreview) {
         heroContainer.classList.remove('no-hero');
-        heroImg.onload = null;
-        heroImg.onerror = null;
-    };
+        heroImg.src = transparentGif;
 
-    heroImg.onerror = () => {
-        heroImg.onload = null;
-        heroImg.onerror = null;
+        const tempHero = new Image();
+        tempHero.onload = () => {
+            heroImg.src = fullPreviewPath;
+            heroImg.style.filter = 'none';
+        };
+        tempHero.onerror = () => {
+            setHeroFallback(heroImg, heroContainer, newSizeLogoPath, originalLogoPath);
+        };
+        tempHero.src = fullPreviewPath;
+    } else {
+        heroContainer.classList.add('no-hero');
+        heroImg.src = transparentGif;
 
-        // Try to load new size logo for fallback hero, otherwise original logo
-        const tempImg = new Image();
-        tempImg.onload = () => {
-            heroImg.src = newSizeLogoPath;
-            heroImg.style.filter = 'blur(40px) brightness(0.5)';
-            heroContainer.classList.add('no-hero');
+        const tempHero = new Image();
+        tempHero.onload = () => {
+            heroImg.src = fullPreviewPath;
+            heroImg.style.filter = 'none';
+            heroContainer.classList.remove('no-hero');
         };
-        tempImg.onerror = () => {
-            heroImg.src = originalLogoPath;
-            heroImg.style.filter = 'blur(40px) brightness(0.5)';
-            heroContainer.classList.add('no-hero');
+        tempHero.onerror = () => {
+            setHeroFallback(heroImg, heroContainer, newSizeLogoPath, originalLogoPath);
         };
-        tempImg.src = newSizeLogoPath;
-    };
-    heroImg.src = fullPreviewPath;
+        tempHero.src = fullPreviewPath;
+    }
 
     linksGrid.innerHTML = '';
     const iconMap = {

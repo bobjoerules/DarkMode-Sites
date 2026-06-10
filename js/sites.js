@@ -252,23 +252,6 @@ const SITES_DATA = [
     "on_home": true
   },
   {
-    "name": "darkreader",
-    "description": "Dark Reader is a browser extension that transforms website colors to a dark mode theme, reducing eye strain and improving readability during nighttime browsing.",
-    "logo": "images/logos/Dark Reader.png",
-    "links": {
-      "website": "https://darkreader.org/"
-    },
-    "flags": {
-      "open_source": true
-    },
-    "categories": {
-      "open-source": true,
-      "websites": true
-    },
-    "lightmode_categories": {},
-    "on_home": true
-  },
-  {
     "name": "Davinci Resolve",
     "description": "DaVinci Resolve is a professional-grade video editing software offering comprehensive editing, color correction, visual effects, and audio post-production capabilities, all in a single application.",
     "logo": "images/logos/davinci resolve.png",
@@ -858,7 +841,8 @@ const SITES_DATA = [
     },
     "lightmode_categories": {
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "Linux": true
     },
     "on_home": true
   },
@@ -946,8 +930,8 @@ const SITES_DATA = [
   },
   {
     "name": "twitter x",
-    "description": "X formally (Twitter) is a social media platform where users post and interact with short messages known as tweets, sharing news, opinions, and multimedia content in real-time.",
-    "logo": "images/twitter1.png",
+    "description": "X (formerly Twitter) is a social media platform where users post and interact with short messages known as tweets, sharing news, opinions, and multimedia content in real-time.",
+    "logo": "images/logos/twitter1.png",
     "links": {
       "website": "https://x.com",
       "android": "https://play.google.com/store/apps/details?id=com.twitter.android",
@@ -3253,14 +3237,16 @@ const SITES_DATA = [
     "on_home": true
   },
   {
-    "name": "Top.gg",
+    "name": "Top.gg Discord",
     "description": "A list of Discord bots (applications) that you can add to your Discord servers.",
     "logo": "images/logos/Topgg.png",
     "links": {
       "website": "https://top.gg/"
     },
     "flags": {},
-    "categories": {},
+    "categories": {
+      "websites": true
+    },
     "lightmode_categories": {},
     "on_home": true
   },
@@ -4648,36 +4634,6 @@ const SITES_DATA = [
     "on_home": true
   },
   {
-    "name": "Dark Mode for Chrome",
-    "description": "Dark mode for all websites. Use dark theme for night and daily browsing with dark reader. Night shift mode.",
-    "logo": "images/logos/DarkMode for Chrome.png",
-    "links": {
-      "website": "https://chromewebstore.google.com/detail/dark-mode-for-chrome/epbpdmalnhhoggbcckpffgacohbmpapb"
-    },
-    "flags": {
-      "no_darkmode": true
-    },
-    "categories": {
-      "no-darkmode": true
-    },
-    "lightmode_categories": {
-      "no-darkmode": true
-    },
-    "on_home": true
-  },
-  {
-    "name": "Dark Mode Google Docs",
-    "description": "Dark Mode for all websites.",
-    "logo": "images/logos/Dark Mode Google Docs.png",
-    "links": {
-      "website": "https://chromewebstore.google.com/detail/dark-mode-google-docs/iabnclnclchijjckhdljmocghgmgnnii"
-    },
-    "flags": {},
-    "categories": {},
-    "lightmode_categories": {},
-    "on_home": true
-  },
-  {
     "name": "Night Eye",
     "description": "Enable dark mode on any website.",
     "logo": "images/logos/Night Eye.png",
@@ -5394,10 +5350,11 @@ const SITES_DATA = [
     "flags": {},
     "categories": {
       "Android": true,
-      "IOS": true,
+      "IOS": true
+    },
+    "lightmode_categories": {
       "websites": true
     },
-    "lightmode_categories": {},
     "on_home": true
   },
   {
@@ -16459,10 +16416,7 @@ const SITES_DATA = [
       "Windows": true,
       "websites": true
     },
-    "lightmode_categories": {
-      "HOME": true,
-      "websites": true
-    },
+    "lightmode_categories": {},
     "on_home": true
   },
   {
@@ -17746,11 +17700,15 @@ const SITES_DATA = [
       "edge": "https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofWindows",
       "safari": "https://apps.apple.com/us/app/dark-reader-for-safari/id1438243180"
     },
-    "flags": {},
-    "categories": {
-      "extensions": true
+    "flags": {
+      "open_source": true
     },
-    "lightmode_categories": {}
+    "categories": {
+      "extensions": true,
+      "open-source": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
   },
   {
     "name": "Scratch Addons",
@@ -17781,7 +17739,8 @@ const SITES_DATA = [
     "categories": {
       "extensions": true
     },
-    "lightmode_categories": {}
+    "lightmode_categories": {},
+    "on_home": true
   },
   {
     "name": "DarkMode Google Docs",
@@ -17794,7 +17753,8 @@ const SITES_DATA = [
     "categories": {
       "extensions": true
     },
-    "lightmode_categories": {}
+    "lightmode_categories": {},
+    "on_home": true
   },
   {
     "name": "YouDJ YouTube Dj",
@@ -20077,19 +20037,6 @@ const SITES_DATA = [
     "logo": "images/logos/1337x.png",
     "links": {
       "website": "https://www.1337x.to/"
-    },
-    "flags": {},
-    "categories": {
-      "websites": true
-    },
-    "lightmode_categories": {}
-  },
-  {
-    "name": "Top.gg Discord",
-    "description": "A list of Discord bots (applications) that you can add to your Discord servers.",
-    "logo": "images/logos/Topgg.png",
-    "links": {
-      "website": "https://top.gg/"
     },
     "flags": {},
     "categories": {
