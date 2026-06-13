@@ -15,7 +15,7 @@ The project is hosted at [darkmodesites.com](https://darkmodesites.com/).
 - `style.css`: Styling for the application.
 - `js/`: JavaScript logic for searching and filtering.
 - `images/`: Logo, icons, and site screenshots.
-- `catagories/`: Sub-pages for specific platform categories.
+- `categories/`: Sub-pages for specific platform categories.
 - `form/`: Interface for adding new entries to the list.
 - `fonts/`: Custom fonts used in the project.
 

@@ -2,7 +2,7 @@ let allSites = [];
 let targetUrl = '';
 
 let basePath = '';
-if (window.location.pathname.includes('/catagories/')) {
+if (window.location.pathname.includes('/categories/')) {
     basePath = '../../';
 } else if (window.location.pathname.includes('/form/')) {
     basePath = '../';
@@ -55,18 +55,18 @@ function updateYear() {
 
 function getCategory() {
     const path = window.location.pathname;
-    if (path.includes('/catagories/Android')) return 'android';
-    if (path.includes('/catagories/IOS')) return 'ios';
-    if (path.includes('/catagories/Windows')) return 'windows';
-    if (path.includes('/catagories/MacOS')) return 'macos';
-    if (path.includes('/catagories/Linux')) return 'linux';
-    if (path.includes('/catagories/Wiki')) return 'wiki';
-    if (path.includes('/catagories/extensions')) return 'extensions';
-    if (path.includes('/catagories/no-darkmode')) return 'no-darkmode';
-    if (path.includes('/catagories/open-source')) return 'open-source';
-    if (path.includes('/catagories/pay-for-darkmode')) return 'pay-for-darkmode';
-    if (path.includes('/catagories/profile-websites')) return 'profile-websites';
-    if (path.includes('/catagories/websites')) return 'websites';
+    if (path.includes('/categories/Android')) return 'android';
+    if (path.includes('/categories/IOS')) return 'ios';
+    if (path.includes('/categories/Windows')) return 'windows';
+    if (path.includes('/categories/MacOS')) return 'macos';
+    if (path.includes('/categories/Linux')) return 'linux';
+    if (path.includes('/categories/Wiki')) return 'wiki';
+    if (path.includes('/categories/extensions')) return 'extensions';
+    if (path.includes('/categories/no-darkmode')) return 'no-darkmode';
+    if (path.includes('/categories/open-source')) return 'open-source';
+    if (path.includes('/categories/pay-for-darkmode')) return 'pay-for-darkmode';
+    if (path.includes('/categories/profile-websites')) return 'profile-websites';
+    if (path.includes('/categories/websites')) return 'websites';
     return 'home';
 }
 

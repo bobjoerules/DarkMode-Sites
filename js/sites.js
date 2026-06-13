@@ -196,6 +196,7 @@ const SITES_DATA = [
     },
     "lightmode_categories": {
       "HOME": true,
+      "Linux": true,
       "MacOS": true,
       "Windows": true
     },
@@ -246,6 +247,7 @@ const SITES_DATA = [
     },
     "lightmode_categories": {
       "HOME": true,
+      "Linux": true,
       "MacOS": true,
       "Windows": true
     },
@@ -1713,7 +1715,6 @@ const SITES_DATA = [
       "website": "https://www.wikipedia.org/",
       "android": "https://play.google.com/store/apps/details?id=org.wikipedia",
       "ios": "https://apps.apple.com/us/app/wikipedia/id324715238",
-      "wiki": "https://www.wikipedia.org/",
       "windows": "https://apps.microsoft.com/detail/9wzdncrfhwm4",
       "wikipedia": "https://en.wikipedia.org/wiki/Wikipedia"
     },
@@ -9248,9 +9249,9 @@ const SITES_DATA = [
     "on_home": true
   },
   {
-    "name": "Dumpas",
-    "description": "Stats for yout Discord.",
-    "logo": "images/logos/Dumpas.png",
+    "name": "Dumpus",
+    "description": "Stats for your Discord.",
+    "logo": "images/logos/Dumpus.png",
     "links": {
       "website": "https://dumpus.app/",
       "android": "https://play.google.com/store/apps/details?id=app.dumpus.app",
@@ -19422,7 +19423,7 @@ const SITES_DATA = [
   },
   {
     "name": "SammCheese",
-    "description": "SammSammCheesecheese about-me site",
+    "description": "SammCheese about-me site",
     "logo": "images/logos/SammCheese.png",
     "links": {},
     "flags": {
