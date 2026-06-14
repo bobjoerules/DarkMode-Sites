@@ -20717,54 +20717,52 @@ const SITES_DATA = [
     "lightmode_categories": {},
     "on_home": true
   },
-  [
-    {
-      "name": "AdGuard",
-      "description": "AdGuard is a comprehensive privacy and security ecosystem primarily focused on blocking ads, preventing web tracking, and shielding users from malware.",
-      "logo": "images/logos/adguard.png",
-      "links": {
-        "website": "https://adguard.com/",
-        "source": "https://github.com/AdguardTeam",
-        "wikipedia": "https://en.wikipedia.org/wiki/AdGuard",
-        "ios": "https://apps.apple.com/us/app/adguard-ad-blocker-for-safari/id1047223162",
-        "android": "https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker",
-        "windows": "https://adguard.com/",
-        "macos": "https://adguard.com/",
-        "chrome": "https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg"
-      },
-      "flags": {
-        "open_source": true
-      },
-      "categories": {
-        "Android": true,
-        "IOS": true,
-        "Windows": true,
-        "MacOS": true,
-        "Wiki": true,
-        "extensions": true,
-        "open-source": true,
-        "websites": true
-      },
-      "lightmode_categories": {},
-      "on_home": true
+  {
+    "name": "AdGuard",
+    "description": "AdGuard is a comprehensive privacy and security ecosystem primarily focused on blocking ads, preventing web tracking, and shielding users from malware.",
+    "logo": "images/logos/adguard.png",
+    "links": {
+      "website": "https://adguard.com/",
+      "source": "https://github.com/AdguardTeam",
+      "wikipedia": "https://en.wikipedia.org/wiki/AdGuard",
+      "ios": "https://apps.apple.com/us/app/adguard-ad-blocker-for-safari/id1047223162",
+      "android": "https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker",
+      "windows": "https://adguard.com/",
+      "macos": "https://adguard.com/",
+      "chrome": "https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg"
     },
-    {
-      "name": " Portainer.io",
-      "description": "Operational control for Kubernetes, Docker, and Podman; without the specialist overhead.",
-      "logo": "images/logos/portainerio.png",
-      "links": {
-        "website": "https://www.portainer.io/",
-        "source": "https://github.com/portainer"
-      },
-      "flags": {
-        "open_source": true
-      },
-      "categories": {
-        "open-source": true,
-        "websites": true
-      },
-      "lightmode_categories": {},
-      "on_home": true
-    }
-  ]
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "Android": true,
+      "IOS": true,
+      "Windows": true,
+      "MacOS": true,
+      "Wiki": true,
+      "extensions": true,
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": " Portainer.io",
+    "description": "Operational control for Kubernetes, Docker, and Podman; without the specialist overhead.",
+    "logo": "images/logos/portainerio.png",
+    "links": {
+      "website": "https://www.portainer.io/",
+      "source": "https://github.com/portainer"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  }
 ];
