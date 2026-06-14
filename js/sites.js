@@ -20618,7 +20618,7 @@ const SITES_DATA = [
   {
     "name": "Jellyfin",
     "description": "Jellyfin is a free, open-source media server software that lets you collect, manage, and stream your personal digital media (movies, TV shows, music, and photos) to any device.",
-    "logo": "images/logos/jellyfin.png",
+    "logo": "images/logos/Jellyfin.png",
     "links": {
       "website": "https://jellyfin.org/",
       "source": "https://github.com/jellyfin",
