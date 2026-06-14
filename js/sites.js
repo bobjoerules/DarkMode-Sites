@@ -30,7 +30,7 @@ const SITES_DATA = [
       "extensions": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -67,8 +67,8 @@ const SITES_DATA = [
       "Windows": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "MacOS": true
+      "MacOS": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -195,10 +195,10 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -246,10 +246,10 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -383,11 +383,11 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
       "Windows": true,
-      "open-source": true
+      "open-source": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -467,7 +467,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -508,7 +508,7 @@ const SITES_DATA = [
     "flags": {},
     "categories": {},
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -528,7 +528,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -548,7 +548,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -628,7 +628,7 @@ const SITES_DATA = [
       "Windows": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -664,7 +664,7 @@ const SITES_DATA = [
     "flags": {},
     "categories": {},
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -678,7 +678,7 @@ const SITES_DATA = [
     "flags": {},
     "categories": {},
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -815,7 +815,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -926,7 +926,7 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -1049,7 +1049,7 @@ const SITES_DATA = [
       "Windows": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -2006,8 +2006,8 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "no-darkmode": true
+      "no-darkmode": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -2077,8 +2077,8 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "no-darkmode": true
+      "no-darkmode": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -2761,8 +2761,8 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "no-darkmode": true
+      "no-darkmode": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -3027,8 +3027,8 @@ const SITES_DATA = [
       "no-darkmode": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "no-darkmode": true
+      "no-darkmode": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -3096,8 +3096,8 @@ const SITES_DATA = [
       "no-darkmode": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "no-darkmode": true
+      "no-darkmode": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -3124,8 +3124,8 @@ const SITES_DATA = [
       "no-darkmode": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "no-darkmode": true
+      "no-darkmode": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -4629,8 +4629,8 @@ const SITES_DATA = [
       "no-darkmode": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "no-darkmode": true
+      "no-darkmode": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -4974,7 +4974,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -5071,7 +5071,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -5298,8 +5298,8 @@ const SITES_DATA = [
       "no-darkmode": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "no-darkmode": true
+      "no-darkmode": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -5507,8 +5507,8 @@ const SITES_DATA = [
       "no-darkmode": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "no-darkmode": true
+      "no-darkmode": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -5786,7 +5786,6 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "websites": true
     },
     "on_home": true
@@ -6095,7 +6094,6 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "websites": true
     },
     "on_home": true
@@ -6730,7 +6728,6 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "MacOS": true,
       "Windows": true,
       "websites": true
@@ -6752,7 +6749,6 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "websites": true
     },
     "on_home": true
@@ -6809,10 +6805,10 @@ const SITES_DATA = [
       "Windows": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -6837,10 +6833,10 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -6882,7 +6878,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -6917,7 +6913,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -6985,11 +6981,11 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
       "Windows": true,
-      "open-source": true
+      "open-source": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7031,9 +7027,9 @@ const SITES_DATA = [
       "Windows": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7052,9 +7048,9 @@ const SITES_DATA = [
       "Windows": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7073,9 +7069,9 @@ const SITES_DATA = [
       "Windows": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7092,7 +7088,7 @@ const SITES_DATA = [
       "MacOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -7111,7 +7107,7 @@ const SITES_DATA = [
       "MacOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -7159,9 +7155,9 @@ const SITES_DATA = [
       "Windows": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7177,7 +7173,6 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "websites": true
     },
     "on_home": true
@@ -7198,7 +7193,7 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -7240,10 +7235,10 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7267,10 +7262,10 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7320,10 +7315,10 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7339,7 +7334,6 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "websites": true
     },
     "on_home": true
@@ -7582,10 +7576,10 @@ const SITES_DATA = [
       "extensions": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7605,8 +7599,8 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "MacOS": true
+      "MacOS": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7671,7 +7665,7 @@ const SITES_DATA = [
       "MacOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -7825,8 +7819,8 @@ const SITES_DATA = [
       "MacOS": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "MacOS": true
+      "MacOS": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7849,9 +7843,9 @@ const SITES_DATA = [
       "Windows": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7876,10 +7870,10 @@ const SITES_DATA = [
       "Windows": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -7903,7 +7897,7 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -7984,7 +7978,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -8003,7 +7997,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -8103,7 +8097,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -8122,7 +8116,7 @@ const SITES_DATA = [
       "MacOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -8141,7 +8135,7 @@ const SITES_DATA = [
       "MacOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -8167,8 +8161,8 @@ const SITES_DATA = [
       "extensions": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "MacOS": true
+      "MacOS": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -8187,7 +8181,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -8206,7 +8200,7 @@ const SITES_DATA = [
       "MacOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -8226,8 +8220,8 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "MacOS": true
+      "MacOS": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -8251,10 +8245,10 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -8274,8 +8268,8 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "MacOS": true
+      "MacOS": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -8626,7 +8620,6 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
       "Windows": true,
@@ -8924,23 +8917,6 @@ const SITES_DATA = [
     },
     "flags": {},
     "categories": {
-      "websites": true
-    },
-    "lightmode_categories": {},
-    "on_home": true
-  },
-  {
-    "name": "Cataclysm: Dark Days Ahead",
-    "description": "Cataclysm: Dark Days Ahead is a turn-based survival game set in a post-apocalyptic world.",
-    "logo": "images/logos/Cataclysm_ Dark Days Ahead.png",
-    "links": {
-      "website": "https://cataclysmdda.org/"
-    },
-    "flags": {
-      "open_source": true
-    },
-    "categories": {
-      "open-source": true,
       "websites": true
     },
     "lightmode_categories": {},
@@ -11361,7 +11337,7 @@ const SITES_DATA = [
       "MacOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -11397,9 +11373,9 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "MacOS": true,
-      "open-source": true
+      "open-source": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -11416,8 +11392,8 @@ const SITES_DATA = [
       "MacOS": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "MacOS": true
+      "MacOS": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -11455,9 +11431,9 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "MacOS": true,
-      "open-source": true
+      "open-source": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -11474,8 +11450,8 @@ const SITES_DATA = [
       "MacOS": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "MacOS": true
+      "MacOS": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -16624,7 +16600,7 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -16851,8 +16827,8 @@ const SITES_DATA = [
       "MacOS": true
     },
     "lightmode_categories": {
-      "HOME": true,
-      "MacOS": true
+      "MacOS": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -16970,11 +16946,11 @@ const SITES_DATA = [
       "open-source": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
       "Windows": true,
-      "open-source": true
+      "open-source": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -17120,10 +17096,10 @@ const SITES_DATA = [
       "Windows": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "Linux": true,
       "MacOS": true,
-      "Windows": true
+      "Windows": true,
+      "websites": true
     },
     "on_home": true
   },
@@ -17297,7 +17273,6 @@ const SITES_DATA = [
       "websites": true
     },
     "lightmode_categories": {
-      "HOME": true,
       "websites": true
     },
     "on_home": true
@@ -17331,7 +17306,7 @@ const SITES_DATA = [
       "IOS": true
     },
     "lightmode_categories": {
-      "HOME": true
+      "websites": true
     },
     "on_home": true
   },
@@ -17780,7 +17755,9 @@ const SITES_DATA = [
     "name": "Shop.app",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/shop-app.png",
-    "links": {},
+    "links": {
+      "website": "https://shop.app/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17795,7 +17772,9 @@ const SITES_DATA = [
     "name": "Amazon Photos",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/amazonphotos.png",
-    "links": {},
+    "links": {
+      "website": "https://www.amazon.com/Amazon-Photos/b?ie=UTF8&node=13234696011"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17810,7 +17789,9 @@ const SITES_DATA = [
     "name": "Beli",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/beli.png",
-    "links": {},
+    "links": {
+      "website": "https://beliapp.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17825,7 +17806,9 @@ const SITES_DATA = [
     "name": "Student View",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/studentview.png",
-    "links": {},
+    "links": {
+      "website": "https://edupoint.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17840,7 +17823,9 @@ const SITES_DATA = [
     "name": "Internet Archive",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/internetarchive.png",
-    "links": {},
+    "links": {
+      "website": "https://web.archive.org/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17855,7 +17840,9 @@ const SITES_DATA = [
     "name": "Xfinity",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/xfinity.png",
-    "links": {},
+    "links": {
+      "website": "https://www.xfinity.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17870,7 +17857,9 @@ const SITES_DATA = [
     "name": "American Red Cross Blood Donor",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/redcross.png",
-    "links": {},
+    "links": {
+      "website": "https://www.redcrossblood.org/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17885,7 +17874,9 @@ const SITES_DATA = [
     "name": "King Candy Crush",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/candycrush_king.png",
-    "links": {},
+    "links": {
+      "website": "https://www.king.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17900,7 +17891,9 @@ const SITES_DATA = [
     "name": "Hilton Honors",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/hilton.png",
-    "links": {},
+    "links": {
+      "website": "https://www.hilton.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17915,7 +17908,9 @@ const SITES_DATA = [
     "name": "Delta Fly Delta",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/Delta.png",
-    "links": {},
+    "links": {
+      "website": "https://www.delta.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17930,7 +17925,9 @@ const SITES_DATA = [
     "name": "First Tech Credit Union",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/first tech.png",
-    "links": {},
+    "links": {
+      "website": "https://www.firsttechfed.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17945,7 +17942,9 @@ const SITES_DATA = [
     "name": "Common App",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/commonapp.png",
-    "links": {},
+    "links": {
+      "website": "https://www.commonapp.org/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17960,7 +17959,9 @@ const SITES_DATA = [
     "name": "Clover",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/clover.png",
-    "links": {},
+    "links": {
+      "website": "https://www.clover.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17975,7 +17976,9 @@ const SITES_DATA = [
     "name": "Meta Business Suite",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/Meta Business suite.png",
-    "links": {},
+    "links": {
+      "website": "https://business.facebook.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -17990,7 +17993,9 @@ const SITES_DATA = [
     "name": "Pokémon Trading Card Game Pocket",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/pokemon tccp.png",
-    "links": {},
+    "links": {
+      "website": "https://tcgpocket.pokemon.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -18005,7 +18010,9 @@ const SITES_DATA = [
     "name": "New York Times Games",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/nytgames.png",
-    "links": {},
+    "links": {
+      "website": "https://www.nytimes.com/games/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -18020,7 +18027,9 @@ const SITES_DATA = [
     "name": "Scratch Mit",
     "description": "App nor website has darkmode",
     "logo": "images/logos/scratch.png",
-    "links": {},
+    "links": {
+      "website": "https://scratch.mit.edu/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -18035,7 +18044,9 @@ const SITES_DATA = [
     "name": "Indie Wiki Buddy",
     "description": "Website and browser extension doesn't have darkmode",
     "logo": "images/logos/Indie Wiki Buddy.png",
-    "links": {},
+    "links": {
+      "website": "https://getindie.wiki/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -18050,7 +18061,9 @@ const SITES_DATA = [
     "name": "CDC",
     "description": "Website and browser extension doesn't have darkmode",
     "logo": "images/logos/cdc.png",
-    "links": {},
+    "links": {
+      "website": "https://www.cdc.gov/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -18065,7 +18078,9 @@ const SITES_DATA = [
     "name": "PrivateBin",
     "description": "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data.",
     "logo": "images/logos/PrivateBin.png",
-    "links": {},
+    "links": {
+      "website": "https://privatebin.info/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -18080,7 +18095,9 @@ const SITES_DATA = [
     "name": "Dockey",
     "description": "Make your macOS Dock faster.",
     "logo": "images/logos/Dockey.png",
-    "links": {},
+    "links": {
+      "website": "https://familiasi.gumroad.com/l/dockey"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -18095,7 +18112,9 @@ const SITES_DATA = [
     "name": "New Seasons Market",
     "description": "Website doesn't have darkmode",
     "logo": "images/logos/new seasons market.png",
-    "links": {},
+    "links": {
+      "website": "https://www.newseasonsmarket.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -18110,7 +18129,9 @@ const SITES_DATA = [
     "name": "BRmesh",
     "description": "BRmesh is a mobile application designed to control Bluetooth-enabled smart lighting devices, offering both daily and ambient lighting solutions.",
     "logo": "images/logos/BRmesh.png",
-    "links": {},
+    "links": {
+      "website": "https://mybrlight.com/"
+    },
     "flags": {
       "no_darkmode": true
     },
@@ -18123,7 +18144,9 @@ const SITES_DATA = [
     "name": "HeroUI",
     "description": "Make beautiful websites regardless of your design experience.",
     "logo": "images/logos/hero.png",
-    "links": {},
+    "links": {
+      "github": "https://github.com/heroui-inc/"
+    },
     "flags": {
       "open_source": true
     },
@@ -18136,7 +18159,10 @@ const SITES_DATA = [
     "name": "Bitlife",
     "description": "A popular text-based life simulator where you make choices that shape your digital avatar's entire life story.",
     "logo": "images/logos/bitlife.png",
-    "links": {},
+    "links": {
+      "ios": "https://apps.apple.com/us/app/bitlife-life-simulator/id1374403536",
+      "android": "https://play.google.com/store/apps/details?id=com.candywriter.bitlife&hl=en_US&gl=US"
+    },
     "flags": {
       "pay_for_darkmode": true
     },
@@ -18151,7 +18177,9 @@ const SITES_DATA = [
     "name": "bobjoerules",
     "description": "Bobjoerules about-me site",
     "logo": "images/logos/bobjoerulesws.png",
-    "links": {},
+    "links": {
+      "website": "https://bobjoerules.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18164,7 +18192,9 @@ const SITES_DATA = [
     "name": "1nf evwltrs",
     "description": "1nf/evwltrs site",
     "logo": "images/logos/1nf.png",
-    "links": {},
+    "links": {
+      "website": "https://1nf.me/"
+    },
     "flags": {
       "profile": true
     },
@@ -18177,7 +18207,9 @@ const SITES_DATA = [
     "name": "aa gaming",
     "description": "Aagaming about-me site",
     "logo": "images/logos/aagaming.png",
-    "links": {},
+    "links": {
+      "website": "https://aagaming.me/"
+    },
     "flags": {
       "profile": true
     },
@@ -18190,7 +18222,9 @@ const SITES_DATA = [
     "name": "Abhiyan Dhakal",
     "description": "About-me site for Abhiyan Dhakal",
     "logo": "images/logos/Abhiyan Dhakal.png",
-    "links": {},
+    "links": {
+      "website": "https://abhiyan.me/"
+    },
     "flags": {
       "profile": true
     },
@@ -18203,7 +18237,9 @@ const SITES_DATA = [
     "name": "Absolucy",
     "description": "Absolucy about-me site",
     "logo": "images/logos/absolucy.png",
-    "links": {},
+    "links": {
+      "website": "https://absolucy.moe/"
+    },
     "flags": {
       "profile": true
     },
@@ -18216,7 +18252,9 @@ const SITES_DATA = [
     "name": "AdriDoesThings",
     "description": "AdriDoesThings about-me site",
     "logo": "images/logos/adridoesthings.png",
-    "links": {},
+    "links": {
+      "website": "https://adridoesthings.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18229,7 +18267,9 @@ const SITES_DATA = [
     "name": "Ajay Ramachandran",
     "description": "Ajay Ramachandran about-me site",
     "logo": "images/logos/Ajay Ramachandran.png",
-    "links": {},
+    "links": {
+      "website": "https://ajay.app/"
+    },
     "flags": {
       "profile": true
     },
@@ -18242,7 +18282,9 @@ const SITES_DATA = [
     "name": "Alicia Sykes",
     "description": "Alicia Sykes about-me site",
     "logo": "images/logos/Alicia Sykes.png",
-    "links": {},
+    "links": {
+      "website": "https://www.aliciasykes.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18255,7 +18297,9 @@ const SITES_DATA = [
     "name": "Ashish Panigrahi",
     "description": "Ashish Panigrahi about-me site",
     "logo": "images/logos/Ashish Panigrahi.png",
-    "links": {},
+    "links": {
+      "website": "https://ashishpanigrahi.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18268,7 +18312,9 @@ const SITES_DATA = [
     "name": "Alecks",
     "description": "Alecks about-me site",
     "logo": "images/logos/Alecks.png",
-    "links": {},
+    "links": {
+      "website": "https://alecks.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -18281,7 +18327,9 @@ const SITES_DATA = [
     "name": "Andrew Leguay",
     "description": "Andrew Leguay about-me site",
     "logo": "images/logos/Andrew Leguay.png",
-    "links": {},
+    "links": {
+      "website": "https://www.andrewleguay.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18294,7 +18342,9 @@ const SITES_DATA = [
     "name": "Andrew Larson",
     "description": "Andrew Larson about-me site",
     "logo": "images/logos/Andrew Larson.png",
-    "links": {},
+    "links": {
+      "website": "https://drewj.la/"
+    },
     "flags": {
       "profile": true
     },
@@ -18307,7 +18357,9 @@ const SITES_DATA = [
     "name": "Andrew Jones",
     "description": "Andrew Jones about-me site",
     "logo": "images/logos/Andrew Jones.png",
-    "links": {},
+    "links": {
+      "website": "https://www.andrewthedev.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18320,7 +18372,9 @@ const SITES_DATA = [
     "name": "Accursed Farms Ross Scott",
     "description": "Ross Scott's YouTube site",
     "logo": "images/logos/accursed farms.png",
-    "links": {},
+    "links": {
+      "website": "https://www.accursedfarms.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18333,7 +18387,9 @@ const SITES_DATA = [
     "name": "Eric Wastl",
     "description": "Eric Wastl about-me site",
     "logo": "images/logos/Eric Wastl.png",
-    "links": {},
+    "links": {
+      "website": "https://was.tl/"
+    },
     "flags": {
       "profile": true
     },
@@ -18346,7 +18402,9 @@ const SITES_DATA = [
     "name": "Shrirang Kahale",
     "description": "Shrirang Kahale about-me site",
     "logo": "images/logos/Shrirang Kahale.png",
-    "links": {},
+    "links": {
+      "website": "https://shrirangkahale.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18359,7 +18417,9 @@ const SITES_DATA = [
     "name": "Abdulrahman Alfawal",
     "description": "Abdulrahman Alfawal about-me site",
     "logo": "images/logos/Alfawal.png",
-    "links": {},
+    "links": {
+      "website": "https://www.alfawal.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -18372,7 +18432,9 @@ const SITES_DATA = [
     "name": "Anish De",
     "description": "Anish De about-me site",
     "logo": "images/logos/anish de.png",
-    "links": {},
+    "links": {
+      "website": "https://anishde.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -18385,7 +18447,9 @@ const SITES_DATA = [
     "name": "AshCam",
     "description": "AshCam about-me site",
     "logo": "images/logos/AshCam.png",
-    "links": {},
+    "links": {
+      "website": "https://ashcam.xyz/"
+    },
     "flags": {
       "profile": true
     },
@@ -18398,7 +18462,9 @@ const SITES_DATA = [
     "name": "Alexey Ardov",
     "description": "Alexey Ardov about-me site",
     "logo": "images/logos/Alexey Ardov.png",
-    "links": {},
+    "links": {
+      "website": "https://ardov.me/"
+    },
     "flags": {
       "profile": true
     },
@@ -18411,7 +18477,9 @@ const SITES_DATA = [
     "name": "Ari Archer",
     "description": "Ari Archer about-me site",
     "logo": "images/logos/Ari Archer.png",
-    "links": {},
+    "links": {
+      "website": "https://ari.lt/"
+    },
     "flags": {
       "profile": true
     },
@@ -18424,7 +18492,9 @@ const SITES_DATA = [
     "name": "arialfx",
     "description": "Arialfx about-me site",
     "logo": "images/logos/arialfx.png",
-    "links": {},
+    "links": {
+      "website": "https://arialfx.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18437,7 +18507,9 @@ const SITES_DATA = [
     "name": "AnnikaV9",
     "description": "AnnikaV9 about-me site",
     "logo": "images/logos/AnnikaV9.png",
-    "links": {},
+    "links": {
+      "website": "https://av9.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -18450,7 +18522,9 @@ const SITES_DATA = [
     "name": "Daksh P. Jain",
     "description": "Daksh P. Jain about-me site",
     "logo": "images/logos/Daksh P. Jain.png",
-    "links": {},
+    "links": {
+      "website": "https://daksh.eu.org/"
+    },
     "flags": {
       "profile": true
     },
@@ -18463,7 +18537,9 @@ const SITES_DATA = [
     "name": "Catvibers DanKGooGLy Vapourium",
     "description": "DanKGooGLy about-me site",
     "logo": "images/logos/DanKGooGLy.png",
-    "links": {},
+    "links": {
+      "website": "https://catvibers.me/"
+    },
     "flags": {
       "profile": true
     },
@@ -18476,7 +18552,9 @@ const SITES_DATA = [
     "name": "Cadence",
     "description": "Cadence about-me site",
     "logo": "images/logos/Cadence.png",
-    "links": {},
+    "links": {
+      "website": "https://cadence.moe/"
+    },
     "flags": {
       "profile": true
     },
@@ -18489,7 +18567,9 @@ const SITES_DATA = [
     "name": "Elliot Négrel-Jerzy",
     "description": "Elliot Négrek-Jerzy about-me site",
     "logo": "images/logos/elliotnegrekjerzy.png",
-    "links": {},
+    "links": {
+      "website": "https://www.bsodium.fr/"
+    },
     "flags": {
       "profile": true
     },
@@ -18502,7 +18582,9 @@ const SITES_DATA = [
     "name": "Ben Herila",
     "description": "Ben Herila about-me site",
     "logo": "images/logos/Ben Herila.png",
-    "links": {},
+    "links": {
+      "website": "https://bherila.net/"
+    },
     "flags": {
       "profile": true
     },
@@ -18515,7 +18597,9 @@ const SITES_DATA = [
     "name": "Brian Maher",
     "description": "Brian Maher about-me site",
     "logo": "images/logos/Brian Maher.png",
-    "links": {},
+    "links": {
+      "website": "https://brianpmaher.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18528,7 +18612,9 @@ const SITES_DATA = [
     "name": "Brian Lovin",
     "description": "Brian Lovin about-me site",
     "logo": "images/logos/Brian Lovin.png",
-    "links": {},
+    "links": {
+      "website": "https://brianlovin.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18541,7 +18627,9 @@ const SITES_DATA = [
     "name": "Brian Takita",
     "description": "Brian Takita about-me site",
     "logo": "images/logos/Brian Takita.png",
-    "links": {},
+    "links": {
+      "website": "https://briantakita.me/"
+    },
     "flags": {
       "profile": true
     },
@@ -18554,7 +18642,9 @@ const SITES_DATA = [
     "name": "Devil Bro",
     "description": "DevilBro about-me site",
     "logo": "images/logos/DevilBro.png",
-    "links": {},
+    "links": {
+      "website": "https://mwittrien.github.io/"
+    },
     "flags": {
       "profile": true
     },
@@ -18567,7 +18657,9 @@ const SITES_DATA = [
     "name": "seyi",
     "description": "Seyi about-me site",
     "logo": "images/logos/seyi.png",
-    "links": {},
+    "links": {
+      "website": "https://www.seyi.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -18580,7 +18672,9 @@ const SITES_DATA = [
     "name": "Miguel de Moura",
     "description": "Miguel de Moura about-me site",
     "logo": "images/logos/Miguel de Moura.png",
-    "links": {},
+    "links": {
+      "website": "https://migueldemoura.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18593,7 +18687,9 @@ const SITES_DATA = [
     "name": "Andrea Doimo",
     "description": "Andrea Doimo about-me site",
     "logo": "images/logos/Andrea Doimo.png",
-    "links": {},
+    "links": {
+      "website": "https://www.omiod.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18606,7 +18702,9 @@ const SITES_DATA = [
     "name": "Bryce Bostwick",
     "description": "Bryce Bostwick about-me site",
     "logo": "images/logos/Bryce Bostwick.png",
-    "links": {},
+    "links": {
+      "website": "https://bryce.co/"
+    },
     "flags": {
       "profile": true
     },
@@ -18619,7 +18717,9 @@ const SITES_DATA = [
     "name": "Daniel",
     "description": "Dani about-me site",
     "logo": "images/logos/dani.png",
-    "links": {},
+    "links": {
+      "website": "https://danidev.net/"
+    },
     "flags": {
       "profile": true
     },
@@ -18632,7 +18732,9 @@ const SITES_DATA = [
     "name": "Jakeler",
     "description": "Jakeler about-me site",
     "logo": "images/logos/Jakeler.png",
-    "links": {},
+    "links": {
+      "website": "https://blog.ja-ke.tech/"
+    },
     "flags": {
       "profile": true
     },
@@ -18645,7 +18747,9 @@ const SITES_DATA = [
     "name": "Brodie Robertson",
     "description": "Brodie Robertson about-me site",
     "logo": "images/logos/Brodie Robertson.png",
-    "links": {},
+    "links": {
+      "website": "https://brodierobertson.xyz/"
+    },
     "flags": {
       "profile": true
     },
@@ -18658,7 +18762,9 @@ const SITES_DATA = [
     "name": "Xander",
     "description": "Xander about-me site",
     "logo": "images/logos/Xander.png",
-    "links": {},
+    "links": {
+      "website": "https://www.isxander.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -18671,7 +18777,9 @@ const SITES_DATA = [
     "name": "Tommy Tran",
     "description": "Tommy Tran about-me site",
     "logo": "images/logos/Tommy Tran.png",
-    "links": {},
+    "links": {
+      "website": "https://tommytran.io/"
+    },
     "flags": {
       "profile": true
     },
@@ -18684,7 +18792,9 @@ const SITES_DATA = [
     "name": "Jonah Snider",
     "description": "Jonah Snider about-me site",
     "logo": "images/logos/Jonah Snider.png",
-    "links": {},
+    "links": {
+      "website": "https://jonahsnider.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18697,7 +18807,9 @@ const SITES_DATA = [
     "name": "Baptiste Boulongne",
     "description": "Baptiste Boulongne about-me site",
     "logo": "images/logos/Baptiste Boulongne.png",
-    "links": {},
+    "links": {
+      "website": "https://blgn.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -18710,7 +18822,9 @@ const SITES_DATA = [
     "name": "Blueagle",
     "description": "Blueagle about-me site",
     "logo": "images/logos/Blueeagle.png",
-    "links": {},
+    "links": {
+      "website": "https://blueagle.top/"
+    },
     "flags": {
       "profile": true
     },
@@ -18723,7 +18837,9 @@ const SITES_DATA = [
     "name": "Lorenzo Bocchi",
     "description": "Lorenzo Bocchi about-me site",
     "logo": "images/logos/Lorenzo Bocchi.png",
-    "links": {},
+    "links": {
+      "website": "https://bocchilorenzo.github.io/"
+    },
     "flags": {
       "profile": true
     },
@@ -18736,7 +18852,9 @@ const SITES_DATA = [
     "name": "Pierre Bondoerffer",
     "description": "Pierre Bondoerffer about-me site",
     "logo": "images/logos/Pierre Bondoerffer.png",
-    "links": {},
+    "links": {
+      "website": "https://bondoer.fr/"
+    },
     "flags": {
       "profile": true
     },
@@ -18749,7 +18867,9 @@ const SITES_DATA = [
     "name": "Brian Seymour",
     "description": "Brian Seymour about-me site",
     "logo": "images/logos/brian seymour.png",
-    "links": {},
+    "links": {
+      "website": "https://bri.io/"
+    },
     "flags": {
       "profile": true
     },
@@ -18762,7 +18882,9 @@ const SITES_DATA = [
     "name": "Clément Saccoccio",
     "description": "Clément Saccoccio about-me site",
     "logo": "images/logos/clementsaccoccio.png",
-    "links": {},
+    "links": {
+      "website": "https://c-saccoccio.fr/"
+    },
     "flags": {
       "profile": true
     },
@@ -18775,7 +18897,9 @@ const SITES_DATA = [
     "name": "Cj Ratliff",
     "description": "Cj Ratliff about-me site",
     "logo": "images/logos/Cj Ratliff.png",
-    "links": {},
+    "links": {
+      "website": "https://www.cjratliff.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18788,7 +18912,9 @@ const SITES_DATA = [
     "name": "Bruno Tomé",
     "description": "Bruno Tomé about-me site",
     "logo": "images/logos/Bruno Tomé.png",
-    "links": {},
+    "links": {
+      "website": "https://brunotome.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -18801,7 +18927,9 @@ const SITES_DATA = [
     "name": "CookiePLMonster",
     "description": "CookiePLMonster about-me site",
     "logo": "images/logos/CookiePLMonster.png",
-    "links": {},
+    "links": {
+      "website": "https://cookieplmonster.github.io/"
+    },
     "flags": {
       "profile": true
     },
@@ -18814,7 +18942,9 @@ const SITES_DATA = [
     "name": "Snazzah",
     "description": "Snazzah about-me site",
     "logo": "images/logos/snazzah.png",
-    "links": {},
+    "links": {
+      "website": "https://snazzah.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18827,7 +18957,9 @@ const SITES_DATA = [
     "name": "cuibonobo",
     "description": "Cuibonobo about-me site",
     "logo": "images/logos/cuibonobo.png",
-    "links": {},
+    "links": {
+      "website": "https://cuibonobo.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18840,7 +18972,9 @@ const SITES_DATA = [
     "name": "zyrenth",
     "description": "Zyrenth about-me site",
     "logo": "images/logos/zyrenth.png",
-    "links": {},
+    "links": {
+      "website": "https://zyrenth.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -18853,7 +18987,9 @@ const SITES_DATA = [
     "name": "zerator",
     "description": "Zerator about-me site",
     "logo": "images/logos/Zerator.png",
-    "links": {},
+    "links": {
+      "website": "https://zerator.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18866,7 +19002,9 @@ const SITES_DATA = [
     "name": "0x6rss",
     "description": "0x6rss about-me site",
     "logo": "images/logos/0x6rss.png",
-    "links": {},
+    "links": {
+      "website": "https://cti.monster/"
+    },
     "flags": {
       "profile": true
     },
@@ -18879,7 +19017,9 @@ const SITES_DATA = [
     "name": "Max Langer",
     "description": "Max Langer about-me site",
     "logo": "images/logos/Max Langer.png",
-    "links": {},
+    "links": {
+      "website": "https://max.codes/"
+    },
     "flags": {
       "profile": true
     },
@@ -18892,7 +19032,9 @@ const SITES_DATA = [
     "name": "wiktrek",
     "description": "Wiktrek about-me site",
     "logo": "images/logos/wiktrek.png",
-    "links": {},
+    "links": {
+      "website": "https://wiktrek.xyz/"
+    },
     "flags": {
       "profile": true
     },
@@ -18905,7 +19047,9 @@ const SITES_DATA = [
     "name": "MKBHD",
     "description": "MKBHD about-me site",
     "logo": "images/logos/MKBHD.png",
-    "links": {},
+    "links": {
+      "website": "https://mkbhd.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18918,7 +19062,9 @@ const SITES_DATA = [
     "name": "Darling fireball",
     "description": "A technology-focused blog and podcast platform created and solely maintained by John Gruber.",
     "logo": "images/logos/Daring Fireball.png",
-    "links": {},
+    "links": {
+      "website": "https://daringfireball.net/"
+    },
     "flags": {
       "profile": true
     },
@@ -18931,7 +19077,9 @@ const SITES_DATA = [
     "name": "Denims",
     "description": "Denims about-me site",
     "logo": "images/logos/Denims.png",
-    "links": {},
+    "links": {
+      "website": "https://www.denims.tv/"
+    },
     "flags": {
       "profile": true
     },
@@ -18944,7 +19092,9 @@ const SITES_DATA = [
     "name": "Destiny Steven Bonnell II",
     "description": "Destiny about-me site",
     "logo": "images/logos/Destiny.png",
-    "links": {},
+    "links": {
+      "website": "https://www.destiny.gg/"
+    },
     "flags": {
       "profile": true
     },
@@ -18957,7 +19107,9 @@ const SITES_DATA = [
     "name": "Devan",
     "description": "Devan about-me site",
     "logo": "images/logos/Devan.png",
-    "links": {},
+    "links": {
+      "website": "https://devanbuggay.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18970,7 +19122,9 @@ const SITES_DATA = [
     "name": "Warith AL Maawali",
     "description": "Warith AL Maawali about-me site",
     "logo": "images/logos/Warith AL Maawali.png",
-    "links": {},
+    "links": {
+      "website": "https://www.digi77.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -18983,7 +19137,9 @@ const SITES_DATA = [
     "name": "DistroTube Derek Taylor",
     "description": "DistroTube about-me site",
     "logo": "images/logos/DistroTube.png",
-    "links": {},
+    "links": {
+      "website": "https://distro.tube/"
+    },
     "flags": {
       "profile": true
     },
@@ -18996,7 +19152,9 @@ const SITES_DATA = [
     "name": "Ecys",
     "description": "Ecys about-me site",
     "logo": "images/logos/Ecys.png",
-    "links": {},
+    "links": {
+      "website": "https://ecys.xyz/"
+    },
     "flags": {
       "profile": true
     },
@@ -19009,7 +19167,9 @@ const SITES_DATA = [
     "name": "Jacob Parker",
     "description": "Jacob Parker about-me site",
     "logo": "images/logos/Jacob does code.png",
-    "links": {},
+    "links": {
+      "website": "https://jacobdoescode.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19022,7 +19182,9 @@ const SITES_DATA = [
     "name": "Elybeatmaker",
     "description": "Elybeatmaker about-me site",
     "logo": "images/logos/Elybeatmaker.png",
-    "links": {},
+    "links": {
+      "website": "https://elybeatmaker.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19035,7 +19197,9 @@ const SITES_DATA = [
     "name": "Framp Federico Rampazzo",
     "description": "Framp about-me site",
     "logo": "images/logos/Framp.png",
-    "links": {},
+    "links": {
+      "website": "https://framp.me/"
+    },
     "flags": {
       "profile": true
     },
@@ -19048,7 +19212,9 @@ const SITES_DATA = [
     "name": "ForumPlayer",
     "description": "ForumPlayer about-me site",
     "logo": "images/logos/ForumPlayer.png",
-    "links": {},
+    "links": {
+      "website": "https://forumplayer.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -19061,7 +19227,9 @@ const SITES_DATA = [
     "name": "Forsle",
     "description": "Games Created by Twitch Streamer Forsle",
     "logo": "images/logos/FORSLE.png",
-    "links": {},
+    "links": {
+      "website": "https://forsen.horse/"
+    },
     "flags": {
       "profile": true
     },
@@ -19074,7 +19242,9 @@ const SITES_DATA = [
     "name": "Fluxpoint Development",
     "description": "Fluxpoint Development about-me site",
     "logo": "images/logos/Fluxpoint Development.png",
-    "links": {},
+    "links": {
+      "website": "https://fluxpoint.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -19087,7 +19257,9 @@ const SITES_DATA = [
     "name": "Fleepy",
     "description": "Fleepy about-me site",
     "logo": "images/logos/Fleepy.png",
-    "links": {},
+    "links": {
+      "website": "https://fleepy.tv/"
+    },
     "flags": {
       "profile": true
     },
@@ -19100,7 +19272,9 @@ const SITES_DATA = [
     "name": "IMXNOOBX",
     "description": "IMXNOOBX about-me site",
     "logo": "images/logos/IMXNOOBX.png",
-    "links": {},
+    "links": {
+      "website": "https://imxnoobx.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19113,7 +19287,9 @@ const SITES_DATA = [
     "name": "Kashiful Haque",
     "description": "Kashiful Haque about-me site",
     "logo": "images/logos/Kashiful Haque.png",
-    "links": {},
+    "links": {
+      "website": "https://ifkash.vercel.app/"
+    },
     "flags": {
       "profile": true
     },
@@ -19126,7 +19302,9 @@ const SITES_DATA = [
     "name": "Benjamin O'Brian",
     "description": "Benjamin O'Brian about-me site",
     "logo": "images/logos/Benjamin obrian.png",
-    "links": {},
+    "links": {
+      "website": "https://iipython.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -19139,7 +19317,9 @@ const SITES_DATA = [
     "name": "Otzdarva",
     "description": "Otzdarva about-me site",
     "logo": "images/logos/Otzdarva.png",
-    "links": {},
+    "links": {
+      "website": "https://otzdarva.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19152,7 +19332,9 @@ const SITES_DATA = [
     "name": "oSumAtrIX",
     "description": "oSumAtrIX about-me site",
     "logo": "images/logos/osumatrix.png",
-    "links": {},
+    "links": {
+      "website": "https://osumatrix.me/"
+    },
     "flags": {
       "profile": true
     },
@@ -19165,7 +19347,9 @@ const SITES_DATA = [
     "name": "Razeen Faruque",
     "description": "Razeen Faruque about-me site",
     "logo": "images/logos/Razeen Faruque.png",
-    "links": {},
+    "links": {
+      "website": "https://www.razeenf.ca/"
+    },
     "flags": {
       "profile": true
     },
@@ -19178,7 +19362,9 @@ const SITES_DATA = [
     "name": "Raunak Sitoula",
     "description": "Raunak Sitoula about-me site",
     "logo": "images/logos/Raunak Sitoula.png",
-    "links": {},
+    "links": {
+      "website": "https://www.raunaksitoula.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19191,7 +19377,9 @@ const SITES_DATA = [
     "name": "Gabriel Catalfo",
     "description": "Gabriel Catalfo about-me site",
     "logo": "images/logos/Gabriel Catalfo.png",
-    "links": {},
+    "links": {
+      "website": "https://gabecatalfo.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19204,7 +19392,9 @@ const SITES_DATA = [
     "name": "Joseph CHATAIGNON",
     "description": "Joseph CHATAIGNON about-me site",
     "logo": "images/logos/Joseph CHATAIGNON.png",
-    "links": {},
+    "links": {
+      "website": "https://josephchataignon.github.io/"
+    },
     "flags": {
       "profile": true
     },
@@ -19217,7 +19407,9 @@ const SITES_DATA = [
     "name": "Jhey Tompkins",
     "description": "Jhey Tompkins about-me site",
     "logo": "images/logos/Jhey Tompkins.png",
-    "links": {},
+    "links": {
+      "website": "https://www.jhey.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -19230,7 +19422,9 @@ const SITES_DATA = [
     "name": "Jeusto",
     "description": "Jeusto about-me site",
     "logo": "images/logos/Jeusto.png",
-    "links": {},
+    "links": {
+      "website": "https://www.jeusto.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19243,7 +19437,9 @@ const SITES_DATA = [
     "name": "Jakob Neumann",
     "description": "Jakob Neumann about-me site",
     "logo": "images/logos/Jakob Neumann.png",
-    "links": {},
+    "links": {
+      "website": "https://jakobneumann.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19256,7 +19452,9 @@ const SITES_DATA = [
     "name": "JAKE ROMAN",
     "description": "JAKE ROMAN about-me site",
     "logo": "images/logos/JAKE ROMAN.png",
-    "links": {},
+    "links": {
+      "website": "https://jakeroman.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19269,7 +19467,9 @@ const SITES_DATA = [
     "name": "kyleggiero",
     "description": "kyleggiero about-me site",
     "logo": "images/logos/kyleggiero.png",
-    "links": {},
+    "links": {
+      "website": "https://kyleggiero.me/"
+    },
     "flags": {
       "profile": true
     },
@@ -19282,7 +19482,9 @@ const SITES_DATA = [
     "name": "X3NO",
     "description": "X3NO about-me site",
     "logo": "images/logos/X3NO.png",
-    "links": {},
+    "links": {
+      "website": "https://www.ksenon.net/"
+    },
     "flags": {
       "profile": true
     },
@@ -19295,7 +19497,9 @@ const SITES_DATA = [
     "name": "korino Ender",
     "description": "korino about-me site",
     "logo": "images/logos/korino.png",
-    "links": {},
+    "links": {
+      "website": "https://korino.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -19308,7 +19512,9 @@ const SITES_DATA = [
     "name": "Ilya Kulbachny",
     "description": "Ilya Kulbachny about-me site",
     "logo": "images/logos/Ilya kulbachny.png",
-    "links": {},
+    "links": {
+      "website": "https://kulbachny.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19321,7 +19527,9 @@ const SITES_DATA = [
     "name": "ppy",
     "description": "ppy about-me site",
     "logo": "images/logos/ppy.png",
-    "links": {},
+    "links": {
+      "website": "https://ppy.sh/"
+    },
     "flags": {
       "profile": true
     },
@@ -19334,7 +19542,9 @@ const SITES_DATA = [
     "name": "Luke Smith",
     "description": "Luke Smith about-me site",
     "logo": "images/logos/Luke Smith.png",
-    "links": {},
+    "links": {
+      "website": "https://lukesmith.xyz/"
+    },
     "flags": {
       "profile": true
     },
@@ -19347,7 +19557,9 @@ const SITES_DATA = [
     "name": "Cody Miller",
     "description": "Cody Miller about-me site",
     "logo": "images/logos/Cody Miller.png",
-    "links": {},
+    "links": {
+      "website": "https://looskie.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19360,7 +19572,9 @@ const SITES_DATA = [
     "name": "Lemmino",
     "description": "Lemmino about-me site",
     "logo": "images/logos/lemmino.png",
-    "links": {},
+    "links": {
+      "website": "https://www.lemmi.no/"
+    },
     "flags": {
       "profile": true
     },
@@ -19373,7 +19587,9 @@ const SITES_DATA = [
     "name": "Schlep.Tv",
     "description": "Schlep about-me site",
     "logo": "images/logos/SCHLEP.TV.png",
-    "links": {},
+    "links": {
+      "website": "https://schlep.tv/"
+    },
     "flags": {
       "profile": true
     },
@@ -19386,7 +19602,9 @@ const SITES_DATA = [
     "name": "Hectorlizard",
     "description": "Hectorlizard about-me site",
     "logo": "images/logos/Hectorlizard.png",
-    "links": {},
+    "links": {
+      "website": "https://hectorlizard.me/"
+    },
     "flags": {
       "profile": true
     },
@@ -19399,7 +19617,9 @@ const SITES_DATA = [
     "name": "Adam Smith",
     "description": "Adam Smith about-me site",
     "logo": "images/logos/Adam Smith.png",
-    "links": {},
+    "links": {
+      "website": "https://burkybang.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19412,7 +19632,9 @@ const SITES_DATA = [
     "name": "Sander van der Burg's blog",
     "description": "Sander van der Burg's blog",
     "logo": "images/logos/Sander van der Burg.png",
-    "links": {},
+    "links": {
+      "website": "https://sandervanderburg.blogspot.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19425,7 +19647,9 @@ const SITES_DATA = [
     "name": "SammCheese",
     "description": "SammCheese about-me site",
     "logo": "images/logos/SammCheese.png",
-    "links": {},
+    "links": {
+      "website": "https://sammcheese.net/"
+    },
     "flags": {
       "profile": true
     },
@@ -19438,7 +19662,9 @@ const SITES_DATA = [
     "name": "Saliven",
     "description": "Saliven about-me site",
     "logo": "images/logos/Saliven.png",
-    "links": {},
+    "links": {
+      "website": "https://saliven.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19451,7 +19677,9 @@ const SITES_DATA = [
     "name": "Ruben Panzich",
     "description": "Ruben Panzich about-me site",
     "logo": "images/logos/Ruben Panzich.png",
-    "links": {},
+    "links": {
+      "website": "https://www.ruben-p.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19464,7 +19692,9 @@ const SITES_DATA = [
     "name": "Kagurazaka. Ritsuka (晏雲杉)",
     "description": "Kagurazaka. Ritsuka (晏雲杉) about-me site",
     "logo": "images/logos/Kagurazaka Ritsuka.png",
-    "links": {},
+    "links": {
+      "website": "https://ritsuka.moe/"
+    },
     "flags": {
       "profile": true
     },
@@ -19477,7 +19707,9 @@ const SITES_DATA = [
     "name": "Piotr Brzozowski",
     "description": "Piotr Brzozowski about-me site",
     "logo": "images/logos/Piotr Brzozowski.png",
-    "links": {},
+    "links": {
+      "website": "https://stirante.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19490,7 +19722,9 @@ const SITES_DATA = [
     "name": "Pandadev",
     "description": "Pandadev about-me site",
     "logo": "images/logos/Pandadev.png",
-    "links": {},
+    "links": {
+      "website": "https://pandadev.net/"
+    },
     "flags": {
       "profile": true
     },
@@ -19503,7 +19737,9 @@ const SITES_DATA = [
     "name": "Nicholas Johnson",
     "description": "Nicholas Johnson about-me site",
     "logo": "images/logos/nicholasjohnson.png",
-    "links": {},
+    "links": {
+      "website": "https://nicholasjohnson.ch/"
+    },
     "flags": {
       "profile": true
     },
@@ -19516,7 +19752,9 @@ const SITES_DATA = [
     "name": "Neurocore",
     "description": "Neurocore about-me site",
     "logo": "images/logos/Neurocore.png",
-    "links": {},
+    "links": {
+      "website": "https://neurocore.xyz/"
+    },
     "flags": {
       "profile": true
     },
@@ -19529,7 +19767,9 @@ const SITES_DATA = [
     "name": "Nemanja Dragun",
     "description": "Nemanja Dragun about-me site",
     "logo": "images/logos/Nemanja Dragun.png",
-    "links": {},
+    "links": {
+      "website": "https://nemanjadragun.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19542,7 +19782,9 @@ const SITES_DATA = [
     "name": "NanoBunTV",
     "description": "NanoBunTV about-me site",
     "logo": "images/logos/NanoBunTV.png",
-    "links": {},
+    "links": {
+      "website": "https://nanobun.tv/"
+    },
     "flags": {
       "profile": true
     },
@@ -19555,7 +19797,9 @@ const SITES_DATA = [
     "name": "Node",
     "description": "Node about-me site",
     "logo": "images/logos/node.png",
-    "links": {},
+    "links": {
+      "website": "https://n-o-d-e.net/"
+    },
     "flags": {
       "profile": true
     },
@@ -19568,7 +19812,9 @@ const SITES_DATA = [
     "name": "Ryan Yin",
     "description": "Ryan Yin about-me site",
     "logo": "images/logos/Ryan Yin.png",
-    "links": {},
+    "links": {
+      "website": "https://thiscute.world/"
+    },
     "flags": {
       "profile": true
     },
@@ -19581,7 +19827,9 @@ const SITES_DATA = [
     "name": "H. Kamran",
     "description": "H. Kamran about-me site",
     "logo": "images/logos/H. Kamran.png",
-    "links": {},
+    "links": {
+      "website": "https://hkamran.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19594,7 +19842,9 @@ const SITES_DATA = [
     "name": "Immanuel Hise",
     "description": "Immanuel Hise about-me site",
     "logo": "images/logos/Immanuel Hise.png",
-    "links": {},
+    "links": {
+      "website": "https://hiserod.github.io/"
+    },
     "flags": {
       "profile": true
     },
@@ -19607,7 +19857,9 @@ const SITES_DATA = [
     "name": "Nathan Lodge",
     "description": "Nathan Lodge about-me site",
     "logo": "images/logos/Nathan Lodge.png",
-    "links": {},
+    "links": {
+      "website": "https://hexiro.me/"
+    },
     "flags": {
       "profile": true
     },
@@ -19620,7 +19872,9 @@ const SITES_DATA = [
     "name": "Yarmo",
     "description": "Yarmo about-me site",
     "logo": "images/logos/Yarmo.png",
-    "links": {},
+    "links": {
+      "website": "https://yarmo.eu/"
+    },
     "flags": {
       "profile": true
     },
@@ -19633,7 +19887,9 @@ const SITES_DATA = [
     "name": "w0rp zone",
     "description": "w0rp zone blog",
     "logo": "images/logos/w0rp zone.png",
-    "links": {},
+    "links": {
+      "website": "https://w0rp.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19646,7 +19902,9 @@ const SITES_DATA = [
     "name": "MrQuantumOFF",
     "description": "Demir about-me site",
     "logo": "images/logos/MrQuantumOFF.png",
-    "links": {},
+    "links": {
+      "website": "https://mrquantumoff.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -19659,7 +19917,9 @@ const SITES_DATA = [
     "name": "Dylan MidnightSlicer",
     "description": "Dylan (MidnightSlicer) about-me site",
     "logo": "images/logos/Dylan.png",
-    "links": {},
+    "links": {
+      "website": "https://mnsr.win/"
+    },
     "flags": {
       "profile": true
     },
@@ -19672,7 +19932,9 @@ const SITES_DATA = [
     "name": "Marián Mižik",
     "description": "Marián Mižik about-me site",
     "logo": "images/logos/Marian Mizik.png",
-    "links": {},
+    "links": {
+      "website": "https://mizik.eu/"
+    },
     "flags": {
       "profile": true
     },
@@ -19685,7 +19947,9 @@ const SITES_DATA = [
     "name": "Mitch Siegel",
     "description": "Mitch Siegel about-me site",
     "logo": "images/logos/Mitch Siegel.png",
-    "links": {},
+    "links": {
+      "website": "https://mit.gg/"
+    },
     "flags": {
       "profile": true
     },
@@ -19698,7 +19962,9 @@ const SITES_DATA = [
     "name": "Maxime Pinot",
     "description": "Maxime Pinot about-me site",
     "logo": "images/logos/Maxime Pinot.png",
-    "links": {},
+    "links": {
+      "website": "https://www.maximepinot.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19711,7 +19977,9 @@ const SITES_DATA = [
     "name": "marvil",
     "description": "marvil about-me site",
     "logo": "images/logos/marvil.png",
-    "links": {},
+    "links": {
+      "website": "https://marvil.co/"
+    },
     "flags": {
       "profile": true
     },
@@ -19724,7 +19992,9 @@ const SITES_DATA = [
     "name": "Marte Montipo'",
     "description": "Marte Montipo' about-me site",
     "logo": "images/logos/Marte Montipo.png",
-    "links": {},
+    "links": {
+      "website": "https://marte.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -19737,7 +20007,9 @@ const SITES_DATA = [
     "name": "Alex mango.pdf.zone",
     "description": "Alex about-me site",
     "logo": "images/logos/mango.pdf.zone.png",
-    "links": {},
+    "links": {
+      "website": "https://mango.pdf.zone/"
+    },
     "flags": {
       "profile": true
     },
@@ -19750,7 +20022,9 @@ const SITES_DATA = [
     "name": "Tarballwalf",
     "description": "Tarballwalf about-me site",
     "logo": "images/logos/Tarballwalf.png",
-    "links": {},
+    "links": {
+      "website": "https://trblwlf.net/"
+    },
     "flags": {
       "profile": true
     },
@@ -19763,7 +20037,9 @@ const SITES_DATA = [
     "name": "Sylvie Fox",
     "description": "Sylvie about-me site",
     "logo": "images/logos/sylvie fox.png",
-    "links": {},
+    "links": {
+      "website": "https://sylviefox.ca/"
+    },
     "flags": {
       "profile": true
     },
@@ -19776,7 +20052,9 @@ const SITES_DATA = [
     "name": "The Linux Cast",
     "description": "A dedicated YouTube channel and community focusing on Linux news, tutorials, and desktop environment reviews.",
     "logo": "images/logos/The Linux Cast.png",
-    "links": {},
+    "links": {
+      "website": "https://thelinuxcast.org/"
+    },
     "flags": {
       "profile": true
     },
@@ -19789,7 +20067,9 @@ const SITES_DATA = [
     "name": "tube.Kody",
     "description": "tube.Kody site",
     "logo": "images/logos/tube.Kody.png",
-    "links": {},
+    "links": {
+      "website": "https://tube.kdy.ch/"
+    },
     "flags": {
       "profile": true
     },
@@ -19802,7 +20082,9 @@ const SITES_DATA = [
     "name": "Pirate Software",
     "description": "Pirate Software about-me site",
     "logo": "images/logos/Pirate Software.png",
-    "links": {},
+    "links": {
+      "website": "https://gopiratesoftware.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19815,7 +20097,9 @@ const SITES_DATA = [
     "name": "Kuba pxseu",
     "description": "Kuba/pxseu about-me site",
     "logo": "images/logos/pxseu.png",
-    "links": {},
+    "links": {
+      "website": "https://pxseu.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19828,7 +20112,9 @@ const SITES_DATA = [
     "name": "Philipp",
     "description": "Philipp about-me site",
     "logo": "images/logos/Philipp.png",
-    "links": {},
+    "links": {
+      "website": "https://ppluss.de/"
+    },
     "flags": {
       "profile": true
     },
@@ -19841,7 +20127,9 @@ const SITES_DATA = [
     "name": "plasticuproject",
     "description": "plasticuproject about-me site",
     "logo": "images/logos/plasticuproject.png",
-    "links": {},
+    "links": {
+      "website": "https://plasticuproject.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19854,7 +20142,9 @@ const SITES_DATA = [
     "name": "Peter Lindbergh",
     "description": "Peter Lindbergh about-me site",
     "logo": "images/logos/peter lin.png",
-    "links": {},
+    "links": {
+      "website": "https://peterlindbergh.obys.agency/"
+    },
     "flags": {
       "profile": true
     },
@@ -19867,7 +20157,9 @@ const SITES_DATA = [
     "name": "Pedro Lucas",
     "description": "Pedro Lucas about-me site",
     "logo": "images/logos/Pedro Lucas.png",
-    "links": {},
+    "links": {
+      "website": "https://pedrorok.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19880,7 +20172,9 @@ const SITES_DATA = [
     "name": "Maximilian Dorn",
     "description": "Maximilian Dorn about-me site",
     "logo": "images/logos/Maximilian Dorn.png",
-    "links": {},
+    "links": {
+      "website": "https://cerus.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -19893,7 +20187,9 @@ const SITES_DATA = [
     "name": "valkyrie_pilot",
     "description": "valkyrie_pilot about-me site",
     "logo": "images/logos/valkyrie_pilot.png",
-    "links": {},
+    "links": {
+      "website": "https://www.randomairborne.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -19906,7 +20202,9 @@ const SITES_DATA = [
     "name": "Ewan Howell",
     "description": "Ewan Howell about-me site",
     "logo": "images/logos/Ewan Howell.png",
-    "links": {},
+    "links": {
+      "website": "https://ewanhowell.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19919,7 +20217,9 @@ const SITES_DATA = [
     "name": "Supinic",
     "description": "Supinic about-me site",
     "logo": "images/logos/Supinic.png",
-    "links": {},
+    "links": {
+      "website": "https://supinic.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19932,7 +20232,9 @@ const SITES_DATA = [
     "name": "Just Still",
     "description": " about-me site",
     "logo": "images/logos/Just Still.png",
-    "links": {},
+    "links": {
+      "website": "https://stillu.cc/"
+    },
     "flags": {
       "profile": true
     },
@@ -19945,7 +20247,9 @@ const SITES_DATA = [
     "name": "sleeplessbeastie's notes",
     "description": "sleeplessbeastie's blog",
     "logo": "images/logos/sleeplessbeastie.png",
-    "links": {},
+    "links": {
+      "website": "https://sleeplessbeastie.eu/"
+    },
     "flags": {
       "profile": true
     },
@@ -19958,7 +20262,9 @@ const SITES_DATA = [
     "name": "Derek Sivers",
     "description": "Derek Sivers about-me site",
     "logo": "images/logos/Derek Sivers.png",
-    "links": {},
+    "links": {
+      "website": "https://sive.rs/"
+    },
     "flags": {
       "profile": true
     },
@@ -19971,7 +20277,9 @@ const SITES_DATA = [
     "name": "siddharth.ray()",
     "description": "siddharth.ray() about-me site",
     "logo": "images/logos/siddharth.ray.png",
-    "links": {},
+    "links": {
+      "website": "https://www.siddharthray.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -19984,7 +20292,9 @@ const SITES_DATA = [
     "name": "shubham",
     "description": "shubham about-me site",
     "logo": "images/logos/shubham.png",
-    "links": {},
+    "links": {
+      "website": "https://www.shubhamprasad.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -19997,7 +20307,9 @@ const SITES_DATA = [
     "name": "Shriram Balaji",
     "description": "Shriram Balaji about-me site",
     "logo": "images/logos/Shriram Balaji.png",
-    "links": {},
+    "links": {
+      "website": "https://www.shrirambalaji.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -20010,7 +20322,9 @@ const SITES_DATA = [
     "name": "Siderite",
     "description": "A personal blog and resource site focusing on software development, technology, and philosophical musings.",
     "logo": "images/logos/Siderite.png",
-    "links": {},
+    "links": {
+      "website": "https://siderite.dev/"
+    },
     "flags": {
       "profile": true
     },
@@ -20023,7 +20337,9 @@ const SITES_DATA = [
     "name": "Elías",
     "description": "Elías about-me site",
     "logo": "images/logos/Elias.png",
-    "links": {},
+    "links": {
+      "website": "https://eliasruiz.com/"
+    },
     "flags": {
       "profile": true
     },
@@ -20117,5 +20433,338 @@ const SITES_DATA = [
     },
     "lightmode_categories": {},
     "on_home": true
-  }
+  },
+  {
+    "name": "Transmissionbt Transmission BitTorrent",
+    "description": "A Fast, Easy and Free Bittorrent Client for macOS, Windows and Linux",
+    "logo": "images/logos/transmissionbt.png",
+    "links": {
+      "website": "https://transmissionbt.com/",
+      "macos": "https://transmissionbt.com/download/",
+      "windows": "https://transmissionbt.com/download/",
+      "linux": "https://transmissionbt.com/download/",
+      "source": "https://github.com/transmission/"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "open-source": true,
+      "websites": true,
+      "macos": true,
+      "windows": true,
+      "linux": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "Uptime Kuma",
+    "description": "Self-hosted monitoring tool",
+    "logo": "images/logos/uptimekuma.png",
+    "links": {
+      "website": "https://uptime.kuma.pet/",
+      "source": "https://github.com/louislam/uptime-kuma"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "VueTorrent",
+    "description": "WEBUI for qBittorrent made with Vuejs!",
+    "logo": "images/logos/vuetorrent.png",
+    "links": {
+      "website": "https://vuetorrent.github.io/demo/",
+      "source": "https://github.com/VueTorrent"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "Unraid",
+    "description": "Operating system for self-hosted servers and network-attached storage.",
+    "logo": "images/logos/unraid.png",
+    "links": {
+      "website": "https://unraid.net/",
+      "windows": "https://unraid.net/getting-started",
+      "macos": "https://unraid.net/getting-started",
+      "linux": "https://unraid.net/getting-started"
+    },
+    "flags": {},
+    "categories": {
+      "Windows": true,
+      "MacOS": true,
+      "Linux": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "Seerr",
+    "description": "Seerr is a free, open-source request management and media discovery tool that works seamlessly with your Jellyfin, Plex, or Emby server.",
+    "logo": "images/logos/seerr.png",
+    "links": {
+      "website": "https://seerr.dev/",
+      "source": "https://github.com/seerr-team"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "Nginx Proxy Manager",
+    "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface.",
+    "logo": "images/logos/nginxproxymanager.png",
+    "links": {
+      "website": "https://nginxproxymanager.com/",
+      "source": "https://github.com/NginxProxyManager"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "Netdata",
+    "description": "Netdata Cloud is a real-time infrastructure monitoring and full-stack observability platform. It allows developers, sysadmins, and DevOps teams to track the health and performance of their entire IT infrastructure—including bare metal, virtual machines, containers, networks, and applications.",
+    "logo": "images/logos/netdata.png",
+    "links": {
+      "website": "https://www.netdata.cloud/",
+      "source": "https://github.com/netdata"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "Ombi",
+    "description": "A self-hosted web application that acts as a centralized request and discovery portal for home media servers like Plex, Emby, and Jellyfin.",
+    "logo": "images/logos/ombi.png",
+    "links": {
+      "website": "https://ombi.io/",
+      "source": "https://github.com/Ombi-app",
+      "ios": "https://apps.apple.com/us/app/ombi/id1335260043",
+      "android": "https://play.google.com/store/apps/details?id=com.tidusjar.Ombi",
+      "windows": "https://github.com/Ombi-app/Ombi/releases",
+      "macos": "https://github.com/Ombi-app/Ombi/releases",
+      "linux": "https://github.com/Ombi-app/Ombi/releases"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "Android": true,
+      "IOS": true,
+      "Windows": true,
+      "MacOS": true,
+      "Linux": true,
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "Apache Guacamole",
+    "description": "Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.",
+    "logo": "images/logos/apacheguacamole.png",
+    "links": {
+      "website": "https://guacamole.apache.org/",
+      "source": "https://github.com/apache/guacamole-server",
+      "wikipedia": "https://en.wikipedia.org/wiki/Apache_Guacamole"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "Jellyfin",
+    "description": "Jellyfin is a free, open-source media server software that lets you collect, manage, and stream your personal digital media (movies, TV shows, music, and photos) to any device.",
+    "logo": "images/logos/jellyfin.png",
+    "links": {
+      "website": "https://jellyfin.org/",
+      "source": "https://github.com/jellyfin",
+      "ios": "https://apps.apple.com/us/app/jellyfin-mobile/id1480192618",
+      "android": "https://play.google.com/store/apps/details?id=org.jellyfin.mobile&hl=en_US",
+      "windows": "https://jellyfin.org/downloads/windows",
+      "macos": "https://jellyfin.org/downloads/macos",
+      "linux": "https://jellyfin.org/downloads/linux"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "Android": true,
+      "IOS": true,
+      "Windows": true,
+      "MacOS": true,
+      "Linux": true,
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "LibreSpeed Speedtest",
+    "description": "Self-hosted Speed Test for HTML5 and more. Easy setup, examples, configurable, mobile friendly. Supports PHP, Node, Multiple servers, and more",
+    "logo": "images/logos/librespeedspeedtest.png",
+    "links": {
+      "website": "https://librespeed.org/",
+      "source": "https://github.com/librespeed"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "Authelia",
+    "description": "Authelia is an open-source authentication and authorization server and portal fulfilling the identity and access management (IAM) role of information security in providing multi-factor authentication and single sign-on (SSO) for your applications via a web portal. Authelia is an OpenID Connect 1.0 Provider which is OpenID Certified™ allowing comprehensive integrations, and acts as a companion for common reverse proxies.",
+    "logo": "images/logos/authelia.png",
+    "links": {
+      "website": "https://www.authelia.com/",
+      "source": "https://github.com/authelia"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "Dozzle",
+    "description": "Realtime log viewer for containers. Supports Docker, Swarm and K8s.",
+    "logo": "images/logos/dozzle.png",
+    "links": {
+      "website": "https://dozzle.dev/",
+      "source": "https://github.com/amir20/dozzle"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  {
+    "name": "audiobookshelf",
+    "description": "Self-hosted audiobook and podcast server.",
+    "logo": "images/logos/audiobookshelf.png",
+    "links": {
+      "website": "https://www.audiobookshelf.org/",
+      "source": "https://github.com/advplyr/audiobookshelf",
+      "android": "https://play.google.com/store/apps/details?id=com.audiobookshelf.app"
+    },
+    "flags": {
+      "open_source": true
+    },
+    "categories": {
+      "Android": true,
+      "open-source": true,
+      "websites": true
+    },
+    "lightmode_categories": {},
+    "on_home": true
+  },
+  [
+    {
+      "name": "AdGuard",
+      "description": "AdGuard is a comprehensive privacy and security ecosystem primarily focused on blocking ads, preventing web tracking, and shielding users from malware.",
+      "logo": "images/logos/adguard.png",
+      "links": {
+        "website": "https://adguard.com/",
+        "source": "https://github.com/AdguardTeam",
+        "wikipedia": "https://en.wikipedia.org/wiki/AdGuard",
+        "ios": "https://apps.apple.com/us/app/adguard-ad-blocker-for-safari/id1047223162",
+        "android": "https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker",
+        "windows": "https://adguard.com/",
+        "macos": "https://adguard.com/",
+        "chrome": "https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg"
+      },
+      "flags": {
+        "open_source": true
+      },
+      "categories": {
+        "Android": true,
+        "IOS": true,
+        "Windows": true,
+        "MacOS": true,
+        "Wiki": true,
+        "extensions": true,
+        "open-source": true,
+        "websites": true
+      },
+      "lightmode_categories": {},
+      "on_home": true
+    },
+    {
+      "name": " Portainer.io",
+      "description": "Operational control for Kubernetes, Docker, and Podman; without the specialist overhead.",
+      "logo": "images/logos/portainerio.png",
+      "links": {
+        "website": "https://www.portainer.io/",
+        "source": "https://github.com/portainer"
+      },
+      "flags": {
+        "open_source": true
+      },
+      "categories": {
+        "open-source": true,
+        "websites": true
+      },
+      "lightmode_categories": {},
+      "on_home": true
+    }
+  ]
 ];

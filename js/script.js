@@ -322,7 +322,7 @@ function isLinkTypeLightmode(site, type) {
 
     let checkKeys = [];
     if (typeLower === 'website') {
-        checkKeys = ['home', 'websites'];
+        checkKeys = ['websites'];
     } else if (['chrome', 'firefox', 'edge', 'safari', 'opera', 'brave'].includes(typeLower)) {
         checkKeys = ['extensions'];
     } else if (['wiki', 'wikipedia'].includes(typeLower)) {
