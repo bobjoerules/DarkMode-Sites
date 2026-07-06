@@ -1969,7 +1969,7 @@ const SITES_DATA = [
       "linux": "https://spicetify.app/docs/getting-started",
       "macos": "https://spicetify.app/docs/getting-started",
       "windows": "https://spicetify.app/docs/getting-started",
-      "wikipedia": "https://en.wikipedia.org/wiki/Spicetify"
+      "github": "https://github.com/spicetify"
     },
     "flags": {
       "open_source": true
@@ -4997,11 +4997,15 @@ const SITES_DATA = [
     "description": "Play games across your devices.",
     "logo": "images/logos/Google Play Games.png",
     "links": {
-      "website": "https://play.google.com/googleplaygames/"
+      "website": "https://play.google.com/googleplaygames/",
+      "android": "https://play.google.com/googleplaygames/",
+      "windows": "https://play.google.com/googleplaygames/"
     },
     "flags": {},
     "categories": {
-      "websites": true
+      "websites": true,
+      "Android": true,
+      "Windows": true
     },
     "lightmode_categories": {},
     "on_home": true
