@@ -161,8 +161,7 @@ const SITES_DATA = [
     "description": "Minecraft server hosting and also includes useful minecraft resources like text gradient generator",
     "logo": "images/logos/birdflop.png",
     "links": {
-      "website": "https://www.birdflop.com/",
-      "github": "https://github.com/birdflop/"
+      "website": "https://www.birdflop.com/"
     },
     "flags": {
       "open_source": true
@@ -183,8 +182,7 @@ const SITES_DATA = [
       "linux": "https://www.blender.org/download/",
       "macos": "https://www.blender.org/",
       "windows": "https://www.blender.org/",
-      "wikipedia": "https://en.wikipedia.org/wiki/Blender_(software)",
-      "source": "https://projects.blender.org/blender/blender"
+      "wikipedia": "https://en.wikipedia.org/wiki/Blender_(software)"
     },
     "flags": {
       "open_source": true
@@ -371,8 +369,7 @@ const SITES_DATA = [
       "linux": "https://www.mozilla.org/en-US/firefox/linux/",
       "macos": "https://www.mozilla.org/firefox",
       "windows": "https://www.mozilla.org/firefox",
-      "wikipedia": "https://en.wikipedia.org/wiki/Firefox",
-      "source": "https://hg-edge.mozilla.org/mozilla-central/"
+      "wikipedia": "https://en.wikipedia.org/wiki/Firefox"
     },
     "flags": {
       "open_source": true
@@ -771,8 +768,7 @@ const SITES_DATA = [
     "logo": "images/logos/scartchaddons.png",
     "links": {
       "website": "https://scratchaddons.com/",
-      "wikipedia": "https://en.wikipedia.org/wiki/Scratch_(programming_language)",
-      "github": "https://github.com/ScratchAddons"
+      "wikipedia": "https://en.wikipedia.org/wiki/Scratch_(programming_language)"
     },
     "flags": {
       "open_source": true
@@ -918,8 +914,7 @@ const SITES_DATA = [
       "linux": "https://code.visualstudio.com/download",
       "macos": "https://code.visualstudio.com/download",
       "windows": "https://code.visualstudio.com/download",
-      "wikipedia": "https://en.wikipedia.org/wiki/Visual_Studio_Code",
-      "github": "https://github.com/microsoft/vscode"
+      "wikipedia": "https://en.wikipedia.org/wiki/Visual_Studio_Code"
     },
     "flags": {
       "open_source": true
@@ -1085,8 +1080,7 @@ const SITES_DATA = [
       "website": "https://betterdiscord.app/",
       "linux": "https://betterdiscord.app/",
       "macos": "https://betterdiscord.app/",
-      "windows": "https://betterdiscord.app/",
-      "github": "https://github.com/BetterDiscord/"
+      "windows": "https://betterdiscord.app/"
     },
     "flags": {
       "open_source": true
@@ -1161,8 +1155,7 @@ const SITES_DATA = [
     "logo": "images/logos/playcover.png",
     "links": {
       "website": "https://playcover.io/",
-      "macos": "https://playcover.io/download/",
-      "github": "https://github.com/PlayCover/"
+      "macos": "https://playcover.io/download/"
     },
     "flags": {
       "open_source": true
@@ -1215,8 +1208,7 @@ const SITES_DATA = [
     "logo": "images/logos/Heroic.png",
     "links": {
       "website": "https://heroicgameslauncher.com/",
-      "macos": "https://heroicgameslauncher.com/downloads",
-      "github": "https://github.com/Heroic-Games-Launcher"
+      "macos": "https://heroicgameslauncher.com/downloads"
     },
     "flags": {
       "open_source": true
@@ -1360,8 +1352,7 @@ const SITES_DATA = [
     "description": "DarkMode minecraft ui maker",
     "logo": "images/logos/darkomizer.png",
     "links": {
-      "website": "https://darkomizer.com/",
-      "github": "https://github.com/nebuIr/Default-Dark-Mode"
+      "website": "https://darkomizer.com/"
     },
     "flags": {
       "open_source": true
@@ -1378,8 +1369,7 @@ const SITES_DATA = [
     "description": "Guide to learning/using discord.js",
     "logo": "images/logos/Discord Js Guide.png",
     "links": {
-      "website": "https://discordjs.guide/",
-      "github": "https://github.com/discordjs/guide"
+      "website": "https://discordjs.guide/"
     },
     "flags": {
       "open_source": true
@@ -1440,8 +1430,7 @@ const SITES_DATA = [
     "logo": "images/logos/mdn.png",
     "links": {
       "website": "https://developer.mozilla.org/",
-      "wikipedia": "https://en.wikipedia.org/wiki/MDN_Web_Docs",
-      "github": "https://github.com/mdn/"
+      "wikipedia": "https://en.wikipedia.org/wiki/MDN_Web_Docs"
     },
     "flags": {
       "open_source": true
@@ -1520,8 +1509,7 @@ const SITES_DATA = [
       "ios": "https://apps.apple.com/us/app/duckduckgo-private-browser/id663592361?platform=iphone",
       "macos": "https://duckduckgo.com/mac",
       "windows": "https://duckduckgo.com/windows",
-      "wikipedia": "https://en.wikipedia.org/wiki/DuckDuckGo",
-      "github": "https://github.com/duckduckgo"
+      "wikipedia": "https://en.wikipedia.org/wiki/DuckDuckGo"
     },
     "flags": {
       "open_source": true
@@ -1908,8 +1896,7 @@ const SITES_DATA = [
       "website": "https://prismlauncher.org/",
       "linux": "https://prismlauncher.org/download/",
       "macos": "https://prismlauncher.org/download/mac/",
-      "windows": "https://prismlauncher.org/download/windows/",
-      "github": "https://github.com/PrismLauncher/"
+      "windows": "https://prismlauncher.org/download/windows/"
     },
     "flags": {
       "open_source": true
@@ -1933,8 +1920,7 @@ const SITES_DATA = [
       "linux": "https://multimc.org/#Download",
       "macos": "https://multimc.org/#Download",
       "windows": "https://multimc.org/#Download",
-      "wikipedia": "https://en.wikipedia.org/wiki/MultiMC",
-      "github": "https://github.com/MultiMC/"
+      "wikipedia": "https://en.wikipedia.org/wiki/MultiMC"
     },
     "flags": {
       "open_source": true
@@ -2008,8 +1994,7 @@ const SITES_DATA = [
       "firefox": "https://addons.mozilla.org/firefox/addon/ublock-origin/",
       "edge": "https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak",
       "opera": "https://addons.opera.com/en/extensions/details/ublock/",
-      "wikipedia": "https://en.wikipedia.org/wiki/Opera_(web_browser)",
-      "github": "https://github.com/gorhill/uBlock"
+      "wikipedia": "https://en.wikipedia.org/wiki/Opera_(web_browser)"
     },
     "flags": {
       "no_darkmode": true,
@@ -2166,8 +2151,7 @@ const SITES_DATA = [
     "description": "An online platform dedicated to preserving and enhancing the multiplayer experience for classic Command & Conquer (C&C) real-time strategy games.",
     "logo": "images/logos/cncnet.png",
     "links": {
-      "website": "https://cncnet.org/",
-      "github": "https://github.com/cncnet"
+      "website": "https://cncnet.org/"
     },
     "flags": {
       "open_source": true
@@ -2185,8 +2169,7 @@ const SITES_DATA = [
     "logo": "images/logos/mastercomfig.png",
     "links": {
       "website": "https://comfig.app/",
-      "wikipedia": "https://en.wikipedia.org/wiki/Mastercomfig",
-      "github": "https://github.com/mastercomfig/"
+      "wikipedia": "https://en.wikipedia.org/wiki/Mastercomfig"
     },
     "flags": {
       "open_source": true
@@ -2308,8 +2291,7 @@ const SITES_DATA = [
     "description": "Open source, and powerful Nintendo Switch emulator.",
     "logo": "images/logos/suyu.png",
     "links": {
-      "website": "https://suyu.dev/",
-      "source": "https://git.suyu.dev/suyu/"
+      "website": "https://suyu.dev/"
     },
     "flags": {
       "open_source": true
@@ -2336,12 +2318,11 @@ const SITES_DATA = [
     "on_home": true
   },
   {
-    "name": "\u00f8bin.net obin.net",
+    "name": "øbin.net obin.net",
     "description": "A client side encrypted PasteBin",
-    "logo": "images/logos/\u00f8binnet.png",
+    "logo": "images/logos/øbinnet.png",
     "links": {
-      "website": "https://0bin.net/",
-      "github": "https://github.com/Tygs/0bin"
+      "website": "https://0bin.net/"
     },
     "flags": {
       "open_source": true
@@ -2410,8 +2391,7 @@ const SITES_DATA = [
     "description": "Better Discord Themes/Plugins made by Lighty",
     "logo": "images/logos/Lighty's Better Discord stuff.png",
     "links": {
-      "website": "https://1lighty.github.io/BetterDiscordStuff/",
-      "github": "https://github.com/1Lighty/BetterDiscordPlugins/"
+      "website": "https://1lighty.github.io/BetterDiscordStuff/"
     },
     "flags": {
       "open_source": true
@@ -2608,8 +2588,7 @@ const SITES_DATA = [
     "logo": "images/logos/AmogOS.png",
     "links": {
       "website": "https://amog-os.github.io/",
-      "windows": "https://amog-os.github.io/downloads.html",
-      "github": "https://github.com/Amog-OS/"
+      "windows": "https://amog-os.github.io/downloads.html"
     },
     "flags": {
       "open_source": true
@@ -2697,8 +2676,7 @@ const SITES_DATA = [
     "description": "Answer Overflow is a platform that helps index and archive Discord server questions and answers, making them publicly searchable on Google.",
     "logo": "images/logos/Answer Overflow.png",
     "links": {
-      "website": "https://www.answeroverflow.com/",
-      "github": "https://github.com/AnswerOverflow/"
+      "website": "https://www.answeroverflow.com/"
     },
     "flags": {
       "open_source": true
@@ -2746,8 +2724,7 @@ const SITES_DATA = [
       "website": "https://destinyitemmanager.com/",
       "android": "https://play.google.com/store/apps/details?id=com.destinyitemmanager.app",
       "ios": "https://apps.apple.com/us/app/destiny-item-manager/id1600203128",
-      "windows": "https://apps.microsoft.com/detail/9p8q2xrw9cv7",
-      "github": "https://github.com/DestinyItemManager"
+      "windows": "https://apps.microsoft.com/detail/9p8q2xrw9cv7"
     },
     "flags": {
       "open_source": true
@@ -2770,8 +2747,7 @@ const SITES_DATA = [
       "website": "https://keeweb.info/",
       "linux": "https://keeweb.info/",
       "macos": "https://keeweb.info/",
-      "windows": "https://keeweb.info/",
-      "github": "https://github.com/keeweb"
+      "windows": "https://keeweb.info/"
     },
     "flags": {
       "no_darkmode": true,
@@ -2811,8 +2787,7 @@ const SITES_DATA = [
     "description": "This tool helps you plan the optimal order of combining and applying books, to give you the cheapest possible xp cost.",
     "logo": "images/logos/Minecraft Enchantment Ordering Tool.png",
     "links": {
-      "website": "https://iamcal.github.io/enchant-order/",
-      "github": "https://github.com/iamcal/enchant-order"
+      "website": "https://iamcal.github.io/enchant-order/"
     },
     "flags": {
       "open_source": true
@@ -2845,8 +2820,7 @@ const SITES_DATA = [
     "description": "AniList is a website and app that allows users to track, share, and discover anime and manga.",
     "logo": "images/logos/AniList.png",
     "links": {
-      "website": "https://anilist.co/",
-      "github": "https://github.com/AniList"
+      "website": "https://anilist.co/"
     },
     "flags": {
       "open_source": true
@@ -2863,8 +2837,7 @@ const SITES_DATA = [
     "description": "An open-source project that serves as an unofficial MyAnimeList API, providing access to a wealth of anime and manga data.",
     "logo": "images/logos/JikanAPI.png",
     "links": {
-      "website": "https://jikan.moe/",
-      "github": "https://github.com/jikan-me"
+      "website": "https://jikan.moe/"
     },
     "flags": {
       "open_source": true
@@ -3006,8 +2979,7 @@ const SITES_DATA = [
     "links": {
       "website": "https://arweave.app/",
       "chrome": "https://chromewebstore.google.com/detail/arweaveapp/hloekinecmafifaghekdjepphlabepkl",
-      "firefox": "https://addons.mozilla.org/firefox/addon/arweave-app/",
-      "github": "https://github.com/jfbeats/ArweaveWebWallet"
+      "firefox": "https://addons.mozilla.org/firefox/addon/arweave-app/"
     },
     "flags": {
       "open_source": true
@@ -3022,11 +2994,10 @@ const SITES_DATA = [
   },
   {
     "name": "Ar.io",
-    "description": "\u200bAR.IO is a decentralized, permanent cloud network built on the Arweave blockchain",
+    "description": "​AR.IO is a decentralized, permanent cloud network built on the Arweave blockchain",
     "logo": "images/logos/ar.io.png",
     "links": {
-      "website": "https://ar.io/",
-      "github": "https://github.com/ar-io"
+      "website": "https://ar.io/"
     },
     "flags": {
       "open_source": true
@@ -3207,8 +3178,7 @@ const SITES_DATA = [
     "links": {
       "website": "https://chat.deepseek.com/",
       "android": "https://play.google.com/store/apps/details?id=com.deepseek.chat",
-      "ios": "https://apps.apple.com/in/app/deepseek-ai-assistant/id6737597349",
-      "github": "https://github.com/deepseek-ai"
+      "ios": "https://apps.apple.com/in/app/deepseek-ai-assistant/id6737597349"
     },
     "flags": {
       "open_source": true
@@ -3427,8 +3397,7 @@ const SITES_DATA = [
     "description": "An Open Source Discord Package Explorer and Viewer.",
     "logo": "images/logos/discordpackage.png",
     "links": {
-      "website": "https://discordpackage.com/",
-      "github": "https://github.com/peterhanania/discord-package"
+      "website": "https://discordpackage.com/"
     },
     "flags": {
       "open_source": true
@@ -3473,8 +3442,7 @@ const SITES_DATA = [
     "description": "Paimon.moe is a fan-made website for Genshin Impact that provides various tools and resources to help players track their in-game progress.",
     "logo": "images/logos/Paimon.moe.png",
     "links": {
-      "website": "https://paimon.moe/",
-      "github": "https://github.com/MadeBaruna/paimon-moe"
+      "website": "https://paimon.moe/"
     },
     "flags": {
       "open_source": true
@@ -3602,8 +3570,7 @@ const SITES_DATA = [
       "linux": "https://revolt.chat/download",
       "macos": "https://revolt.chat/download",
       "windows": "https://revolt.chat/download",
-      "wikipedia": "https://en.wikipedia.org/wiki/Revolt_(chat_application)",
-      "github": "https://github.com/revoltchat"
+      "wikipedia": "https://en.wikipedia.org/wiki/Revolt_(chat_application)"
     },
     "flags": {
       "open_source": true
@@ -3696,8 +3663,7 @@ const SITES_DATA = [
     "description": "ArmaForces is a Polish community centered around the military simulation game Arma 3.",
     "logo": "images/logos/ArmaForces.png",
     "links": {
-      "website": "https://armaforces.com/",
-      "github": "https://github.com/ArmaForces"
+      "website": "https://armaforces.com/"
     },
     "flags": {
       "open_source": true
@@ -3728,8 +3694,7 @@ const SITES_DATA = [
     "description": "AstroNvim is an aesthetically pleasing and feature-rich Neovim configuration that focuses on extensibility and usability.",
     "logo": "images/logos/astronvim.png",
     "links": {
-      "website": "https://astronvim.com/",
-      "github": "https://github.com/AstroNvim/"
+      "website": "https://astronvim.com/"
     },
     "flags": {
       "open_source": true
@@ -3743,7 +3708,7 @@ const SITES_DATA = [
   },
   {
     "name": "Atelier 801",
-    "description": "Atelier 801 is a French independent video game development company founded in October 2011 by Jean-Baptiste Le Marchand and M\u00e9lanie Christin.",
+    "description": "Atelier 801 is a French independent video game development company founded in October 2011 by Jean-Baptiste Le Marchand and Mélanie Christin.",
     "logo": "images/logos/atelier801.png",
     "links": {
       "website": "https://atelier801.com/"
@@ -3761,8 +3726,7 @@ const SITES_DATA = [
     "logo": "images/logos/atlasos.png",
     "links": {
       "website": "https://atlasos.net/",
-      "wikipedia": "https://en.wikipedia.org/wiki/AtlasOS",
-      "github": "https://github.com/Atlas-OS/"
+      "wikipedia": "https://en.wikipedia.org/wiki/AtlasOS"
     },
     "flags": {
       "open_source": true
@@ -3838,8 +3802,7 @@ const SITES_DATA = [
     "description": "Bedrock Linux is a meta Linux distribution which allows users to mix-and-match components from other, typically incompatible distributions.",
     "logo": "images/logos/bedrock linux.png",
     "links": {
-      "website": "https://bedrocklinux.org/",
-      "github": "https://github.com/bedrocklinux/"
+      "website": "https://bedrocklinux.org/"
     },
     "flags": {
       "open_source": true
@@ -3857,8 +3820,7 @@ const SITES_DATA = [
     "logo": "images/logos/Homebrew.png",
     "links": {
       "website": "https://brew.sh/",
-      "wikipedia": "https://en.wikipedia.org/wiki/Homebrew_(package_manager)",
-      "github": "https://github.com/Homebrew/"
+      "wikipedia": "https://en.wikipedia.org/wiki/Homebrew_(package_manager)"
     },
     "flags": {
       "open_source": true
@@ -4074,8 +4036,7 @@ const SITES_DATA = [
     "description": "Cobalt is a tool that makes downloading public content easier.",
     "logo": "images/logos/cobalt.png",
     "links": {
-      "website": "https://cobalt.tools/",
-      "github": "https://github.com/imputnet/cobalt"
+      "website": "https://cobalt.tools/"
     },
     "flags": {
       "open_source": true
@@ -4106,8 +4067,7 @@ const SITES_DATA = [
     "description": "Beat Saber leaderboard.",
     "logo": "images/logos/Beatleader.png",
     "links": {
-      "website": "https://beatleader.com/",
-      "github": "https://github.com/BeatLeader"
+      "website": "https://beatleader.com/"
     },
     "flags": {
       "open_source": true
@@ -4203,8 +4163,7 @@ const SITES_DATA = [
     "description": "Discord Data Package Explorer",
     "logo": "images/logos/Discord Data Package Explorer.png",
     "links": {
-      "website": "https://ddpe.androz2091.fr/",
-      "github": "https://github.com/Androz2091/discord-data-package-explorer"
+      "website": "https://ddpe.androz2091.fr/"
     },
     "flags": {
       "open_source": true
@@ -4281,8 +4240,7 @@ const SITES_DATA = [
       "website": "https://www.piskelapp.com/",
       "linux": "https://www.piskelapp.com/download",
       "macos": "https://www.piskelapp.com/download",
-      "windows": "https://www.piskelapp.com/download",
-      "github": "https://github.com/piskelapp/"
+      "windows": "https://www.piskelapp.com/download"
     },
     "flags": {
       "open_source": true
@@ -4302,8 +4260,7 @@ const SITES_DATA = [
     "description": "Build and deploy Discord bots in minutes using a simple online studio.",
     "logo": "images/logos/Pylon.png",
     "links": {
-      "website": "https://pylon.bot/",
-      "github": "https://github.com/pylonbot"
+      "website": "https://pylon.bot/"
     },
     "flags": {
       "open_source": true
@@ -4386,8 +4343,7 @@ const SITES_DATA = [
     "logo": "images/logos/livesplit 2.png",
     "links": {
       "website": "https://livesplit.org/",
-      "windows": "https://livesplit.org/downloads/",
-      "github": "https://github.com/LiveSplit/"
+      "windows": "https://livesplit.org/downloads/"
     },
     "flags": {
       "open_source": true
@@ -4402,7 +4358,7 @@ const SITES_DATA = [
   },
   {
     "name": "RotomLabs",
-    "description": "RotomLabs is a website that provides tools and resources for Pok\u00e9mon trainers, particularly for games like Omega Ruby, Alpha Sapphire, and Pokemon Legends: Arceus.",
+    "description": "RotomLabs is a website that provides tools and resources for Pokémon trainers, particularly for games like Omega Ruby, Alpha Sapphire, and Pokemon Legends: Arceus.",
     "logo": "images/logos/RotomLabs.png",
     "links": {
       "website": "https://rotomlabs.net/"
@@ -4434,8 +4390,7 @@ const SITES_DATA = [
     "logo": "images/logos/blinkshell.png",
     "links": {
       "website": "https://blink.sh/",
-      "ios": "https://apps.apple.com/us/app/blink-shell-build-code/id1594898306",
-      "github": "https://github.com/blinksh"
+      "ios": "https://apps.apple.com/us/app/blink-shell-build-code/id1594898306"
     },
     "flags": {
       "open_source": true
@@ -4502,7 +4457,7 @@ const SITES_DATA = [
   },
   {
     "name": "free code camp",
-    "description": "Learn to code \u2014 for free. Build projects. Earn certifications.",
+    "description": "Learn to code — for free. Build projects. Earn certifications.",
     "logo": "images/logos/freecodecamp.png",
     "links": {
       "website": "https://www.freecodecamp.org/",
@@ -4534,8 +4489,7 @@ const SITES_DATA = [
     "description": "Generate your custom blazon for Kingdom New Lands and Kingdom Two Crowns (including Shogun Edition)!",
     "logo": "images/logos/Kingdom Blazon Generator.png",
     "links": {
-      "website": "https://cl00e9ment.gitlab.io/kingdom-blazon-generator/",
-      "gitlab": "https://gitlab.com/Cl00e9ment/kingdom-blazon-generator"
+      "website": "https://cl00e9ment.gitlab.io/kingdom-blazon-generator/"
     },
     "flags": {
       "open_source": true
@@ -4614,7 +4568,7 @@ const SITES_DATA = [
   },
   {
     "name": "Knockout!",
-    "description": "\u200bKnockout.chat is an online community forum that originated during the 2018 Facepunch forums shutdown crisis.",
+    "description": "​Knockout.chat is an online community forum that originated during the 2018 Facepunch forums shutdown crisis.",
     "logo": "images/logos/Knockout.png",
     "links": {
       "website": "https://knockout.chat/"
@@ -4646,8 +4600,7 @@ const SITES_DATA = [
     "logo": "images/logos/Fireship.png",
     "links": {
       "website": "https://fireship.io/",
-      "wikipedia": "https://en.wikipedia.org/wiki/Fireship_(YouTube_channel)",
-      "github": "https://github.com/fireship-io"
+      "wikipedia": "https://en.wikipedia.org/wiki/Fireship_(YouTube_channel)"
     },
     "flags": {
       "open_source": true
@@ -4692,8 +4645,7 @@ const SITES_DATA = [
       "firefox": "https://addons.mozilla.org/firefox/addon/night-eye-dark-mode/",
       "edge": "https://microsoftedge.microsoft.com/addons/detail/dark-mode-night-eye/gijhmcgnnbcpigflkfoimbnfjnbcphah",
       "safari": "https://apps.apple.com/us/app/dark-mode-for-safari-nighteye/id1450504903",
-      "naver whale": "https://store.whale.naver.com/detail/fhaccehanjelhpfbgdpaamjnpjppbgcb",
-      "github": "https://github.com/DarkMode-NightEye/"
+      "naver whale": "https://store.whale.naver.com/detail/fhaccehanjelhpfbgdpaamjnpjppbgcb"
     },
     "flags": {
       "open_source": true
@@ -4751,7 +4703,7 @@ const SITES_DATA = [
     "on_home": true
   },
   {
-    "name": "Video Speed Up Controller for Chrome \u23e9",
+    "name": "Video Speed Up Controller for Chrome ⏩",
     "description": "Video speed controller for online videos. Speed up, slow down playback on any website.",
     "logo": "images/logos/Video Speed Up Controller for Chrome.png",
     "links": {
@@ -4856,7 +4808,7 @@ const SITES_DATA = [
   },
   {
     "name": "Trancy",
-    "description": "\u200bTrancy.org is an AI-powered language learning platform designed to enhance your skills through immersive experiences with real-world content.",
+    "description": "​Trancy.org is an AI-powered language learning platform designed to enhance your skills through immersive experiences with real-world content.",
     "logo": "images/logos/Trancy.png",
     "links": {
       "website": "https://www.trancy.org/",
@@ -4992,7 +4944,7 @@ const SITES_DATA = [
   },
   {
     "name": "Google Tasks",
-    "description": "Manage, capture, and edit your tasks from anywhere, at anytime, with to-dos that sync across all your devices. Integrations with Gmail and Google Calendar help you get tasks done\u2014faster.",
+    "description": "Manage, capture, and edit your tasks from anywhere, at anytime, with to-dos that sync across all your devices. Integrations with Gmail and Google Calendar help you get tasks done—faster.",
     "logo": "images/logos/Tasks.png",
     "links": {
       "website": "https://tasks.google.com/",
@@ -5093,7 +5045,7 @@ const SITES_DATA = [
   },
   {
     "name": "Google News",
-    "description": "Google News is a personalized news aggregator that organizes and highlights what\u2019s happening in the world so you can quickly catch up and discover more about the stories that matter to you.",
+    "description": "Google News is a personalized news aggregator that organizes and highlights what’s happening in the world so you can quickly catch up and discover more about the stories that matter to you.",
     "logo": "images/logos/Google New.png",
     "links": {
       "website": "https://news.google.com/",
@@ -5195,8 +5147,7 @@ const SITES_DATA = [
     "description": "A collection of open source libraries and applications.",
     "logo": "images/logos/Bithatch.png",
     "links": {
-      "website": "http://bithatch.co.uk/",
-      "github": "https://github.com/bithatch"
+      "website": "http://bithatch.co.uk/"
     },
     "flags": {
       "open_source": true
@@ -5213,8 +5164,7 @@ const SITES_DATA = [
     "description": "Pixel Experience is a discontinued, community-developed, open-source Android-based operating system designed to emulate the &quot;stock Android&quot; experience found on Google Pixel devices.",
     "logo": "images/logos/PixelExperience.png",
     "links": {
-      "website": "https://pixelexperience.org",
-      "github": "https://github.com/PixelExperience"
+      "website": "https://pixelexperience.org"
     },
     "flags": {
       "open_source": true
@@ -5256,7 +5206,7 @@ const SITES_DATA = [
   },
   {
     "name": "Fathom Analytics",
-    "description": "A Google Analytics alternative that\u2019s simple & privacy-first.",
+    "description": "A Google Analytics alternative that’s simple & privacy-first.",
     "logo": "images/logos/fathom analytics.png",
     "links": {
       "website": "https://usefathom.com/"
@@ -5275,8 +5225,7 @@ const SITES_DATA = [
     "links": {
       "website": "https://bsky.app/",
       "android": "https://play.google.com/store/apps/details?id=xyz.blueskyweb.app",
-      "ios": "https://apps.apple.com/us/app/bluesky-social/id6444370199",
-      "github": "https://github.com/bluesky-social"
+      "ios": "https://apps.apple.com/us/app/bluesky-social/id6444370199"
     },
     "flags": {
       "open_source": true
@@ -5440,8 +5389,7 @@ const SITES_DATA = [
       "website": "https://getaether.net/",
       "linux": "https://getaether.net/download",
       "macos": "https://getaether.net/download",
-      "windows": "https://getaether.net/download",
-      "github": "https://github.com/aethereans"
+      "windows": "https://getaether.net/download"
     },
     "flags": {
       "open_source": true
@@ -5461,8 +5409,7 @@ const SITES_DATA = [
     "description": "Documentary on Fiber.",
     "logo": "images/logos/Fiberdocs.png",
     "links": {
-      "website": "https://docs.gofiber.io/",
-      "github": "https://github.com/gofiber"
+      "website": "https://docs.gofiber.io/"
     },
     "flags": {
       "open_source": true
@@ -5493,8 +5440,7 @@ const SITES_DATA = [
     "description": "Connect roblox account to discord to verify who you really are, sync your group to your server, and more.",
     "logo": "images/logos/Bloxlink.png",
     "links": {
-      "website": "https://blox.link/",
-      "github": "https://github.com/bloxlink"
+      "website": "https://blox.link/"
     },
     "flags": {
       "open_source": true
@@ -5625,8 +5571,7 @@ const SITES_DATA = [
     "logo": "images/logos/Sober.png",
     "links": {
       "website": "https://sober.vinegarhq.org/",
-      "linux": "https://sober.vinegarhq.org/",
-      "github": "https://github.com/vinegarhq/sober"
+      "linux": "https://sober.vinegarhq.org/"
     },
     "flags": {
       "open_source": true
@@ -5644,8 +5589,7 @@ const SITES_DATA = [
     "description": "Vinegar is a fast and robust bootstrapper for Roblox Studio that has many ease-of-use features.",
     "logo": "images/logos/VinegarHQ.png",
     "links": {
-      "website": "https://vinegarhq.org/",
-      "github": "https://github.com/vinegarhq"
+      "website": "https://vinegarhq.org/"
     },
     "flags": {
       "open_source": true
@@ -5663,8 +5607,7 @@ const SITES_DATA = [
     "logo": "images/logos/Grapejuice.png",
     "links": {
       "website": "https://brinkervii.gitlab.io/grapejuice/",
-      "linux": "https://brinkervii.gitlab.io/grapejuice/",
-      "gitlab": "https://gitlab.com/brinkervii/grapejuice"
+      "linux": "https://brinkervii.gitlab.io/grapejuice/"
     },
     "flags": {
       "open_source": true
@@ -5714,8 +5657,7 @@ const SITES_DATA = [
     "description": "Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.",
     "logo": "images/logos/Bootstrap.png",
     "links": {
-      "website": "https://getbootstrap.com/",
-      "github": "https://github.com/twbs"
+      "website": "https://getbootstrap.com/"
     },
     "flags": {
       "open_source": true
@@ -5876,8 +5818,7 @@ const SITES_DATA = [
     "description": "BeepBox is an online tool for sketching and sharing instrumental music.",
     "logo": "images/logos/BeepBox.png",
     "links": {
-      "website": "https://www.beepbox.co/",
-      "github": "https://github.com/johnnesky/beepbox"
+      "website": "https://www.beepbox.co/"
     },
     "flags": {
       "open_source": true
@@ -5909,8 +5850,7 @@ const SITES_DATA = [
     "logo": "images/logos/BlackArchLinux.png",
     "links": {
       "website": "https://blackarch.org/",
-      "linux": "https://blackarch.org/",
-      "github": "https://github.com/BlackArch"
+      "linux": "https://blackarch.org/"
     },
     "flags": {
       "open_source": true
@@ -6087,11 +6027,10 @@ const SITES_DATA = [
   },
   {
     "name": "Bonfire",
-    "description": "Bonfire is a commons\u2013a place to gather, co-create, and build something lasting\u2013beyond products to be sold or services that use, abuse, or extract from you.",
+    "description": "Bonfire is a commons–a place to gather, co-create, and build something lasting–beyond products to be sold or services that use, abuse, or extract from you.",
     "logo": "images/logos/Bonfire.png",
     "links": {
-      "website": "https://bonfirenetworks.org/",
-      "github": "https://github.com/bonfire-networks"
+      "website": "https://bonfirenetworks.org/"
     },
     "flags": {
       "open_source": true
@@ -6108,8 +6047,7 @@ const SITES_DATA = [
     "description": "A discord bot that can provide rich information from multiple sources.",
     "logo": "images/logos/BotBoy.png",
     "links": {
-      "website": "https://botboy.snaz.in/",
-      "github": "https://github.com/BotBoyTeam"
+      "website": "https://botboy.snaz.in/"
     },
     "flags": {
       "open_source": true
@@ -6198,8 +6136,7 @@ const SITES_DATA = [
     "description": "Create and share beautiful images of your source code.",
     "logo": "images/logos/carbon.png",
     "links": {
-      "website": "https://carbon.now.sh/",
-      "github": "https://github.com/carbon-app/carbon"
+      "website": "https://carbon.now.sh/"
     },
     "flags": {
       "open_source": true
@@ -6216,8 +6153,7 @@ const SITES_DATA = [
     "description": "Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.",
     "logo": "images/logos/Vercel.png",
     "links": {
-      "website": "https://vercel.com/",
-      "github": "https://github.com/vercel"
+      "website": "https://vercel.com/"
     },
     "flags": {
       "open_source": true
@@ -6234,8 +6170,7 @@ const SITES_DATA = [
     "description": "Community-based open source software focused on delivering simple personal cloud experience around Docker ecosystem.",
     "logo": "images/logos/casaos.png",
     "links": {
-      "website": "https://casaos.zimaspace.com/",
-      "github": "https://github.com/IceWhaleTech/CasaOS"
+      "website": "https://casaos.zimaspace.com/"
     },
     "flags": {
       "open_source": true
@@ -6315,8 +6250,7 @@ const SITES_DATA = [
       "website": "https://cider.sh/",
       "linux": "https://cider.sh/downloads/client",
       "macos": "https://cider.sh/downloads/client",
-      "windows": "https://cider.sh/downloads/client",
-      "github": "https://github.com/ciderapp/Cider"
+      "windows": "https://cider.sh/downloads/client"
     },
     "flags": {
       "open_source": true
@@ -6337,8 +6271,7 @@ const SITES_DATA = [
     "logo": "images/logos/CLEO Library.png",
     "links": {
       "website": "https://cleo.li/",
-      "windows": "https://cleo.li/",
-      "github": "https://github.com/cleolibrary/"
+      "windows": "https://cleo.li/"
     },
     "flags": {
       "open_source": true
@@ -6393,8 +6326,7 @@ const SITES_DATA = [
       "website": "https://coder.com/",
       "linux": "https://coder.com/docs/install",
       "macos": "https://coder.com/docs/install",
-      "windows": "https://coder.com/docs/install",
-      "github": "https://github.com/coder/"
+      "windows": "https://coder.com/docs/install"
     },
     "flags": {
       "open_source": true
@@ -6414,8 +6346,7 @@ const SITES_DATA = [
     "description": "Programmatically spin up isolated sandboxes for instant code execution in your AI agents and code playgrounds.",
     "logo": "images/logos/CodeSandbox.png",
     "links": {
-      "website": "https://codesandbox.io/",
-      "github": "https://github.com/codesandbox"
+      "website": "https://codesandbox.io/"
     },
     "flags": {
       "open_source": true
@@ -6432,8 +6363,7 @@ const SITES_DATA = [
     "description": "Blog and courses about coding.",
     "logo": "images/logos/codestackr.png",
     "links": {
-      "website": "https://www.codestackr.com/",
-      "github": "https://github.com/codestackr"
+      "website": "https://www.codestackr.com/"
     },
     "flags": {
       "open_source": true
@@ -6450,8 +6380,7 @@ const SITES_DATA = [
     "description": "Improve your development skills by training with your peers on code kata that continuously challenge and push your coding practice.",
     "logo": "images/logos/codewars.png",
     "links": {
-      "website": "https://www.codewars.com/",
-      "github": "https://github.com/codewars"
+      "website": "https://www.codewars.com/"
     },
     "flags": {
       "open_source": true
@@ -6510,8 +6439,7 @@ const SITES_DATA = [
     "description": "A comprehensive aggregation of useful resources for enthusiasts looking to expand their toolchain of programs and adopt good practices to enhance the quality of life in daily computer use and video production.",
     "logo": "images/logos/Couleur Tweak Tips.png",
     "links": {
-      "website": "https://ctt.cx/",
-      "github": "https://github.com/couleur-tweak-tips"
+      "website": "https://ctt.cx/"
     },
     "flags": {
       "open_source": true
@@ -6556,8 +6484,7 @@ const SITES_DATA = [
     "description": "Umbrel is a plug-and-play home cloud server that allows users to host their own cloud storage, media server, VPN, home automation, Bitcoin node, and more.",
     "logo": "images/logos/umbrel.png",
     "links": {
-      "website": "https://umbrel.com/",
-      "github": "https://github.com/getumbrel/umbrel"
+      "website": "https://umbrel.com/"
     },
     "flags": {
       "open_source": true
@@ -6574,8 +6501,7 @@ const SITES_DATA = [
     "description": "Dashy is an open source, highly customizable, easy to use, privacy-respecting dashboard app.",
     "logo": "images/logos/Dashy.png",
     "links": {
-      "website": "https://dashy.to/",
-      "github": "https://github.com/Lissy93/dashy"
+      "website": "https://dashy.to/"
     },
     "flags": {
       "open_source": true
@@ -6595,8 +6521,7 @@ const SITES_DATA = [
       "website": "https://cybercodeonline.com/",
       "android": "https://play.google.com/store/apps/details?id=com.cybercodeonline.cybercode",
       "ios": "https://apps.apple.com/us/app/cybercode-online-text-rpg/id1541691332",
-      "windows": "https://apps.microsoft.com/detail/9n9xc0hl2tsp",
-      "github": "https://github.com/DexterHuang/CyberCodeOnline"
+      "windows": "https://apps.microsoft.com/detail/9n9xc0hl2tsp"
     },
     "flags": {
       "open_source": true
@@ -6630,8 +6555,7 @@ const SITES_DATA = [
     "description": "Check if your email address is in a data breach.",
     "logo": "images/logos/Have I Been Pwned.png",
     "links": {
-      "website": "https://haveibeenpwned.com/",
-      "github": "https://github.com/HaveIBeenPwned"
+      "website": "https://haveibeenpwned.com/"
     },
     "flags": {
       "open_source": true
@@ -6774,8 +6698,7 @@ const SITES_DATA = [
     "description": "Matkap is a powerful tool designed to infiltrate and monitor Telegram bots by utilizing the Telegram Bot API and Telethon. It automates the process of capturing messages from malicious bots and forwarding them to your own account.",
     "logo": "images/logos/Matkap.png",
     "links": {
-      "website": "https://matkap.cti.monster/",
-      "github": "https://github.com/0x6rss/matkap"
+      "website": "https://matkap.cti.monster/"
     },
     "flags": {
       "open_source": true
@@ -6796,8 +6719,7 @@ const SITES_DATA = [
       "android": "https://play.google.com/store/apps/details?id=me.proton.android.drive",
       "ios": "https://apps.apple.com/us/app/proton-drive-cloud-storage/id1509667851",
       "macos": "https://proton.me/drive/download",
-      "windows": "https://proton.me/drive/download",
-      "github": "https://github.com/ProtonDriveApps"
+      "windows": "https://proton.me/drive/download"
     },
     "flags": {
       "open_source": true
@@ -6822,8 +6744,7 @@ const SITES_DATA = [
     "description": "itch.io is an open marketplace for independent digital creators with a focus on independent video games.",
     "logo": "images/logos/itch.io.png",
     "links": {
-      "website": "https://itch.io/",
-      "github": "https://github.com/itchio"
+      "website": "https://itch.io/"
     },
     "flags": {
       "open_source": true
@@ -6844,8 +6765,7 @@ const SITES_DATA = [
     "links": {
       "website": "https://atom-editor.cc/",
       "macos": "https://github.com/atom/atom/releases/tag/v1.60.0",
-      "windows": "https://github.com/atom/atom/releases/tag/v1.60.0",
-      "github": "https://github.com/atom"
+      "windows": "https://github.com/atom/atom/releases/tag/v1.60.0"
     },
     "flags": {
       "open_source": true
@@ -6905,8 +6825,7 @@ const SITES_DATA = [
       "website": "https://phcode.dev/",
       "linux": "https://phcode.io/",
       "macos": "https://phcode.io/",
-      "windows": "https://phcode.io/",
-      "github": "https://github.com/phcode-dev"
+      "windows": "https://phcode.io/"
     },
     "flags": {
       "open_source": true
@@ -6934,8 +6853,7 @@ const SITES_DATA = [
       "website": "https://lmms.io/",
       "linux": "https://lmms.io/download#linux",
       "macos": "https://lmms.io/download#mac",
-      "windows": "https://lmms.io/download#windows",
-      "github": "https://github.com/LMMS"
+      "windows": "https://lmms.io/download#windows"
     },
     "flags": {
       "open_source": true
@@ -7056,8 +6974,7 @@ const SITES_DATA = [
       "website": "https://www.gimp.org/",
       "linux": "https://www.gimp.org/downloads/",
       "macos": "https://www.gimp.org/downloads/",
-      "windows": "https://www.gimp.org/downloads/",
-      "gitlab": "https://gitlab.gnome.org/GNOME/gimp/"
+      "windows": "https://www.gimp.org/downloads/"
     },
     "flags": {
       "open_source": true
@@ -7085,8 +7002,7 @@ const SITES_DATA = [
       "website": "https://krita.org/",
       "linux": "https://krita.org/en/download/",
       "macos": "https://krita.org/en/download/",
-      "windows": "https://krita.org/en/download/",
-      "source": "https://invent.kde.org/graphics/krita"
+      "windows": "https://krita.org/en/download/"
     },
     "flags": {
       "open_source": true
@@ -7202,7 +7118,7 @@ const SITES_DATA = [
   },
   {
     "name": "Pixelmator for iOS",
-    "description": "Powerful, full\u2011featured image editor for iOS.",
+    "description": "Powerful, full‑featured image editor for iOS.",
     "logo": "images/logos/Pixelmator for iOS.png",
     "links": {
       "website": "https://www.pixelmator.com/ios/",
@@ -7312,8 +7228,7 @@ const SITES_DATA = [
       "website": "https://www.pencil2d.org/",
       "linux": "https://www.pencil2d.org/download",
       "macos": "https://www.pencil2d.org/download",
-      "windows": "https://www.pencil2d.org/download",
-      "github": "https://github.com/pencil2d/"
+      "windows": "https://www.pencil2d.org/download"
     },
     "flags": {
       "open_source": true
@@ -7340,8 +7255,7 @@ const SITES_DATA = [
       "website": "https://www.audacityteam.org/",
       "linux": "https://www.audacityteam.org/download/linux/",
       "macos": "https://www.audacityteam.org/download/mac/",
-      "windows": "https://www.audacityteam.org/download/windows/",
-      "github": "https://github.com/audacity"
+      "windows": "https://www.audacityteam.org/download/windows/"
     },
     "flags": {
       "open_source": true
@@ -7394,8 +7308,7 @@ const SITES_DATA = [
       "website": "https://musescore.org/",
       "linux": "https://musescore.org/download",
       "macos": "https://musescore.org/download",
-      "windows": "https://musescore.org/download",
-      "github": "https://github.com/musescore"
+      "windows": "https://musescore.org/download"
     },
     "flags": {
       "open_source": true
@@ -7681,8 +7594,7 @@ const SITES_DATA = [
     "logo": "images/logos/mac mouse fix.png",
     "links": {
       "website": "https://macmousefix.com/",
-      "macos": "https://macmousefix.com/",
-      "github": "https://github.com/noah-nuebling/mac-mouse-fix"
+      "macos": "https://macmousefix.com/"
     },
     "flags": {
       "open_source": true
@@ -7780,7 +7692,7 @@ const SITES_DATA = [
   },
   {
     "name": "LookAway",
-    "description": "LookAway is a smart break reminder that helps reduce eye strain, digital fatigue, and maintain better posture\u2014so you can end your day feeling fresh.",
+    "description": "LookAway is a smart break reminder that helps reduce eye strain, digital fatigue, and maintain better posture—so you can end your day feeling fresh.",
     "logo": "images/logos/LookAway.png",
     "links": {
       "website": "https://lookaway.app/",
@@ -7800,8 +7712,7 @@ const SITES_DATA = [
     "logo": "images/logos/LinearMouse.png",
     "links": {
       "website": "https://linearmouse.app/",
-      "macos": "https://linearmouse.app/",
-      "github": "https://github.com/linearmouse/"
+      "macos": "https://linearmouse.app/"
     },
     "flags": {
       "open_source": true
@@ -7820,8 +7731,7 @@ const SITES_DATA = [
     "logo": "images/logos/latest.png",
     "links": {
       "website": "https://max.codes/latest/",
-      "macos": "https://max.codes/latest/",
-      "github": "https://github.com/mangerlahn/latest"
+      "macos": "https://max.codes/latest/"
     },
     "flags": {
       "open_source": true
@@ -7840,8 +7750,7 @@ const SITES_DATA = [
     "logo": "images/logos/BetterDisplay.png",
     "links": {
       "website": "https://github.com/waydabber/BetterDisplay/",
-      "macos": "https://github.com/waydabber/BetterDisplay/",
-      "github": "https://github.com/waydabber/BetterDisplay/"
+      "macos": "https://github.com/waydabber/BetterDisplay/"
     },
     "flags": {
       "open_source": true
@@ -7866,8 +7775,7 @@ const SITES_DATA = [
       "windows": "https://obsidian.md/download",
       "chrome": "https://chromewebstore.google.com/detail/obsidian-web-clipper/cnjifjpddelmedmihgijeibhnjfabmlf",
       "firefox": "https://addons.mozilla.org/en-US/firefox/addon/web-clipper-obsidian/",
-      "safari": "https://apps.apple.com/us/app/obsidian-web-clipper/id6720708363",
-      "github": "https://github.com/obsidianmd"
+      "safari": "https://apps.apple.com/us/app/obsidian-web-clipper/id6720708363"
     },
     "flags": {
       "open_source": true
@@ -7982,8 +7890,7 @@ const SITES_DATA = [
       "website": "http://anytype.io/",
       "linux": "https://download.anytype.io/",
       "macos": "https://download.anytype.io/",
-      "windows": "https://download.anytype.io/",
-      "github": "https://github.com/anyproto"
+      "windows": "https://download.anytype.io/"
     },
     "flags": {
       "open_source": true
@@ -8166,8 +8073,7 @@ const SITES_DATA = [
     "links": {
       "website": "https://mastodon.social/",
       "android": "https://play.google.com/store/apps/details?id=org.joinmastodon.android",
-      "ios": "https://apps.apple.com/us/app/mastodon/id1571998974",
-      "github": "https://github.com/mastodon/"
+      "ios": "https://apps.apple.com/us/app/mastodon/id1571998974"
     },
     "flags": {
       "open_source": true
@@ -8309,8 +8215,7 @@ const SITES_DATA = [
     "logo": "images/logos/Stats.png",
     "links": {
       "website": "https://mac-stats.com/",
-      "macos": "https://mac-stats.com/downloads",
-      "github": "https://github.com/exelban/stats"
+      "macos": "https://mac-stats.com/downloads"
     },
     "flags": {
       "open_source": true
@@ -8333,8 +8238,7 @@ const SITES_DATA = [
       "website": "https://numi.app/",
       "linux": "https://numi.app/",
       "macos": "https://numi.app/",
-      "windows": "https://numi.app/",
-      "github": "https://github.com/nikolaeu/numi"
+      "windows": "https://numi.app/"
     },
     "flags": {
       "open_source": true
@@ -8359,8 +8263,7 @@ const SITES_DATA = [
     "logo": "images/logos/Karabiner Elements.png",
     "links": {
       "website": "https://karabiner-elements.pqrs.org/",
-      "macos": "https://karabiner-elements.pqrs.org/",
-      "source": "https://karabiner-elements.pqrs.org/"
+      "macos": "https://karabiner-elements.pqrs.org/"
     },
     "flags": {
       "open_source": true
@@ -8383,8 +8286,7 @@ const SITES_DATA = [
       "website": "https://modrinth.com/",
       "linux": "https://modrinth.com/app",
       "macos": "https://modrinth.com/app",
-      "windows": "https://modrinth.com/app",
-      "github": "https://github.com/modrinth"
+      "windows": "https://modrinth.com/app"
     },
     "flags": {
       "open_source": true
@@ -8404,8 +8306,7 @@ const SITES_DATA = [
     "description": "Inceptum is advanced FOSS Launcher for Minecraft written in Java.",
     "logo": "images/logos/Inceptum.png",
     "links": {
-      "website": "https://pages.frohnmeyer-wds.de/JfMods/Inceptum/",
-      "source": "https://git.jfronny.dev/JfMods/Inceptum"
+      "website": "https://pages.frohnmeyer-wds.de/JfMods/Inceptum/"
     },
     "flags": {
       "open_source": true
@@ -8425,8 +8326,7 @@ const SITES_DATA = [
       "website": "https://xmcl.app/",
       "linux": "https://xmcl.app/",
       "macos": "https://xmcl.app/",
-      "windows": "https://xmcl.app/",
-      "github": "https://github.com/voxelum/x-minecraft-launcher"
+      "windows": "https://xmcl.app/"
     },
     "flags": {
       "open_source": true
@@ -8474,8 +8374,7 @@ const SITES_DATA = [
     "description": "A 3D Multiplayer Driving Adventure",
     "logo": "images/logos/Glenn Explore.png",
     "links": {
-      "website": "https://playglenn.com/",
-      "github": "https://github.com/WilliamAvHolmberg/glenn-explore"
+      "website": "https://playglenn.com/"
     },
     "flags": {
       "open_source": true
@@ -8492,8 +8391,7 @@ const SITES_DATA = [
     "description": "Magic Resume uses AI technology to help you quickly create professional resumes.",
     "logo": "images/logos/Magic Resume.png",
     "links": {
-      "website": "https://magicv.art/",
-      "github": "https://github.com/JOYCEQL/magic-resume"
+      "website": "https://magicv.art/"
     },
     "flags": {
       "open_source": true
@@ -8552,8 +8450,7 @@ const SITES_DATA = [
     "description": "Interactive PC Building in 3D",
     "logo": "images/logos/Build Cores.png",
     "links": {
-      "website": "https://buildcores.com/",
-      "github": "https://github.com/buildcores"
+      "website": "https://buildcores.com/"
     },
     "flags": {
       "open_source": true
@@ -8581,13 +8478,12 @@ const SITES_DATA = [
   },
   {
     "name": "Millennium",
-    "description": "An open source gateway to a better Steam\u00ae client experience.",
+    "description": "An open source gateway to a better Steam® client experience.",
     "logo": "images/logos/Millennium.png",
     "links": {
       "website": "https://steambrew.app/",
       "linux": "https://docs.steambrew.app/users/getting-started/installation",
-      "windows": "https://docs.steambrew.app/users/getting-started/installation",
-      "github": "https://github.com/SteamClientHomebrew/Millennium"
+      "windows": "https://docs.steambrew.app/users/getting-started/installation"
     },
     "flags": {
       "open_source": true
@@ -8609,8 +8505,7 @@ const SITES_DATA = [
       "website": "https://imagemagick.org/",
       "linux": "https://imagemagick.org/script/download.php#linux",
       "macos": "https://imagemagick.org/script/download.php#macos",
-      "windows": "https://imagemagick.org/script/download.php#windows",
-      "github": "https://github.com/imagemagick/"
+      "windows": "https://imagemagick.org/script/download.php#windows"
     },
     "flags": {
       "open_source": true
@@ -8680,8 +8575,7 @@ const SITES_DATA = [
     "description": "Build optimized websites quickly, focus on your content.",
     "logo": "images/logos/Docusaurus.png",
     "links": {
-      "website": "https://docusaurus.io/",
-      "github": "https://github.com/facebook/docusaurus"
+      "website": "https://docusaurus.io/"
     },
     "flags": {
       "open_source": true
@@ -8698,8 +8592,7 @@ const SITES_DATA = [
     "description": "KDE is a free and open-source software community that develops a wide range of applications.",
     "logo": "images/logos/KDE.png",
     "links": {
-      "website": "https://kde.org/",
-      "source": "https://invent.kde.org/"
+      "website": "https://kde.org/"
     },
     "flags": {
       "open_source": true
@@ -8719,8 +8612,7 @@ const SITES_DATA = [
       "website": "https://mcreator.net/",
       "linux": "https://mcreator.net/download",
       "macos": "https://mcreator.net/download",
-      "windows": "https://mcreator.net/download",
-      "github": "https://github.com/MCreator"
+      "windows": "https://mcreator.net/download"
     },
     "flags": {
       "open_source": true
@@ -8805,8 +8697,7 @@ const SITES_DATA = [
     "description": "a free, open-source, web-based platform that enables synchronized media watching and group chat across custom &quot;channels&quot;.",
     "logo": "images/logos/CyTube.png",
     "links": {
-      "website": "https://cytu.be/",
-      "github": "https://github.com/calzoneman/sync"
+      "website": "https://cytu.be/"
     },
     "flags": {
       "open_source": true
@@ -8823,8 +8714,7 @@ const SITES_DATA = [
     "description": "The smart contract security training ground for developers, security researchers and educators.",
     "logo": "images/logos/DVD.png",
     "links": {
-      "website": "https://www.damnvulnerabledefi.xyz/",
-      "github": "https://github.com/theredguild/damn-vulnerable-defi/"
+      "website": "https://www.damnvulnerabledefi.xyz/"
     },
     "flags": {
       "open_source": true
@@ -8838,11 +8728,10 @@ const SITES_DATA = [
   },
   {
     "name": "DartPad",
-    "description": "A free, open-source, online code editor and playground created by the Dart team (part of Google). It allows you to write, run, edit, and share Dart and Flutter code entirely within your web browser\u2014no installation needed.",
+    "description": "A free, open-source, online code editor and playground created by the Dart team (part of Google). It allows you to write, run, edit, and share Dart and Flutter code entirely within your web browser—no installation needed.",
     "logo": "images/logos/DartPad.png",
     "links": {
-      "website": "https://dartpad.dev/",
-      "github": "https://github.com/dart-lang/dart-pad"
+      "website": "https://dartpad.dev/"
     },
     "flags": {
       "open_source": true
@@ -8989,8 +8878,7 @@ const SITES_DATA = [
     "description": "Create avatars for your profiles, designs, websites or apps. Piece by piece or based on a seed.",
     "logo": "images/logos/Dice Bear.png",
     "links": {
-      "website": "https://www.dicebear.com/",
-      "github": "https://github.com/dicebear"
+      "website": "https://www.dicebear.com/"
     },
     "flags": {
       "open_source": true
@@ -9010,8 +8898,7 @@ const SITES_DATA = [
       "website": "https://www.digikam.org/",
       "linux": "https://www.digikam.org/download/",
       "macos": "https://www.digikam.org/download/",
-      "windows": "https://www.digikam.org/download/",
-      "source": "https://invent.kde.org/graphics/digikam"
+      "windows": "https://www.digikam.org/download/"
     },
     "flags": {
       "open_source": true
@@ -9109,8 +8996,7 @@ const SITES_DATA = [
     "description": "AdonisJS is a TypeScript-first web framework for building web apps and API servers.",
     "logo": "images/logos/adonis.png",
     "links": {
-      "website": "https://adonisjs.com/",
-      "github": "https://github.com/adonisjs"
+      "website": "https://adonisjs.com/"
     },
     "flags": {
       "open_source": true
@@ -9141,8 +9027,7 @@ const SITES_DATA = [
     "description": "An open DNS recursive service for free security and high privacy.",
     "logo": "images/logos/quad9.png",
     "links": {
-      "website": "https://quad9.net/",
-      "github": "https://github.com/Quad9DNS/"
+      "website": "https://quad9.net/"
     },
     "flags": {
       "open_source": true
@@ -9243,8 +9128,7 @@ const SITES_DATA = [
     "description": "Dracula Theme is a popular open-source dark color scheme created by Zeno Rocha, designed to work across a wide array of software applications.",
     "logo": "images/logos/Dracula Theme.png",
     "links": {
-      "website": "https://draculatheme.com/",
-      "github": "https://github.com/dracula/"
+      "website": "https://draculatheme.com/"
     },
     "flags": {
       "open_source": true
@@ -9276,8 +9160,7 @@ const SITES_DATA = [
     "logo": "images/logos/Droid-ify.png",
     "links": {
       "website": "https://droidify.eu.org/",
-      "android": "https://droidify.eu.org/download",
-      "github": "https://github.com/Droid-ify"
+      "android": "https://droidify.eu.org/download"
     },
     "flags": {
       "open_source": true
@@ -9438,8 +9321,7 @@ const SITES_DATA = [
     "description": "A free and open source icon pack. With hundreds of icons and new ones being added weekly.",
     "logo": "images/logos/IconBrew.png",
     "links": {
-      "website": "https://iconbrew.com/",
-      "github": "https://github.com/elrumo/icon-brew"
+      "website": "https://iconbrew.com/"
     },
     "flags": {
       "open_source": true
@@ -9470,8 +9352,7 @@ const SITES_DATA = [
     "description": "Method Draw is a simple and easy vector editor for the web.",
     "logo": "images/logos/Method Draw Vector.png",
     "links": {
-      "website": "https://editor.method.ac/",
-      "github": "https://github.com/methodofaction/Method-Draw"
+      "website": "https://editor.method.ac/"
     },
     "flags": {
       "open_source": true
@@ -10259,8 +10140,7 @@ const SITES_DATA = [
     "description": "Excel-DNA is an independent project that integrates .NET into Microsoft Excel to extend its native capabilities.",
     "logo": "images/logos/Excel-DNA.png",
     "links": {
-      "website": "https://excel-dna.net/",
-      "github": "https://github.com/Excel-DNA"
+      "website": "https://excel-dna.net/"
     },
     "flags": {
       "open_source": true
@@ -10313,8 +10193,7 @@ const SITES_DATA = [
       "android": "https://www.etlegacy.com/download",
       "linux": "https://www.etlegacy.com/download",
       "macos": "https://www.etlegacy.com/download",
-      "windows": "https://www.etlegacy.com/download",
-      "github": "https://github.com/etlegacy"
+      "windows": "https://www.etlegacy.com/download"
     },
     "flags": {
       "open_source": true
@@ -10408,8 +10287,7 @@ const SITES_DATA = [
     "logo": "images/logos/Enlightment.png",
     "links": {
       "website": "https://www.enlightenment.org/",
-      "linux": "https://www.enlightenment.org/",
-      "source": "https://git.enlightenment.org/enlightenment"
+      "linux": "https://www.enlightenment.org/"
     },
     "flags": {
       "open_source": true
@@ -10440,11 +10318,10 @@ const SITES_DATA = [
   },
   {
     "name": "Apaxy V2",
-    "description": "Apaxy is a customisable theme built to enhance the experience of browsing web directories. It uses the mod_autoindex Apache module\u2014and some CSS\u2014to override the default style of a directory listing.",
+    "description": "Apaxy is a customisable theme built to enhance the experience of browsing web directories. It uses the mod_autoindex Apache module—and some CSS—to override the default style of a directory listing.",
     "logo": "images/logos/Apaxy V2.png",
     "links": {
-      "website": "https://fusengine.github.io/apaxy-v2",
-      "github": "https://github.com/fusengine/apaxy-v2"
+      "website": "https://fusengine.github.io/apaxy-v2"
     },
     "flags": {
       "open_source": true
@@ -10479,8 +10356,7 @@ const SITES_DATA = [
       "chrome": "https://chromewebstore.google.com/detail/frankerfacez/fadndhdgpmmaapbmfcknlfgcflmmmieb",
       "firefox": "https://addons.mozilla.org/en-US/firefox/addon/frankerfacez/",
       "edge": "https://www.frankerfacez.com/",
-      "opera": "https://repeek.gg/",
-      "github": "https://github.com/FrankerFaceZ"
+      "opera": "https://repeek.gg/"
     },
     "flags": {
       "open_source": true
@@ -10558,8 +10434,7 @@ const SITES_DATA = [
     "description": "Forgejo is a self-hosted lightweight software forge.",
     "logo": "images/logos/Forgejo.png",
     "links": {
-      "website": "https://forgejo.org/",
-      "codeberg": "https://codeberg.org/forgejo/"
+      "website": "https://forgejo.org/"
     },
     "flags": {
       "open_source": true
@@ -10703,8 +10578,7 @@ const SITES_DATA = [
     "logo": "images/logos/i3wm.png",
     "links": {
       "website": "https://i3wm.org/",
-      "linux": "https://i3wm.org/",
-      "github": "https://github.com/i3/"
+      "linux": "https://i3wm.org/"
     },
     "flags": {
       "open_source": true
@@ -10723,8 +10597,7 @@ const SITES_DATA = [
     "logo": "images/logos/ImageGlass.png",
     "links": {
       "website": "https://imageglass.org/",
-      "windows": "https://imageglass.org/",
-      "github": "https://github.com/d2phap/ImageGlass"
+      "windows": "https://imageglass.org/"
     },
     "flags": {
       "open_source": true
@@ -10801,8 +10674,7 @@ const SITES_DATA = [
       "website": "https://openrgb.org/",
       "linux": "https://openrgb.org/",
       "macos": "https://openrgb.org/",
-      "windows": "https://openrgb.org/",
-      "gitlab": "https://gitlab.com/CalcProgrammer1/OpenRGB"
+      "windows": "https://openrgb.org/"
     },
     "flags": {
       "open_source": true
@@ -10823,8 +10695,7 @@ const SITES_DATA = [
     "logo": "images/logos/OpenRazer.png",
     "links": {
       "website": "https://openrazer.github.io/",
-      "linux": "https://openrazer.github.io/#download",
-      "github": "https://github.com/openrazer/"
+      "linux": "https://openrazer.github.io/#download"
     },
     "flags": {
       "open_source": true
@@ -10843,8 +10714,7 @@ const SITES_DATA = [
     "logo": "images/logos/OpenEmu.png",
     "links": {
       "website": "https://openemu.org/",
-      "macos": "https://openemu.org/",
-      "github": "https://github.com/OpenEmu"
+      "macos": "https://openemu.org/"
     },
     "flags": {
       "open_source": true
@@ -10863,8 +10733,7 @@ const SITES_DATA = [
     "logo": "images/logos/OpenDota.png",
     "links": {
       "website": "https://www.opendota.com/",
-      "ios": "https://apps.apple.com/us/app/opendota/id1354762555",
-      "github": "https://github.com/odota/"
+      "ios": "https://apps.apple.com/us/app/opendota/id1354762555"
     },
     "flags": {
       "open_source": true
@@ -11031,8 +10900,7 @@ const SITES_DATA = [
     "logo": "images/logos/Vleer.png",
     "links": {
       "website": "https://vleer.app/",
-      "macos": "https://vleer.app/download",
-      "github": "https://github.com/Vleerapp/"
+      "macos": "https://vleer.app/download"
     },
     "flags": {
       "open_source": true
@@ -11082,8 +10950,7 @@ const SITES_DATA = [
     "logo": "images/logos/ReVanced.png",
     "links": {
       "website": "https://revanced.app/",
-      "android": "https://revanced.app/download",
-      "github": "https://github.com/revanced"
+      "android": "https://revanced.app/download"
     },
     "flags": {
       "open_source": true
@@ -11102,8 +10969,7 @@ const SITES_DATA = [
     "logo": "images/logos/Retro Music Player.png",
     "links": {
       "website": "https://retromusic.app/",
-      "android": "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic",
-      "github": "https://github.com/RetroMusicPlayer"
+      "android": "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic"
     },
     "flags": {
       "open_source": true
@@ -11135,8 +11001,7 @@ const SITES_DATA = [
     "description": "Lightweight and easy-to-use repository manager for Maven-based artifacts in the JVM ecosystem.",
     "logo": "images/logos/Reposilite.png",
     "links": {
-      "website": "https://reposilite.com/",
-      "github": "https://github.com/dzikoysk/reposilite"
+      "website": "https://reposilite.com/"
     },
     "flags": {
       "open_source": true
@@ -11156,8 +11021,7 @@ const SITES_DATA = [
       "website": "https://replugged.dev/",
       "linux": "https://replugged.dev/download",
       "macos": "https://replugged.dev/",
-      "windows": "https://replugged.dev/",
-      "github": "https://github.com/replugged-org"
+      "windows": "https://replugged.dev/"
     },
     "flags": {
       "open_source": true
@@ -11212,8 +11076,7 @@ const SITES_DATA = [
       "website": "https://www.redeclipse.net/",
       "linux": "https://www.redeclipse.net/download",
       "macos": "https://www.redeclipse.net/download",
-      "windows": "https://www.redeclipse.net/download",
-      "github": "https://github.com/redeclipse"
+      "windows": "https://www.redeclipse.net/download"
     },
     "flags": {
       "open_source": true
@@ -11235,8 +11098,7 @@ const SITES_DATA = [
     "links": {
       "website": "https://redasm.io/",
       "linux": "https://redasm.io/download",
-      "windows": "https://redasm.io/downloads",
-      "github": "https://github.com/REDasmOrg/"
+      "windows": "https://redasm.io/downloads"
     },
     "flags": {
       "open_source": true
@@ -11392,7 +11254,7 @@ const SITES_DATA = [
   },
   {
     "name": "Sleeve 2",
-    "description": "Sleeve sits on the desktop, displaying and controlling the music you\u2019re currently playing.",
+    "description": "Sleeve sits on the desktop, displaying and controlling the music you’re currently playing.",
     "logo": "images/logos/Sleeve 2.png",
     "links": {
       "website": "https://replay.software/sleeve",
@@ -11432,8 +11294,7 @@ const SITES_DATA = [
       "website": "https://upscayl.org/",
       "linux": "https://upscayl.org/download",
       "macos": "https://upscayl.org/download",
-      "windows": "https://upscayl.org/download",
-      "github": "https://github.com/upscayl"
+      "windows": "https://upscayl.org/download"
     },
     "flags": {
       "open_source": true
@@ -11507,8 +11368,7 @@ const SITES_DATA = [
     "logo": "images/logos/Maccy.png",
     "links": {
       "website": "https://maccy.app/",
-      "macos": "https://github.com/p0deje/Maccy?tab=readme-ov-file#install",
-      "github": "https://github.com/p0deje/Maccy"
+      "macos": "https://github.com/p0deje/Maccy?tab=readme-ov-file#install"
     },
     "flags": {
       "open_source": true
@@ -11566,8 +11426,7 @@ const SITES_DATA = [
     "logo": "images/logos/DockDoor.png",
     "links": {
       "website": "https://dockdoor.net/",
-      "macos": "https://dockdoor.net/",
-      "github": "https://github.com/ejbills/DockDoor"
+      "macos": "https://dockdoor.net/"
     },
     "flags": {
       "open_source": true
@@ -11680,8 +11539,7 @@ const SITES_DATA = [
     "description": "A web-based tool that compares two JSON documents and highlights the differences in a visual format, making it easier to identify additions, deletions, and modifications to the data.",
     "logo": "images/logos/Json Diff.png",
     "links": {
-      "website": "https://json-diff.com/",
-      "github": "https://github.com/blitlabs/online-json-diff"
+      "website": "https://json-diff.com/"
     },
     "flags": {
       "open_source": true
@@ -11699,8 +11557,7 @@ const SITES_DATA = [
     "logo": "images/logos/Jsitor.png",
     "links": {
       "website": "https://jsitor.com/",
-      "ios": "https://apps.apple.com/us/app/jsitor-js-html-css-editor/id1455784773",
-      "github": "https://github.com/jsitor"
+      "ios": "https://apps.apple.com/us/app/jsitor-js-html-css-editor/id1455784773"
     },
     "flags": {
       "open_source": true
@@ -11788,8 +11645,7 @@ const SITES_DATA = [
     "description": "Transform your plain text into static websites and blogs.",
     "logo": "images/logos/jekyllrb.png",
     "links": {
-      "website": "https://jekyllrb.com/",
-      "github": "https://github.com/jekyll/"
+      "website": "https://jekyllrb.com/"
     },
     "flags": {
       "open_source": true
@@ -11807,8 +11663,7 @@ const SITES_DATA = [
     "logo": "images/logos/JaxCore.png",
     "links": {
       "website": "https://jaxcore.app/",
-      "windows": "https://jaxcore.app/",
-      "github": "https://github.com/Jax-Core/"
+      "windows": "https://jaxcore.app/"
     },
     "flags": {
       "open_source": true
@@ -11855,8 +11710,7 @@ const SITES_DATA = [
     "logo": "images/logos/Kristal.png",
     "links": {
       "website": "https://kristal.cc/",
-      "windows": "https://kristal.cc/wiki/downloading",
-      "github": "https://github.com/KristalTeam/Kristal/"
+      "windows": "https://kristal.cc/wiki/downloading"
     },
     "flags": {
       "open_source": true
@@ -11906,8 +11760,7 @@ const SITES_DATA = [
     "description": "A versatile Discord bot designed to enhance community engagement with fun commands, moderation, and utilities.",
     "logo": "images/logos/Kittybot.png",
     "links": {
-      "website": "https://kittybot.de/",
-      "github": "https://github.com/KittyBot-Org"
+      "website": "https://kittybot.de/"
     },
     "flags": {
       "open_source": true
@@ -11949,11 +11802,10 @@ const SITES_DATA = [
   },
   {
     "name": "Kestra",
-    "description": "Unify orchestration for all engineers. Build and govern all your workflows \u2014 Everything-as-Code, and from the UI.",
+    "description": "Unify orchestration for all engineers. Build and govern all your workflows — Everything-as-Code, and from the UI.",
     "logo": "images/logos/Kestra.png",
     "links": {
-      "website": "https://kestra.io/",
-      "github": "https://github.com/kestra-io"
+      "website": "https://kestra.io/"
     },
     "flags": {
       "open_source": true
@@ -12014,8 +11866,7 @@ const SITES_DATA = [
     "description": "Mass Effect 3 Character Builder.",
     "logo": "images/logos/Kalence.png",
     "links": {
-      "website": "https://kalence2.github.io/",
-      "github": "https://github.com/kalence2/kalence2.github.io"
+      "website": "https://kalence2.github.io/"
     },
     "flags": {
       "open_source": true
@@ -12032,8 +11883,7 @@ const SITES_DATA = [
     "description": "A batteries-included, easy-to-use rendering library with a tiny footprint",
     "logo": "images/logos/Kiru.png",
     "links": {
-      "website": "https://kirujs.dev/",
-      "github": "https://github.com/kirujs"
+      "website": "https://kirujs.dev/"
     },
     "flags": {
       "open_source": true
@@ -12111,8 +11961,7 @@ const SITES_DATA = [
       "website": "https://osu.ppy.sh/",
       "linux": "https://osu.ppy.sh/home/download",
       "macos": "https://osu.ppy.sh/home/download",
-      "windows": "https://osu.ppy.sh/home/download",
-      "github": "https://github.com/ppy/osu"
+      "windows": "https://osu.ppy.sh/home/download"
     },
     "flags": {
       "open_source": true
@@ -12146,8 +11995,7 @@ const SITES_DATA = [
     "description": "Instance and Community Explorer for Lemmy.",
     "logo": "images/logos/Lemmy Explorer.png",
     "links": {
-      "website": "https://lemmyverse.net/",
-      "github": "https://github.com/tgxn/lemmy-explorer"
+      "website": "https://lemmyverse.net/"
     },
     "flags": {
       "open_source": true
@@ -12164,8 +12012,7 @@ const SITES_DATA = [
     "description": "Lichess is a free, libre, no-ads, open source chess server.",
     "logo": "images/logos/lichess.org.png",
     "links": {
-      "website": "https://lichess.org/",
-      "github": "https://github.com/lichess-org"
+      "website": "https://lichess.org/"
     },
     "flags": {
       "open_source": true
@@ -12220,8 +12067,7 @@ const SITES_DATA = [
     "description": "Alternative front-end for Google Translate",
     "logo": "images/logos/Lingva.png",
     "links": {
-      "website": "https://lingva.ml/",
-      "github": "https://github.com/thedaviddelta/lingva-translate"
+      "website": "https://lingva.ml/"
     },
     "flags": {
       "open_source": true
@@ -12266,8 +12112,7 @@ const SITES_DATA = [
     "description": "Lishogi is a free, libre, no-ads, open source shogi server.",
     "logo": "images/logos/lishogi.org.png",
     "links": {
-      "website": "https://lishogi.org/",
-      "github": "https://github.com/WandererXII/lishogi"
+      "website": "https://lishogi.org/"
     },
     "flags": {
       "open_source": true
@@ -12440,8 +12285,7 @@ const SITES_DATA = [
     "description": "A Discord bot to make self-assignable roles better.",
     "logo": "images/logos/Roleypoly.png",
     "links": {
-      "website": "https://roleypoly.com/",
-      "github": "https://github.com/roleypoly"
+      "website": "https://roleypoly.com/"
     },
     "flags": {
       "open_source": true
@@ -12458,8 +12302,7 @@ const SITES_DATA = [
     "description": "The official Router for Vue.js",
     "logo": "images/logos/Vue Router.png",
     "links": {
-      "website": "https://router.vuejs.org/",
-      "github": "https://github.com/vuejs/router"
+      "website": "https://router.vuejs.org/"
     },
     "flags": {
       "open_source": true
@@ -12476,8 +12319,7 @@ const SITES_DATA = [
     "description": "An approachable, performant and versatile framework for building web user interfaces.",
     "logo": "images/logos/Vue.js.png",
     "links": {
-      "website": "https://vuejs.org/",
-      "github": "https://github.com/vuejs/"
+      "website": "https://vuejs.org/"
     },
     "flags": {
       "open_source": true
@@ -12494,8 +12336,7 @@ const SITES_DATA = [
     "description": "Your one-stop-shop for Discord server moderation.",
     "logo": "images/logos/Rtbyte.png",
     "links": {
-      "website": "https://rtbyte.xyz/",
-      "github": "https://github.com/RTByte/"
+      "website": "https://rtbyte.xyz/"
     },
     "flags": {
       "open_source": true
@@ -12512,8 +12353,7 @@ const SITES_DATA = [
     "description": "The official documentation site for r/Techsupport, built by the community for the community.",
     "logo": "images/logos/rTS Wiki.png",
     "links": {
-      "website": "https://rtech.support/",
-      "github": "https://github.com/r-Techsupport/"
+      "website": "https://rtech.support/"
     },
     "flags": {
       "open_source": true
@@ -12537,8 +12377,7 @@ const SITES_DATA = [
       "chrome": "https://chromewebstore.google.com/detail/ruffle-flash-emulator/donbcfbmhbcapadipfkeojnmajbakjdc",
       "firefox": "https://addons.mozilla.org/firefox/addon/ruffle_rs",
       "edge": "https://microsoftedge.microsoft.com/addons/detail/ruffle/pipjjbgofgieknlpefmcckdmgaaegban",
-      "mac": "https://ruffle.rs/downloads",
-      "github": "https://github.com/ruffle-rs/"
+      "mac": "https://ruffle.rs/downloads"
     },
     "flags": {
       "open_source": true
@@ -12559,8 +12398,7 @@ const SITES_DATA = [
     "logo": "images/logos/Rune Changer.png",
     "links": {
       "website": "https://runechanger.stirante.com/",
-      "windows": "https://runechanger.stirante.com/",
-      "github": "https://github.com/stirante/RuneChanger"
+      "windows": "https://runechanger.stirante.com/"
     },
     "flags": {
       "open_source": true
@@ -12638,8 +12476,7 @@ const SITES_DATA = [
     "description": "A public instance of Redlib, a privacy-focused, open-source front end for browsing Reddit. It allows users to view content from Reddit without being tracked by the platform's ads or trackers",
     "logo": "images/logos/redlib..png",
     "links": {
-      "website": "https://safereddit.com/",
-      "github": "https://github.com/redlib-org/"
+      "website": "https://safereddit.com/"
     },
     "flags": {
       "open_source": true
@@ -12672,8 +12509,7 @@ const SITES_DATA = [
     "description": "Satisfactory Factories is a web-based tool for planning and managing factories and logistics in the game Satisfactory.",
     "logo": "images/logos/Satisfactory Factories.png",
     "links": {
-      "website": "https://satisfactory-factories.app/",
-      "github": "https://github.com/satisfactory-factories"
+      "website": "https://satisfactory-factories.app/"
     },
     "flags": {
       "open_source": true
@@ -12694,8 +12530,7 @@ const SITES_DATA = [
       "android": "https://play.google.com/store/apps/details?id=de.spiritcroc.riotx",
       "linux": "https://schildi.chat/desktop/",
       "macos": "https://schildi.chat/desktop/",
-      "windows": "https://schildi.chat/desktop/",
-      "github": "https://github.com/SchildiChat"
+      "windows": "https://schildi.chat/desktop/"
     },
     "flags": {
       "open_source": true
@@ -12743,8 +12578,7 @@ const SITES_DATA = [
     "description": "A community-run website that tracks and displays detailed statistics for the massively multiplayer online first-person shooter game, PlanetSide 2.",
     "logo": "images/logos/PS2Alerts.png",
     "links": {
-      "website": "https://ps2alerts.com/",
-      "github": "https://github.com/ps2alerts"
+      "website": "https://ps2alerts.com/"
     },
     "flags": {
       "open_source": true
@@ -12793,8 +12627,7 @@ const SITES_DATA = [
     "description": "A web-based music visualizer and mini-player that provides real-time Spotify song information for streaming purposes.",
     "logo": "images/logos/NowPlaying.png",
     "links": {
-      "website": "https://nowplayi.ng/",
-      "github": "https://github.com/busybox11/NowPlaying-for-Spotify"
+      "website": "https://nowplayi.ng/"
     },
     "flags": {
       "open_source": true
@@ -12816,8 +12649,7 @@ const SITES_DATA = [
       "ios": "https://apps.apple.com/us/app/notesnook-private-note-taking/id1544027013",
       "linux": "https://notesnook.com/downloads/",
       "macos": "https://notesnook.com/downloads/",
-      "windows": "https://notesnook.com/downloads/",
-      "github": "https://github.com/streetwriters/notesnook"
+      "windows": "https://notesnook.com/downloads/"
     },
     "flags": {
       "open_source": true
@@ -12857,8 +12689,7 @@ const SITES_DATA = [
     "description": "An unofficial book for beginners.",
     "logo": "images/logos/NixOS & Flakes Book.png",
     "links": {
-      "website": "https://nixos-and-flakes.thiscute.world/",
-      "github": "https://github.com/ryan4yin/nixos-and-flakes-book"
+      "website": "https://nixos-and-flakes.thiscute.world/"
     },
     "flags": {
       "open_source": true
@@ -12906,8 +12737,7 @@ const SITES_DATA = [
       "website": "https://nheko-reborn.github.io/",
       "linux": "https://nheko-reborn.github.io/",
       "macos": "https://nheko-reborn.github.io/",
-      "windows": "https://nheko-reborn.github.io/",
-      "github": "https://github.com/Nheko-Reborn/nheko"
+      "windows": "https://nheko-reborn.github.io/"
     },
     "flags": {
       "open_source": true
@@ -12924,11 +12754,10 @@ const SITES_DATA = [
   },
   {
     "name": "NH Switch Guide",
-    "description": "A collaboration from Nintendo Homebrew's Discord community, getting you from a stock Switch to Atmosph\u00e8re.",
+    "description": "A collaboration from Nintendo Homebrew's Discord community, getting you from a stock Switch to Atmosphère.",
     "logo": "images/logos/NH Switch Guide.png",
     "links": {
-      "website": "https://switch.hacks.guide/",
-      "github": "https://github.com/nh-server/switch-guide"
+      "website": "https://switch.hacks.guide/"
     },
     "flags": {
       "open_source": true
@@ -12945,8 +12774,7 @@ const SITES_DATA = [
     "description": "Complete guides to homebrew and custom firmware for various devices.",
     "logo": "images/logos/Hacks.Guide.png",
     "links": {
-      "website": "https://hacks.guide/",
-      "github": "https://github.com/hacks-guide"
+      "website": "https://hacks.guide/"
     },
     "flags": {
       "open_source": true
@@ -13005,8 +12833,7 @@ const SITES_DATA = [
     "description": "Make beautiful websites regardless of your design experience.",
     "logo": "images/logos/hero.png",
     "links": {
-      "website": "https://www.heroui.com/",
-      "github": "https://github.com/heroui-inc/"
+      "website": "https://www.heroui.com/"
     },
     "flags": {},
     "categories": {
@@ -13020,8 +12847,7 @@ const SITES_DATA = [
     "description": "Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.",
     "logo": "images/logos/Next.js.png",
     "links": {
-      "website": "https://nextjs.org/",
-      "github": "https://github.com/vercel/next.js"
+      "website": "https://nextjs.org/"
     },
     "flags": {
       "open_source": true
@@ -13052,8 +12878,7 @@ const SITES_DATA = [
     "description": "Nextron is a Minecraft plugin which is meant to replace any other plugins you use at the moment.",
     "logo": "images/logos/Nextron.png",
     "links": {
-      "website": "https://nextron.pandadev.net/",
-      "github": "https://github.com/0pandadev/nextron/"
+      "website": "https://nextron.pandadev.net/"
     },
     "flags": {
       "open_source": true
@@ -13072,8 +12897,7 @@ const SITES_DATA = [
     "links": {
       "website": "https://nerimity.com/",
       "linux": "https://nerimity.com/",
-      "windows": "https://nerimity.com/",
-      "github": "https://github.com/Nerimity/"
+      "windows": "https://nerimity.com/"
     },
     "flags": {
       "open_source": true
@@ -13112,8 +12936,7 @@ const SITES_DATA = [
     "description": "Find your next League of Legends name.",
     "logo": "images/logos/NamesLoL.png",
     "links": {
-      "website": "https://www.nameslol.com/",
-      "github": "https://github.com/bricefrisco/NamesLoL"
+      "website": "https://www.nameslol.com/"
     },
     "flags": {
       "open_source": true
@@ -13147,8 +12970,7 @@ const SITES_DATA = [
       "website": "https://hyper.is/",
       "linux": "https://hyper.is/",
       "macos": "https://hyper.is/",
-      "windows": "https://hyper.is/",
-      "github": "https://github.com/vercel/hyper"
+      "windows": "https://hyper.is/"
     },
     "flags": {
       "open_source": true
@@ -13249,7 +13071,7 @@ const SITES_DATA = [
   },
   {
     "name": "Hit N Mix",
-    "description": "The World\u2019s First AI DAW",
+    "description": "The World’s First AI DAW",
     "logo": "images/logos/Hit Mix.png",
     "links": {
       "website": "https://hitnmix.com/",
@@ -13270,8 +13092,7 @@ const SITES_DATA = [
     "description": "See the latest World of Warcraft simulations results for every class.",
     "logo": "images/logos/Hero Damage.png",
     "links": {
-      "website": "https://www.herodamage.com/",
-      "github": "https://github.com/herotc/shadowlands.herodamage.com"
+      "website": "https://www.herodamage.com/"
     },
     "flags": {
       "open_source": true
@@ -13291,8 +13112,7 @@ const SITES_DATA = [
       "website": "https://hedgewars.org/",
       "linux": "https://hedgewars.org/download.html",
       "macos": "https://hedgewars.org/download.html",
-      "windows": "https://hedgewars.org/download.html",
-      "source": "https://hedgewars.org/download.html"
+      "windows": "https://hedgewars.org/download.html"
     },
     "flags": {
       "open_source": true
@@ -13396,8 +13216,7 @@ const SITES_DATA = [
     "description": "A place for developers to find open-source GitHub projects to contribute to in Hacktoberfest.",
     "logo": "images/logos/Hacktoberfest.png",
     "links": {
-      "website": "https://finder.usmans.me/",
-      "github": "https://github.com/max-programming/hacktoberfest-projects"
+      "website": "https://finder.usmans.me/"
     },
     "flags": {
       "open_source": true
@@ -13553,8 +13372,7 @@ const SITES_DATA = [
       "website": "https://xonotic.org/",
       "linux": "https://xonotic.org/download",
       "macos": "https://xonotic.org/download",
-      "windows": "https://xonotic.org/download",
-      "gitlab": "https://gitlab.com/xonotic/"
+      "windows": "https://xonotic.org/download"
     },
     "flags": {
       "open_source": true
@@ -13571,7 +13389,7 @@ const SITES_DATA = [
   },
   {
     "name": "XMission",
-    "description": "Shared Hosting, Managed Cloud, and Colocation include everything required to build and maintain a successful website or web application\u2014from.",
+    "description": "Shared Hosting, Managed Cloud, and Colocation include everything required to build and maintain a successful website or web application—from.",
     "logo": "images/logos/xmission.png",
     "links": {
       "website": "https://xmission.com/"
@@ -13633,8 +13451,7 @@ const SITES_DATA = [
     "logo": "images/logos/x64dbg.png",
     "links": {
       "website": "https://x64dbg.com/",
-      "windows": "https://sourceforge.net/projects/x64dbg/files/snapshots/",
-      "github": "https://github.com/x64dbg/"
+      "windows": "https://sourceforge.net/projects/x64dbg/files/snapshots/"
     },
     "flags": {
       "open_source": true
@@ -13770,8 +13587,7 @@ const SITES_DATA = [
     "description": "A web application and API that provides a user-friendly way to browse and discover packages available through the Windows Package Manager (WinGet).",
     "logo": "images/logos/winget.run.png",
     "links": {
-      "website": "https://winget.run/",
-      "github": "https://github.com/winget-run"
+      "website": "https://winget.run/"
     },
     "flags": {
       "open_source": true
@@ -13788,8 +13604,7 @@ const SITES_DATA = [
     "description": "A website offering a large collection of pre-designed themes for the Windows Terminal application.",
     "logo": "images/logos/Windows Terminal Themes.png",
     "links": {
-      "website": "https://windowsterminalthemes.dev/",
-      "github": "https://github.com/atomcorp/themes"
+      "website": "https://windowsterminalthemes.dev/"
     },
     "flags": {
       "open_source": true
@@ -13806,8 +13621,7 @@ const SITES_DATA = [
     "description": "Pixel perfect Discord widgets for your website.",
     "logo": "images/logos/Widget Bot.png",
     "links": {
-      "website": "https://widgetbot.io/",
-      "github": "https://github.com/widgetbot-io"
+      "website": "https://widgetbot.io/"
     },
     "flags": {
       "open_source": true
@@ -13827,8 +13641,7 @@ const SITES_DATA = [
       "website": "https://www.wickeditor.com/editor/",
       "linux": "https://www.wickeditor.com/#/download/",
       "macos": "https://www.wickeditor.com/#/download/",
-      "windows": "https://www.wickeditor.com/#/download/",
-      "github": "https://github.com/Wicklets/wick-editor"
+      "windows": "https://www.wickeditor.com/#/download/"
     },
     "flags": {
       "open_source": true
@@ -13867,8 +13680,7 @@ const SITES_DATA = [
     "description": "A X-Ray Vision for your Website.",
     "logo": "images/logos/WebCheck.png",
     "links": {
-      "website": "https://web-check.xyz/",
-      "github": "https://github.com/lissy93/web-check"
+      "website": "https://web-check.xyz/"
     },
     "flags": {
       "open_source": true
@@ -13961,8 +13773,7 @@ const SITES_DATA = [
     "links": {
       "website": "https://wago.io/",
       "linux": "https://wago.io/app",
-      "windows": "https://wago.io/app",
-      "github": "https://github.com/methodgg/wago.io"
+      "windows": "https://wago.io/app"
     },
     "flags": {
       "open_source": true
@@ -14051,8 +13862,7 @@ const SITES_DATA = [
     "description": "Muttwizard is a tool that automatically sets up a neomutt-based minimal email system.",
     "logo": "images/logos/Muttwizard.png",
     "links": {
-      "website": "https://muttwizard.com/",
-      "github": "https://github.com/lukesmithxyz/mutt-wizard"
+      "website": "https://muttwizard.com/"
     },
     "flags": {
       "open_source": true
@@ -14084,8 +13894,7 @@ const SITES_DATA = [
     "logo": "images/logos/MS Paint IDE.png",
     "links": {
       "website": "https://ms-paint-i.de/",
-      "windows": "https://ms-paint-i.de/downloads",
-      "github": "https://github.com/MSPaintIDE"
+      "windows": "https://ms-paint-i.de/downloads"
     },
     "flags": {
       "open_source": true
@@ -14103,8 +13912,7 @@ const SITES_DATA = [
     "description": "Otzdarva Recommended Builds For Dead By Daylight",
     "logo": "images/logos/Otzdarva Recommended Builds.png",
     "links": {
-      "website": "https://mrtipson.github.io/otz-builds/",
-      "github": "https://github.com/MrTipson/otz-builds"
+      "website": "https://mrtipson.github.io/otz-builds/"
     },
     "flags": {
       "open_source": true
@@ -14135,8 +13943,7 @@ const SITES_DATA = [
     "description": "A TypeScript library for creating animated videos using the Canvas API.",
     "logo": "images/logos/Motion Canvas.png",
     "links": {
-      "website": "https://motioncanvas.io/",
-      "github": "https://github.com/motion-canvas"
+      "website": "https://motioncanvas.io/"
     },
     "flags": {
       "open_source": true
@@ -14167,8 +13974,7 @@ const SITES_DATA = [
     "description": "OpenSource Typing Website",
     "logo": "images/logos/monkeytype.png",
     "links": {
-      "website": "https://monkeytype.com/",
-      "github": "https://github.com/monkeytypegame"
+      "website": "https://monkeytype.com/"
     },
     "flags": {
       "open_source": true
@@ -14185,8 +13991,7 @@ const SITES_DATA = [
     "description": "Monitoror is a unified, self-hosted wallboard application for monitoring server status, continuous integration (CI) build progress, and other critical values.",
     "logo": "images/logos/Monitoror.png",
     "links": {
-      "website": "https://monitoror.com/",
-      "github": "https://github.com/monitoror"
+      "website": "https://monitoror.com/"
     },
     "flags": {
       "open_source": true
@@ -14203,8 +14008,7 @@ const SITES_DATA = [
     "description": "A platform for sharing and downloading mods for various games. Working together as a community to create tools, guides and more.",
     "logo": "images/logos/ModWorkshop.png",
     "links": {
-      "website": "https://modworkshop.net/",
-      "github": "https://github.com/ModWorkshop"
+      "website": "https://modworkshop.net/"
     },
     "flags": {
       "open_source": true
@@ -14238,8 +14042,7 @@ const SITES_DATA = [
       "website": "https://mixxx.org/",
       "linux": "https://mixxx.org/download",
       "macos": "https://mixxx.org/download",
-      "windows": "https://mixxx.org/download",
-      "github": "https://github.com/mixxxdj"
+      "windows": "https://mixxx.org/download"
     },
     "flags": {
       "open_source": true
@@ -14259,8 +14062,7 @@ const SITES_DATA = [
     "description": "Data Pack Generators for Minecraft.",
     "logo": "images/logos/Data Pack Generators.png",
     "links": {
-      "website": "https://misode.github.io/",
-      "github": "https://github.com/misode/misode.github.io"
+      "website": "https://misode.github.io/"
     },
     "flags": {
       "open_source": true
@@ -14278,8 +14080,7 @@ const SITES_DATA = [
     "logo": "images/logos/Game Backup Monitor.png",
     "links": {
       "website": "https://mikemaximus.github.io/gbm-web/",
-      "windows": "https://mikemaximus.github.io/gbm-web/",
-      "github": "https://github.com/MikeMaximus/gbm"
+      "windows": "https://mikemaximus.github.io/gbm-web/"
     },
     "flags": {
       "open_source": true
@@ -14311,8 +14112,7 @@ const SITES_DATA = [
     "description": "All Minecraft servers Merged.",
     "logo": "images/logos/Merged.png",
     "links": {
-      "website": "https://merged.games/",
-      "github": "https://github.com/mergedgames"
+      "website": "https://merged.games/"
     },
     "flags": {
       "open_source": true
@@ -14329,8 +14129,7 @@ const SITES_DATA = [
     "description": "Explore the full Bitcoin ecosystem.",
     "logo": "images/logos/mempool.space.png",
     "links": {
-      "website": "https://mempool.space/",
-      "github": "https://github.com/mempool"
+      "website": "https://mempool.space/"
     },
     "flags": {
       "open_source": true
@@ -14350,8 +14149,7 @@ const SITES_DATA = [
       "website": "https://melonds.kuribo64.net/",
       "linux": "https://melonds.kuribo64.net/downloads.php",
       "macos": "https://melonds.kuribo64.net/downloads.php",
-      "windows": "https://melonds.kuribo64.net/downloads.php",
-      "github": "https://github.com/melonDS-emu"
+      "windows": "https://melonds.kuribo64.net/downloads.php"
     },
     "flags": {
       "open_source": true
@@ -14385,8 +14183,7 @@ const SITES_DATA = [
     "description": "Mednafen is a portable, utilizing OpenGL and SDL, argument(command-line)-driven multi-system emulator. ",
     "logo": "images/logos/mednafen.png",
     "links": {
-      "website": "https://mednafen.github.io/",
-      "github": "https://github.com/mednafen/mednafen.github.io"
+      "website": "https://mednafen.github.io/"
     },
     "flags": {
       "open_source": true
@@ -14403,8 +14200,7 @@ const SITES_DATA = [
     "description": "Embedded Mastodon feeds for blogs etc.",
     "logo": "images/logos/Mastofeed.png",
     "links": {
-      "website": "https://mastofeed.com/",
-      "github": "https://github.com/fenwick67/mastofeed"
+      "website": "https://mastofeed.com/"
     },
     "flags": {
       "open_source": true
@@ -14421,8 +14217,7 @@ const SITES_DATA = [
     "description": "Maskbox protects your real email addresses from internet strangers and automatically forwards messages to your inbox.",
     "logo": "images/logos/Maskbox.png",
     "links": {
-      "website": "https://maskbox.app/",
-      "github": "https://github.com/maskbox"
+      "website": "https://maskbox.app/"
     },
     "flags": {
       "open_source": true
@@ -14439,8 +14234,7 @@ const SITES_DATA = [
     "description": "Say hello to the Open-Source education model. Learning made easy without any disturbance, Clear concepts at a glance.",
     "logo": "images/logos/Talent Brick.png",
     "links": {
-      "website": "https://www.talentbrick.com/",
-      "gitlab": "https://gitlab.com/talentbrick/"
+      "website": "https://www.talentbrick.com/"
     },
     "flags": {
       "open_source": true
@@ -14484,8 +14278,7 @@ const SITES_DATA = [
     "description": "Mint your tweets as NFTs and sell them on OpenSea.",
     "logo": "images/logos/TwNFT.png",
     "links": {
-      "website": "https://twnft.vercel.app/",
-      "github": "https://github.com/AnishDe12020/twnft"
+      "website": "https://twnft.vercel.app/"
     },
     "flags": {
       "open_source": true
@@ -14590,8 +14383,7 @@ const SITES_DATA = [
     "description": "Open Source Fanatics & Key Contributors",
     "logo": "images/logos/Trilon.png",
     "links": {
-      "website": "https://trilon.io/",
-      "github": "https://github.com/trilonio"
+      "website": "https://trilon.io/"
     },
     "flags": {
       "open_source": true
@@ -14605,11 +14397,10 @@ const SITES_DATA = [
   },
   {
     "name": "Trigger.dev",
-    "description": "Build and deploy fully\u2011managed AI agents and workflows.",
+    "description": "Build and deploy fully‑managed AI agents and workflows.",
     "logo": "images/logos/Trigger.dev.png",
     "links": {
-      "website": "https://trigger.dev/",
-      "github": "https://github.com/triggerdotdev"
+      "website": "https://trigger.dev/"
     },
     "flags": {
       "open_source": true
@@ -14668,8 +14459,7 @@ const SITES_DATA = [
     "description": "Convert any text into a title case format.",
     "logo": "images/logos/Title Case Converter.png",
     "links": {
-      "website": "https://title-case-converter.vercel.app/",
-      "github": "https://github.com/bot-diff/title-case-converter"
+      "website": "https://title-case-converter.vercel.app/"
     },
     "flags": {
       "open_source": true
@@ -14700,8 +14490,7 @@ const SITES_DATA = [
     "description": "The hub for a &quot;tildeverse,&quot; a network of online communities that provides users with shell accounts on shared, non-commercial Unix-based servers.",
     "logo": "images/logos/tildeverse.org.png",
     "links": {
-      "website": "https://tildeverse.org/",
-      "source": "https://tildegit.org/tildeverse/site"
+      "website": "https://tildeverse.org/"
     },
     "flags": {
       "open_source": true
@@ -14732,8 +14521,7 @@ const SITES_DATA = [
     "description": "A painless, self-hosted Git service.",
     "logo": "images/logos/Gitea.png",
     "links": {
-      "website": "https://git.tilde.town/",
-      "github": "https://github.com/go-gitea/"
+      "website": "https://git.tilde.town/"
     },
     "flags": {
       "open_source": true
@@ -14750,8 +14538,7 @@ const SITES_DATA = [
     "description": "A digital community for socializing, learning, and making cool stuff.",
     "logo": "images/logos/tilde.team.png",
     "links": {
-      "website": "https://tilde.team/",
-      "source": "https://tildegit.org/team/site"
+      "website": "https://tilde.team/"
     },
     "flags": {
       "open_source": true
@@ -14782,8 +14569,7 @@ const SITES_DATA = [
     "description": "Resources and tools for running Unix servers for social purposes",
     "logo": "images/logos/tilde.club.png",
     "links": {
-      "website": "https://tilde.club/",
-      "github": "https://github.com/tildeclub"
+      "website": "https://tilde.club/"
     },
     "flags": {
       "open_source": true
@@ -14800,8 +14586,7 @@ const SITES_DATA = [
     "description": "The Decentralized Cloud for AI, Media & Entertainment.",
     "logo": "images/logos/Theta.png",
     "links": {
-      "website": "https://thetatoken.org/",
-      "github": "https://github.com/thetatoken"
+      "website": "https://thetatoken.org/"
     },
     "flags": {
       "open_source": true
@@ -14846,8 +14631,7 @@ const SITES_DATA = [
     "description": "Custom themes for your favorite apps!",
     "logo": "images/logos/theme park.png",
     "links": {
-      "website": "https://theme-park.dev/",
-      "github": "https://github.com/themepark-dev"
+      "website": "https://theme-park.dev/"
     },
     "flags": {
       "open_source": true
@@ -14909,8 +14693,7 @@ const SITES_DATA = [
       "website": "https://tetr.io/",
       "linux": "https://tetr.io/about/desktop/",
       "macos": "https://tetr.io/about/desktop/",
-      "windows": "https://tetr.io/about/desktop/",
-      "github": "https://github.com/tetrio"
+      "windows": "https://tetr.io/about/desktop/"
     },
     "flags": {
       "open_source": true
@@ -14944,8 +14727,7 @@ const SITES_DATA = [
     "description": "Create, view and edit terminal colorschemes.",
     "logo": "images/logos/terminal.sexy.png",
     "links": {
-      "website": "https://terminal.sexy/",
-      "github": "https://github.com/stayradiated/terminal.sexy"
+      "website": "https://terminal.sexy/"
     },
     "flags": {
       "open_source": true
@@ -14978,8 +14760,7 @@ const SITES_DATA = [
     "links": {
       "website": "https://tautulli.com/",
       "android": "https://play.google.com/store/apps/details?id=com.tautulli.tautulli_remote",
-      "ios": "https://apps.apple.com/us/app/tautulli-remote/id1570909086",
-      "github": "https://github.com/Tautulli"
+      "ios": "https://apps.apple.com/us/app/tautulli-remote/id1570909086"
     },
     "flags": {
       "open_source": true
@@ -15012,8 +14793,7 @@ const SITES_DATA = [
     "description": "A minimal, distraction-free chat application.",
     "logo": "images/logos/hack.chat.png",
     "links": {
-      "website": "https://hack.chat/",
-      "github": "https://github.com/hack-chat"
+      "website": "https://hack.chat/"
     },
     "flags": {
       "open_source": true
@@ -15055,11 +14835,10 @@ const SITES_DATA = [
   },
   {
     "name": "galactica bot",
-    "description": "A free bot to get your Discord\u2122 server up and running!",
+    "description": "A free bot to get your Discord™ server up and running!",
     "logo": "images/logos/galactica-bot.png",
     "links": {
-      "website": "https://galacticabot.vercel.app/",
-      "github": "https://github.com/jebediah47/galactica-bot"
+      "website": "https://galacticabot.vercel.app/"
     },
     "flags": {
       "open_source": true
@@ -15139,8 +14918,7 @@ const SITES_DATA = [
     "logo": "images/logos/Garuda Linux.png",
     "links": {
       "website": "https://garudalinux.org/",
-      "linux": "https://garudalinux.org/",
-      "gitlab": "https://gitlab.com/garuda-linux"
+      "linux": "https://garudalinux.org/"
     },
     "flags": {
       "open_source": true
@@ -15204,8 +14982,7 @@ const SITES_DATA = [
     "description": "Connecting people, projects and protocols to build a decentralized web.",
     "logo": "images/logos/DWeb.png",
     "links": {
-      "website": "https://getdweb.net/",
-      "gitlab": "https://gitlab.com/getdweb"
+      "website": "https://getdweb.net/"
     },
     "flags": {
       "open_source": true
@@ -15222,8 +14999,7 @@ const SITES_DATA = [
     "description": "Highly customizable, drop-in Bootstrap replacement.",
     "logo": "images/logos/halfmoon.png",
     "links": {
-      "website": "https://www.gethalfmoon.com/",
-      "github": "https://github.com/halfmoonui/"
+      "website": "https://www.gethalfmoon.com/"
     },
     "flags": {
       "open_source": true
@@ -15241,8 +15017,7 @@ const SITES_DATA = [
     "logo": "images/logos/ShareX.png",
     "links": {
       "website": "https://getsharex.com/",
-      "windows": "https://getsharex.com/",
-      "github": "https://github.com/ShareX"
+      "windows": "https://getsharex.com/"
     },
     "flags": {
       "open_source": true
@@ -15394,8 +15169,7 @@ const SITES_DATA = [
     "description": "An emoji guide for your commit messages.",
     "logo": "images/logos/gitmoji.png",
     "links": {
-      "website": "https://gitmoji.dev/",
-      "github": "https://github.com/carloscuesta/gitmoji"
+      "website": "https://gitmoji.dev/"
     },
     "flags": {
       "open_source": true
@@ -15426,8 +15200,7 @@ const SITES_DATA = [
     "description": "WeeChat web frontend.",
     "logo": "images/logos/Glowing Bear.png",
     "links": {
-      "website": "https://glowing-bear.org/",
-      "github": "https://github.com/glowing-bear"
+      "website": "https://glowing-bear.org/"
     },
     "flags": {
       "open_source": true
@@ -15444,8 +15217,7 @@ const SITES_DATA = [
     "description": "Shader editor and gallery.",
     "logo": "images/logos/GLSL Sandbox.png",
     "links": {
-      "website": "https://glslsandbox.com/",
-      "github": "https://github.com/mrdoob/glsl-sandbox"
+      "website": "https://glslsandbox.com/"
     },
     "flags": {
       "open_source": true
@@ -15496,8 +15268,7 @@ const SITES_DATA = [
       "android": "https://grayjay.app/",
       "linux": "https://grayjay.app/desktop/",
       "macos": "https://grayjay.app/desktop/",
-      "windows": "https://grayjay.app/desktop/",
-      "github": "https://github.com/futo-org"
+      "windows": "https://grayjay.app/desktop/"
     },
     "flags": {
       "open_source": true
@@ -15546,8 +15317,7 @@ const SITES_DATA = [
     "description": "Minecraft Anticheat.",
     "logo": "images/logos/GrimAC.png",
     "links": {
-      "website": "https://grim.ac/",
-      "github": "https://github.com/GrimAnticheat"
+      "website": "https://grim.ac/"
     },
     "flags": {
       "open_source": true
@@ -15578,8 +15348,7 @@ const SITES_DATA = [
     "description": "Twitch stream view count guessing game.",
     "logo": "images/logos/Guessr.tv.png",
     "links": {
-      "website": "https://guessr.tv/",
-      "github": "https://github.com/badoge/guessr.tv"
+      "website": "https://guessr.tv/"
     },
     "flags": {
       "open_source": true
@@ -15610,8 +15379,7 @@ const SITES_DATA = [
     "description": "Host static sites with pages.gay.",
     "logo": "images/logos/pages.gay.png",
     "links": {
-      "website": "https://pages.gay/",
-      "source": "https://git.gay/gitgay/pages-server"
+      "website": "https://pages.gay/"
     },
     "flags": {
       "open_source": true
@@ -15628,8 +15396,7 @@ const SITES_DATA = [
     "description": "Offering Git hosting, CI, and static site hosting, git.gay is a platform made to empower queer developers to create, collaborate, and share their projects with the world.",
     "logo": "images/logos/Git Gay.png",
     "links": {
-      "website": "https://git.gay/",
-      "source": "https://git.gay/gitgay/"
+      "website": "https://git.gay/"
     },
     "flags": {
       "open_source": true
@@ -15674,8 +15441,7 @@ const SITES_DATA = [
     "description": "A game of proximity.",
     "logo": "images/logos/Proxx.png",
     "links": {
-      "website": "https://proxx.app/",
-      "github": "https://github.com/GoogleChromeLabs/proxx"
+      "website": "https://proxx.app/"
     },
     "flags": {
       "open_source": true
@@ -15706,8 +15472,7 @@ const SITES_DATA = [
     "description": "Nuclei detects exploitable vulnerabilities across every asset, so you can fix what matters without the noise.",
     "logo": "images/logos/ProjectDiscovery.png",
     "links": {
-      "website": "https://projectdiscovery.io/",
-      "github": "https://github.com/projectdiscovery/"
+      "website": "https://projectdiscovery.io/"
     },
     "flags": {
       "open_source": true
@@ -15775,8 +15540,7 @@ const SITES_DATA = [
     "description": "The ultimate framework for your Cyber Security operations.",
     "logo": "images/logos/ParrotSEC.png",
     "links": {
-      "website": "https://parrotsec.org/",
-      "gitlab": "https://gitlab.com/parrotsec"
+      "website": "https://parrotsec.org/"
     },
     "flags": {
       "open_source": true
@@ -15853,8 +15617,7 @@ const SITES_DATA = [
     "description": "The intuitive store for Vue.js.",
     "logo": "images/logos/Pinia.png",
     "links": {
-      "website": "https://pinia.vuejs.org/",
-      "github": "https://github.com/vuejs/pinia"
+      "website": "https://pinia.vuejs.org/"
     },
     "flags": {
       "open_source": true
@@ -15871,8 +15634,7 @@ const SITES_DATA = [
     "description": "An alternative privacy-friendly YouTube frontend which is efficient by design.",
     "logo": "images/logos/Piped.png",
     "links": {
-      "website": "https://piped.video/",
-      "github": "https://github.com/TeamPiped"
+      "website": "https://piped.video/"
     },
     "flags": {
       "open_source": true
@@ -15928,7 +15690,7 @@ const SITES_DATA = [
   },
   {
     "name": "Poal",
-    "description": "Poal is an online forum / social site with many user\u2010subreddits (\u201csubs\u201d) similar to Reddit. Users can post content (links, images, text), vote, comment, etc.",
+    "description": "Poal is an online forum / social site with many user‐subreddits (“subs”) similar to Reddit. Users can post content (links, images, text), vote, comment, etc.",
     "logo": "images/logos/poal.png",
     "links": {
       "website": "https://poal.co/"
@@ -15970,7 +15732,7 @@ const SITES_DATA = [
   },
   {
     "name": "POE LAB Path of Exile",
-    "description": "PoELab.com is a fan/community site for Path of Exile (PoE), focused especially on the Labyrinth (often called \u201cLab\u201d) content.",
+    "description": "PoELab.com is a fan/community site for Path of Exile (PoE), focused especially on the Labyrinth (often called “Lab”) content.",
     "logo": "images/logos/POE LAB.png",
     "links": {
       "website": "https://www.poelab.com/"
@@ -15988,8 +15750,7 @@ const SITES_DATA = [
     "logo": "images/logos/polychromatic.png",
     "links": {
       "website": "https://polychromatic.app/",
-      "linux": "https://polychromatic.app/download/",
-      "github": "https://github.com/polychromatic"
+      "linux": "https://polychromatic.app/download/"
     },
     "flags": {
       "open_source": true
@@ -16049,8 +15810,7 @@ const SITES_DATA = [
     "description": "Set up custom cards for free, import MEE6 levels, and level up to the stars with Experienced!",
     "logo": "images/logos/Experienced.png",
     "links": {
-      "website": "https://xp.valk.sh/",
-      "github": "https://github.com/randomairborne/experienced"
+      "website": "https://xp.valk.sh/"
     },
     "flags": {
       "open_source": true
@@ -16084,8 +15844,7 @@ const SITES_DATA = [
       "website": "https://tabby.sh/",
       "linux": "https://tabby.sh/",
       "macos": "https://tabby.sh/",
-      "windows": "https://tabby.sh/",
-      "github": "https://github.com/eugeny/tabby"
+      "windows": "https://tabby.sh/"
     },
     "flags": {
       "open_source": true
@@ -16119,8 +15878,7 @@ const SITES_DATA = [
     "description": "A scalable, distributed, collaborative, document-graph database, for the realtime web.",
     "logo": "images/logos/SurrealDB.png",
     "links": {
-      "website": "https://surrealdb.com/",
-      "github": "https://github.com/surrealdb"
+      "website": "https://surrealdb.com/"
     },
     "flags": {
       "open_source": true
@@ -16151,8 +15909,7 @@ const SITES_DATA = [
     "description": "An expressive, robust, feature-rich CSS language built for Node.js",
     "logo": "images/logos/Stylus.png",
     "links": {
-      "website": "https://stylus-lang.com/",
-      "github": "https://github.com/stylus"
+      "website": "https://stylus-lang.com/"
     },
     "flags": {
       "open_source": true
@@ -16399,8 +16156,7 @@ const SITES_DATA = [
     "description": "A performance profiler for Minecraft clients, servers, and proxies.",
     "logo": "images/logos/spark.png",
     "links": {
-      "website": "https://spark.lucko.me/",
-      "github": "https://github.com/lucko/spark"
+      "website": "https://spark.lucko.me/"
     },
     "flags": {
       "open_source": true
@@ -16445,8 +16201,7 @@ const SITES_DATA = [
     "description": "Discord Snowflake to Timestamp Converter",
     "logo": "images/logos/Snowflake.png",
     "links": {
-      "website": "https://snowsta.mp/",
-      "github": "https://github.com/vegeta897/snow-stamp"
+      "website": "https://snowsta.mp/"
     },
     "flags": {
       "open_source": true
@@ -16463,8 +16218,7 @@ const SITES_DATA = [
     "description": "Smithed is an open-source platform for exploring, sharing and supercharging minecraft data & resource packs.",
     "logo": "images/logos/Smithed.png",
     "links": {
-      "website": "https://smithed.net/",
-      "github": "https://github.com/Smithed-MC"
+      "website": "https://smithed.net/"
     },
     "flags": {
       "open_source": true
@@ -16481,8 +16235,7 @@ const SITES_DATA = [
     "description": "Project Slippi is an ongoing project designed for emulators like Dolphin that aims to give Super Smash Bros. Melee several major quality of life features.",
     "logo": "images/logos/slippi.gg.png",
     "links": {
-      "website": "https://slippi.gg/",
-      "github": "https://github.com/project-slippi/"
+      "website": "https://slippi.gg/"
     },
     "flags": {
       "open_source": true
@@ -16513,8 +16266,7 @@ const SITES_DATA = [
     "description": "SkyCrypt is a free, open-source stats viewer for Hypixel SkyBlock.",
     "logo": "images/logos/SkyCrypt.png",
     "links": {
-      "website": "https://sky.shiiyu.moe/",
-      "github": "https://github.com/SkyCryptWebsite"
+      "website": "https://sky.shiiyu.moe/"
     },
     "flags": {
       "open_source": true
@@ -16545,8 +16297,7 @@ const SITES_DATA = [
     "description": "skiftOS is a hobby OS built from scratch using C/C++ for ARM, x86, and RISC-V.",
     "logo": "images/logos/skift OS.png",
     "links": {
-      "website": "https://skiftos.org/",
-      "github": "https://github.com/skift-org"
+      "website": "https://skiftos.org/"
     },
     "flags": {
       "open_source": true
@@ -16655,8 +16406,7 @@ const SITES_DATA = [
     "description": "SearXNG is a Metasearch engine that aggregates results from other search engines while not storing any information about its users.",
     "logo": "images/logos/SearXNG.png",
     "links": {
-      "website": "https://github.com/searxng/searx-instances",
-      "github": "https://github.com/searxng/"
+      "website": "https://github.com/searxng/searx-instances"
     },
     "flags": {
       "open_source": true
@@ -16686,8 +16436,7 @@ const SITES_DATA = [
     "description": "Script Kit. Automate Anything.",
     "logo": "images/logos/Script Kit.png",
     "links": {
-      "website": "https://www.scriptkit.com/",
-      "github": "https://github.com/johnlindquist/kit"
+      "website": "https://www.scriptkit.com/"
     },
     "flags": {
       "open_source": true
@@ -16726,8 +16475,7 @@ const SITES_DATA = [
     "description": "A sandbox for exploring nostr.",
     "logo": "images/logos/nostrudel.ninja.png",
     "links": {
-      "website": "https://nostrudel.ninja/",
-      "github": "https://github.com/hzrd149/nostrudel"
+      "website": "https://nostrudel.ninja/"
     },
     "flags": {
       "open_source": true
@@ -16744,8 +16492,7 @@ const SITES_DATA = [
     "description": "Nostr Nests is an audio space for chatting, jamming, micro-conferences, live podcast recordings, etc. that's powered by Nostr.",
     "logo": "images/logos/nostrnests.png",
     "links": {
-      "website": "https://nostrnests.com/",
-      "github": "https://github.com/nostrnests/"
+      "website": "https://nostrnests.com/"
     },
     "flags": {
       "open_source": true
@@ -16762,8 +16509,7 @@ const SITES_DATA = [
     "description": "A Nostr-based application to create, manage and discover link lists, show notes and other stuff.",
     "logo": "images/logos/Nostree.png",
     "links": {
-      "website": "https://nostree.me/",
-      "github": "https://github.com/gzuuus/linktr-nostr"
+      "website": "https://nostree.me/"
     },
     "flags": {
       "open_source": true
@@ -16794,8 +16540,7 @@ const SITES_DATA = [
     "description": "A nostr client that implements the nostrocket NIPS.",
     "logo": "images/logos/Nostr Rocket.png",
     "links": {
-      "website": "https://nostrocket.org/",
-      "github": "https://github.com/nostrocket"
+      "website": "https://nostrocket.org/"
     },
     "flags": {
       "open_source": true
@@ -16812,8 +16557,7 @@ const SITES_DATA = [
     "description": "Coolr is a simple, open-source, ephemeral group chat built on Nostr.",
     "logo": "images/logos/coolr.chat.png",
     "links": {
-      "website": "https://www.coolr.chat/",
-      "github": "https://github.com/Galaxoid-labs/coolr-web"
+      "website": "https://www.coolr.chat/"
     },
     "flags": {
       "open_source": true
@@ -16827,7 +16571,7 @@ const SITES_DATA = [
   },
   {
     "name": "Yondar",
-    "description": "Yondar (go.yondar.me) is a browser-based decentralized XR/metaverse platform for sharing locations, places, and friends using its \u201cCyberspace Meta-Protocol.\u201d",
+    "description": "Yondar (go.yondar.me) is a browser-based decentralized XR/metaverse platform for sharing locations, places, and friends using its “Cyberspace Meta-Protocol.”",
     "logo": "images/logos/Yondar.png",
     "links": {
       "website": "https://go.yondar.me/",
@@ -16849,8 +16593,7 @@ const SITES_DATA = [
       "website": "https://0xchat.com/",
       "android": "https://play.google.com/store/apps/details?id=com.oxchat.nostr",
       "ios": "https://apps.apple.com/us/app/0xchat/id1637607169",
-      "macos": "https://apps.apple.com/us/app/0xchat/id1637607169",
-      "github": "https://github.com/0xchat-app"
+      "macos": "https://apps.apple.com/us/app/0xchat/id1637607169"
     },
     "flags": {
       "open_source": true
@@ -16905,8 +16648,7 @@ const SITES_DATA = [
     "description": "Curate, Organize, and Discover everything Nostr has to offer.",
     "logo": "images/logos/Listr.png",
     "links": {
-      "website": "https://listr.lol/",
-      "github": "https://github.com/erskingardner/listr"
+      "website": "https://listr.lol/"
     },
     "flags": {
       "open_source": true
@@ -16923,8 +16665,7 @@ const SITES_DATA = [
     "description": "A modern and user-friendly web client for the Nostr protocol, focusing on a seamless social experience.",
     "logo": "images/logos/lumilumi.png",
     "links": {
-      "website": "https://lumilumi.app/",
-      "github": "https://github.com/TsukemonoGit/lumilumi"
+      "website": "https://lumilumi.app/"
     },
     "flags": {
       "open_source": true
@@ -16941,8 +16682,7 @@ const SITES_DATA = [
     "description": "Nostter is a minimalist web-based Nostr client designed for a calm and distraction-free user experience.",
     "logo": "images/logos/nostter.png",
     "links": {
-      "website": "https://nostter.app/",
-      "github": "https://github.com/SnowCait/nostter"
+      "website": "https://nostter.app/"
     },
     "flags": {
       "open_source": true
@@ -16959,8 +16699,7 @@ const SITES_DATA = [
     "description": "The Wired is an anon agora, built upon the NOSTR protocol.",
     "logo": "images/logos/wired.png",
     "links": {
-      "website": "https://www.getwired.app/",
-      "github": "https://github.com/smolgrrr/Wired"
+      "website": "https://www.getwired.app/"
     },
     "flags": {
       "open_source": true
@@ -16991,8 +16730,7 @@ const SITES_DATA = [
     "description": "A gif companion app for nostr clients.",
     "logo": "images/logos/GIF Buddy.png",
     "links": {
-      "website": "https://www.gifbuddy.lol/",
-      "github": "https://github.com/happylemonprogramming/gifbuddy"
+      "website": "https://www.gifbuddy.lol/"
     },
     "flags": {
       "open_source": true
@@ -17009,8 +16747,7 @@ const SITES_DATA = [
     "description": "A Nostr client for feeds that puts relays first.",
     "logo": "images/logos/Coracle.png",
     "links": {
-      "website": "https://coracle.social/",
-      "github": "https://github.com/coracle-social"
+      "website": "https://coracle.social/"
     },
     "flags": {
       "open_source": true
@@ -17202,8 +16939,7 @@ const SITES_DATA = [
       "website": "https://ollama.com/",
       "linux": "https://ollama.com/download/linux",
       "macos": "https://ollama.com/download/mac",
-      "windows": "https://ollama.com/download/windows",
-      "github": "https://github.com/ollama"
+      "windows": "https://ollama.com/download/windows"
     },
     "flags": {
       "open_source": true
@@ -17228,8 +16964,7 @@ const SITES_DATA = [
     "description": "Virtual whiteboard for sketching hand-drawn like diagrams.",
     "logo": "images/logos/excalidraw.png",
     "links": {
-      "website": "https://excalidraw.com/",
-      "github": "https://github.com/excalidraw"
+      "website": "https://excalidraw.com/"
     },
     "flags": {
       "open_source": true
@@ -17260,8 +16995,7 @@ const SITES_DATA = [
     "description": "Replacement icons for popular apps in the style of macOS",
     "logo": "images/logos/macOSicons.png",
     "links": {
-      "website": "https://macosicons.com/",
-      "github": "https://github.com/elrumo/macOS_Big_Sur_icons_replacements"
+      "website": "https://macosicons.com/"
     },
     "flags": {
       "open_source": true
@@ -17336,8 +17070,7 @@ const SITES_DATA = [
     "links": {
       "website": "https://www.comfy.org",
       "macos": "https://www.comfy.org/download",
-      "windows": "https://www.comfy.org/download",
-      "github": "https://github.com/comfyanonymous/ComfyUI"
+      "windows": "https://www.comfy.org/download"
     },
     "flags": {
       "open_source": true
@@ -17377,7 +17110,7 @@ const SITES_DATA = [
   },
   {
     "name": "ChatGPT Atlas",
-    "description": "Bring ChatGPT with you across the web for instant answers, smarter suggestions, and help with tasks\u2014all with privacy settings you can control.",
+    "description": "Bring ChatGPT with you across the web for instant answers, smarter suggestions, and help with tasks—all with privacy settings you can control.",
     "logo": "images/logos/Atlas.png",
     "links": {
       "website": "https://chatgpt.com/atlas/",
@@ -17763,8 +17496,7 @@ const SITES_DATA = [
     "description": "Wotaku.wiki is a comprehensive index of otaku-related resources, offering links to websites, software, and guides for anime, manga, light novels, music, games, and more. ",
     "logo": "images/logos/Wotaku.png",
     "links": {
-      "wiki": "https://wotaku.wiki/",
-      "github": "https://github.com/wotakumoe"
+      "wiki": "https://wotaku.wiki/"
     },
     "flags": {
       "open_source": true
@@ -17868,7 +17600,7 @@ const SITES_DATA = [
   },
   {
     "name": "Rhythm Heaven Wiki",
-    "description": "This wiki is about the popular Rhythm Heaven series created by Tsunku\u2642.",
+    "description": "This wiki is about the popular Rhythm Heaven series created by Tsunku♂.",
     "logo": "images/logos/Rythm Heaven Wiki.png",
     "links": {
       "wiki": "https://rhwiki.net/"
@@ -17947,8 +17679,7 @@ const SITES_DATA = [
       "chrome": "https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh",
       "firefox": "https://addons.mozilla.org/firefox/addon/darkreader/",
       "edge": "https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofWindows",
-      "safari": "https://apps.apple.com/us/app/dark-reader-for-safari/id1438243180",
-      "source": "https://darkreader.org/"
+      "safari": "https://apps.apple.com/us/app/dark-reader-for-safari/id1438243180"
     },
     "flags": {
       "open_source": true
@@ -18264,7 +17995,7 @@ const SITES_DATA = [
     }
   },
   {
-    "name": "Pok\u00e9mon Trading Card Game Pocket",
+    "name": "Pokémon Trading Card Game Pocket",
     "description": "Phone app nor website has darkmode",
     "logo": "images/logos/pokemon tccp.png",
     "links": {
@@ -18838,8 +18569,8 @@ const SITES_DATA = [
     "lightmode_categories": {}
   },
   {
-    "name": "Elliot N\u00e9grel-Jerzy",
-    "description": "Elliot Ne\u0301grek-Jerzy about-me site",
+    "name": "Elliot Négrel-Jerzy",
+    "description": "Elliot Négrek-Jerzy about-me site",
     "logo": "images/logos/elliotnegrekjerzy.png",
     "links": {
       "website": "https://www.bsodium.fr/"
@@ -19153,8 +18884,8 @@ const SITES_DATA = [
     "lightmode_categories": {}
   },
   {
-    "name": "Cl\u00e9ment Saccoccio",
-    "description": "Cl\u00e9ment Saccoccio about-me site",
+    "name": "Clément Saccoccio",
+    "description": "Clément Saccoccio about-me site",
     "logo": "images/logos/clementsaccoccio.png",
     "links": {
       "website": "https://c-saccoccio.fr/"
@@ -19183,9 +18914,9 @@ const SITES_DATA = [
     "lightmode_categories": {}
   },
   {
-    "name": "Bruno Tom\u00e9",
-    "description": "Bruno Tom\u00e9 about-me site",
-    "logo": "images/logos/Bruno Tome\u0301.png",
+    "name": "Bruno Tomé",
+    "description": "Bruno Tomé about-me site",
+    "logo": "images/logos/Bruno Tomé.png",
     "links": {
       "website": "https://brunotome.dev/"
     },
@@ -19963,8 +19694,8 @@ const SITES_DATA = [
     "lightmode_categories": {}
   },
   {
-    "name": "Kagurazaka.\u2008Ritsuka (\u664f\u96f2\u6749)",
-    "description": "Kagurazaka.\u2008Ritsuka (\u664f\u96f2\u6749) about-me site",
+    "name": "Kagurazaka. Ritsuka (晏雲杉)",
+    "description": "Kagurazaka. Ritsuka (晏雲杉) about-me site",
     "logo": "images/logos/Kagurazaka Ritsuka.png",
     "links": {
       "website": "https://ritsuka.moe/"
@@ -20203,8 +19934,8 @@ const SITES_DATA = [
     "lightmode_categories": {}
   },
   {
-    "name": "Mari\u00e1n Mi\u017eik",
-    "description": "Mari\u00e1n Mi\u017eik about-me site",
+    "name": "Marián Mižik",
+    "description": "Marián Mižik about-me site",
     "logo": "images/logos/Marian Mizik.png",
     "links": {
       "website": "https://mizik.eu/"
@@ -20608,8 +20339,8 @@ const SITES_DATA = [
     "lightmode_categories": {}
   },
   {
-    "name": "El\u00edas",
-    "description": "El\u00edas about-me site",
+    "name": "Elías",
+    "description": "Elías about-me site",
     "logo": "images/logos/Elias.png",
     "links": {
       "website": "https://eliasruiz.com/"
@@ -20826,7 +20557,7 @@ const SITES_DATA = [
   },
   {
     "name": "Netdata",
-    "description": "Netdata Cloud is a real-time infrastructure monitoring and full-stack observability platform. It allows developers, sysadmins, and DevOps teams to track the health and performance of their entire IT infrastructure\u2014including bare metal, virtual machines, containers, networks, and applications.",
+    "description": "Netdata Cloud is a real-time infrastructure monitoring and full-stack observability platform. It allows developers, sysadmins, and DevOps teams to track the health and performance of their entire IT infrastructure—including bare metal, virtual machines, containers, networks, and applications.",
     "logo": "images/logos/netdata.png",
     "links": {
       "website": "https://www.netdata.cloud/",
@@ -20937,7 +20668,7 @@ const SITES_DATA = [
   },
   {
     "name": "Authelia",
-    "description": "Authelia is an open-source authentication and authorization server and portal fulfilling the identity and access management (IAM) role of information security in providing multi-factor authentication and single sign-on (SSO) for your applications via a web portal. Authelia is an OpenID Connect 1.0 Provider which is OpenID Certified\u2122 allowing comprehensive integrations, and acts as a companion for common reverse proxies.",
+    "description": "Authelia is an open-source authentication and authorization server and portal fulfilling the identity and access management (IAM) role of information security in providing multi-factor authentication and single sign-on (SSO) for your applications via a web portal. Authelia is an OpenID Connect 1.0 Provider which is OpenID Certified™ allowing comprehensive integrations, and acts as a companion for common reverse proxies.",
     "logo": "images/logos/authelia.png",
     "links": {
       "website": "https://www.authelia.com/",

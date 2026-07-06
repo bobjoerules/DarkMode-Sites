@@ -145,6 +145,9 @@ function renderExtensionItem(site) {
     const types = [
         { key: 'website', label: 'Website', icon: 'website.png' },
         { key: 'github', label: 'GitHub', icon: 'github.png' },
+        { key: 'gitlab', label: 'GitLab', icon: 'opensource.png' },
+        { key: 'codeberg', label: 'Codeberg', icon: 'opensource.png' },
+        { key: 'source', label: 'Source', icon: 'opensource.png' },
         { key: 'ios', label: 'IOS', icon: 'ios.png' },
         { key: 'android', label: 'Android', icon: 'android.png' },
         { key: 'chrome', label: 'Chrome', icon: 'chrome.png' },
@@ -483,11 +486,12 @@ function openSitePopup(site) {
         chrome: 'chrome.png', firefox: 'firefox.png', edge: 'edge.png',
         safari: 'safari.png', opera: 'opera.png', brave: 'brave.png',
         wiki: 'Wiki.png', wikipedia: 'wikipedia.png', github: 'github.png',
+        gitlab: 'opensource.png', codeberg: 'opensource.png', source: 'opensource.png',
         'naver whale': 'narver whale.png', 'other browsers': 'extensions.png'
     };
 
     const entries = Object.entries(site.links);
-    const lastKeys = ['website', 'github', 'wiki', 'wikipedia'];
+    const lastKeys = ['website', 'github', 'gitlab', 'codeberg', 'source', 'wiki', 'wikipedia'];
     const appLinks = entries.filter(([key]) => !lastKeys.includes(key));
     const webLinks = [];
     lastKeys.forEach(k => {
