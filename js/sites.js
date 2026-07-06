@@ -1325,10 +1325,15 @@ const SITES_DATA = [
     "logo": "images/logos/Black Magic Cam.png",
     "links": {
       "website": "https://www.blackmagicdesign.com/products/blackmagiccamera",
+      "android": "https://play.google.com/store/apps/details?id=com.blackmagicdesign.bmdcam",
+      "ios": "https://apps.apple.com/us/app/blackmagic-camera/id6449580241",
       "wikipedia": "https://en.wikipedia.org/wiki/Blackmagic_Design"
     },
     "flags": {},
-    "categories": {},
+    "categories": {
+      "Android": true,
+      "IOS": true
+    },
     "lightmode_categories": {},
     "on_home": true
   },
