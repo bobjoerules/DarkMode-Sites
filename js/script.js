@@ -426,7 +426,7 @@ function openSitePopup(site) {
 
     desc.textContent = site.description || "No description available.";
 
-    const previewSrc = site.preview || site.thumbnail || `images/previews/${site.name}.png`;
+    const previewSrc = site.preview || site.thumbnail || `images/previews/${site.name.replace(/\?/g, '')}.png`;
     const fullPreviewPath = basePath + previewSrc;
 
     heroImg.onload = null;

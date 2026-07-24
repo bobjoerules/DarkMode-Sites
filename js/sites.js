@@ -6174,6 +6174,7 @@ const SITES_DATA = [
     "name": "Can you block it?",
     "description": "A simple Ad Block Tester.",
     "logo": "images/logos/Can you block it.png",
+    "preview": "images/previews/Can you block it.png",
     "links": {
       "website": "https://canyoublockit.com/"
     },
